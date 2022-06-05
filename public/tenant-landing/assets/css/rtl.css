@@ -1,0 +1,232 @@
+/*==== rtl css ====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
+
+body {
+	font-family: 'Almarai', sans-serif;
+}
+
+
+.iti {
+	direction: ltr !important;
+}
+
+h1, h2, h3, h4, h5, h6 , p {
+	font-family: 'Almarai', sans-serif;
+}
+
+.appie-traffic-area.appie-traffic-area-rtl .traffic-thumb {
+	left: 0;
+	right: auto;
+	transform: translateY(-50%) rotateY(-180deg);
+}
+
+
+.appie-features-tabs-btn .nav a i {
+	margin-left: 10px !important;
+	margin-right: unset !important;
+}
+
+.appie-traffic-title {
+	padding-right: unset !important;
+	padding-left: 220px !important;
+}
+
+.appie-traffic-area .traffic-thumb {
+	left: 0 !important;
+	right: unset !important;
+
+}
+
+.slick-slider {
+	direction: ltr !important;
+}
+
+.appie-team-item .thumb ul li {
+	margin: 0 !important;
+}
+
+.team-btn a i {
+	padding-right: 6px !important;
+	padding-left: unset !important;
+}
+
+.main-btn .fa-arrow-right:before ,.appie-footer-area .fa-arrow-right:before{
+	content: "\f060";
+}
+
+.main-btn .fa-arrow-left:before  ,.appie-footer-area .fa-arrow-left:before{
+	content: "\f061";
+}
+
+.appie-project-area .appie-project-box .appie-project-thumb {
+	right: unset !important;
+	left: 70px !important;
+}
+
+.appie-project-content .input-box input {
+	padding-right: 30px;
+	padding-left: unset !important;
+}
+
+.appie-project-content .input-box button {
+	margin-right: 10px !important;
+	margin-left: unset !important;
+}
+
+.footer-widget-info ul li a {
+	padding-right: 30px !important;
+	padding-left: unset !important;
+}
+
+.footer-widget-info ul li a i {
+	left: unset !important;
+	right: 0 !important;
+}
+
+.footer-about-widget {
+	padding-right: unset !important;
+	padding-left: 70px !important;
+}
+
+.appie-traffic-service {
+ 	padding-left: 70px;
+	padding-right: 40px;
+}
+
+@media (max-width: 767px){
+	.appie-traffic-service {
+ 		padding-left: 0 !important;
+	}
+
+	.appie-traffic-title {
+		padding-right: unset;
+		padding-left: 0 !important;
+	}
+}
+
+.appie-traffic-service .icon {
+	left: unset !important;
+	right: 0 !important;
+}
+
+
+.appie-traffic-area-rtl .appie-traffic-title {
+	padding-left: 220px;
+	padding-right: 0;
+}
+
+
+.appie-traffic-area-rtl .appie-traffic-service .icon {
+	right: 0;
+	left: auto;
+}
+
+
+
+.appie-faq-area-rtl .faq-accrodion .accrodion .accrodion-title::after,
+.appie-faq-area-rtl .faq-accrodion .accrodion .accrodion-title::before {
+	right: auto;
+	left: 30px;
+}
+
+
+.appie-project-area.appie-project-area-rtl .appie-project-box .appie-project-thumb {
+	left: 70px;
+	right: auto;
+}
+
+
+
+.appie-project-area-rtl .appie-project-content .input-box input {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+
+.appie-project-area-rtl .appie-project-content .input-box button {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+
+
+
+
+.appie-header-area-rtl .appie-header-main-menu ul {
+	text-align: right;
+}
+
+
+.ml-30 {
+	margin-left: unset;
+	margin-right: 30px;
+}
+
+
+.appie-header-area-rtl .appie-header-main-menu ul>li .sub-menu {
+	text-align: right;
+}
+
+/*
+
+.appie-btn-box.text-right {
+	text-align: left !important;
+} */
+
+@media (max-width: 767px) {
+	.header-nav-box .appie-btn-box {
+		padding-right: unset !important;
+		padding-left: 30px !important;
+	}
+}
+
+.wizard-content .wizard>.steps>ul>li:before {
+	left: unset !important;
+	right: 0 !important;
+}
+
+.wizard-content .wizard>.steps>ul>li:after {
+	right: unset !important;
+	left: 0 !important;
+}
+
+.wizard-content .wizard>.actions>ul>li {
+	float: right !important;
+}
+
+.wizard-content .wizard>.actions>ul>li+li {
+	margin-left: unset !important;
+	margin-right: 10px !important;
+}
+
+.toggle-btn {
+	right: unset;
+	left: 10px;
+}
+
+@media (max-width: 768px){
+.wizard-content .wizard>.steps>ul>li {
+     float: right !important;
+ }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+.header-nav-box .appie-btn-box {
+    padding-right: unset !important;
+    padding-left: 50px !important;
+}
+}
+
+
+
+
+
+.form-of-span .eye {
+	left: 10px !important;
+	right: unset !important;
+}
+
+#domain {
+	direction: ltr;
+}

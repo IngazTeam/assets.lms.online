@@ -1,0 +1,343 @@
+:root {
+    --main-color: #fb6d3a;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+[direction="rtl"] {
+    text-align: right;
+}
+.bg-secondary {
+    background-color: #fb6d3a !important;
+}
+.card-title {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+}
+/* the main section start  */
+.card {
+    margin-bottom: 25px;
+    border-radius: 15px !important;
+}
+
+.doctor-info-details .media {
+    position: relative;
+}
+.title-and-rev {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+@media (min-width: 425px) {
+    .title-and-rev {
+        padding-right: 30px;
+    }
+}
+.doctor-info-details .media img {
+    width: 140px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+.media-body h2 {
+    color: #2e2e2e;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.media-body p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+}
+.media-body span {
+    color: #777;
+}
+.media-body span i {
+    font-size: 16px;
+    margin-left: 5px;
+}
+.dropdown .btn {
+    font-weight: 400;
+    border-radius: 0.75rem;
+}
+
+.flu-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    z-index: 1000;
+    display: none;
+    float: right;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.8rem;
+    color: #212529;
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    border: 1px solid #eee;
+    width: 100%;
+}
+.flu-dropdown .dropdown-menu.show {
+    transform: translate(50px, 40px) !important;
+}
+.star-review span {
+    font-weight: 400;
+    color: #444;
+}
+.doctor-info-content h3 {
+    font-weight: bold;
+}
+.doctor-info-content p {
+    font-size: 1.2rem;
+    color: #777;
+    line-height: 1.4;
+}
+.card-footer:last-child {
+    background-color: #fff;
+    border-radius: 0 0 calc(0.75rem - 1px) calc(0.75rem - 1px);
+    margin-bottom: 20px;
+}
+.card-footer:last-child a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+.card-footer:last-child a:hover {
+    color: #22052d;
+}
+/* disease history section  */
+
+.card .card-header {
+    border-radius: 15px !important;
+    text-align: center;
+}
+.timeline {
+    position: relative;
+    list-style: none;
+}
+.timeline li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.timeline i {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px;
+    color: var(--main-color);
+    text-align: center;
+    left: -10px;
+    top: 0;
+    display: inline-block;
+    z-index: 1;
+}
+html[dir="rtl"] .timeline i {
+    left: 10px;
+    transform: rotate(0deg);
+}
+html[dir="rtl"] .timeline a:hover i {
+    animation: left-to-right 1.5s ease-in-out infinite;
+}
+@keyframes left-to-right {
+    0% {
+        left: 10px;
+    }
+    100% {
+        left: -5px;
+    }
+}
+.timeline a:hover i {
+    animation: right_to_left 1.5s ease-in-out infinite;
+}
+@keyframes right_to_left {
+    0% {
+        left: -10px;
+    }
+    100% {
+        left: 5px;
+    }
+}
+
+
+.timeline a {
+    text-decoration: none;
+}
+.timeline a h4 {
+    font-size: 22px;
+    color: #222;
+}
+/* side sections  */
+.patient-map-area {
+    position: relative;
+}
+.patient-map-area i {
+    background: #3e4954;
+    border: 10px solid #3e4954;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 56px;
+}
+
+.patient-map-area a {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    bottom: 30px;
+    left: 30px;
+}
+.patient-map-area a:hover {
+    background-color: #ec384a;
+    border-color: #ec384a;
+}
+.iconbox {
+    display: flex;
+}
+.iconbox i {
+    background: #f9f7fa;
+    width: 40px;
+    height: 40px;
+    line-height: 56px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    color: var(--main-color);
+    border: 3px solid #f9f7fa;
+}
+.iconbox small {
+    font-size: 20px;
+    color: #777;
+    display: block;
+}
+.iconbox p {
+    color: #777;
+    margin-right: 20px;
+}
+/* the last side card style  */
+.card .card-header {
+    background-color: #fcfcfc;
+    border-radius: 15px 15px 0 0 !important;
+}
+/* chart style  */
+#chartt {
+    width: 100%;
+    height: 100%;
+}
+.anychart-credits {
+    display: none;
+}
+/* owl carousel style  */
+.owl-card {
+    position: relative;
+}
+.owl-dots {
+    display: none;
+}
+.owl-card .card-body {
+    margin: 0 20px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    border-radius: 0.75rem;
+    top: 50%;
+    right: -35px;
+    background: rgb(255 255 255 / 40%) !important;
+    color: var(--main-color) !important;
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    margin-top: -25px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 13px 25px 0 rgb(0 0 0 / 13%);
+}
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    border-radius: 0.75rem;
+    top: 50%;
+    left: -35px;
+    background: rgb(255 255 255 / 40%) !important;
+    color: var(--main-color) !important;
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    margin-top: -30px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 13px 25px 0 rgb(0 0 0 / 13%);
+}
+.owl-theme .owl-nav .owl-next.disabled,
+.owl-theme .owl-nav .owl-prev.disabled {
+    display: none;
+    opacity: 0.5;
+    cursor: default;
+}
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+}
+.btn-outline-dark {
+    border: none;
+    background-color: #eee;
+    color: #343a40;
+}
+.owl-carousel.owl-rtl {
+    direction: rtl;
+    text-align: right;
+}
+.owl-carousel.owl-rtl .owl-item .bootstrap-media .media-body{
+    padding-left: 0;
+    padding-right: 1rem;
+}
+/* media query */
+@media (max-width: 320px) {
+    .patient-map-area img {
+        width: 260px !important;
+    }
+}
+@media (max-width: 375px) {
+    .course-info.d-flex {
+        flex-wrap: wrap;
+    }
+    .media-body h2,
+    .card-title {
+        font-size: 1.5rem !important;
+    }
+    .st-numbers {
+        font-size: 24px !important;
+    }
+    .timeline a h4,
+    .timeline a i {
+        font-size: 1.25rem !important;
+    }
+}
