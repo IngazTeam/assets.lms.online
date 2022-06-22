@@ -187,6 +187,14 @@
         }
     });
 
+    $(".commessions").click(function () {
+        $(this).css('cursor','unset');
+        $(this).removeClass('fa-copy');
+        $(this).addClass("fas fa-check");
+
+      
+    });
+
 
     $("body").on('change', '.fileUpload', function () {
         let placeholder = $(this).closest(".primary_file_uploader").find(".filePlaceholder");
