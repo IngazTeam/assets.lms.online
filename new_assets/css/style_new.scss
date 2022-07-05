@@ -169,8 +169,10 @@ body {
             list-style: none;
             padding: 5px 20px;
             width: 100%;
+            border-radius: 30px;
             color: #6d6d78;
             font-weight: 600;
+            transition: .5s;
         }
 
         .nav-item.active {
@@ -621,9 +623,10 @@ body {
     border-radius: 25px;
 
     .owl-card {
-        border-radius: 20px;
+        border-radius: 30px;
         padding: 15px;
         border: 1px solid $borderColor;
+        height: 135px;
 
         h6 {
             font-size: 18px;
@@ -643,6 +646,104 @@ body {
                 border-radius: 50%;
                 right: 10px;
                 top: 25px;
+            }
+
+            .exams-text {
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .exams-type {
+                font-size: 14px;
+                font-weight: 600;
+                color: $secoundryColor;
+            }
+        }
+
+
+
+        &.trains {
+            background-color: $secoundryColor;
+            color: #fff;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $mainColor;
+                border-radius: 50%;
+                right: 10px;
+                top: 25px;
+            }
+
+            .train-text {
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .train-type {
+                font-size: 14px;
+                font-weight: 600;
+                color: $lightText;
+            }
+        }
+
+        .dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #fc77a0;
+        }
+
+
+    }
+
+    .owl-dots {
+        display: none;
+    }
+
+    .owl-carousel {
+        .owl-nav {
+            margin-top: 0;
+            position: absolute;
+            left: -45px;
+            display: flex;
+            flex-direction: column;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .owl-prev {
+                span {
+                    &::before {
+                        content: '\f053';
+
+                    }
+                }
+            }
+
+            .owl-next {
+                span {
+                    &::before {
+                        content: '\f054';
+
+                    }
+                }
+            }
+
+            .owl-prev,
+            .owl-next {
+                margin: 5px;
+                padding: 10px !important;
+                background-color: #f0f0f0 !important;
+                border-radius: 10px !important;
+                display: flex;
+                font-size: 20px;
+
+                span {
+                    color: $mainColor;
+
+                }
             }
         }
     }
