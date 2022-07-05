@@ -1,0 +1,135 @@
+<div class="left-sidebar">
+    <div class="links-container bg-white mb-3">
+        <div class="content-box d-flex gap-2 mb-2">
+            <a href="#" class="link-box-top d-flex w-25">
+                <div class="box active d-flex flex-column w-100">
+                    <box-icon
+                        type="solid"
+                        name="graduation"
+                        color="white"
+                        animation="tada-hover"
+                    ></box-icon>
+                    <span>الكورسات</span>
+                </div>
+            </a>
+            <a href="#" class="link-box-top d-flex w-25">
+                <div class="box d-flex flex-column w-100">
+                    <box-icon name="medal" color="#3B459C"></box-icon>
+                    <span>الشهادات</span>
+                </div>
+            </a>
+            <a href="#" class="link-box-top d-flex w-25">
+                <div class="box d-flex flex-column w-100">
+                    <box-icon name="notepad" color="#3B459C"></box-icon>
+                    <span>التقارير</span>
+                </div>
+            </a>
+            <a href="#" class="link-box-top d-flex w-25">
+                <div class="box d-flex flex-column w-100">
+                    <box-icon name="user-pin" color="#3B459C"></box-icon>
+                    <span>كورساتي</span>
+                </div>
+            </a>
+        </div>
+        <div class="content-box d-flex gap-2 mt-2">
+            <a href="#" class="link-box-bottom d-flex w-25">
+                <div class="box active d-flex flex-column w-100">
+                    <box-icon
+                        type="solid"
+                        name="graduation"
+                        color="white"
+                        animation="tada-hover"
+                    ></box-icon>
+                    <span>الكورسات</span>
+                </div>
+            </a>
+            <a href="#" class="link-box-bottom d-flex w-25">
+                <div class="box d-flex flex-column w-100">
+                    <box-icon name="medal" color="#3B459C"></box-icon>
+                    <span>الشهادات</span>
+                </div>
+            </a>
+            <a href="#" class="link-box-bottom d-flex w-25">
+                <div class="box d-flex flex-column w-100">
+                    <box-icon name="notepad" color="#3B459C"></box-icon>
+                    <span>التقارير</span>
+                </div>
+            </a>
+            <a href="#" class="link-box-bottom d-flex w-25">
+                <div class="box d-flex flex-column w-100">
+                    <box-icon name="user-pin" color="#3B459C"></box-icon>
+                    <span>كورساتي</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="whats-new bg-white mb-3">
+        <div class="title">
+            <h5>جديد المنصة</h5>
+        </div>
+        <div class="whats-new-links row gap-2 justify-content-center">
+            <a href="#" class="link col-5">
+                <span class="text">New Courses</span>
+                <span class="orangeCircle"></span>
+            </a>
+            <a href="#" class="link col-5">
+                <span class="text">New Courses</span>
+                <span class="pinkCircle"></span>
+            </a>
+            <a href="#" class="link col-5">
+                <span class="text">New Courses</span>
+                <span class="greenCircle"></span>
+            </a>
+            <a href="#" class="link col-5">
+                <span class="text">New Courses</span>
+                <span class="blueCircle"></span>
+            </a>
+            <a href="#" class="link col-5">
+                <span class="text">New Courses</span>
+                <span class="pinkCircle"></span> </a
+            ><a href="#" class="link col-5">
+                <span class="text">New Courses</span>
+                <span class="pinkCircle"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="adds bg-white mb-3">
+        <div class="add-img-box">
+            <img src="imgs/logo-2.png" alt="" width="100%" />
+        </div>
+    </div>
+</div>
+<script>
+    $(".link-box-top").on("click", function () {
+        //Remove any previous active classes and (animation , color attributes)
+        $(".link-box-top").children(".box").removeClass("active");
+        $(".box box-icon").attr({
+            color: "#3B459C",
+            animation: "",
+        });
+
+        //Add active class , color and animation attributes to the clicked item
+        $(this).children(".box").addClass("active");
+        $(".box.active box-icon").attr({
+            color: "white",
+            animation: "tada-hover",
+        });
+    });
+    $(".link-box-bottom").on("click", function () {
+        //Remove any previous active classes and (animation , color attributes)
+        $(".link-box-bottom").children(".box").removeClass("active");
+        $(".link-box-bottom .box box-icon").attr({
+            color: "#3b459c",
+            animation: "",
+        });
+
+        //Add active class , color and animation attributes to the clicked item
+        $(this).children(".box").addClass("active");
+        $(".link-box-bottom .box.active box-icon").attr({
+            color: "white",
+            animation: "tada-hover",
+        });
+    });
+</script>

@@ -12,19 +12,24 @@ $lightText: #b8b8b8;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
     a {
         text-decoration: none;
     }
 }
+
 .avatar-img-box {
     border-radius: 50%;
+
     img {
         border-radius: 50%;
     }
 }
+
 .main-title {
     color: $secoundryColor;
 }
+
 html {
     overflow-x: hidden;
 }
@@ -41,17 +46,21 @@ body {
     position: absolute;
     top: 95px;
 }
+
 .left-dots {
     left: -70px;
 }
+
 .right-dots {
     right: -70px;
 }
+
 .bottom-dots {
     position: absolute;
     bottom: -105px;
     left: 100px;
 }
+
 .bottom-layer {
     position: absolute;
     bottom: -120px;
@@ -66,22 +75,26 @@ body {
     gap: 0.75rem;
     border-radius: 40px;
     flex-basis: 18%;
+
     .main-title {
         font-size: 1rem;
         margin-bottom: 0;
         font-weight: 600;
     }
 }
+
 .news {
     border-radius: 40px;
     flex-basis: 37%;
     gap: 0.25rem;
     justify-content: space-around;
+
     span {
         font-size: 10px;
         color: $lightText;
         font-weight: 600;
     }
+
     i {
         color: $mainColor;
     }
@@ -91,10 +104,12 @@ body {
     border-radius: 40px;
     flex-basis: 15%;
     gap: 0.75px;
+
     i {
         color: $mainColor;
         font-weight: bold;
     }
+
     input {
         border: none;
         outline: none;
@@ -103,6 +118,7 @@ body {
         font-size: 10px;
         color: $lightText;
         padding: 0 10px;
+
         &::placeholder {
             text-align: center;
             font-weight: 600;
@@ -111,6 +127,7 @@ body {
         }
     }
 }
+
 .logo-img {
     width: 50px;
     height: 50px;
@@ -118,16 +135,19 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .profile {
     border-radius: 40px;
     flex-basis: 24%;
     gap: 0.75rem;
     justify-content: space-evenly;
+
     span {
         font-size: 10px;
         font-weight: 600;
         color: $lightText;
     }
+
     .icons-box {
         display: flex;
         align-items: center;
@@ -180,6 +200,7 @@ body {
 
 // left sidebar style
 .left-sidebar {
+
     // links container
     .links-container {
         border-radius: 30px;
@@ -194,19 +215,23 @@ body {
             padding: 10px;
             align-items: center;
             justify-content: center;
+
             span {
                 font-size: 10px;
                 font-weight: 600;
                 color: $secoundryColor;
             }
         }
+
         .box.active {
             background-color: $mainColor;
+
             span {
                 color: #fff;
             }
         }
     }
+
     .link-box-bottom {
         .box {
             background-color: $backgroundColor;
@@ -214,14 +239,17 @@ body {
             padding: 10px;
             align-items: center;
             justify-content: center;
+
             span {
                 font-size: 10px;
                 font-weight: 600;
                 color: $secoundryColor;
             }
         }
+
         .box.active {
             background-color: $secoundryColor;
+
             span {
                 color: #fff;
             }
@@ -233,9 +261,11 @@ body {
         border-radius: 30px;
         padding: 20px;
         border: 1px solid $borderColor;
+
         .title {
             position: relative;
             margin-right: 15px;
+
             &::before {
                 content: "";
                 position: absolute;
@@ -248,6 +278,7 @@ body {
                 transform: translateY(50%);
             }
         }
+
         .whats-new-links {
             .link {
                 background-color: #ebebeb;
@@ -256,6 +287,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
                 .text {
                     color: #172239;
                     font-size: 12px;
@@ -264,24 +296,28 @@ body {
                     text-transform: capitalize;
                     text-align: left;
                 }
+
                 .orangeCircle {
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
                     background-color: #ffcb57;
                 }
+
                 .pinkCircle {
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
                     background-color: #fc77a0;
                 }
+
                 .greenCircle {
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
                     background-color: #29bcb0;
                 }
+
                 .blueCircle {
                     width: 10px;
                     height: 10px;
@@ -299,3 +335,81 @@ body {
         overflow: hidden;
     }
 }
+
+// ain content area style
+.dotted-circles {
+    width: 150px;
+    position: absolute;
+    z-index: -1;
+    right: -40px;
+    top: 20px;
+}
+
+.hello-user {
+    height: 100%;
+    padding: 30px 20px;
+    border-radius: 30px;
+    border: 1px solid $borderColor;
+    position: relative;
+    margin: 0;
+
+    .hello-text {
+        color: $secoundryColor;
+    }
+
+    .m-user-name {
+        color: #6d6d78;
+    }
+}
+
+.m-user-subscriptions {
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: 1px solid $borderColor;
+
+    .def {
+        color: $secoundryColor;
+        font-weight: 600;
+    }
+
+    .m-subscription-name {
+        span {
+            color: $lightText;
+            font-size: 12px;
+            font-weight: 600;
+            transition: 0.5s;
+        }
+
+        &:hover {
+            span {
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.m-another-subscriptions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+
+    span {
+        color: $lightText;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .m-number-of-subscriptions {
+        color: $secoundryColor;
+    }
+
+    .icon {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+    }
+}
+
+// the secound row 
+.dropDowns {}

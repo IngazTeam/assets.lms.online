@@ -368,4 +368,87 @@ body {
   border: 1px solid #eaeaea;
   overflow: hidden;
 }
-/*# sourceMappingURL=style.css.map */
+
+.dotted-circles {
+  width: 150px;
+  position: absolute;
+  z-index: -1;
+  right: -40px;
+  top: 20px;
+}
+
+.hello-user {
+  height: 100%;
+  padding: 30px 20px;
+  border-radius: 30px;
+  border: 1px solid #eaeaea;
+  position: relative;
+  margin: 0;
+}
+
+.hello-user .hello-text {
+  color: #3b459c;
+}
+
+.hello-user .m-user-name {
+  color: #6d6d78;
+}
+
+.m-user-subscriptions {
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: 1px solid #eaeaea;
+}
+
+.m-user-subscriptions .def {
+  color: #3b459c;
+  font-weight: 600;
+}
+
+.m-user-subscriptions .m-subscription-name span {
+  color: #b8b8b8;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.m-user-subscriptions .m-subscription-name:hover span {
+  color: #29bcb0;
+}
+
+.m-another-subscriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 5px;
+}
+
+.m-another-subscriptions span {
+  color: #b8b8b8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.m-another-subscriptions .m-number-of-subscriptions {
+  color: #3b459c;
+}
+
+.m-another-subscriptions .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+/*# sourceMappingURL=style_new.css.map */

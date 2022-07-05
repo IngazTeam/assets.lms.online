@@ -1,0 +1,109 @@
+<div class="right-sidebar">
+    <ul class="nav navbar mb-3">
+        <li class="w-100">
+            <a
+                href="#"
+                class="nav-item active my-2 d-flex align-items-center justify-content-start gap-4"
+                ><div class="icon-box d-flex">
+                    <box-icon
+                        name="home"
+                        animation="burst"
+                        color="white"
+                    ></box-icon>
+                </div>
+                <span>الرئيسية</span>
+            </a>
+        </li>
+        <li class="w-100">
+            <a
+                href="#"
+                class="nav-item my-2 d-flex align-items-center justify-content-start gap-4"
+                ><div class="icon-box d-flex align-items-center">
+                    <box-icon name="bookmarks"></box-icon>
+                </div>
+                <span>كورساتي</span>
+            </a>
+        </li>
+        <li class="w-100">
+            <a
+                href="#"
+                class="nav-item my-2 d-flex align-items-center justify-content-start gap-4"
+                ><div class="icon-box d-flex align-items-center">
+                    <box-icon name="user"></box-icon>
+                </div>
+                <span>كورساتي</span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="nav navbar mb-3">
+        <li class="w-100">
+            <a
+                href="#"
+                class="nav-item my-2 d-flex align-items-center justify-content-start gap-4"
+                ><div class="icon-box d-flex">
+                    <box-icon name="home"></box-icon>
+                </div>
+                <span>الرئيسية</span>
+            </a>
+        </li>
+        <li class="w-100">
+            <a
+                href="#"
+                class="nav-item my-2 d-flex align-items-center justify-content-start gap-4"
+                ><div class="icon-box d-flex align-items-center">
+                    <box-icon name="bookmarks"></box-icon>
+                </div>
+                <span>كورساتي</span>
+            </a>
+        </li>
+        <li class="w-100">
+            <a
+                href="#"
+                class="nav-item my-2 d-flex align-items-center justify-content-start gap-4"
+                ><div class="icon-box d-flex align-items-center">
+                    <box-icon name="user"></box-icon>
+                </div>
+                <span>كورساتي</span>
+            </a>
+        </li>
+        <li class="w-100">
+            <a
+                href="#"
+                class="nav-item my-2 d-flex align-items-center justify-content-start gap-4"
+                ><div class="icon-box d-flex align-items-center">
+                    <box-icon name="user"></box-icon>
+                </div>
+                <span>كورساتي</span>
+            </a>
+        </li>
+        <li class="w-100">
+            <a
+                href="#"
+                class="nav-item my-2 d-flex align-items-center justify-content-start gap-4"
+                ><div class="icon-box d-flex align-items-center">
+                    <box-icon name="user"></box-icon>
+                </div>
+                <span>كورساتي</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<script>
+    //Click event handler for nav-items
+    $(".nav-item").on("click", function () {
+        //Remove any previous active classes and (animation , color attributes)
+        $(".nav-item").removeClass("active");
+        $(".nav-item box-icon").attr({
+            color: "black",
+            animation: "",
+        });
+
+        //Add active class , color and animation attributes to the clicked item
+        $(this).addClass("active");
+        $(".nav-item.active box-icon").attr({
+            color: "white",
+            animation: "burst",
+        });
+    });
+</script>
