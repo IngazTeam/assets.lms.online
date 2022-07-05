@@ -89,7 +89,7 @@ body {
     gap: 0.25rem;
     justify-content: space-around;
 
-    span {
+    marquee {
         font-size: 10px;
         color: $lightText;
         font-weight: 600;
@@ -412,4 +412,238 @@ body {
 }
 
 // the secound row 
-.dropDowns {}
+.dropDowns {
+    .select2-container--default {
+        width: 140px !important;
+
+        .select2-selection--single {
+            border: none;
+            border-radius: 15px;
+            padding: 0 10px;
+
+            .select2-selection__rendered {
+                color: $lightText;
+                font-size: 12px;
+                font-weight: 600;
+                padding-left: 10px;
+            }
+
+            .select2-selection__arrow b {
+                border-color: $mainColor transparent transparent transparent;
+            }
+        }
+    }
+
+    .select2-container--default.select2-container--open {
+        .select2-selection--single {
+            .select2-selection__arrow {
+                b {
+                    border-color: transparent transparent $mainColor transparent;
+                }
+            }
+        }
+    }
+
+    .icon {
+        border-radius: 50%;
+    }
+}
+
+
+// select custom style 
+// =================================================================================================================================
+.select2-dropdown--below {
+    border: none;
+}
+
+.select2-search--dropdown {
+    display: none;
+}
+
+.select2-results {
+    padding: 4px;
+}
+
+.select2-results__option--selectable {
+    font-size: 12px;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: $mainColor;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: $secoundryColor;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.select2-container--open .select2-dropdown--below {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+// .cards area 
+.cards-container {
+    .Card {
+        background-color: #fff;
+        border-radius: 25px;
+        padding: 15px 5px;
+
+        &.active {
+            background-color: $mainColor;
+
+            .main-number {
+                color: #fff;
+
+            }
+
+            .main-title {
+                color: #fff;
+
+            }
+        }
+
+        .perc {
+            color: $lightText;
+            font-size: 14px;
+            font-weight: 700;
+
+            &::before {
+                content: '%';
+                position: absolute;
+                left: -12px;
+                top: -5px;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+
+        .attend {
+            color: $secoundryColor;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .main-number {
+            color: $mainColor;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+
+        .main-title {
+            color: $lightText;
+            margin-bottom: 0;
+            font-weight: 700;
+        }
+    }
+}
+
+// culender area styles 
+.culender {
+    .title {
+        color: #525C72;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $mainColor;
+            border-radius: 50%;
+        }
+    }
+
+    .select2-container--default {
+        width: 100px !important;
+
+        .select2-selection--single {
+            border: none;
+            border-radius: 15px;
+            padding: 0 10px;
+
+            .select2-selection__rendered {
+                color: $lightText;
+                font-size: 14px;
+                font-weight: 700;
+                padding-left: 10px;
+            }
+
+            .select2-selection__arrow b {
+                border-color: $mainColor transparent transparent transparent;
+            }
+        }
+    }
+
+    .select2-container--default.select2-container--open {
+        .select2-selection--single {
+            .select2-selection__arrow {
+                b {
+                    border-color: transparent transparent $mainColor transparent;
+                }
+            }
+        }
+    }
+
+    .tabs {
+        padding: 0 20px;
+        border-radius: 20px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        .tab {
+            padding: 5px 10px;
+            font-size: 14px;
+            color: $lightText;
+            font-weight: 700;
+
+            &.active {
+                background-color: $mainColor;
+                color: #fff;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.content-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+
+    .owl-card {
+        border-radius: 20px;
+        padding: 15px;
+        border: 1px solid $borderColor;
+
+        h6 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        &.exams {
+            background-color: $mainColor;
+            color: #fff;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $secoundryColor;
+                border-radius: 50%;
+                right: 10px;
+                top: 25px;
+            }
+        }
+    }
+}
