@@ -1,0 +1,131 @@
+$backgroundColor: #f2f3f7;
+$mainColor: #29bcb0;
+$secoundryColor: #3b459c;
+$lightSecoundry: #4c75f3;
+$borderColor: #eaeaea;
+$blackText: #373737;
+$lightText: #b8b8b8;
+$text-color:#525F77;
+$inputs-border:#EDEDED;
+$white-color: #fff;
+
+body {
+    background: $backgroundColor;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-div {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 100%;
+
+        label {
+            color: $text-color;
+        }
+
+        input {
+            direction: rtl;
+            border-color: $inputs-border;
+            border-radius: 15px;
+            font-size: 14px;
+
+            &:focus,
+            &:hover {
+                border-color: $lightSecoundry;
+                outline: none;
+                box-shadow: unset !important;
+            }
+        }
+
+        .input-ico {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            border-left: 1px solid #ddd;
+            padding-left: 8px;
+        }
+
+        .sign-btn {
+            width: 100%;
+            background: $mainColor;
+            border-radius: 25px;
+            padding: 6px 12px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .create-account {
+            float: left;
+            font-size: 14px;
+            margin-top: 6px;
+            color: #29BCB0;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        .bottom-text {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            bottom: 15px;
+            right: 0;
+
+            .txt-div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    color: $secoundryColor;
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-bottom: 0px;
+                }
+    
+                span {
+                    color: $lightText;
+                    font-size: 13px;
+                    font-weight: bold;
+                    margin-bottom: 0px;
+                }
+
+            }
+
+           
+        }
+
+        .bot-anker {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            font-size: 12px;
+
+            
+        }
+    }
+
+    .login-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 650px;
+
+
+    }
+
+}
