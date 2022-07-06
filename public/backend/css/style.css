@@ -2452,11 +2452,11 @@ table.dataTable tbody td .form-check-input {
 /* line 308, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
 .primary-input:focus {
-    color: #58548e !important;
+    /* color: #58548e !important;
     outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    border-color: transparent !important;
+    box-shadow: none !important; */
+    /* background: transparent !important; */
+    /* border-color: transparent !important; */
 }
 
 /* line 315, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
