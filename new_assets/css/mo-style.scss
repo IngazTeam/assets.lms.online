@@ -11,6 +11,7 @@ $white-color: #fff;
 
 body {
     background: $backgroundColor;
+    min-height: 100vh;
 }
 
 p {
@@ -26,6 +27,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 
     .form-div {
         display: flex;
