@@ -1,0 +1,263 @@
+// variables
+$main_course_color:#525C72;
+$circle_color:#29BCB0;
+$blue_color:#3B459C;
+$gray_color:#9F9F9F;
+
+//  mixins
+@mixin flex($dir, $content, $items) {
+    display: flex;
+    justify-content: $content;
+    align-items: $items;
+    flex-direction: $dir;
+}
+
+///////////////////////  courses style ///////////////////////////
+.section_title {
+    color: $main_course_color;
+    font-size: 24px;
+    font-weight: 800;
+    padding-right: 19px;
+    position: relative;
+
+    &::before {
+        @extend .circle_before;
+    }
+}
+
+.left_links {
+    @include flex(row, end, center);
+
+    a {
+        color: $main_course_color;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 0 2px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        .bi-slash-lg {
+            font-size: 20px;
+            transform: rotate(90deg);
+
+            &::before {
+                transform: rotate(135deg);
+                font-size: 20px;
+                color: $main_course_color
+            }
+        }
+
+        .bi-chevron-left {
+            font-size: 15px;
+            font-weight: 900;
+            color: $main_course_color
+        }
+    }
+}
+
+.card_box {
+    background-color: #fff;
+    border-radius: 31px;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    padding: 27px 23px;
+
+    .add_course {
+        background-color: $circle_color;
+        @include flex(row, center, center);
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        position: absolute;
+        right: 2px;
+        top: -25px;
+    }
+
+    .title {
+        color: $blue_color;
+        font-size: 20px;
+        font-weight: 600;
+        padding-right: 10px;
+
+        &::before {
+            @extend .circle_before;
+            right: 13px !important;
+            top: 34px !important;
+        }
+    }
+
+    .card_info {
+        background-color: #F7F8FB;
+        padding: 17px 10px;
+        position: relative;
+        border-radius: 31px;
+        padding-bottom: 30px;
+
+        .card_info_title {
+            color: $blue_color;
+            font-size: 18px;
+            font-weight: 600;
+            padding-right: 22px;
+
+            &::before {
+                @extend .circle_before;
+                right: 13px !important;
+                top: 25px !important;
+            }
+        }
+
+        select,
+        input {
+            width: 90%;
+            border-radius: 31px;
+            border: 0.1px solid #EDEDED;
+            padding: 5px 15px;
+            color: $gray_color;
+            font-weight: 700;
+            font-size: 14px;
+            appearance: none;
+            height: 33px;
+
+            &:focus {
+                outline: none !important;
+            }
+
+            &::placeholder {
+                font-size: 14px;
+                color: $gray_color;
+                font-weight: 700;
+            }
+        }
+
+        .bi-caret-left-fill {
+            color: #D5D4D4;
+            font-size: 22px;
+        }
+
+        .time {
+            span {
+                font-size: 14px;
+                color: $gray_color;
+                font-weight: 700;
+                margin: 0 10px;
+            }
+
+            input {
+                width: 72px;
+                text-align: center;
+            }
+
+            .training_hours {
+                width: 101px;
+                margin-left: 5px;
+            }
+
+            .toggle {
+                input[type=checkbox] {
+                    height: 0;
+                    width: 0;
+                    visibility: hidden;
+                    display: none;
+                }
+
+                label {
+                    cursor: pointer;
+                    text-indent: -9999px;
+                    width: 54px;
+                    height: 26px;
+                    background: #fff;
+                    border: 0.1px solid #EDEDED;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100px;
+                    position: relative;
+                }
+
+                label:after {
+                    content: "";
+                    background: #CFCFCF;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 3px;
+                    left: 4px;
+                    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+                }
+
+                input:checked+label {
+                    background: #fff;
+
+                    &:after {
+                        background: $circle_color;
+                    }
+                }
+
+                input:checked+label:after {
+                    left: calc(100% - 5px);
+                    transform: translateX(-100%);
+                }
+
+            }
+
+            .training_salary {
+                width: 225px;
+                margin-left: 4px;
+                text-align: right;
+            }
+        }
+        .create_group{
+            width:90%;
+            background-color: $circle_color;
+            border-radius: 31px;
+            height: 33px;
+            padding: 4px 14px;
+            color:#fff;
+            font-weight: 700;
+            img{
+                width:15px
+            }
+        }
+        .group_content{
+            border-top: .1px solid #70707021;
+            margin-top: 15px;
+            .delet_tag{
+                background-color: #FF4141;
+                padding: 5px;
+                border-radius: 10px;
+                width: 28px;
+                height: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 5px;
+            }
+        }
+        .start_end_date{
+            input{
+                width: 131px;
+            }
+        }
+    }
+}
+
+
+
+// global classes
+
+.circle_before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    margin-top: 3px;
+    height: 12px;
+    background-color: $circle_color;
+    right: 0px;
+    border-radius: 50%;
+    top: 10px;
+}
