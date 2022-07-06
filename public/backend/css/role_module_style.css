@@ -8387,11 +8387,12 @@ input::placeholder, textarea::placeholder {
 }
 
 .single_role_blocks {
-    display: inline-block;
-    background: #fff;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 0 20px;
+  display: inline-block;
+  background: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 25px;
+  margin: 0 0 15px
 }
 
 .erp_role_permission_area .single_permission .permission_body > ul > li {
@@ -8402,7 +8403,7 @@ input::placeholder, textarea::placeholder {
     padding: 20px 25px 11px 25px;
     position: relative;
     box-shadow: 0px 1px 3px #ddd;
-    border-radius: 6px;
+    border-radius: 25px;
     transition: all .3s ease-in-out;
 }
 
@@ -8438,7 +8439,7 @@ input::placeholder, textarea::placeholder {
     right: 12px;
     height: auto;
     font-family: 'themify';
-    color: #fb6d3a;
+    color: #29bcb0;
     font-size: 18px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -8448,7 +8449,7 @@ input::placeholder, textarea::placeholder {
 
 .arrow.collapsed::after {
     content: "\e61a";
-    color: #fb6d3a;
+    color: #29bcb0;
     font-size: 18px;
 }
 
