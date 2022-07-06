@@ -189,6 +189,116 @@ body {
   gap: 7px;
 }
 
+.noficationbox {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 15px;
+  left: 0;
+  top: 60px;
+  z-index: 999;
+}
+
+.noficationbox.hidden {
+  display: none;
+}
+
+.noficationbox .notify h5 {
+  color: #373737;
+}
+
+.noficationbox .notify h5::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #29bcb0;
+  border-radius: 50%;
+  right: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.noficationbox .read {
+  padding: 2px 15px;
+  background-color: #29bcb0;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.noficationbox .all-notafications {
+  max-height: 285px;
+  overflow-y: scroll;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.noficationbox .all-notafications::-webkit-scrollbar {
+  width: 5px;
+}
+
+.noficationbox .all-notafications::-webkit-scrollbar-track {
+  background-color: #b8b8b8;
+  border-radius: 20px;
+}
+
+.noficationbox .all-notafications::-webkit-scrollbar-thumb {
+  background: #3b459c;
+  border-radius: 10px;
+}
+
+.noficationbox .all-notafications::-webkit-scrollbar-thumb:hover {
+  background: #4c75f3;
+}
+
+.noficationbox .all-notafications .notafication-content {
+  background-color: #f2f3f7;
+  border: 1px solid #eaeaea;
+  border-radius: 50px;
+  padding: 0 10px;
+  margin: 0 5px;
+}
+
+.noficationbox .all-notafications .notafication-content.unread {
+  background-color: #fff;
+}
+
+.noficationbox .all-notafications .image {
+  width: 75px;
+}
+
+.noficationbox .all-notafications .image img {
+  width: 100%;
+}
+
+.noficationbox .all-notafications .text-box h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b459c;
+  margin-bottom: 0;
+}
+
+.noficationbox .all-notafications .text-box p {
+  font-size: 10px;
+  font-weight: 500;
+  color: #b8b8b8;
+  margin-bottom: 0;
+  padding: 0 0 0 15px;
+}
+
+.noficationbox .see-all {
+  margin-top: 15px;
+  border-top: 1px solid #eaeaea;
+}
+
+.noficationbox .see-all a {
+  color: #3b459c;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .right-sidebar .navbar {
   height: 100%;
   padding: 20px 10px;

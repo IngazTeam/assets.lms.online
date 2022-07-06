@@ -156,6 +156,122 @@ body {
     }
 }
 
+.noficationbox {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 15px;
+    left: 0;
+    top: 60px;
+    z-index: 999;
+
+    &.hidden {
+        display: none;
+    }
+
+    .notify {
+        h5 {
+            color: $blackText;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: $mainColor;
+                border-radius: 50%;
+                right: -20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .read {
+        padding: 2px 15px;
+        background-color: $mainColor;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+    .all-notafications {
+        max-height: 285px;
+        overflow-y: scroll;
+
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background-color: $lightText;
+            border-radius: 20px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: $secoundryColor;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: $lightSecoundry;
+        }
+
+        .notafication-content {
+            background-color: $backgroundColor;
+            border: 1px solid $borderColor;
+            border-radius: 50px;
+            padding: 0 10px;
+            margin: 0 5px;
+        }
+
+        .notafication-content.unread {
+            background-color: #fff;
+        }
+
+        .image {
+            width: 75px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text-box {
+            h6 {
+                font-size: 14px;
+                font-weight: 600;
+                color: $secoundryColor;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 10px;
+                font-weight: 500;
+                color: $lightText;
+                margin-bottom: 0;
+                padding: 0 0 0 15px;
+            }
+        }
+    }
+
+
+    .see-all {
+        margin-top: 15px;
+        border-top: 1px solid $borderColor;
+
+        a {
+            color: $secoundryColor;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+}
+
 // right sidebar style
 .right-sidebar {
     .navbar {
