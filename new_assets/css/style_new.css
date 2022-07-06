@@ -31,10 +31,6 @@ body {
   position: relative;
 }
 
-.container {
-  max-width: 98%;
-}
-
 .left-dots,
 .right-dots {
   position: absolute;
