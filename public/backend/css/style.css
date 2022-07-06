@@ -2148,7 +2148,7 @@ table.dataTable tbody td .form-check-input {
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
-    border-radius: 6px;
+    border-radius: 25px;
 }
 
 /* line 147, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
@@ -2263,7 +2263,7 @@ table.dataTable tbody td .form-check-input {
 
 .primary-btn.fix-gr-bg {
     display: flex;
-    background: #415094;
+    background: #29bcb0;
     padding: 5px 11px;
     /* background: -webkit-linear-gradient( 90deg, #7c32ff 0%, #c738d8 51%, #7c32ff 100%);
     background: -moz-linear-gradient( 90deg, #7c32ff 0%, #c738d8 51%, #7c32ff 100%);

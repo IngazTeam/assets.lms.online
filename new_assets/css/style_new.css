@@ -202,8 +202,11 @@ body {
   list-style: none;
   padding: 5px 20px;
   width: 100%;
+  border-radius: 30px;
   color: #6d6d78;
   font-weight: 600;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .right-sidebar .navbar .nav-item.active {
@@ -644,9 +647,10 @@ body {
 }
 
 .content-box .owl-card {
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 15px;
   border: 1px solid #eaeaea;
+  height: 135px;
 }
 
 .content-box .owl-card h6 {
@@ -668,5 +672,95 @@ body {
   border-radius: 50%;
   right: 10px;
   top: 25px;
+}
+
+.content-box .owl-card.exams .exams-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content-box .owl-card.exams .exams-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b459c;
+}
+
+.content-box .owl-card.trains {
+  background-color: #3b459c;
+  color: #fff;
+}
+
+.content-box .owl-card.trains::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #29bcb0;
+  border-radius: 50%;
+  right: 10px;
+  top: 25px;
+}
+
+.content-box .owl-card.trains .train-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content-box .owl-card.trains .train-type {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b8b8b8;
+}
+
+.content-box .owl-card .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fc77a0;
+}
+
+.content-box .owl-dots {
+  display: none;
+}
+
+.content-box .owl-carousel .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  left: -45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.content-box .owl-carousel .owl-nav .owl-prev span::before {
+  content: '\f053';
+}
+
+.content-box .owl-carousel .owl-nav .owl-next span::before {
+  content: '\f054';
+}
+
+.content-box .owl-carousel .owl-nav .owl-prev,
+.content-box .owl-carousel .owl-nav .owl-next {
+  margin: 5px;
+  padding: 10px !important;
+  background-color: #f0f0f0 !important;
+  border-radius: 10px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.content-box .owl-carousel .owl-nav .owl-prev span,
+.content-box .owl-carousel .owl-nav .owl-next span {
+  color: #29bcb0;
 }
 /*# sourceMappingURL=style_new.css.map */
