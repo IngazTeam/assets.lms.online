@@ -31,6 +31,10 @@ body {
   position: relative;
 }
 
+.container {
+  max-width: 98%;
+}
+
 .left-dots,
 .right-dots {
   position: absolute;
@@ -642,7 +646,7 @@ body {
 
 .content-box {
   background-color: #fff;
-  padding: 20px;
+  padding: 4px 0;
   border-radius: 25px;
 }
 
@@ -762,5 +766,185 @@ body {
 .content-box .owl-carousel .owl-nav .owl-prev span,
 .content-box .owl-carousel .owl-nav .owl-next span {
   color: #29bcb0;
+}
+
+.card-box {
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.card-box .img-box {
+  background-color: #FFCB57;
+  border-radius: 25px;
+}
+
+.card-box .rating-box span {
+  color: #b8b8b8;
+  font-size: 12px;
+}
+
+.card-box .rating-box .rate .total-rate {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3b459c;
+}
+
+.card-box .course-name {
+  color: #525C72;
+}
+
+.card-box .instractors {
+  font-size: 12px;
+  color: #b8b8b8;
+}
+
+.card-box .course-content .title {
+  font-weight: 500;
+  color: #3b459c;
+}
+
+.card-box .course-content .title::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #29bcb0;
+  right: -20px;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.card-box .course-content .number-of-courses {
+  font-weight: bold;
+  font-size: 16px;
+  color: #373737;
+}
+
+.card-box .course-videos .video {
+  padding: 3px 10px;
+  background-color: #F7F8FB;
+  border-radius: 30px;
+  border: 1px solid #eaeaea;
+}
+
+.card-box .course-videos .video .video-name .box {
+  padding: 5px 15px;
+  background-color: #29bcb0;
+  margin-right: -25px;
+  border-radius: 10px;
+}
+
+.card-box .course-videos .video .video-name .box .fa-clipboard {
+  color: #fff;
+}
+
+.card-box .course-videos .video .video-name .name {
+  font-weight: 700;
+  color: #373737;
+  margin-bottom: 0;
+}
+
+.card-box .course-videos .video .duration {
+  color: #b8b8b8;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.card-box .course-videos .video.active {
+  background-color: #29bcb0;
+}
+
+.card-box .course-videos .video.active .video-name .box {
+  background-color: #3b459c;
+}
+
+.card-box .course-videos .video.active .video-name .box i {
+  color: #fff;
+}
+
+.card-box .course-videos .video.active .video-name .name {
+  color: #fff;
+}
+
+.card-box .course-videos .video.active .duration {
+  color: #fff;
+}
+
+.card-box .avalable-videos {
+  margin-top: 10px;
+}
+
+.card-box .avalable-videos .number-of-pending {
+  color: #b8b8b8;
+  font-weight: 600;
+}
+
+.culender2 .title {
+  color: #525C72;
+}
+
+.culender2 .title::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #29bcb0;
+  border-radius: 50%;
+}
+
+.culender2 .tabs {
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+}
+
+.culender2 .tabs .tab {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #b8b8b8;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+.culender2 .tabs .tab.active {
+  background-color: #29bcb0;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.culender2 .tabs .icon {
+  border-radius: 10px;
+}
+
+.courses-box .courses .owl-nav {
+  display: none;
+}
+
+.courses-box .courses .owl-dots {
+  margin-top: 10px;
+}
+
+.courses-box .courses .owl-dots .owl-dot:hover span {
+  background: #29bcb0;
+}
+
+.courses-box .courses .owl-dots .owl-dot.active span {
+  background: #29bcb0;
 }
 /*# sourceMappingURL=style_new.css.map */
