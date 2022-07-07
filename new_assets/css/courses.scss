@@ -333,6 +333,27 @@ $gray_color:#9F9F9F;
     border-top-right-radius: 10px;
 }
 
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #F2F2F2;
+    border-radius: 35px;
+    outline: none;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    color: $gray_color;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field {
+    font-size: 14px;
+
+    &::placeholder {
+        color: $gray_color;
+        font-weight: 600;
+    }
+}
+
 // customize the file upload style 
 .bootstrap-filestyle {
     width: 225px;
@@ -353,4 +374,13 @@ $gray_color:#9F9F9F;
             border: 1px solid #F2F2F2;
         }
     }
+}
+
+.submit-btn {
+    background-color: $circle_color;
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
 }
