@@ -47,6 +47,10 @@
 /*}*/
 .modal-body .input-group .form-control {
     width: 80%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 25px 0 0 25px !important
 }
 
 .input-group:not(.has-validation)>.custom-file:not(:last-child) .custom-file-label::after,
@@ -72,8 +76,8 @@ body.crm_body_bg {
     background-size: cover;
 }
 
-@media (min-width: 1200px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
+@media (max-width: 1600px){
+    .container {
         max-width: 96% !important;
     }
 }
@@ -2221,7 +2225,7 @@ input::placeholder {
 }
 
 .card_main {
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     position: relative;
     transition: all 0.4s ease 0s;
     background: transparent;
@@ -2246,8 +2250,23 @@ input::placeholder {
 
 .header_chart h3 {
     margin-bottom: 0;
-    color: #58548E;
+    color: #525C72;
+    font-weight: bold;
+    position: relative;
+    padding: 0 20px;
 }
+
+.header_chart h3:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #29BCB0;
+} 
 
 .header_chart .primary_select {
     width: 50%;
@@ -7972,6 +7991,13 @@ html[dir="rtl"] .error-message {
     font-weight: 500;
 }
 
+.primary_input .input-group .input-group-prepend .input-group-text {
+    background: #29bcb0;
+    color: #f7f7f7;
+    height: 40px;
+    border-radius: 0px 25px 25px 0px !important;
+}
+
 .primary_input .form-control:focus {
     box-shadow: none !important;
     border-color: #ECEEF4;
@@ -8599,6 +8625,7 @@ html[dir="rtl"] .error-message {
     height: 32px;
     border-radius: 50%;
     flex: 32px 0 0;
+    border: transparent;
 }
 
 .modal-content .modal-header .close i {
