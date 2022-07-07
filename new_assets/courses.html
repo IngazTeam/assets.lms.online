@@ -109,7 +109,7 @@
                                         <!-- **** -->
                                         <div class="d-flex mt-3">
                                             <i class="bi bi-caret-left-fill"></i>
-                                            <input type="text" placeholder="إســـــم الـــدورة التــدريبيـــــة">
+                                            <input type="text" placeholder="إســـــم الـــدورة التــدريبيـــــة" id="courseName" onkeyup="myFunction()">
                                         </div>
                                         <!-- **** -->
                                         <div class="d-flex mt-3 time">
@@ -163,7 +163,7 @@
                                         <!-- **** -->
                                         <div class="d-flex mt-3">
                                             <i class="bi bi-caret-left-fill"></i>
-                                            <input type="text" placeholder="  الـمدربيــن">
+                                            <input type="text" placeholder="الـمدربيــن" id="trainers" onkeyup="instractorFun()">
                                         </div>
                                         <!-- **** -->
                                         <div class="d-flex mt-3 time">
@@ -204,7 +204,7 @@
                                             <i class="bi bi-caret-left-fill"></i>
                                             <div class="d-flex justify-content-center w-100 align-items-center">
                                                 <div class="d-flex align-items-center">
-                                                    <input class="filestyle" data-text="ارفع صورة الدورة" style="width: 225px;" type="file">
+                                                    <input class="filestyle" data-text="ارفع صورة الدورة" style="width: 225px;" type="file" id="uploadImage">
                                                 </div>
                                                 <div class="image">
                                                     <img src="imgs/icons/vuesax-broken-gallery.png" alt="">
@@ -235,16 +235,13 @@
                                 <div class="col-lg-6">
                                     <div class="card-box p-2" style="border: 1px solid #F2F2F2;">
                                         <div class="img-box">
-                                            <img src="imgs/Group 145.svg" alt="">
+                                            <img id="img" src="imgs/Group 145.svg" alt="">
                                         </div>
                                         <div class="rating-box p-2 d-flex align-items-center justify-content-between">
                                             <span>وزارة الصحة</span>
-                                            <div class="rate d-flex align-items-center justify-content-center gap-2">
-                                                <span class="total-rate">4.5</span>
-                                                <img src="imgs/star.png" alt="">
-                                            </div>
+
                                         </div>
-                                        <h5 class="course-name p-2 fw-bold">
+                                        <h5 class="course-name p-2 fw-bold" id="nameOfCourse">
                                             دورة الإنعاش الرئوي الرئوي الرئوي
                                             الرئوي الرئوي ...
                                         </h5>
@@ -342,6 +339,34 @@
         });
         $(":file").filestyle({
             text: "ارفع صورة الدورة"
+        });
+
+        function myFunction() {
+            var x = document.getElementById("courseName").value;
+            document.getElementById("nameOfCourse").textContent = x;
+            console.log(x)
+        }
+
+        function instractorFun() {
+            var y = document.getElementById("trainers").value;
+            document.querySelector(".instractors").textContent = y;
+            console.log(y)
+        }
+        $(function () {
+            $('#uploadImage').change(function () {
+                var input = this;
+                var url = $(this).val();
+                var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+                if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#img').attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                } else {
+                    $('#img').attr('src', '/assets/no_preview.png');
+                }
+            });
         });
     </script>
     <script src="js/main.js"></script>
