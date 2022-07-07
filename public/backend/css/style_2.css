@@ -47,6 +47,10 @@
 /*}*/
 .modal-body .input-group .form-control {
     width: 80%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 25px 0 0 25px !important
 }
 
 .input-group:not(.has-validation)>.custom-file:not(:last-child) .custom-file-label::after,
@@ -7987,6 +7991,13 @@ html[dir="rtl"] .error-message {
     font-weight: 500;
 }
 
+.primary_input .input-group .input-group-prepend .input-group-text {
+    background: #29bcb0;
+    color: #f7f7f7;
+    height: 40px;
+    border-radius: 0px 25px 25px 0px !important;
+}
+
 .primary_input .form-control:focus {
     box-shadow: none !important;
     border-color: #ECEEF4;
@@ -8614,6 +8625,7 @@ html[dir="rtl"] .error-message {
     height: 32px;
     border-radius: 50%;
     flex: 32px 0 0;
+    border: transparent;
 }
 
 .modal-content .modal-header .close i {
