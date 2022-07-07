@@ -12,6 +12,39 @@ $gray_color:#9F9F9F;
     flex-direction: $dir;
 }
 
+// global classes
+
+.circle_before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    margin-top: 3px;
+    height: 12px;
+    background-color: $circle_color;
+    right: 0px;
+    border-radius: 50%;
+    top: 10px;
+}
+
+.input_design{
+    border-radius: 31px;
+    border: 0.1px solid #EDEDED;
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 14px;
+    appearance: none;
+    height: 33px;
+    &:focus {
+        outline: none !important;
+    }
+}
+
+input , textarea{
+    &:focus {
+        outline: none !important;
+    }
+} 
+
 ///////////////////////  courses style ///////////////////////////
 .section_title {
     color: $main_course_color;
@@ -112,19 +145,11 @@ $gray_color:#9F9F9F;
         select,
         input {
             width: 90%;
-            border-radius: 31px;
-            border: 0.1px solid #EDEDED;
-            padding: 5px 15px;
             color: $gray_color;
-            font-weight: 700;
-            font-size: 14px;
-            appearance: none;
-            height: 33px;
-
+            @extend .input_design;
             &:focus {
                 outline: none !important;
             }
-
             &::placeholder {
                 font-size: 14px;
                 color: $gray_color;
@@ -211,22 +236,26 @@ $gray_color:#9F9F9F;
                 text-align: right;
             }
         }
-        .create_group{
-            width:90%;
+
+        .create_group {
+            width: 90%;
             background-color: $circle_color;
             border-radius: 31px;
             height: 33px;
             padding: 4px 14px;
-            color:#fff;
+            color: #fff;
             font-weight: 700;
-            img{
-                width:15px
+
+            img {
+                width: 15px
             }
         }
-        .group_content{
+
+        .group_content {
             border-top: .1px solid #70707021;
             margin-top: 15px;
-            .delet_tag{
+
+            .delet_tag {
                 background-color: #FF4141;
                 padding: 5px;
                 border-radius: 10px;
@@ -238,8 +267,9 @@ $gray_color:#9F9F9F;
                 margin-right: 5px;
             }
         }
-        .start_end_date{
-            input{
+
+        .start_end_date {
+            input {
                 width: 131px;
             }
         }
@@ -247,17 +277,199 @@ $gray_color:#9F9F9F;
 }
 
 
+///////////////////////////course details ///////////////////////////
+.tab_part {
+    .nav-tabs {
+        border-bottom: 0px solid transparent;
+    }
 
-// global classes
+    .nav-link {
+        background-color: #FFFFFF;
+        border-radius: 19px;
+        width: 131px;
+        margin-left: 6px;
+        font-size: 12px;
+        font-weight: 700;
+        height: 38px;
+        color: $circle_color;
 
-.circle_before {
-    content: '';
-    position: absolute;
-    width: 12px;
-    margin-top: 3px;
-    height: 12px;
-    background-color: $circle_color;
-    right: 0px;
-    border-radius: 50%;
-    top: 10px;
+        &.active {
+            border: 0px solid transparent;
+            background-color: $circle_color;
+            color: #fff;
+        }
+    }
+
+    .card_box {
+        padding: 20px 23px;
+
+        .title {
+            font-size: 18px;
+            font-weight: 700;
+
+            &::before {
+                top: 29px !important;
+            }
+        }
+    }
+
+    .add_content {
+        background-color: $circle_color;
+        width: 132px;
+        border-radius: 19px;
+        font-weight: 700;
+        font-size: 12px;
+        height: 38px;
+        border: 0px solid transparent;
+        align-items: center;
+        color: white;
+
+        .img_box {
+            background-color: #3b459c66;
+            border-radius: 20px;
+            width: 50px;
+            @include flex (row, center, center);
+            height: 38px;
+            margin-left: 5px;
+        }
+    }
+
+    .main_collapese {
+        width: 100%;
+        display: flex;
+        background-color: #F2F3F7;
+        padding: 10px 15px;
+        border-radius: 30px;
+        border: 0px solid transparent;
+        align-items: center;
+        height: 38px;
+
+        .bi-caret-down-fill,
+        .bi-caret-left-fill {
+            color: #fff;
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+
+        .inner_title {
+            color: $blue_color;
+            font-weight: 700;
+        }
+
+        .box_action {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 13px 6px;
+            margin-left: 5px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #525C72;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            img {
+                // width: 15px;
+            }
+        }
+    }
+    .main_collapese_card {
+        .card {
+            border: 0px solid transparent;
+        }
+        .frist_inner_collapse {
+            .bi-caret-down-fill,
+            .bi-caret-left-fill {
+                color: $blue_color;
+            }
+        }
+        .collapse_content{
+            border: 1px solid #E1E1E1;
+            border-radius: 30px;
+            padding: 0 20px;
+        }
+        .main_collapese{
+            background-color: transparent !important;
+            // border-bottom: 1PX solid #E1E1E1 ;
+            border-radius: 0px !important;
+            padding: 0px !important;
+            .box_action{
+                background-color: #f2f3f7;
+            }
+        }
+        .inner_collapese_card{
+            border-top:  1PX solid #E1E1E1 ;
+            padding:10px;
+            label{
+                font-size: 10px;
+                color: $main_course_color;
+            }
+            input,textarea{
+                border-radius: 10px !important;
+                border: 0px solid transparent !important;
+                background-color: #F2F3F7;
+                font-size: 10px !important;
+            }
+            .right_part{
+                @media(min-width:767px){
+                    width: 61%;
+                }
+                .input_box{
+                    @media(min-width:767px){
+                        padding-left: 5px !important;
+                        padding-right: 5px !important;
+                    }
+                    input{
+                        @extend .input_design;
+                        height: 24px !important;
+                        max-width: 100%;
+                    }
+                }
+                
+                .form-check{
+                    // display: flex;
+                    label{
+                        font-weight:600 ;
+                        font-size: 8px;
+                    }
+                    .form-check-input{
+                        width: 11px !important;
+                        height: 11px !important;
+                        padding: 0px !important;
+                        border: 1px solid #707070 !important;
+                        background-color: #fff !important;
+                        margin-top: 10px;
+                        &:checked:before{
+                            content: "";
+                            display: block;
+                            width: 75%;
+                            height: 75%;
+                            margin: 15% auto;
+                            border-radius: 50%;
+                            background-color: $blue_color;
+                        }
+                    }
+                    
+                }
+                .choose_date {
+                    @media(min-width:767px){
+                        width: 65% !important;
+                    }
+                }
+                
+            }
+            .left_part{
+                @media(min-width:767px){
+                    width: 35%;
+                }
+                textarea{
+                    @extend .input_design;
+                    width: 100%;
+                    height: 66px;
+                }
+            }
+           
+        }
+    }
 }
+
+
