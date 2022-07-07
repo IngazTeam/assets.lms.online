@@ -119,8 +119,13 @@
 .card_box .card_info select,
 .card_box .card_info input {
   width: 90%;
+}
+
+.card_box .card_info select,
+.card_box .card_info input,
+.card_box .card_info .select2-selection--single {
   border-radius: 31px;
-  border: 0.1px solid #EDEDED;
+  border: 0.1px solid #F2F2F2;
   padding: 5px 15px;
   color: #9F9F9F;
   font-weight: 700;
@@ -132,36 +137,61 @@
 }
 
 .card_box .card_info select:focus,
-.card_box .card_info input:focus {
+.card_box .card_info input:focus,
+.card_box .card_info .select2-selection--single:focus {
   outline: none !important;
 }
 
 .card_box .card_info select::-webkit-input-placeholder,
-.card_box .card_info input::-webkit-input-placeholder {
+.card_box .card_info select .select2-selection__rendered,
+.card_box .card_info input::-webkit-input-placeholder,
+.card_box .card_info input .select2-selection__rendered,
+.card_box .card_info .select2-selection--single::-webkit-input-placeholder,
+.card_box .card_info .select2-selection--single .select2-selection__rendered {
   font-size: 14px;
   color: #9F9F9F;
   font-weight: 700;
+  padding: 0 !important;
+  line-height: unset;
 }
 
 .card_box .card_info select:-ms-input-placeholder,
-.card_box .card_info input:-ms-input-placeholder {
+.card_box .card_info select .select2-selection__rendered,
+.card_box .card_info input:-ms-input-placeholder,
+.card_box .card_info input .select2-selection__rendered,
+.card_box .card_info .select2-selection--single:-ms-input-placeholder,
+.card_box .card_info .select2-selection--single .select2-selection__rendered {
   font-size: 14px;
   color: #9F9F9F;
   font-weight: 700;
+  padding: 0 !important;
+  line-height: unset;
 }
 
 .card_box .card_info select::-ms-input-placeholder,
-.card_box .card_info input::-ms-input-placeholder {
+.card_box .card_info select .select2-selection__rendered,
+.card_box .card_info input::-ms-input-placeholder,
+.card_box .card_info input .select2-selection__rendered,
+.card_box .card_info .select2-selection--single::-ms-input-placeholder,
+.card_box .card_info .select2-selection--single .select2-selection__rendered {
   font-size: 14px;
   color: #9F9F9F;
   font-weight: 700;
+  padding: 0 !important;
+  line-height: unset;
 }
 
 .card_box .card_info select::placeholder,
-.card_box .card_info input::placeholder {
+.card_box .card_info select .select2-selection__rendered,
+.card_box .card_info input::placeholder,
+.card_box .card_info input .select2-selection__rendered,
+.card_box .card_info .select2-selection--single::placeholder,
+.card_box .card_info .select2-selection--single .select2-selection__rendered {
   font-size: 14px;
   color: #9F9F9F;
   font-weight: 700;
+  padding: 0 !important;
+  line-height: unset;
 }
 
 .card_box .card_info .bi-caret-left-fill {
@@ -199,7 +229,7 @@
   width: 54px;
   height: 26px;
   background: #fff;
-  border: 0.1px solid #EDEDED;
+  border: 0.1px solid #F2F2F2;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -247,6 +277,23 @@
   text-align: right;
 }
 
+.card_box .card_info .time .image {
+  width: 50px;
+  height: 33px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #F2F2F2;
+}
+
 .card_box .card_info .create_group {
   width: 90%;
   background-color: #29BCB0;
@@ -288,6 +335,56 @@
   width: 131px;
 }
 
+.card_box .card_info .create_group.level {
+  background-color: #fff;
+  color: #9F9F9F;
+}
+
+.card_box .card_info .create_group.level img {
+  background-color: #29BCB0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.card_box .card_info .course-discription {
+  height: 100px;
+  border-radius: 31px;
+  border: 0.1px solid #F2F2F2;
+  padding: 5px 15px;
+  color: #9F9F9F;
+  font-weight: 700;
+  font-size: 14px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 90%;
+  resize: none;
+  outline: none;
+  padding: 10px 15px;
+}
+
+.card_box .card_info .course-discription::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
+}
+
+.card_box .card_info .course-discription:-ms-input-placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
+}
+
+.card_box .card_info .course-discription::-ms-input-placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
+}
+
+.card_box .card_info .course-discription::placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
+}
+
 .circle_before, .section_title::before, .card_box .title::before, .card_box .card_info .card_info_title::before {
   content: '';
   position: absolute;
@@ -298,5 +395,36 @@
   right: 0px;
   border-radius: 50%;
   top: 10px;
+}
+
+.select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow {
+  left: 10px;
+}
+
+.select2-container--open .select2-dropdown--above {
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.bootstrap-filestyle {
+  width: 225px;
+}
+
+.bootstrap-filestyle .form-control {
+  display: none;
+}
+
+.bootstrap-filestyle .group-span-filestyle {
+  margin: 0 !important;
+  width: 200px;
+}
+
+.bootstrap-filestyle .group-span-filestyle label {
+  margin-bottom: 0;
+  width: 220px;
+  border-radius: 35px;
+  background-color: #fff;
+  border: 1px solid #F2F2F2;
 }
 /*# sourceMappingURL=courses.css.map */
