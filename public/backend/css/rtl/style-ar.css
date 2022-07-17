@@ -157,7 +157,7 @@ div.dt-buttons{
 /*    float: right !important;*/
 /*}*/
 .common-radio:empty~label:before{
-    right: 0 !important;
+    right: unset !important; /* was 0 */
     left: unset !important;
 }
 
@@ -192,12 +192,12 @@ div.dt-button-collection {
 
 
 .common-radio:checked~label:after{
-    right: -3px !important;
+    right: unset !important; /* was 2px  */
     left: unset !important;
 }
 
 .for-check .common-radio:checked~label:after{
-    right: 2px !important;
+    right: unset !important; /* was 2px  */
     left: unset !important;
 }
 

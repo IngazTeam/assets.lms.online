@@ -401,6 +401,7 @@ table.dataTable tbody td {
         display: flex;
         /*flex-direction: row-reverse;*/
         align-items: flex-start;
+        border-bottom: 1px solid transparent !important;
     }
 
     .dataTables_wrapper .dataTables_paginate {
@@ -410,6 +411,17 @@ table.dataTable tbody td {
     .dataTables_wrapper .dataTables_paginate .paginate_button {
         margin-bottom: 10px;
     }
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details>li {
+    display: flex;
+    /*flex-direction: row-reverse;*/
+    align-items: center;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+table.dataTable > tbody > tr.child span.dtr-title {
+    border-bottom: 1px solid transparent !important ;
 }
 
 .mt_40 {
@@ -5371,7 +5383,7 @@ html[dir="rtl"] .linkIcons-bottom.admn-pg .notify-drop.show {
 
 #lms_table .form-check {
     margin: 0 !important;
-    padding: 0 17px !important;
+    padding: 0 27px !important;
     display: flex;
     align-items: center;
     justify-content: center;
