@@ -474,9 +474,57 @@
   border-radius: 25px;
   border: none;
   font-weight: 600;
+  font-size: 15px;
 }
 
 .select2-selection__choice {
   border-radius: 20px !important;
+}
+
+#popupModal .modal-content {
+  background-color: #F2F3F7;
+  border-radius: 35px;
+  padding: 0 35px;
+}
+
+#popupModal .modal-content .modal-header {
+  border-bottom-color: #70707010;
+}
+
+#popupModal .modal-content .modal-header .modal-title {
+  position: relative;
+  font-size: 16px;
+  color: #525F77;
+}
+
+#popupModal .modal-content .modal-header .modal-title::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #29BCB0;
+  right: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#popupModal .modal-content .modal-header .close-btn {
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+#popupModal .modal-content .modal-footer {
+  border-top-color: #70707010;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=courses.css.map */

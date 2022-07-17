@@ -836,7 +836,7 @@ body {
 
 .circle-box svg .cir-3 {
   fill: none;
-  stroke: #3b459c;
+  stroke: url(#GradientColor);
   stroke-width: 15px;
 }
 
