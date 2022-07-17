@@ -10,7 +10,7 @@
   top: 10px;
 }
 
-.input_design, .tab_part .main_collapese_card .inner_collapese_card .left_part textarea, .tab_part .main_collapese_card .inner_collapese_card .right_part .input_box input, .card_box .card_info select,
+.input_design, .tab_part .main_collapese_card .inner_collapese_card .left_part textarea, .tab_part .main_collapese_card .inner_big_cart .left_part textarea, .tab_part .main_collapese_card .inner_collapese_card .right_part .input_box input, .tab_part .main_collapese_card .inner_big_cart .right_part .input_box input, .card_box .card_info select,
 .card_box .card_info input {
   border-radius: 31px;
   border: 0.1px solid #EDEDED;
@@ -20,12 +20,28 @@
   appearance: none;
   height: 33px;
 }
-.input_design:focus, .tab_part .main_collapese_card .inner_collapese_card .left_part textarea:focus, .tab_part .main_collapese_card .inner_collapese_card .right_part .input_box input:focus, .card_box .card_info select:focus,
+.input_design:focus, .tab_part .main_collapese_card .inner_collapese_card .left_part textarea:focus, .tab_part .main_collapese_card .inner_big_cart .left_part textarea:focus, .tab_part .main_collapese_card .inner_collapese_card .right_part .input_box input:focus, .tab_part .main_collapese_card .inner_big_cart .right_part .input_box input:focus, .card_box .card_info select:focus,
 .card_box .card_info input:focus {
   outline: none !important;
 }
 
-input:focus, textarea:focus {
+.button_style, .tab_part .main_collapese_card .inner_collapese_card .close_button, .tab_part .main_collapese_card .inner_big_cart .close_button, .tab_part .main_collapese_card .inner_collapese_card .confirm_button, .tab_part .main_collapese_card .inner_big_cart .confirm_button {
+  border-radius: 31px;
+  padding: 5px 33px;
+  border: 0px solid transparent;
+  color: #fff;
+  font-weight: 600;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #FC77A0;
+  margin-left: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
   outline: none !important;
 }
 
@@ -324,42 +340,60 @@ input:focus, textarea:focus {
   padding: 0px !important;
 }
 .tab_part .main_collapese_card .main_collapese .box_action {
-  background-color: #f2f3f7;
+  background-color: #F2F3F7;
 }
-.tab_part .main_collapese_card .inner_collapese_card {
+.tab_part .main_collapese_card .inner_collapese_card, .tab_part .main_collapese_card .inner_big_cart {
   border-top: 1PX solid #E1E1E1;
   padding: 10px;
 }
-.tab_part .main_collapese_card .inner_collapese_card label {
+.tab_part .main_collapese_card .inner_collapese_card label, .tab_part .main_collapese_card .inner_big_cart label {
   font-size: 10px;
   color: #525C72;
 }
-.tab_part .main_collapese_card .inner_collapese_card input, .tab_part .main_collapese_card .inner_collapese_card textarea {
+.tab_part .main_collapese_card .inner_collapese_card input, .tab_part .main_collapese_card .inner_collapese_card textarea, .tab_part .main_collapese_card .inner_collapese_card select, .tab_part .main_collapese_card .inner_big_cart input, .tab_part .main_collapese_card .inner_big_cart textarea, .tab_part .main_collapese_card .inner_big_cart select {
   border-radius: 10px !important;
   border: 0px solid transparent !important;
   background-color: #F2F3F7;
-  font-size: 10px !important;
+  font-size: 9px !important;
+  padding: 5px 15px;
 }
 @media (min-width: 767px) {
-  .tab_part .main_collapese_card .inner_collapese_card .right_part {
+  .tab_part .main_collapese_card .inner_collapese_card .right_part, .tab_part .main_collapese_card .inner_big_cart .right_part {
     width: 61%;
   }
 }
 @media (min-width: 767px) {
-  .tab_part .main_collapese_card .inner_collapese_card .right_part .input_box {
+  .tab_part .main_collapese_card .inner_collapese_card .right_part .input_box, .tab_part .main_collapese_card .inner_big_cart .right_part .input_box {
     padding-left: 5px !important;
     padding-right: 5px !important;
   }
 }
-.tab_part .main_collapese_card .inner_collapese_card .right_part .input_box input {
+.tab_part .main_collapese_card .inner_collapese_card .right_part .input_box input, .tab_part .main_collapese_card .inner_big_cart .right_part .input_box input {
   height: 24px !important;
   max-width: 100%;
 }
-.tab_part .main_collapese_card .inner_collapese_card .right_part .form-check label {
+.tab_part .main_collapese_card .inner_collapese_card .right_part .input_box .small_input, .tab_part .main_collapese_card .inner_big_cart .right_part .input_box .small_input {
+  width: 49%;
+}
+.tab_part .main_collapese_card .inner_collapese_card .right_part .input_box .form-check, .tab_part .main_collapese_card .inner_big_cart .right_part .input_box .form-check {
+  min-height: 0rem;
+  margin-bottom: -0.5rem;
+  margin-top: -5px;
+}
+.tab_part .main_collapese_card .inner_collapese_card .right_part .form-check .form-check-input, .tab_part .main_collapese_card .inner_big_cart .right_part .form-check .form-check-input {
+  width: 11px !important;
+  height: 11px !important;
+}
+@media (min-width: 767px) {
+  .tab_part .main_collapese_card .inner_collapese_card .right_part .choose_date, .tab_part .main_collapese_card .inner_big_cart .right_part .choose_date {
+    width: 65% !important;
+  }
+}
+.tab_part .main_collapese_card .inner_collapese_card .form-check label, .tab_part .main_collapese_card .inner_big_cart .form-check label {
   font-weight: 600;
   font-size: 8px;
 }
-.tab_part .main_collapese_card .inner_collapese_card .right_part .form-check .form-check-input {
+.tab_part .main_collapese_card .inner_collapese_card .form-check .form-check-input, .tab_part .main_collapese_card .inner_big_cart .form-check .form-check-input {
   width: 11px !important;
   height: 11px !important;
   padding: 0px !important;
@@ -367,7 +401,7 @@ input:focus, textarea:focus {
   background-color: #fff !important;
   margin-top: 10px;
 }
-.tab_part .main_collapese_card .inner_collapese_card .right_part .form-check .form-check-input:checked:before {
+.tab_part .main_collapese_card .inner_collapese_card .form-check .form-check-input:checked:before, .tab_part .main_collapese_card .inner_big_cart .form-check .form-check-input:checked:before {
   content: "";
   display: block;
   width: 75%;
@@ -377,18 +411,144 @@ input:focus, textarea:focus {
   background-color: #3B459C;
 }
 @media (min-width: 767px) {
-  .tab_part .main_collapese_card .inner_collapese_card .right_part .choose_date {
-    width: 65% !important;
-  }
-}
-@media (min-width: 767px) {
-  .tab_part .main_collapese_card .inner_collapese_card .left_part {
+  .tab_part .main_collapese_card .inner_collapese_card .left_part, .tab_part .main_collapese_card .inner_big_cart .left_part {
     width: 35%;
   }
 }
-.tab_part .main_collapese_card .inner_collapese_card .left_part textarea {
+.tab_part .main_collapese_card .inner_collapese_card .left_part textarea, .tab_part .main_collapese_card .inner_big_cart .left_part textarea {
   width: 100%;
   height: 66px;
+}
+.tab_part .main_collapese_card .inner_collapese_card .confirm_button, .tab_part .main_collapese_card .inner_big_cart .confirm_button {
+  background-color: #29BCB0;
+  font-size: 12px;
+}
+.tab_part .main_collapese_card .inner_collapese_card .close_button, .tab_part .main_collapese_card .inner_big_cart .close_button {
+  background-color: #FF4141;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.tab_part .main_collapese_card .inner_big_cart {
+  padding: 5px 20px;
+}
+.tab_part .main_collapese_card .inner_big_cart .card_content {
+  border-top: 1px solid #E1E1E1;
+}
+.tab_part .main_collapese_card .inner_big_cart .card_content select {
+  appearance: none !important;
+  background: #F2F3F7 url(../imgs/arrow-down.svg) no-repeat 6px;
+  background-size: 15px !important;
+}
+.tab_part .main_collapese_card .inner_big_cart .card_content .input_box:nth-of-type(1) {
+  padding-left: 0px !important;
+}
+.tab_part .main_collapese_card .inner_big_cart .card_content .input_box:nth-of-type(3) {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+.tab_part .main_collapese_card .inner_big_cart .card_content .input_box:nth-of-type(4) {
+  padding-right: 5px !important;
+}
+.tab_part .main_collapese_card .inner_big_cart .card_content .two_inputs {
+  padding-right: 10px !important;
+  padding-left: 0px !important;
+}
+.tab_part .main_collapese_card .inner_big_cart .card_content .two_inputs .input_box:nth-of-type(1) {
+  margin-left: 10px;
+}
+.tab_part .question_section .header {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #F2F3F7;
+}
+.tab_part .question_section .header .titlee {
+  font-size: 10px;
+  color: #525F77;
+  border-radius: 9px 9px 0px 0px;
+  background-color: #F2F3F7;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+.tab_part .question_section .header .add_content {
+  height: 24px;
+}
+.tab_part .question_section .header .add_content .img_box {
+  height: 24px;
+}
+.tab_part .question_section .header .add_content .img_box img {
+  width: 15px;
+}
+.tab_part .question_section .question_box {
+  border: 1px solid #F2F3F7;
+  border-radius: 10px;
+}
+.tab_part .question_section .question_box .question_title {
+  border-radius: 10px;
+  background-color: #F2F3F7;
+  padding: 6px;
+}
+.tab_part .question_section .question_box .question_title p {
+  font-size: 10px;
+  color: #525F77;
+  font-weight: bold;
+  margin-bottom: 0px !important;
+  padding-right: 5px;
+}
+.tab_part .question_section .question_box .question_title img {
+  width: 16px;
+}
+.tab_part .question_section .question_box .question_box_body {
+  padding: 5px 15px;
+}
+.tab_part .question_section .question_box .question_box_body .row .frist_input {
+  width: 100% !important;
+}
+.tab_part .question_section .question_box .question_box_body .circle {
+  margin-left: 10px;
+  margin-top: 24px;
+}
+.tab_part .question_section .question_box .question_box_body .form-check {
+  text-align: center;
+}
+.tab_part .question_section .question_box .question_box_body .form-check label {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+}
+.tab_part .question_section .question_box .question_box_body .form-check .form-check-input {
+  margin-left: 0px;
+  width: 17px !important;
+  height: 17px !important;
+}
+.tab_part .question_section .question_box .question_box_body .box_action {
+  background-color: #F2F3F7;
+  border-radius: 10px;
+  padding: 13px 6px;
+  margin-left: 5px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.tab_part .question_section .question_box .question_box_body .add_button {
+  background-color: #29BCB0;
+}
+
+input[type=date] {
+  appearance: none !important;
+  background: #F2F3F7 url(../imgs/calendar-2.svg) no-repeat 6px;
+  background-size: 15px !important;
+  text-align: right;
+  position: relative;
+}
+input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  left: 6px;
+  width: 10px;
 }
 
 /*# sourceMappingURL=courses.css.map */

@@ -110,9 +110,7 @@
                                     <img src="imgs/message-add.svg" alt="" width="" />
                                 </div>
                                 <span>إضافة محتوى</span>
-
                             </button>
-
                         </div>
                         <!--******* start tab conenet****** -->
                         <div class="tab-content" id="myTabContent">
@@ -164,7 +162,7 @@
                                                         class="main_collapese frist_inner_collapse d-flex justify-content-between"
                                                         data-bs-target="#frist_inner_collapese"
                                                         data-bs-toggle="collapse" onclick="test_collapse(this)"
-                                                        role="button" aria-expanded="false"
+                                                        role="button" aria-expanded="true"
                                                         aria-controls="collapseExample">
                                                         <div class="d-flex">
                                                             <i class="bi bi-caret-left-fill"></i>
@@ -173,19 +171,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="d-flex">
-                                                            <a href="" class="box_action">
+                                                            <a href="" class="box_action" data-toggle="tooltip" title="معاينة ">
                                                                 <img src="imgs/eye.svg" alt="" width="20" />
                                                             </a>
-                                                            <a href="" class="box_action">
+                                                            <a href="" class="box_action"  data-toggle="tooltip" title="تعديل ">
                                                                 <img src="imgs/edit.svg" alt="" width="20" />
                                                             </a>
-                                                            <a href="" class="box_action">
+                                                            <a href="" class="box_action"  data-toggle="tooltip" title="اغلاق ">
                                                                 <img src="imgs/vuesax-broken-add.svg" alt=""
                                                                     width="13" />
                                                             </a>
                                                         </div>
                                                     </button>
-                                                    <div class="collapse inner_collapese_card" id="frist_inner_collapese">
+                                                    <div class="collapse inner_collapese_card  show" id="frist_inner_collapese">
                                                         <div class="d-flex justify-content-between">
                                                             <div class="right_part">
                                                                 <div class="row">
@@ -199,7 +197,7 @@
                                                                     </div>
                                                                     <div class="input_box col-6">
                                                                         <label for="">  وقت الظهور</label>
-                                                                        <div class="d-flex">
+                                                                        <div class="d-flex align-items-center">
                                                                             <div>
                                                                                 <div class="form-check">
                                                                                     <label class="form-check-label" for="flexRadioDefault1">
@@ -217,7 +215,16 @@
                                                                             <input class="choose_date" type="date" placeholder=" ">
                                                                         </div>
                                                                     </div>
-                                                                    
+                                                                    <div class="input_box col-6 d-flex justify-content-between align-items-center">
+                                                                        <div class="small_input">
+                                                                            <label for=""> المدة بالدقائق</label>
+                                                                            <input type="text" placeholder=" 85:45 ">
+                                                                        </div>
+                                                                        <div class="small_input">
+                                                                            <label for="">  كلمة السر</label>
+                                                                            <input type="placeholder" placeholder=" ******* ">
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <div class="left_part">
@@ -225,9 +232,165 @@
                                                                 <textarea name="" id="" cols="" rows=""></textarea>
                                                             </div>
                                                         </div>
+                                                        <div class="d-flex justify-content-center mt-3">
+                                                            <button class="confirm_button ">تأكيد</button>
+                                                            <button class="close_button">الغاء</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <!-- end frist inner collapse -->
+                                                <!-- start of big cart content -->
+                                                <div class="collapse_content inner_big_cart  mt-4">
+                                                    <div class="main_collapese d-flex justify-content-between ">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="circle"></div>
+                                                            <div class="inner_title">
+                                                                اختبار الفصل الأول: اختبار على الإسعافات الأولية
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <a href="" class="box_action" data-toggle="tooltip" title="معاينة ">
+                                                                <img src="imgs/eye.svg" alt="" width="20" />
+                                                            </a>
+                                                            <a href="" class="box_action"  data-toggle="tooltip" title="تعديل ">
+                                                                <img src="imgs/edit.svg" alt="" width="20" />
+                                                            </a>
+                                                            <a href="" class="box_action"  data-toggle="tooltip" title="اغلاق ">
+                                                                <img src="imgs/vuesax-broken-add.svg" alt=""
+                                                                    width="13" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card_content">
+                                                        <div class="row">
+                                                            <div class="input_box col-3">
+                                                                <label for=""> عنوان الإختبار</label>
+                                                                <input class="w-100" type="text" placeholder="  الدرس الثاني : مبادئ رقم 2">
+                                                            </div>
+                                                            <div class="col-3 two_inputs d-flex justify-content-btween">
+                                                                <div class="input_box">
+                                                                    <label for="">أقل نسبة مئوية</label>
+                                                                    <input class="w-100" type="text" placeholder="20 %">
+                                                                </div>
+                                                                <div class="input_box">
+                                                                    <label for="">الوقت في دقيقة</label>
+                                                                    <input class="w-100" type="text" placeholder="60">
+                                                                </div>
+                                                            </div> 
+                                                            <div class="input_box col-3">
+                                                                <label for=""> نوع الوقت</label>
+                                                                <select class="w-100" name="" id="">
+                                                                    <option value="">تحديد وقت لكل سؤال</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="input_box col-3">
+                                                                <label for="">سماحية الإختبار</label>
+                                                                <select class="w-100" name="" id="">
+                                                                    <option value="">   اكمال الحضور عند انهاء الاجابات</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="input_box col-3 mt-2">
+                                                                <label for=""> وقت الظهور</label>
+                                                                <input class="w-100" type="date" placeholder="60">
+                                                            </div>
+                                                            <div class="input_box col-4 mt-2">
+                                                                <label for="">  تعليمات لدخول الاختبار</label>
+                                                                <input class="w-100" type="text" placeholder="60">
+                                                            </div>
+                                                        </div>
+                                                        <!-- start question part -->
+                                                        <div class="question_section">
+                                                            <div class="header d-flex justify-content-between">
+                                                                <div class="titlee">قسم الأسئلة</div>
+                                                                <button class="add_content d-flex justify-content-start">
+                                                                    <div class="img_box">
+                                                                        <img src="imgs/message-add.svg" alt="" width="" />
+                                                                    </div>
+                                                                    <span>إضافة سؤال</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="question_box">
+                                                                <div class="question_title d-flex justify-content-center align-items-center">
+                                                                    <img src="imgs/vuesax-broken-task-square.svg" alt="">
+                                                                    <p>أسئلة صح و خطأ</p>
+                                                                </div>
+                                                                <div class="question_box_body">
+                                                                    
+                                                                    <!-- ********************* -->
+                                                                    <div class="row">
+                                                                        <div class="col-6 d-flex align-items-center">
+                                                                            <div class="circle"></div>
+                                                                            <div class="input_box frist_input">
+                                                                                <label for="">    اسم السؤال</label>
+                                                                                <input class="w-100" type="text" placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-2">
+                                                                            <div class="input_box">
+                                                                                <label for="">    الدرجة </label>
+                                                                                <input class="w-100" type="text" placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 d-flex justify-content-around align-items-center">
+                                                                            <div class="form-check">
+                                                                                <label class="form-check-label" for="flexRadioDefault3">صح</label>
+                                                                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                <label class="form-check-label" for="flexRadioDefault4">خطأ</label>
+                                                                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4">
+                                                                            </div>
+                                                                            <div class="">
+                                                                                <a href="" class="box_action"  data-toggle="tooltip" title="اغلاق ">
+                                                                                    <img src="imgs/vuesax-broken-add.svg" alt=""
+                                                                                        width="13" />
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- ********************* -->
+                                                                    <div class="row">
+                                                                        <div class="col-6 d-flex align-items-center">
+                                                                            <div class="circle"></div>
+                                                                            <div class="input_box frist_input">
+                                                                                <label for="">    اسم السؤال</label>
+                                                                                <input class="w-100" type="text" placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-2">
+                                                                            <div class="input_box">
+                                                                                <label for="">    الدرجة </label>
+                                                                                <input class="w-100" type="text" placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-4 d-flex justify-content-around align-items-center">
+                                                                            <div class="form-check">
+                                                                                <label class="form-check-label" for="flexRadioDefault3">صح</label>
+                                                                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                <label class="form-check-label" for="flexRadioDefault4">خطأ</label>
+                                                                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4">
+                                                                            </div>
+                                                                            <div class="d-flex">
+                                                                                <a href="" class="box_action"  data-toggle="tooltip" title="اغلاق ">
+                                                                                    <img src="imgs/vuesax-broken-add.svg" alt=""
+                                                                                        width="13" />
+                                                                                </a>
+                                                                                <a href="" class="box_action add_button"  data-toggle="tooltip" title="اغلاق ">
+                                                                                    <img src="imgs/vuesax-broken-add2.svg" alt=""
+                                                                                        width="13" />
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end question section -->
+                                                    </div>
+                                                </div>
+                                                <!-- end of big cart content -->
                                             </div>
                                         </div>
                                     </div>

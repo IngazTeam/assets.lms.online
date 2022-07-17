@@ -3,6 +3,8 @@ $main_course_color:#525C72;
 $circle_color:#29BCB0;
 $blue_color:#3B459C;
 $gray_color:#9F9F9F;
+$red_color:#FF4141;
+$simple_gray:#F2F3F7;
 
 //  mixins
 @mixin flex($dir, $content, $items) {
@@ -34,12 +36,29 @@ $gray_color:#9F9F9F;
     font-size: 14px;
     appearance: none;
     height: 33px;
+    
     &:focus {
         outline: none !important;
     }
 }
 
-input , textarea{
+.button_style{
+    border-radius: 31px;
+    // width:78px;
+    padding: 5px 33px;
+    border: 0px solid transparent;
+    color:#fff;
+    font-weight: 600;
+}
+.circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FC77A0;
+    margin-left: 5px;
+}
+
+input , textarea,select{
     &:focus {
         outline: none !important;
     }
@@ -337,7 +356,7 @@ input , textarea{
     .main_collapese {
         width: 100%;
         display: flex;
-        background-color: #F2F3F7;
+        background-color: $simple_gray;
         padding: 10px 15px;
         border-radius: 30px;
         border: 0px solid transparent;
@@ -371,6 +390,7 @@ input , textarea{
                 // width: 15px;
             }
         }
+        
     }
     .main_collapese_card {
         .card {
@@ -393,21 +413,22 @@ input , textarea{
             border-radius: 0px !important;
             padding: 0px !important;
             .box_action{
-                background-color: #f2f3f7;
+                background-color: $simple_gray;
             }
         }
-        .inner_collapese_card{
+        .inner_collapese_card,.inner_big_cart{
             border-top:  1PX solid #E1E1E1 ;
             padding:10px;
             label{
                 font-size: 10px;
                 color: $main_course_color;
             }
-            input,textarea{
+            input,textarea,select{
                 border-radius: 10px !important;
                 border: 0px solid transparent !important;
-                background-color: #F2F3F7;
-                font-size: 10px !important;
+                background-color: $simple_gray;
+                font-size: 9px !important;
+                padding: 5px 15px;
             }
             .right_part{
                 @media(min-width:767px){
@@ -423,36 +444,53 @@ input , textarea{
                         height: 24px !important;
                         max-width: 100%;
                     }
+                    .small_input{
+                        width: 49%;
+                    }
+                    .form-check{
+                        min-height: 0rem;
+                        margin-bottom: -0.5rem; 
+                        margin-top: -5px;
+                    }
+                   
                 }
                 
                 .form-check{
-                    // display: flex;
-                    label{
-                        font-weight:600 ;
-                        font-size: 8px;
-                    }
+                    
                     .form-check-input{
                         width: 11px !important;
                         height: 11px !important;
-                        padding: 0px !important;
-                        border: 1px solid #707070 !important;
-                        background-color: #fff !important;
-                        margin-top: 10px;
-                        &:checked:before{
-                            content: "";
-                            display: block;
-                            width: 75%;
-                            height: 75%;
-                            margin: 15% auto;
-                            border-radius: 50%;
-                            background-color: $blue_color;
-                        }
                     }
                     
                 }
                 .choose_date {
                     @media(min-width:767px){
                         width: 65% !important;
+                    }
+                }
+                
+            }
+            .form-check{
+                // display: flex;
+                label{
+                    font-weight:600 ;
+                    font-size: 8px;
+                }
+                .form-check-input{
+                    width: 11px !important;
+                    height: 11px !important;
+                    padding: 0px !important;
+                    border: 1px solid #707070 !important;
+                    background-color: #fff !important;
+                    margin-top: 10px;
+                    &:checked:before{
+                        content: "";
+                        display: block;
+                        width: 75%;
+                        height: 75%;
+                        margin: 15% auto;
+                        border-radius: 50%;
+                        background-color: $blue_color;
                     }
                 }
                 
@@ -467,8 +505,158 @@ input , textarea{
                     height: 66px;
                 }
             }
+            .confirm_button{
+                @extend .button_style;
+                background-color:$circle_color;
+                font-size: 12px
+            }
+            .close_button{
+                @extend .button_style;
+                background-color:$red_color ;
+                margin-right: 10px;
+                font-size: 12px;
+            }
            
         }
+        .inner_big_cart{
+            padding: 5px 20px;
+            .card_content{
+                border-top: 1px solid #E1E1E1;
+                select{
+                    appearance: none !important;
+                    background: $simple_gray url(../imgs/arrow-down.svg) no-repeat 6px;
+                    background-size: 15px !important;
+                }
+                .input_box{
+                    &:nth-of-type(1){
+                        padding-left: 0px !important;
+                        // padding-right: 10px !important;
+                    }
+                    
+                    &:nth-of-type(3){
+                        padding-right: 10px !important;
+                        padding-left: 10px  !important;
+                    }
+                    &:nth-of-type(4){
+                        padding-right: 5px !important;
+                    }
+                }
+                .two_inputs{
+                    padding-right: 10px !important;
+                    padding-left: 0px !important;
+                    .input_box{
+                        &:nth-of-type(1){
+                            margin-left: 10px;
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+    .question_section{
+        .header{
+            margin-top: 25px;
+            margin-bottom:10px;
+            border-bottom: 2px solid $simple_gray;
+            .titlee{
+                font-size: 10px;
+                color:#525F77;
+                border-radius: 9px 9px 0px 0px;
+                background-color: $simple_gray;
+                margin-top: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding:8px;
+            }
+            .add_content {
+                height: 24px;
+                .img_box{
+                    height: 24px;
+                    img{
+                        width: 15px;
+                    }
+                }
+            }
+        }
+        .question_box{
+            border: 1px solid $simple_gray;
+            border-radius: 10px;
+            .question_title
+            {
+                border-radius: 10px;
+                background-color: $simple_gray;
+                padding: 6px ;
+                p{
+                    font-size: 10px;
+                    color:#525F77;
+                    font-weight: bold;
+                    margin-bottom:0px !important;
+                    padding-right: 5px;
+                }
+                img{
+                    width: 16px;
+                }
+            }
+            .question_box_body{
+                padding: 5px 15px;
+                .row{
+                    .frist_input{
+                        width: 100% !important;
+                    }
+                }
+                .circle{
+                    margin-left: 10px;
+                    margin-top: 24px;
+                }
+                .form-check{
+                    text-align: center;
+                    label{
+                        display: block;
+                        text-align: center;
+                        font-weight: 700;
+                    }
+                    .form-check-input{
+                        margin-left: 0px;
+                        width: 17px !important;
+                        height: 17px !important;
+                    }
+                }
+                
+                .box_action {
+                    background-color: $simple_gray;
+                    border-radius: 10px;
+                    padding: 13px 6px;
+                    margin-left: 5px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+                }
+                .add_button{
+                    background-color: $circle_color;
+                }
+            }
+        }
+    }
+}
+
+input[type='date']{
+    appearance: none !important;
+    background: $simple_gray url(../imgs/calendar-2.svg) no-repeat 6px;
+    background-size: 15px !important;
+    text-align: right;
+    position: relative;
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator{
+        // display:none;
+        // appearance: none;
+        opacity: 0;
+        position: absolute;
+        left: 6px;
+        width: 10px;
     }
 }
 

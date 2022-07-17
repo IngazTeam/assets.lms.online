@@ -6,3 +6,8 @@ function test_collapse(that) {
         $(that).find('.bi-caret-down-fill').toggleClass('bi-caret-down-fill  bi-caret-left-fill')
     }
 }
+
+
+$(function(){
+    $("[data-toggle=tooltip]").tooltip();
+})
