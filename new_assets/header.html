@@ -27,15 +27,15 @@
             </div>
             <span class="user-name">أبو النواس أيمن</span>
             <div class="icons-box">
-                <a href="#" class="notafications-button position-relative">
+                <a href="#" class="notafications-button position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notafications">
                     <img src="imgs/bell-icon.svg">
                     <span class="notafications-number position-absolute">
                         0
                     </span>
                 </a>
-                <a href="#"><img src="imgs/msg-icon.svg"></a>
-                <a href="#"><img src="imgs/incoming-icon.svg"></a>
-                <a href="#"><img src="imgs/login.svg"></a>
+                <a href="#"><img src="imgs/msg-icon.svg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chat"></a>
+                <a href="#"><img src="imgs/incoming-icon.svg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mail"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout" href="#"><img src="imgs/login.svg"></a>
             </div>
 
             <div class="noficationbox hidden position-absolute ">
@@ -178,5 +178,12 @@
 <script>
     $('.notafications-button').click(function () {
         $(".noficationbox").toggleClass("hidden");
+    })
+</script>
+<!-- bootstrap tooltip  -->
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 </script>

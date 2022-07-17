@@ -346,7 +346,10 @@ $gray_color:#9F9F9F;
 }
 
 .select2-container--default .select2-search--inline .select2-search__field {
-    font-size: 14px;
+    font-size: 13px;
+    margin-top: 0;
+    width: unset !important;
+    padding: 0 10px;
 
     &::placeholder {
         color: $gray_color;
@@ -383,4 +386,8 @@ $gray_color:#9F9F9F;
     border-radius: 25px;
     border: none;
     font-weight: 600;
+}
+
+.select2-selection__choice {
+    border-radius: 20px !important;
 }

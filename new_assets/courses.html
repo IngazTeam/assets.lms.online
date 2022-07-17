@@ -199,10 +199,24 @@
                                             <!-- **** -->
                                             <div class="d-flex mt-3">
                                                 <i class="bi bi-caret-left-fill"></i>
-                                                <a href="#" class="d-flex justify-content-between create_group level">
+                                                <a href="#" class="d-flex justify-content-between create_group level" data-bs-toggle="modal" data-bs-target="#popupModal">
                                                     <p>مستوي الدورة</p>
                                                     <img src="imgs/Union 1.svg" alt="" width="" />
                                                 </a>
+                                            </div>
+                                            <div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-body">
+                                                            <input type="text" placeholder="any text here" style="width: 100%;">
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="submit-btn btn-danger" data-bs-dismiss="modal" style="background-color:#dc3545;">إغلاق</button>
+                                                            <button type="button" class="submit-btn">حفظ ومتابعة</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <!-- **** -->
                                             <div class="d-flex mt-3 time">
