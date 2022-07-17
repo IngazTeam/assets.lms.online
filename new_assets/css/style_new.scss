@@ -748,6 +748,103 @@ body {
     }
 }
 
+// circle style 
+.circle-box {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 100%;
+    padding: 20px;
+
+    .outer {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 15px solid #d8d8d8;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .inner {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: bold;
+            color: #525C72;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+
+        .cir-1 {
+            fill: none;
+            stroke: $mainColor;
+            stroke-width: 15px;
+        }
+
+        .cir-2 {
+            fill: none;
+            stroke: #4C75F3;
+            stroke-width: 15px;
+        }
+
+        .cir-3 {
+            fill: none;
+            stroke: $secoundryColor;
+            stroke-width: 15px;
+        }
+    }
+}
+
+.certificate-area {
+    .certificate {
+        padding: 0px 10px;
+        border-radius: 40px;
+
+        h5 {
+            color: #000;
+            margin-bottom: 0;
+        }
+
+        &.not-ready {
+            background-color: #fff;
+
+            span {
+                font-size: 14px;
+                color: $lightText;
+            }
+        }
+
+        &.ready {
+            position: relative;
+            background-color: #FFCF65;
+
+            span {
+                font-size: 14px;
+                color: #3B459C;
+                font-weight: bold;
+            }
+
+            i {
+                position: absolute;
+                color: #fff;
+                font-size: 30px;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
 .content-box {
     background-color: #fff;
     padding: 4px 0;
