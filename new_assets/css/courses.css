@@ -420,7 +420,10 @@
 }
 
 .select2-container--default .select2-search--inline .select2-search__field {
-  font-size: 14px;
+  font-size: 13px;
+  margin-top: 0;
+  width: unset !important;
+  padding: 0 10px;
 }
 
 .select2-container--default .select2-search--inline .select2-search__field::-webkit-input-placeholder {
@@ -471,5 +474,9 @@
   border-radius: 25px;
   border: none;
   font-weight: 600;
+}
+
+.select2-selection__choice {
+  border-radius: 20px !important;
 }
 /*# sourceMappingURL=courses.css.map */
