@@ -35,7 +35,7 @@
     <!-- custom style -->
     <link rel="stylesheet" href="css/style_new.css" />
     <!-- courses style -->
-    <link rel="stylesheet" href="css/courses.css" />
+    <link rel="stylesheet" href="css/exams.css" />
 </head>
 
 <body>
@@ -126,7 +126,7 @@
                                         <!-- start collapse box -->
                                         <button class="main_collapese d-flex justify-content-between mt-3"
                                             data-bs-target="#main_collapese" data-bs-toggle="collapse"
-                                            onclick="test_collapse(this)" role="button" aria-expanded="false"
+                                            onclick="test_collapse(this)" role="button" aria-expanded="true"
                                             aria-controls="collapseExample">
                                             <div class="d-flex">
                                                 <i class="bi bi-caret-left-fill"></i>
@@ -154,7 +154,7 @@
                                                 </a>
                                             </div>
                                         </button>
-                                        <div class="collapse main_collapese_card" id="main_collapese">
+                                        <div class="collapse main_collapese_card show" id="main_collapese">
                                             <div class="card card-body inner_collapses">
                                                 <!-- start frist inner collapse -->
                                                 <div class="collapse_content">
@@ -171,58 +171,76 @@
                                                             </div>
                                                         </div>
                                                         <div class="d-flex">
-                                                            <a href="" class="box_action" data-toggle="tooltip" title="معاينة ">
+                                                            <a href="" class="box_action" data-toggle="tooltip"
+                                                                title="معاينة ">
                                                                 <img src="imgs/eye.svg" alt="" width="20" />
                                                             </a>
-                                                            <a href="" class="box_action"  data-toggle="tooltip" title="تعديل ">
+                                                            <a href="" class="box_action" data-toggle="tooltip"
+                                                                title="تعديل ">
                                                                 <img src="imgs/edit.svg" alt="" width="20" />
                                                             </a>
-                                                            <a href="" class="box_action"  data-toggle="tooltip" title="اغلاق ">
+                                                            <a href="" class="box_action" data-toggle="tooltip"
+                                                                title="اغلاق ">
                                                                 <img src="imgs/vuesax-broken-add.svg" alt=""
                                                                     width="13" />
                                                             </a>
                                                         </div>
                                                     </button>
-                                                    <div class="collapse inner_collapese_card  show" id="frist_inner_collapese">
+                                                    <div class="collapse inner_collapese_card  show"
+                                                        id="frist_inner_collapese">
                                                         <div class="d-flex justify-content-between">
                                                             <div class="right_part">
                                                                 <div class="row">
                                                                     <div class="input_box col-6">
                                                                         <label for="">اسم الدرس</label>
-                                                                        <input type="text" placeholder="  الدرس الثاني : مبادئ رقم 2">
+                                                                        <input type="text"
+                                                                            placeholder="  الدرس الثاني : مبادئ رقم 2">
                                                                     </div>
                                                                     <div class="input_box col-6">
                                                                         <label for=""> لينك الدرس</label>
-                                                                        <input type="text" placeholder=" https://ui8.net/hello-picko/products/traver---traveling-apps">
+                                                                        <input type="text"
+                                                                            placeholder=" https://ui8.net/hello-picko/products/traver---traveling-apps">
                                                                     </div>
                                                                     <div class="input_box col-6">
-                                                                        <label for="">  وقت الظهور</label>
+                                                                        <label for=""> وقت الظهور</label>
                                                                         <div class="d-flex align-items-center">
                                                                             <div>
                                                                                 <div class="form-check">
-                                                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                                                    <label class="form-check-label"
+                                                                                        for="flexRadioDefault1">
                                                                                         الوقت الحالي
-                                                                                      </label>
-                                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                                  </div>
-                                                                                  <div class="form-check">
-                                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked style="accent-color: green !important;">
-                                                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                                                    </label>
+                                                                                    <input class="form-check-input"
+                                                                                        type="radio"
+                                                                                        name="flexRadioDefault"
+                                                                                        id="flexRadioDefault1">
+                                                                                </div>
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="radio"
+                                                                                        name="flexRadioDefault"
+                                                                                        id="flexRadioDefault2" checked
+                                                                                        style="accent-color: green !important;">
+                                                                                    <label class="form-check-label"
+                                                                                        for="flexRadioDefault2">
                                                                                         وقت لاحق
                                                                                     </label>
                                                                                 </div>
                                                                             </div>
-                                                                            <input class="choose_date" type="date" placeholder=" ">
+                                                                            <input class="choose_date" type="date"
+                                                                                placeholder=" ">
                                                                         </div>
                                                                     </div>
-                                                                    <div class="input_box col-6 d-flex justify-content-between align-items-center">
+                                                                    <div
+                                                                        class="input_box col-6 d-flex justify-content-between align-items-center">
                                                                         <div class="small_input">
                                                                             <label for=""> المدة بالدقائق</label>
                                                                             <input type="text" placeholder=" 85:45 ">
                                                                         </div>
                                                                         <div class="small_input">
-                                                                            <label for="">  كلمة السر</label>
-                                                                            <input type="placeholder" placeholder=" ******* ">
+                                                                            <label for=""> كلمة السر</label>
+                                                                            <input type="placeholder"
+                                                                                placeholder=" ******* ">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -249,13 +267,16 @@
                                                             </div>
                                                         </div>
                                                         <div class="d-flex">
-                                                            <a href="" class="box_action" data-toggle="tooltip" title="معاينة ">
+                                                            <a href="" class="box_action" data-toggle="tooltip"
+                                                                title="معاينة ">
                                                                 <img src="imgs/eye.svg" alt="" width="20" />
                                                             </a>
-                                                            <a href="" class="box_action"  data-toggle="tooltip" title="تعديل ">
+                                                            <a href="" class="box_action" data-toggle="tooltip"
+                                                                title="تعديل ">
                                                                 <img src="imgs/edit.svg" alt="" width="20" />
                                                             </a>
-                                                            <a href="" class="box_action"  data-toggle="tooltip" title="اغلاق ">
+                                                            <a href="" class="box_action" data-toggle="tooltip"
+                                                                title="اغلاق ">
                                                                 <img src="imgs/vuesax-broken-add.svg" alt=""
                                                                     width="13" />
                                                             </a>
@@ -265,7 +286,8 @@
                                                         <div class="row">
                                                             <div class="input_box col-3">
                                                                 <label for=""> عنوان الإختبار</label>
-                                                                <input class="w-100" type="text" placeholder="  الدرس الثاني : مبادئ رقم 2">
+                                                                <input class="w-100" type="text"
+                                                                    placeholder="  الدرس الثاني : مبادئ رقم 2">
                                                             </div>
                                                             <div class="col-3 two_inputs d-flex justify-content-btween">
                                                                 <div class="input_box">
@@ -276,7 +298,7 @@
                                                                     <label for="">الوقت في دقيقة</label>
                                                                     <input class="w-100" type="text" placeholder="60">
                                                                 </div>
-                                                            </div> 
+                                                            </div>
                                                             <div class="input_box col-3">
                                                                 <label for=""> نوع الوقت</label>
                                                                 <select class="w-100" name="" id="">
@@ -286,7 +308,8 @@
                                                             <div class="input_box col-3">
                                                                 <label for="">سماحية الإختبار</label>
                                                                 <select class="w-100" name="" id="">
-                                                                    <option value="">   اكمال الحضور عند انهاء الاجابات</option>
+                                                                    <option value=""> اكمال الحضور عند انهاء الاجابات
+                                                                    </option>
                                                                 </select>
                                                             </div>
                                                             <div class="input_box col-3 mt-2">
@@ -294,7 +317,7 @@
                                                                 <input class="w-100" type="date" placeholder="60">
                                                             </div>
                                                             <div class="input_box col-4 mt-2">
-                                                                <label for="">  تعليمات لدخول الاختبار</label>
+                                                                <label for=""> تعليمات لدخول الاختبار</label>
                                                                 <input class="w-100" type="text" placeholder="60">
                                                             </div>
                                                         </div>
@@ -302,90 +325,507 @@
                                                         <div class="question_section">
                                                             <div class="header d-flex justify-content-between">
                                                                 <div class="titlee">قسم الأسئلة</div>
-                                                                <button class="add_content d-flex justify-content-start">
+                                                                <button
+                                                                    class="add_content d-flex justify-content-start">
                                                                     <div class="img_box">
-                                                                        <img src="imgs/message-add.svg" alt="" width="" />
+                                                                        <img src="imgs/message-add.svg" alt=""
+                                                                            width="" />
                                                                     </div>
                                                                     <span>إضافة سؤال</span>
                                                                 </button>
                                                             </div>
+                                                            <!-- ****************start frist type of questions ************-->
                                                             <div class="question_box">
-                                                                <div class="question_title d-flex justify-content-center align-items-center">
-                                                                    <img src="imgs/vuesax-broken-task-square.svg" alt="">
+                                                                <div
+                                                                    class="question_title d-flex justify-content-center align-items-center">
+                                                                    <img src="imgs/vuesax-broken-task-square.svg"
+                                                                        alt="">
                                                                     <p>أسئلة صح و خطأ</p>
                                                                 </div>
-                                                                <div class="question_box_body">
-                                                                    
+                                                                <div class="question_box_body pb-2">
                                                                     <!-- ********************* -->
                                                                     <div class="row">
                                                                         <div class="col-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
-                                                                                <label for="">    اسم السؤال</label>
-                                                                                <input class="w-100" type="text" placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
+                                                                                <label for=""> اسم السؤال</label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-2">
                                                                             <div class="input_box">
-                                                                                <label for="">    الدرجة </label>
-                                                                                <input class="w-100" type="text" placeholder="60">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="degree_input" type="text"
+                                                                                    placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-4 d-flex justify-content-around align-items-center">
-                                                                            <div class="form-check">
-                                                                                <label class="form-check-label" for="flexRadioDefault3">صح</label>
-                                                                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
-                                                                            </div>
-                                                                            <div class="form-check">
-                                                                                <label class="form-check-label" for="flexRadioDefault4">خطأ</label>
-                                                                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4">
-                                                                            </div>
-                                                                            <div class="">
-                                                                                <a href="" class="box_action"  data-toggle="tooltip" title="اغلاق ">
-                                                                                    <img src="imgs/vuesax-broken-add.svg" alt=""
-                                                                                        width="13" />
-                                                                                </a>
+                                                                        <div
+                                                                            class="col-4 d-flex justify-content-around align-items-center">
+                                                                            <div class="row w-100">
+                                                                                <div class="col-3">
+                                                                                    <div class="form-check">
+                                                                                        <label class="form-check-label"
+                                                                                            for="flexRadioDefault3">صح</label>
+                                                                                        <input class="form-check-input"
+                                                                                            type="radio"
+                                                                                            name="flexRadioDefault3"
+                                                                                            id="flexRadioDefault3">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-3">
+                                                                                    <div class="form-check">
+                                                                                        <label class="form-check-label"
+                                                                                            for="flexRadioDefault4">خطأ</label>
+                                                                                        <input class="form-check-input"
+                                                                                            type="radio"
+                                                                                            name="flexRadioDefault3"
+                                                                                            id="flexRadioDefault4">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-6">
+                                                                                    <a href="" class="box_action"
+                                                                                        data-toggle="tooltip"
+                                                                                        title="اغلاق ">
+                                                                                        <img src="imgs/vuesax-broken-add.svg"
+                                                                                            alt="" width="13" />
+                                                                                    </a>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
+                                                                    </div>
+                                                                    <!-- ********************* -->
+                                                                    <div class="row row_content" id="row_content">
+                                                                        <div class="col-6 d-flex align-items-center">
+                                                                            <div class="circle"></div>
+                                                                            <div class="input_box frist_input">
+                                                                                <label for=""> اسم السؤال</label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-2">
+                                                                            <div class="input_box">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="degree_input" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-4 d-flex justify-content-around align-items-center">
+                                                                            <div class="row w-100">
+                                                                                <div class="col-3">
+                                                                                    <div class="form-check">
+                                                                                        <label class="form-check-label"
+                                                                                            for="flexRadioDefault3">صح</label>
+                                                                                        <input class="form-check-input"
+                                                                                            type="radio"
+                                                                                            name="flexRadioDefault3"
+                                                                                            id="flexRadioDefault3">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-3">
+                                                                                    <div class="form-check">
+                                                                                        <label class="form-check-label"
+                                                                                            for="flexRadioDefault4">خطأ</label>
+                                                                                        <input class="form-check-input"
+                                                                                            type="radio"
+                                                                                            name="flexRadioDefault3"
+                                                                                            id="flexRadioDefault4">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-6">
+                                                                                    <div class="d-flex action_buttons w-100">
+                                                                                        <a href="javascript:;" onclick="RemoveQuestion(this)" class="box_action"
+                                                                                            data-toggle="tooltip"
+                                                                                            title="اغلاق ">
+                                                                                            <img src="imgs/vuesax-broken-add.svg"
+                                                                                                alt="" width="13" />
+                                                                                        </a>
+                                                                                        <a href="javascript:;" onclick="AppendQuestion(row_content,this.id)"
+                                                                                            class="box_action add_button"
+                                                                                            data-toggle="tooltip"
+                                                                                            title="اضافة">
+                                                                                            <img src="imgs/vuesax-broken-add2.svg"
+                                                                                                alt="" width="13" />
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- ****************End frist type of questions************* -->
+                                                            <!-- ****************start second type of questions ************-->
+                                                            <div class="question_box mt-3 pb-2">
+                                                                <div
+                                                                    class="question_title d-flex justify-content-center align-items-center">
+                                                                    <img src="imgs/vuesax-broken-task.svg"
+                                                                        alt="">
+                                                                    <p> أسئلة اختيار متعدد </p>
+                                                                </div>
+                                                                <div class="question_box_body multi_choose">
+                                                                    <!-- ********************* -->
+                                                                    <div class="row">
+                                                                        <div class="col-6 d-flex align-items-center">
+                                                                            <div class="circle"></div>
+                                                                            <div class="input_box frist_input">
+                                                                                <label for=""> اسم السؤال</label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                            <div class="input_box w-50">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="degree_input" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                            <div class="input_box w-50">
+                                                                                <label for="">عدد الاختيارات </label>
+                                                                                <select class="w-100" name="" id="">
+                                                                                    <option value=""> 4
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-end mt-2">
+                                                                            <a href="" class="box_action"
+                                                                            data-toggle="tooltip"
+                                                                            title="اغلاق ">
+                                                                            <img src="imgs/vuesax-broken-add.svg"
+                                                                                alt="" width="13" />
+                                                                            </a>
+                                                                        </div>
+
+                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                            <div class="form-check mt-3">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexRadioDefault5"></label>
+                                                                                <input class="form-check-input"
+                                                                                    type="radio"
+                                                                                    name="flexRadioDefault5"
+                                                                                    id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="input_box">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                            <div class="form-check mt-3">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexRadioDefault5"></label>
+                                                                                <input class="form-check-input"
+                                                                                    type="radio"
+                                                                                    name="flexRadioDefault5"
+                                                                                    id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="input_box">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                            <div class="form-check mt-3">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexRadioDefault5"></label>
+                                                                                <input class="form-check-input"
+                                                                                    type="radio"
+                                                                                    name="flexRadioDefault5"
+                                                                                    id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="input_box">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                            <div class="form-check mt-3">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexRadioDefault5"></label>
+                                                                                <input class="form-check-input"
+                                                                                    type="radio"
+                                                                                    name="flexRadioDefault5"
+                                                                                    id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="input_box">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        
                                                                     </div>
                                                                     <!-- ********************* -->
                                                                     <div class="row">
                                                                         <div class="col-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
-                                                                                <label for="">    اسم السؤال</label>
-                                                                                <input class="w-100" type="text" placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
+                                                                                <label for=""> اسم السؤال</label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-2">
-                                                                            <div class="input_box">
-                                                                                <label for="">    الدرجة </label>
-                                                                                <input class="w-100" type="text" placeholder="60">
+                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                            <div class="input_box w-50">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="degree_input" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                            <div class="input_box w-50">
+                                                                                <label for="">عدد الاختيارات </label>
+                                                                                <select class="w-100" name="" id="">
+                                                                                    <option value=""> 4
+                                                                                    </option>
+                                                                                </select>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-4 d-flex justify-content-around align-items-center">
-                                                                            <div class="form-check">
-                                                                                <label class="form-check-label" for="flexRadioDefault3">صح</label>
-                                                                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault3">
-                                                                            </div>
-                                                                            <div class="form-check">
-                                                                                <label class="form-check-label" for="flexRadioDefault4">خطأ</label>
-                                                                                <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault4">
-                                                                            </div>
-                                                                            <div class="d-flex">
-                                                                                <a href="" class="box_action"  data-toggle="tooltip" title="اغلاق ">
-                                                                                    <img src="imgs/vuesax-broken-add.svg" alt=""
-                                                                                        width="13" />
+                                                                        <div class="col-3 mt-2">
+                                                                            <div class="d-flex justify-content-end  w-100">
+                                                                                <a href="" class="box_action"
+                                                                                    data-toggle="tooltip"
+                                                                                    title="اغلاق ">
+                                                                                    <img src="imgs/vuesax-broken-add.svg"
+                                                                                        alt="" width="13" />
                                                                                 </a>
-                                                                                <a href="" class="box_action add_button"  data-toggle="tooltip" title="اغلاق ">
-                                                                                    <img src="imgs/vuesax-broken-add2.svg" alt=""
-                                                                                        width="13" />
+                                                                                <a href=""
+                                                                                    class="box_action add_button"
+                                                                                    data-toggle="tooltip"
+                                                                                    title="اغلاق ">
+                                                                                    <img src="imgs/vuesax-broken-add2.svg"
+                                                                                        alt="" width="13" />
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                            <div class="form-check mt-3">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexRadioDefault5"></label>
+                                                                                <input class="form-check-input"
+                                                                                    type="radio"
+                                                                                    name="flexRadioDefault5"
+                                                                                    id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="input_box">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                            <div class="form-check mt-3">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexRadioDefault5"></label>
+                                                                                <input class="form-check-input"
+                                                                                    type="radio"
+                                                                                    name="flexRadioDefault5"
+                                                                                    id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="input_box">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                            <div class="form-check mt-3">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexRadioDefault5"></label>
+                                                                                <input class="form-check-input"
+                                                                                    type="radio"
+                                                                                    name="flexRadioDefault5"
+                                                                                    id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="input_box">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                            <div class="form-check mt-3">
+                                                                                <label class="form-check-label"
+                                                                                    for="flexRadioDefault5"></label>
+                                                                                <input class="form-check-input"
+                                                                                    type="radio"
+                                                                                    name="flexRadioDefault5"
+                                                                                    id="flexRadioDefault3">
+                                                                            </div>
+                                                                            <div class="input_box">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- ****************End second type of questions************* -->
+                                                            <!-- ****************start third type of questions ************-->
+                                                            <div class="question_box mt-3 pb-2">
+                                                                <div
+                                                                    class="question_title d-flex justify-content-center align-items-center">
+                                                                    <img src="imgs/vuesax-broken-task-square_2.svg"
+                                                                        alt="">
+                                                                    <p>   عمليات حسابية </p>
+                                                                </div>
+                                                                <div class="question_box_body multi_choose">
+                                                                    <!-- ********************* -->
+                                                                    <div class="row my-1">
+                                                                        <div class="col-6 d-flex align-items-center">
+                                                                            <div class="circle"></div>
+                                                                            <div class="input_box frist_input">
+                                                                                <label for=""> اسم السؤال</label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="2+6+58989+20*50/1112+20-55">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                            <div class="input_box w-50">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="degree_input" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                            <div class="input_box w-50">
+                                                                                <label for="">الاجابة  </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="4">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-end mt-2">
+                                                                            <a href="" class="box_action"
+                                                                            data-toggle="tooltip"
+                                                                            title="اغلاق ">
+                                                                            <img src="imgs/vuesax-broken-add.svg"
+                                                                                alt="" width="13" />
+                                                                            </a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <!-- ********************* -->
+                                                                    <div class="row my-1">
+                                                                        <div class="col-6 d-flex align-items-center">
+                                                                            <div class="circle"></div>
+                                                                            <div class="input_box frist_input">
+                                                                                <label for=""> اسم السؤال</label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="2+6+58989+20*50/1112+20-55">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                            <div class="input_box w-50">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="degree_input" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                            <div class="input_box w-50">
+                                                                                <label for="">الاجابة  </label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="4">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 mt-2">
+                                                                            <div class="d-flex justify-content-end  w-100">
+                                                                                <a href="" class="box_action"
+                                                                                    data-toggle="tooltip"
+                                                                                    title="اغلاق ">
+                                                                                    <img src="imgs/vuesax-broken-add.svg"
+                                                                                        alt="" width="13" />
+                                                                                </a>
+                                                                                <a href=""
+                                                                                    class="box_action add_button"
+                                                                                    data-toggle="tooltip"
+                                                                                    title="اغلاق ">
+                                                                                    <img src="imgs/vuesax-broken-add2.svg"
+                                                                                        alt="" width="13" />
                                                                                 </a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <!-- ****************End third type of questions************* -->
+                                                            <!-- ****************start fourth type of questions ************-->
+                                                            <div class="question_box mt-3 pb-2">
+                                                                <div
+                                                                    class="question_title d-flex justify-content-center align-items-center">
+                                                                    <img src="imgs/Icon.svg"
+                                                                        alt="" width="10" height="13">
+                                                                    <p>  سؤال مقالي </p>
+                                                                </div>
+                                                                <div class="question_box_body multi_choose">
+                                                                    <!-- ********************* -->
+                                                                    <div class="row my-1">
+                                                                        <div class="col-6 d-flex align-items-center">
+                                                                            <div class="circle"></div>
+                                                                            <div class="input_box frist_input">
+                                                                                <label for=""> اسم السؤال</label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="ماهي عوامل سقوط الدولة العثمانية؟(اكتب بإيجاز)">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                            <div class="input_box w-50">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="degree_input" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-end mt-2">
+                                                                            <a href="" class="box_action"
+                                                                            data-toggle="tooltip"
+                                                                            title="اغلاق ">
+                                                                            <img src="imgs/vuesax-broken-add.svg"
+                                                                                alt="" width="13" />
+                                                                            </a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <!-- ********************* -->
+                                                                    <div class="row my-1">
+                                                                        <div class="col-6 d-flex align-items-center">
+                                                                            <div class="circle"></div>
+                                                                            <div class="input_box frist_input">
+                                                                                <label for=""> اسم السؤال</label>
+                                                                                <input class="w-100" type="text"
+                                                                                    placeholder="ماهي عوامل سقوط الدولة العثمانية؟(اكتب بإيجاز)">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                            <div class="input_box w-50">
+                                                                                <label for=""> الدرجة </label>
+                                                                                <input class="degree_input" type="text"
+                                                                                    placeholder="60">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-3 mt-2">
+                                                                            <div class="d-flex justify-content-end  w-100">
+                                                                                <a href="" class="box_action"
+                                                                                    data-toggle="tooltip"
+                                                                                    title="اغلاق ">
+                                                                                    <img src="imgs/vuesax-broken-add.svg"
+                                                                                        alt="" width="13" />
+                                                                                </a>
+                                                                                <a href=""
+                                                                                    class="box_action add_button"
+                                                                                    data-toggle="tooltip"
+                                                                                    title="اغلاق ">
+                                                                                    <img src="imgs/vuesax-broken-add2.svg"
+                                                                                        alt="" width="13" />
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- ****************End fourth type of questions************* -->
                                                         </div>
                                                         <!-- end question section -->
                                                     </div>
