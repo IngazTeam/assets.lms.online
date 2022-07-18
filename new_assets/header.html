@@ -1,37 +1,195 @@
 <div class="container my-4">
-    <div class="row flex-xl-nowrap flex-lg-wrap">
+    <div class="row justify-content-between">
         <!-- head  -->
-        <div class="main-head bg-white p-1">
+        <div class="toggeler-box bg-white col-2 d-lg-none  d-flex align-items-center justify-content-center" style="border-radius: 50%; width: 40px; height: 40px;">
+            <img src="imgs/icons/vuesax-broken-sort.png" alt="" width="25" />
+
+        </div>
+
+        <div class="main-head bg-white p-1 col-8 mb-2 col-lg-2">
             <div class="avatar-img-box">
                 <img src="imgs/User_Avatar_2.png" alt="" width="35" />
             </div>
             <h3 class="main-title">أفق للتدريب</h3>
         </div>
+        <a class="logo-img col-1 d-lg-none d-flex" href="index.html"><img src="imgs/n.png" alt="" /></a>
         <!-- news -->
-        <div class="news bg-white mx-2 py-1 px-3 d-flex align-items-center">
+        <div class="news bg-white py-1 px-3 d-lg-flex align-items-center d-none col-lg-4">
             <marquee>خبر جديد خبر جديد خبر جديد خبر جديد خبر جديد خبر
                 جديد ر خبر جديد خبر جديد جديد جديدجديد جديد
             </marquee>
             <i class="bi bi-bookmarks"></i>
         </div>
         <!-- search  -->
-        <div class="search-box bg-white mx-2 py-1 px-3 d-flex align-items-center">
+        <div class="search-box bg-white py-2 px-3 d-lg-flex align-items-center col-lg-2 ">
             <i class="bi bi-search"></i>
             <input type="text" placeholder="بحــث تــفــاعـلـي" />
         </div>
-        <a class="logo-img" href="index.html"><img src="imgs/n.png" alt="" /></a>
+        <a class="logo-img col-1 d-lg-flex d-none" href="index.html"><img src="imgs/n.png" alt="" /></a>
         <!-- profile info -->
-        <div class="profile bg-white p-1 d-flex align-items-center">
+        <div class="profile bg-white p-1 d-none d-lg-flex align-items-center position-relative col-lg-3">
             <div class="avatar-img-box">
                 <img src="imgs/User_Avatar_2.png" alt="" width="35" />
             </div>
-            <span>أبو النواس أيمن</span>
+            <span class="user-name">أبو النواس أيمن</span>
             <div class="icons-box">
-                <a href="#"><img src="imgs/bell-icon.svg"></a>
-                <a href=""><img src="imgs/msg-icon.svg"></a>
-                <a href=""><img src="imgs/incoming-icon.svg"></a>
-                <a href=""><img src="imgs/login.svg"></a>
+                <a href="#" class="notafications-button position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notafications">
+                    <img src="imgs/bell-icon.svg">
+                    <span class="notafications-number position-absolute">
+                        0
+                    </span>
+                </a>
+                <a href="#"><img src="imgs/msg-icon.svg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chat"></a>
+                <a href="#"><img src="imgs/incoming-icon.svg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mail"></a>
+                <a data-bs-toggle="tooltip" data-bs-placement="bottom" title="Logout" href="#"><img src="imgs/login.svg"></a>
+            </div>
+
+            <div class="noficationbox hidden position-absolute ">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="notify">
+                        <h5 class="position-relative mx-3">الإشعارات</h5>
+                    </div>
+                    <a href="#" class="read">تم القراءة</a>
+                </div>
+
+
+                <div class="all-notafications d-flex align-items-center justify-content-start gap-2 flex-column">
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                    <a href="#" class="notafication-content unread d-flex align-items-center justify-content-start gap-2">
+                        <div class="image">
+                            <img src="imgs/User_Avatar_2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h6>عنوان الـإشعار</h6>
+                            <p>نص يمكن استبداله بمحتوى بنفس حجم ولون الخط نص يمكن استبداله بمحتوى بنفس حجم ولون الخط</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="see-all text-center pt-2">
+                    <a href="#">رؤية الكل</a>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
+<script>
+    $('.notafications-button').click(function () {
+        $(".noficationbox").toggleClass("hidden");
+    })
+</script>
+<!-- bootstrap tooltip  -->
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>

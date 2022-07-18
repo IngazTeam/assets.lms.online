@@ -8207,14 +8207,14 @@ input::placeholder, textarea::placeholder {
 }
 
 /* line 120, ../../../../Desktop/role_permission/scss/_role_permission.scss */
-.erp_role_permission_area .single_permission .permission_header div {
+/* .erp_role_permission_area .single_permission .permission_header div {
   position: relative;
   top: -5px;
-}
+} */
 
 /* line 128, ../../../../Desktop/role_permission/scss/_role_permission.scss */
 .erp_role_permission_area .single_permission .permission_header .common-radio:empty ~ label::before {
-  border: 1px solid #fb6d3a;
+  border: 1px solid #29bcb0;
 }
 
 /* line 131, ../../../../Desktop/role_permission/scss/_role_permission.scss */
@@ -8228,12 +8228,25 @@ input::placeholder, textarea::placeholder {
   border-top-color: transparent;
 }
 
-/* line 139, ../../../../Desktop/role_permission/scss/_role_permission.scss */
-.erp_role_permission_area .single_permission .permission_body {
-    background: rgb(255 255 255);
-    border-radius: 13px;
-    box-shadow: 0px 0px 3px #ddd;
+.permission_body .submodule {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 10px;
 }
+
+.permission_body  .option{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  gap: 6px;
+}
+
+
+
+ 
 
 /* line 142, ../../../../Desktop/role_permission/scss/_role_permission.scss */
 .erp_role_permission_area .single_permission .permission_body .submodule label {
@@ -8244,7 +8257,7 @@ input::placeholder, textarea::placeholder {
 
 /* line 146, ../../../../Desktop/role_permission/scss/_role_permission.scss */
 .erp_role_permission_area .single_permission .permission_body .submodule .common-radio:empty ~ label::before {
-  border: 1px solid #5a46aa;
+  border: 1px solid #29bcb0;
 }
 
 /* line 149, ../../../../Desktop/role_permission/scss/_role_permission.scss */
@@ -8285,18 +8298,18 @@ input::placeholder, textarea::placeholder {
 }
 
 /* line 168, ../../../../Desktop/role_permission/scss/_role_permission.scss */
-.erp_role_permission_area .single_permission .permission_body > ul > li ul {
+/* .erp_role_permission_area .single_permission .permission_body > ul > li ul {
   display: grid;
   margin-left: 25px;
   grid-template-columns: repeat(4, 1fr);
-}
+} */
 
 @media (max-width: 767.98px) {
   /* line 168, ../../../../Desktop/role_permission/scss/_role_permission.scss */
-  .erp_role_permission_area .single_permission .permission_body > ul > li ul {
+  /* .erp_role_permission_area .single_permission .permission_body > ul > li ul {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 20px;
-  }
+  } */
 }
 
 /* line 176, ../../../../Desktop/role_permission/scss/_role_permission.scss */
@@ -8309,7 +8322,7 @@ input::placeholder, textarea::placeholder {
 
 /* line 181, ../../../../Desktop/role_permission/scss/_role_permission.scss */
 .erp_role_permission_area .single_permission .permission_body > ul > li ul .common-radio:empty ~ label::before {
-  border: 1px solid #415094;
+  border: 1px solid #29bcb0;
 }
 
 /* line 184, ../../../../Desktop/role_permission/scss/_role_permission.scss */
@@ -8343,9 +8356,9 @@ input::placeholder, textarea::placeholder {
 }
 
 /* line 200, ../../../../Desktop/role_permission/scss/_role_permission.scss */
-.erp_role_permission_area .single_permission .permission_body > ul > li ul li:last-child {
+/* .erp_role_permission_area .single_permission .permission_body > ul > li ul li:last-child {
   margin-right: 0;
-}
+} */
 
 /* line 213, ../../../../Desktop/role_permission/scss/_role_permission.scss */
 .role_permission_wrap .permission_title h4 {
@@ -8370,9 +8383,9 @@ input::placeholder, textarea::placeholder {
 }
 
 .erp_role_permission_area .single_permission .permission_body > ul > li ul {
-    display: grid;
+    /* display: grid;
     margin-left: 25px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); */
     /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
 }
 
@@ -8387,11 +8400,12 @@ input::placeholder, textarea::placeholder {
 }
 
 .single_role_blocks {
-    display: inline-block;
-    background: #fff;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 0 20px;
+  display: inline-block;
+  background: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 25px;
+  margin: 0 0 15px
 }
 
 .erp_role_permission_area .single_permission .permission_body > ul > li {
@@ -8402,14 +8416,10 @@ input::placeholder, textarea::placeholder {
     padding: 20px 25px 11px 25px;
     position: relative;
     box-shadow: 0px 1px 3px #ddd;
-    border-radius: 6px;
+    border-radius: 25px;
     transition: all .3s ease-in-out;
 }
-
-.erp_role_permission_area .single_permission .permission_header:hover {
-    background: #f5f4fc;
-    transform: scale(.98);
-}
+ 
 
 @media (min-width: 320px) and (max-width: 1199.98px) {
     .mesonary_role_header {
@@ -8438,7 +8448,7 @@ input::placeholder, textarea::placeholder {
     right: 12px;
     height: auto;
     font-family: 'themify';
-    color: #fb6d3a;
+    color: #29bcb0;
     font-size: 18px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -8448,13 +8458,13 @@ input::placeholder, textarea::placeholder {
 
 .arrow.collapsed::after {
     content: "\e61a";
-    color: #fb6d3a;
+    color: #29bcb0;
     font-size: 18px;
 }
 
 .erp_role_permission_area .single_permission .permission_header div {
     position: relative;
-    top: -5px;
+    /* top: -5px; */
     z-index: 6;
 }
 

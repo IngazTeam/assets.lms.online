@@ -660,7 +660,7 @@ button:focus {
 /* line 3, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
 .white-box {
-    background: #f7f7f7;
+    background: #f2f3f7;
     padding: 40px 30px;
     border-radius: 6px;
 }
@@ -2452,11 +2452,11 @@ table.dataTable tbody td .form-check-input {
 /* line 308, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
 .primary-input:focus {
-    color: #58548e !important;
+    /* color: #58548e !important;
     outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    border-color: transparent !important;
+    box-shadow: none !important; */
+    /* background: transparent !important; */
+    /* border-color: transparent !important; */
 }
 
 /* line 315, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
@@ -7582,9 +7582,7 @@ hr {
         background-color: #fff !important;
     }
 
-    .sms-breadcrumb {
-        margin-top: 105px;
-    }
+   
 
     .sidebar #sidebar_menu li a {
         background: #f3f5fc9e !important;
