@@ -13387,8 +13387,8 @@ body.admin {
 
 .select2-container--default .select2-selection--multiple {
     border: 1px solid #ced4da;
-    border-radius: 6px !important;
-    min-height: 46px;
+    border-radius: 25px !important;
+    min-height: 40px;
     position: relative;
 }
 
