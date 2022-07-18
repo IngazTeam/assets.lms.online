@@ -259,6 +259,7 @@ html[dir="rtl"] .timeline a:hover i {
 .owl-card .card-body {
     margin: 0 20px;
 }
+/*
 .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
     width: 50px;
@@ -295,6 +296,8 @@ html[dir="rtl"] .timeline a:hover i {
     cursor: pointer;
     box-shadow: 0 13px 25px 0 rgb(0 0 0 / 13%);
 }
+
+*/
 .owl-theme .owl-nav .owl-next.disabled,
 .owl-theme .owl-nav .owl-prev.disabled {
     display: none;
