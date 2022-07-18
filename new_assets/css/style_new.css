@@ -70,8 +70,6 @@ body {
           align-items: center;
   gap: 0.75rem;
   border-radius: 40px;
-  -ms-flex-preferred-size: 18%;
-      flex-basis: 18%;
 }
 
 .main-head .main-title {
@@ -82,8 +80,6 @@ body {
 
 .news {
   border-radius: 40px;
-  -ms-flex-preferred-size: 37%;
-      flex-basis: 37%;
   gap: 0.25rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -101,8 +97,6 @@ body {
 
 .search-box {
   border-radius: 40px;
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
   gap: 0.75px;
 }
 
@@ -165,8 +159,6 @@ body {
 
 .profile {
   border-radius: 40px;
-  -ms-flex-preferred-size: 24%;
-      flex-basis: 24%;
   gap: 0.75rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -641,6 +633,7 @@ body {
   background-color: #3b459c;
   border-radius: 10px;
   font-size: 12px;
+  color: #fff;
 }
 
 .select2-container--open .select2-dropdown--below {
@@ -915,12 +908,12 @@ body {
 }
 
 .content-box .owl-card.exams .exams-text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 
 .content-box .owl-card.exams .exams-type {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #3b459c;
 }
@@ -942,12 +935,12 @@ body {
 }
 
 .content-box .owl-card.trains .train-text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 
 .content-box .owl-card.trains .train-type {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #b8b8b8;
 }

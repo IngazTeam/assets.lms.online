@@ -75,7 +75,7 @@ body {
     align-items: center;
     gap: 0.75rem;
     border-radius: 40px;
-    flex-basis: 18%;
+    // flex-basis: 18%;
 
     .main-title {
         font-size: 1rem;
@@ -86,7 +86,7 @@ body {
 
 .news {
     border-radius: 40px;
-    flex-basis: 37%;
+    // flex-basis: 37%;
     gap: 0.25rem;
     justify-content: space-around;
 
@@ -103,7 +103,7 @@ body {
 
 .search-box {
     border-radius: 40px;
-    flex-basis: 15%;
+    // flex-basis: 15%;
     gap: 0.75px;
 
     i {
@@ -139,7 +139,7 @@ body {
 
 .profile {
     border-radius: 40px;
-    flex-basis: 24%;
+    // flex-basis: 24%;
     gap: 0.75rem;
     justify-content: space-evenly;
 
@@ -612,6 +612,7 @@ body {
     background-color: $secoundryColor;
     border-radius: 10px;
     font-size: 12px;
+    color: #fff;
 }
 
 .select2-container--open .select2-dropdown--below {
@@ -877,12 +878,12 @@ body {
             }
 
             .exams-text {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 700;
             }
 
             .exams-type {
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 600;
                 color: $secoundryColor;
             }
@@ -906,12 +907,12 @@ body {
             }
 
             .train-text {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 700;
             }
 
             .train-type {
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 600;
                 color: $lightText;
             }
