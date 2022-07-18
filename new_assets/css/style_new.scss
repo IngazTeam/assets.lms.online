@@ -39,6 +39,7 @@ body {
     background-color: $backgroundColor;
     font-family: "IBM Plex Sans Arabic", sans-serif;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -627,10 +628,30 @@ body {
 
     // .cards area 
     .cards-container {
+        .owl-dots {
+            margin-top: 10px;
+
+            .owl-dot:hover span {
+                background: $mainColor;
+            }
+
+            .owl-dot.active {
+                span {
+                    background: $mainColor;
+                }
+            }
+        }
+
         .Card {
             background-color: #fff;
             border-radius: 25px;
             padding: 15px 5px;
+
+            .card-head {
+                img {
+                    width: 20px;
+                }
+            }
 
             &.active {
                 background-color: $mainColor;
