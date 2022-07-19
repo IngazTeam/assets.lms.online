@@ -13,16 +13,14 @@
     <link rel="icon" type="image/x-icon" href="imgs/n.png" />
     <!-- Bootstrap -->
     <link rel="stylesheet" id="BootstrapLink" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
     <!-- Font Awesome -->
-    <!-- <link rel="stylesheet" href="css/all.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font include  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;400;500;600;700&display=swap" rel="stylesheet" />
     <!-- select2 -->
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="css/select-2.css" rel="stylesheet" />
     <!-- owl -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,6 +28,7 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <!-- custom style -->
     <link rel="stylesheet" href="css/style_new.css" />
+    <link rel="stylesheet" href="css/bottom-navbar.css">
 </head>
 
 
@@ -65,8 +64,8 @@
             <div class="row">
                 <!-- right sidebar area  -->
                 <!-- ========================================================================== -->
-                <div class="col-2 pe-0 d-none d-lg-block">
-                    <div id="rightSidebar"></div>
+                <div class="col-lg-2 pe-0">
+                    <div id="rightSidebar" class="d-lg-block hidden"></div>
                 </div>
 
 
@@ -768,6 +767,11 @@
                 <div class="col-3 ps-0 d-none d-lg-block">
                     <div id="leftSidebar"></div>
                 </div>
+
+                <!-- bottom navbar  -->
+                <div class="col-12 d-lg-none">
+                    <div id="bottomNavBar" ></div>
+                </div>
             </div>
         </div>
     </div>
@@ -780,18 +784,15 @@
     <script src="js/swiper.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/owl.min.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <!-- chart script  -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-
+    <script src="js/box-icon.js"></script>
+    <script src="js/select-2.js"></script>
 
     <script>
         $("#Header").load("header.html");
         $("#rightSidebar").load("right-sidebar.html");
         $("#leftSidebar").load("left-sidebar.html");
+        $("#bottomNavBar").load("bottom-navbar.html");
     </script>
-
 
     <script src="js/main.js"></script>
 
@@ -852,11 +853,14 @@
             responsive: {
                 0: {
                     items: 2,
-                    nav: true,
+                    nav: false,
+                    loop: false,
+
                 },
                 600: {
                     items: 4,
                     nav: false,
+                    loop: false
                 },
                 1000: {
                     items: 6,
