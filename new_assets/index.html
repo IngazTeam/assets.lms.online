@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/animate.min.css" />
     <!-- custom style -->
     <link rel="stylesheet" href="css/style_new.css" />
+    <link rel="stylesheet" href="css/bottom-navbar.css">
 </head>
 
 
@@ -63,8 +64,8 @@
             <div class="row">
                 <!-- right sidebar area  -->
                 <!-- ========================================================================== -->
-                <div class="col-2 pe-0 d-none d-lg-block">
-                    <div id="rightSidebar"></div>
+                <div class="col-lg-2 pe-0">
+                    <div id="rightSidebar" class="d-lg-block hidden"></div>
                 </div>
 
 
@@ -766,6 +767,11 @@
                 <div class="col-3 ps-0 d-none d-lg-block">
                     <div id="leftSidebar"></div>
                 </div>
+
+                <!-- bottom navbar  -->
+                <div class="col-12 d-lg-none">
+                    <div id="bottomNavBar" ></div>
+                </div>
             </div>
         </div>
     </div>
@@ -785,8 +791,8 @@
         $("#Header").load("header.html");
         $("#rightSidebar").load("right-sidebar.html");
         $("#leftSidebar").load("left-sidebar.html");
+        $("#bottomNavBar").load("bottom-navbar.html");
     </script>
-
 
     <script src="js/main.js"></script>
 

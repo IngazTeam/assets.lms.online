@@ -59,6 +59,46 @@ body {
   left: 100px;
 }
 
+.med-new-content #rightSidebar {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 992px) {
+  .med-new-content #rightSidebar.hidden {
+    position: fixed;
+    top: 70px;
+    right: -255px;
+    width: 250px;
+  }
+  .med-new-content #rightSidebar.active {
+    position: fixed;
+    top: 70px;
+    right: 5px;
+    z-index: 9999;
+    width: 250px;
+  }
+  .med-new-content #rightSidebar.active::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    position: fixed;
+    top: 0;
+  }
+  .med-new-content #rightSidebar.active .right-sidebar .navbar {
+    -webkit-box-shadow: 5px 10px 25px -10px #00000080;
+            box-shadow: 5px 10px 25px -10px #00000080;
+  }
+}
+
+.med-new-content .toggeler-box {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
 .med-new-content .main-head {
   display: -webkit-box;
   display: -ms-flexbox;
