@@ -17,11 +17,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
@@ -30,11 +30,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   height: 100%;
 }
 
@@ -49,11 +49,12 @@ img {
   font-size: 14px;
 }
 
-.login .form-div input:focus, .login .form-div input:hover {
+.login .form-div input:focus,
+.login .form-div input:hover {
   border-color: #4c75f3;
   outline: none;
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
 }
 
 .login .form-div .input-ico {
@@ -82,37 +83,77 @@ img {
   padding: 0 10px;
 }
 
-.login .form-div .bottom-text {
+.bottom-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
   position: absolute;
   bottom: 15px;
-  right: 0;
 }
 
-.login .form-div .bottom-text .txt-div {
+.bottom-text .txt-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.login .form-div .bottom-text .txt-div p {
+@media (max-width:575px) {
+
+  .login {
+    align-items: flex-start !important;
+  }
+
+  .login .row {
+    flex-direction: column-reverse;
+    margin-bottom: 65px;
+  }
+
+  .login .form-div {
+    justify-content: center !important;
+    margin-top: 20px;
+  }
+
+  .padding-zero {
+    padding: 0 !important;
+  }
+
+  .login .login-img {
+    align-items: flex-start !important;
+    height: unset !important;
+  }
+
+  .login .login-img img {
+    width: 100% !important;
+  }
+
+  .bottom-text {  
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .bottom-text .txt-div span {
+     font-size: 11px;
+  }
+
+}
+
+
+.bottom-text .txt-div p {
   color: #3b459c;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0px;
 }
 
-.login .form-div .bottom-text .txt-div span {
+.bottom-text .txt-div span {
   color: #b8b8b8;
   font-size: 13px;
   font-weight: bold;
@@ -125,11 +166,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   font-size: 12px;
 }
 
@@ -138,11 +179,12 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 650px;
 }
+
 /*# sourceMappingURL=mo-style.css.map */
