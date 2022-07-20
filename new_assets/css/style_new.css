@@ -28,7 +28,7 @@ html {
 
 body {
   background-color: #f2f3f7;
-  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
   position: relative;
   overflow: hidden;
 }
@@ -363,6 +363,7 @@ body {
   margin: 0;
   background-color: #fff;
   border: 1px solid #eaeaea;
+  font-size: 1rem;
 }
 
 .med-new-content .right-sidebar .navbar .nav-item {
