@@ -47,11 +47,11 @@
 
   <!-- the header area  -->
   <!-- ========================================================================================================================= -->
-  <header id="Header" class="the-navbar"></header>
+  <header id="Header" class="the-navbar med-new-content"></header>
 
   <!-- main content area  -->
   <!-- ========================================================================================================================= -->
-  <div class="home-content">
+  <div class="home-content med-new-content">
     <div class="container" style="
                     overflow: hidden;
                     position: relative;
@@ -66,9 +66,9 @@
       <div class="row">
         <!-- right sidebar area  -->
         <!-- ========================================================================== -->
-        <div class="col-2 pe-0 d-none d-lg-block">
-          <div id="rightSidebar"></div>
-        </div>
+        <div class="col-lg-2 pe-0">
+          <div id="rightSidebar" class="d-lg-block hidden"></div>
+      </div>
 
 
         <!-- main content area  -->
@@ -92,7 +92,7 @@
                     <!-- course details row  -->
                     <div class="row">
                       <div class="col-lg-8">
-                        <div class="about-the-course p-4 d-flex">
+                        <div class="about-the-course p-4 d-flex flex-column flex-lg-row">
                           <div class="img-box">
                             <img src="imgs/Ibrahim_el_Fikiy.png" alt="">
                           </div>
@@ -140,7 +140,7 @@
 
                     <!-- teacher and completed row  -->
                     <div class="row mt-3">
-                      <div class="col-8">
+                      <div class="col-lg-8">
                         <div class="course-teachers p-4">
                           <h6 class="next-course">معلموا الدورة</h6>
                           <div class="teachers owl-carousel owl-theme">
@@ -202,7 +202,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class=" col-4 p-0">
+                      <div class=" col-lg-4 p-0">
                         <div class="course-percentage p-4">
                           <h6 class="next-course">اكتمال الكورس</h6>
                           <div class="circle-box d-flex align-items-center justify-content-center">
@@ -227,7 +227,7 @@
                               </svg>
                             </div>
                           </div>
-                          <div class="d-flex flex-wrap justify-content-between gap-2">
+                          <div class="d-flex flex-wrap justify-content-between gap-3">
                             <p class="next-course">الدروس المكتملة</p>
                             <p class="next-course exam">الاختبارات المكتملة</p>
                             <p class="next-course direct">الدروس المباشرة المكتملة</p>
@@ -263,9 +263,16 @@
 
         <!-- left sidebar area  -->
         <!-- ========================================================================== -->
-        <div class="col-3 ps-0 d-none d-lg-block">
-          <div id="leftSidebar"></div>
-        </div>
+        <!-- left sidebar area  -->
+                <!-- ========================================================================== -->
+              <div class="col-3 ps-0 d-none d-lg-block">
+                  <div id="leftSidebar"></div>
+              </div>
+
+              <!-- bottom navbar  -->
+              <div class="col-12 d-lg-none">
+                  <div id="bottomNavBar" ></div>
+              </div>
       </div>
     </div>
   </div>
@@ -330,11 +337,11 @@
     $('.teachers.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,
-      nav: true,
+      nav: false,
       rtl: true,
       responsive: {
         0: {
-          items: 1
+          items: 2
         },
         600: {
           items: 2
