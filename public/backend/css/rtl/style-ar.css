@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap');
 
 
-body , p, a , input , textarea , h1 , h2 , h3 , h4 ,h5 , h6  , .primary-btn{
+/* body , p, a , input , textarea , h1 , h2 , h3 , h4 ,h5 , h6  , .primary-btn{
     font-family: 'Almarai', sans-serif !important;
-}
+} */
 .nice-select .option , .profile_info .profile_info_iner .profile_info_details , .nice-select , .CRM_dropdown.dropdown .dropdown-menu .dropdown-item{
     text-align: right !important;
 }
