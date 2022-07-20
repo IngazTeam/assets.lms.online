@@ -1,0 +1,172 @@
+<nav class="amazing-tabs">
+  <div class="filters-container">
+    <div class="filters-wrapper">
+      <ul class="filter-tabs">
+        <li>
+          <button class="filter-button filter-active" data-translate-value="0">
+            profile
+          </button>
+        </li>
+        <li>
+          <button class="filter-button" data-translate-value="-100%">
+            edit
+          </button>
+        </li>
+        <li>
+          <button class="filter-button" data-translate-value="-200%">
+            username
+          </button>
+        </li>
+      </ul>
+      <div class="filter-slider" aria-hidden="true">
+        <div class="filter-slider-rect">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <div class="main-tabs-container">
+    <div class="main-tabs-wrapper">
+      <ul class="main-tabs">
+        <li>
+          <button class="round-button user-btn" data-translate-value="400%">
+            <span class="avatar">
+              <img src="imgs/icons/user.svg" alt="user avatar" />
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="round-button" style="--round-button-active-color: #2962ff" data-translate-value="300%">
+            <span class="avatar">
+              <img src="imgs/icons/chat.svg" alt="user avatar" />
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="round-button active" style="--round-button-active-color: #00c853" data-translate-value="200%">
+            <span class="avatar">
+              <img src="imgs/icons/home.svg" alt="user avatar" />
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="round-button" style="--round-button-active-color: #aa00ff" data-translate-value="100%">
+            <span class="avatar">
+              <img src="imgs/icons/message.svg" alt="user avatar" />
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="round-button" style="--round-button-active-color: #ff6d00" data-translate-value="0">
+            <span class="avatar">
+              <img src="imgs/icons/logout.svg" alt="user avatar" />
+            </span>
+          </button>
+        </li>
+      </ul>
+      <div class="main-slider" aria-hidden="true">
+        <div class="main-slider-circle">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  // resources in description
+  const mainTabs = document.querySelector(".main-tabs");
+  const mainSliderCircle = document.querySelector(".main-slider-circle");
+  const roundButtons = document.querySelectorAll(".round-button");
+
+  const colors = {
+    blue: {
+      50: {
+        value: "#e3f2fd"
+      },
+      100: {
+        value: "#bbdefb"
+      }
+    },
+    green: {
+      50: {
+        value: "#e8f5e9"
+      },
+      100: {
+        value: "#c8e6c9"
+      }
+    },
+    purple: {
+      50: {
+        value: "#f3e5f5"
+      },
+      100: {
+        value: "#e1bee7"
+      }
+    },
+    orange: {
+      50: {
+        value: "#ffe0b2"
+      },
+      100: {
+        value: "#ffe0b2"
+      }
+    },
+    red: {
+      50: {
+        value: "#ffebee"
+      },
+      100: {
+        value: "#ffcdd2"
+      }
+    }
+  };
+
+  // const getColor = (color, variant) => {
+  //   return colors[color][variant].value;
+  // };
+
+  const handleActiveTab = (tabs, event, className) => {
+    tabs.forEach((tab) => {
+      tab.classList.remove(className);
+    });
+
+    if (!event.target.classList.contains(className)) {
+      event.target.classList.add(className);
+    }
+  };
+
+  mainTabs.addEventListener("click", (event) => {
+    const root = document.documentElement;
+    const targetColor = event.target.dataset.color;
+    const targetTranslateValue = event.target.dataset.translateValue;
+
+    if (event.target.classList.contains("round-button")) {
+      mainSliderCircle.classList.remove("animate-jello");
+      void mainSliderCircle.offsetWidth;
+      mainSliderCircle.classList.add("animate-jello");
+
+      root.style.setProperty("--translate-main-slider", targetTranslateValue);
+      // root.style.setProperty("--main-slider-color", getColor(targetColor, 50));
+      // root.style.setProperty("--background-color", getColor(targetColor, 100));
+
+      handleActiveTab(roundButtons, event, "active");
+
+      if (!event.target.classList.contains("user-btn")) {
+        root.style.setProperty("--filters-container-height", "0");
+        root.style.setProperty("--filters-wrapper-opacity", "0");
+      } else {
+        root.style.setProperty("--filters-container-height", "3.8rem");
+        root.style.setProperty("--filters-wrapper-opacity", "1");
+      }
+    }
+  });
+
+  const filterTabs = document.querySelector(".filter-tabs");
+  const filterButtons = document.querySelectorAll(".filter-button");
+
+  filterTabs.addEventListener("click", (event) => {
+    const root = document.documentElement;
+    const targetTranslateValue = event.target.dataset.translateValue;
+
+    if (event.target.classList.contains("filter-button")) {
+      root.style.setProperty("--translate-filters-slider", targetTranslateValue);
+      handleActiveTab(filterButtons, event, "filter-active");
+    }
+  });
+</script>

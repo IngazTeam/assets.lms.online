@@ -1,0 +1,83 @@
+
+"< Ingaz lms Info >"
+
+
+=================================================================
+# domain : https://byanlms.xyz
+=================================================================
+
+
+=================================================================
+# github details
+
+  - git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+  - git Token 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
+
+  - git clone https://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@github.com/ingaz-lms-project/ingazlms.git
+
+  - # commands
+     1- git add .
+     2- git commit -m "write your commit"
+     3- git pull https://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@github.com/ingaz-lms-project/ingazlms.git  ==> /** USE **/
+     4- git push https://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@github.com/ingaz-lms-project/ingazlms.git
+   
+   - # github login
+      - email : lmsingaz@gmail.com
+      - password : ingaZ1#9010
+=================================================================
+
+
+=================================================================
+# Gmail
+
+ email : lmsingaz@gmail.com
+ password : ingaZ1#9
+=================================================================
+
+
+=================================================================
+# Server info
+
+Domain: byanlms.xyz
+| Ip: 206.189.61.154 (n)
+| UserName: byanlms
+| PassWord: &4qN.v=GOI(3
+=================================================================
+
+
+=================================================================
+ # database 
+
+     DB_URL = https://byanlms.xyz:2083/cpsess6643421521/3rdparty/phpMyAdmin/db_structure.php?server=1&db=byanlms_ingazlms
+     DB_DATABASE = byanlms_ingazlms
+     DB_USERNAME = byanlms_ingazlms
+     DB_PASSWORD = Yi*F1v)MCc7T
+=================================================================
+
+
+=================================================================
+# Ftp
+
+  FTP Username: ingazlms@byanlms.xyz
+  FTP server: ftp.byanlms.xyz
+  FTP port:  21
+  password : Xat#GmdSW@&W
+=================================================================
+
+
+=================================================================
+# Ssh
+  
+=================================================================
+
+
+
+
+
+
+
+
+
+
+
+
