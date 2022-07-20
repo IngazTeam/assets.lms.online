@@ -560,4 +560,21 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   width: 10px;
 }
 
+.row_content:not(:last-child) .add_button,
+.second_row_content:not(:last-child) .add_button,
+.third_row_content:not(:last-child) .add_button,
+.fourth_row_content:not(:last-child) .add_button {
+  display: none !important;
+}
+.row_content:not(:last-child) .remove_row,
+.second_row_content:not(:last-child) .remove_row,
+.third_row_content:not(:last-child) .remove_row,
+.fourth_row_content:not(:last-child) .remove_row {
+  margin-left: 29% !important;
+}
+
+.first_row .remove_row {
+  margin-left: 29% !important;
+}
+
 /*# sourceMappingURL=exams.css.map */

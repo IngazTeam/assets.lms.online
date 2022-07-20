@@ -342,9 +342,9 @@
                                                                         alt="">
                                                                     <p>أسئلة صح و خطأ</p>
                                                                 </div>
-                                                                <div class="question_box_body pb-2">
+                                                                <div class="question_box_body pb-2 " id="question_type_1">
                                                                     <!-- ********************* -->
-                                                                    <div class="row">
+                                                                    <div class="row first_row">
                                                                         <div class="col-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
@@ -436,13 +436,13 @@
                                                                                 </div>
                                                                                 <div class="col-6">
                                                                                     <div class="d-flex action_buttons w-100">
-                                                                                        <a href="javascript:;" onclick="RemoveQuestion(this)" class="box_action"
+                                                                                        <a href="javascript:;" onclick="RemoveQuestion(this,'row_content')" class="box_action"
                                                                                             data-toggle="tooltip"
                                                                                             title="اغلاق ">
                                                                                             <img src="imgs/vuesax-broken-add.svg"
                                                                                                 alt="" width="13" />
                                                                                         </a>
-                                                                                        <a href="javascript:;" onclick="AppendQuestion(this)"
+                                                                                        <a href="javascript:;"  onclick="AppendQuestion('question_type_1','row_content')"
                                                                                             class="box_action add_button"
                                                                                             data-toggle="tooltip"
                                                                                             title="اضافة">
@@ -458,16 +458,16 @@
                                                             </div>
                                                             <!-- ****************End frist type of questions************* -->
                                                             <!-- ****************start second type of questions ************-->
-                                                            <div class="question_box mt-3 pb-2">
+                                                            <div class="question_box mt-3 pb-2" >
                                                                 <div
                                                                     class="question_title d-flex justify-content-center align-items-center">
                                                                     <img src="imgs/vuesax-broken-task.svg"
                                                                         alt="">
                                                                     <p> أسئلة اختيار متعدد </p>
                                                                 </div>
-                                                                <div class="question_box_body multi_choose">
+                                                                <div class="question_box_body multi_choose" id="question_type_2">
                                                                     <!-- ********************* -->
-                                                                    <div class="row">
+                                                                    <div class="row first_row">
                                                                         <div class="col-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
@@ -491,7 +491,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-3 d-flex justify-content-end mt-2">
-                                                                            <a href="" class="box_action"
+                                                                            <a href="" class="box_action remove_row"
                                                                             data-toggle="tooltip"
                                                                             title="اغلاق ">
                                                                             <img src="imgs/vuesax-broken-add.svg"
@@ -562,7 +562,7 @@
                                                                         
                                                                     </div>
                                                                     <!-- ********************* -->
-                                                                    <div class="row">
+                                                                    <div class="row second_row_content" id="second_row_content">
                                                                         <div class="col-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
@@ -586,14 +586,14 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-3 mt-2">
-                                                                            <div class="d-flex justify-content-end  w-100">
-                                                                                <a href="" class="box_action"
+                                                                            <div class="d-flex justify-content-end action_buttons w-100">
+                                                                                <a href="javascript:;" class="box_action remove_row" onclick="RemoveQuestion(this,'second_row_content')"
                                                                                     data-toggle="tooltip"
                                                                                     title="اغلاق ">
                                                                                     <img src="imgs/vuesax-broken-add.svg"
                                                                                         alt="" width="13" />
                                                                                 </a>
-                                                                                <a href=""
+                                                                                <a href="javascript:;" onclick="AppendQuestion('question_type_2','second_row_content')"
                                                                                     class="box_action add_button"
                                                                                     data-toggle="tooltip"
                                                                                     title="اغلاق ">
@@ -676,9 +676,9 @@
                                                                         alt="">
                                                                     <p>   عمليات حسابية </p>
                                                                 </div>
-                                                                <div class="question_box_body multi_choose">
+                                                                <div class="question_box_body multi_choose " id="question_type_3">
                                                                     <!-- ********************* -->
-                                                                    <div class="row my-1">
+                                                                    <div class="row my-1 first_row">
                                                                         <div class="col-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
@@ -700,7 +700,7 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-3 d-flex justify-content-end mt-2">
-                                                                            <a href="" class="box_action"
+                                                                            <a href="" class="box_action remove_row"
                                                                             data-toggle="tooltip"
                                                                             title="اغلاق ">
                                                                             <img src="imgs/vuesax-broken-add.svg"
@@ -710,7 +710,7 @@
 
                                                                     </div>
                                                                     <!-- ********************* -->
-                                                                    <div class="row my-1">
+                                                                    <div class="row my-1  third_row_content" id="third_row_content">
                                                                         <div class="col-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
@@ -732,14 +732,14 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-3 mt-2">
-                                                                            <div class="d-flex justify-content-end  w-100">
-                                                                                <a href="" class="box_action"
+                                                                            <div class="d-flex justify-content-end action_buttons w-100">
+                                                                                <a href="javascript:;" class="box_action remove_row" onclick="RemoveQuestion(this,'third_row_content')"
                                                                                     data-toggle="tooltip"
                                                                                     title="اغلاق ">
                                                                                     <img src="imgs/vuesax-broken-add.svg"
                                                                                         alt="" width="13" />
                                                                                 </a>
-                                                                                <a href=""
+                                                                                <a href="javascript:;" onclick="AppendQuestion('question_type_3','third_row_content')"
                                                                                     class="box_action add_button"
                                                                                     data-toggle="tooltip"
                                                                                     title="اغلاق ">
@@ -760,9 +760,9 @@
                                                                         alt="" width="10" height="13">
                                                                     <p>  سؤال مقالي </p>
                                                                 </div>
-                                                                <div class="question_box_body multi_choose">
+                                                                <div class="question_box_body multi_choose " id="question_type_4">
                                                                     <!-- ********************* -->
-                                                                    <div class="row my-1">
+                                                                    <div class="row my-1 first_row">
                                                                         <div class="col-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
@@ -779,17 +779,16 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-3 d-flex justify-content-end mt-2">
-                                                                            <a href="" class="box_action"
+                                                                            <a href="" class="box_action remove_row"
                                                                             data-toggle="tooltip"
                                                                             title="اغلاق ">
                                                                             <img src="imgs/vuesax-broken-add.svg"
                                                                                 alt="" width="13" />
                                                                             </a>
                                                                         </div>
-
                                                                     </div>
                                                                     <!-- ********************* -->
-                                                                    <div class="row my-1">
+                                                                    <div class="row my-1 fourth_row_content" id="fourth_row_content">
                                                                         <div class="col-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
@@ -806,14 +805,14 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-3 mt-2">
-                                                                            <div class="d-flex justify-content-end  w-100">
-                                                                                <a href="" class="box_action"
+                                                                            <div class="d-flex justify-content-end action_buttons w-100">
+                                                                                <a href="javascript:;" class="box_action remove_row " onclick="RemoveQuestion(this,'fourth_row_content')"
                                                                                     data-toggle="tooltip"
                                                                                     title="اغلاق ">
                                                                                     <img src="imgs/vuesax-broken-add.svg"
                                                                                         alt="" width="13" />
                                                                                 </a>
-                                                                                <a href=""
+                                                                                <a href="javascript:;" onclick="AppendQuestion('question_type_4','fourth_row_content')"
                                                                                     class="box_action add_button"
                                                                                     data-toggle="tooltip"
                                                                                     title="اغلاق ">

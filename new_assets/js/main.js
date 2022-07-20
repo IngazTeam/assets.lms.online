@@ -16,18 +16,19 @@ $(function(){
 
 // Append Question
 
-function AppendQuestion(that){
-    console.log('test click');
-    $(that).parent().closest('.question_box_body').append(`<div class="row row_content">` + $(that).closest('.row_content').html() +`</div>`);
-    $(that).remove()
+// function AppendQuestion(that){
+//     console.log('test click');
+//     $(that).parent().closest('.question_box_body').append(`<div class="row row_content">` + $(that).closest('.row_content').html() +`</div>`);
+//     $(that).remove()
+// }
+function AppendQuestion(parentId,childId){
+    $('#'+childId).clone().appendTo($('#'+parentId));
 }
-
 // Remove Question
-
-function RemoveQuestion(that){
-    $(that).closest('.row_content').prev().addClass('ttttte');
-    console.log($(that).siblings().html());
-    $(that).closest('.row_content').prev().find('.action_buttons').append($(that).siblings().html())
-    $(that).closest('.row_content').remove();
+function RemoveQuestion(that,row_content){
+    // $(that).closest('.'+ row_content).prev().find('.action_buttons').append($(that).siblings().html())
+    $(that).closest('.'+ row_content).remove();
     
 }
+
+

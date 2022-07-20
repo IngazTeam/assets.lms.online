@@ -386,9 +386,7 @@ input , textarea,select{
             height: 24px;
             display: flex;
             align-items: center;
-            img {
-                // width: 15px;
-            }
+            
         }
         
     }
@@ -673,4 +671,19 @@ input[type='date']{
     }
 }
 
-
+.row_content:not(:last-child) ,
+.second_row_content:not(:last-child) ,
+.third_row_content:not(:last-child) ,
+.fourth_row_content:not(:last-child) {
+    .add_button {
+        display: none !important;
+    }
+    .remove_row{
+        margin-left: 29% !important; 
+     }
+}
+.first_row{
+    .remove_row{
+        margin-left: 29% !important; 
+     }
+}
