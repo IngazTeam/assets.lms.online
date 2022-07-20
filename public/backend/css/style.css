@@ -41,7 +41,7 @@ Author E-mail: support@spondonit.com
 body.admin {
     line-height: 24px;
     font-size: 13px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 400;
     color: #828bb2;
     /* background: url(../img/body-bg.jpg) no-repeat center; */
@@ -1848,7 +1848,7 @@ table.dataTable tbody td .form-check-input {
     color: #58548e;
     background: #ffffff;
     border: 1px solid #c738d8;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 12px;
     text-align: center;
 }
@@ -2132,7 +2132,7 @@ table.dataTable tbody td .form-check-input {
     align-items: center;
     color: #58548e;
     letter-spacing: 1px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 12px;
     font-weight: 500;
     line-height: 25px;
@@ -4793,7 +4793,7 @@ table.dataTable thead .sorting {
 
 body.client {
     font-size: 14px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 400;
     color: #828bb2;
     line-height: 26px;
@@ -6389,7 +6389,7 @@ body.client.color {
     padding: 5% 10%;
     color: #58548e;
     letter-spacing: 1px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-size: 12px;
     outline: none !important;
     text-align: center;

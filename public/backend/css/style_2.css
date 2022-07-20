@@ -61,7 +61,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     padding: 0;
     margin: 0;
     font-size: 14px;
@@ -199,9 +199,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 600;
-    line-height: 1.2;
+    /* line-height: 1.2; */
 }
 
 li {
@@ -219,7 +219,7 @@ p {
     font-size: 14px;
     margin-bottom: 0px;
     color: #828BB2;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 300;
 }
 
@@ -763,7 +763,7 @@ table.dataTable > tbody > tr.child span.dtr-title {
     font-weight: 500;
     line-height: 16px;
     margin-bottom: 22px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 @media (max-width: 991px) {
@@ -4210,7 +4210,7 @@ table.dataTable {
 }
 
 .main-title h3 {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
@@ -4218,7 +4218,7 @@ table.dataTable {
 }
 
 .main-title2 h4 {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -6207,7 +6207,7 @@ tspan {
     color: #fff !important;
     font-size: 12px;
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 .morris-hover.morris-default-style .morris-hover-row-label {
@@ -6217,11 +6217,11 @@ tspan {
     font-weight: 300;
     color: #7e7172;
     line-height: 12px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 .morris-hover.morris-default-style {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     font-size: 12px;
     text-align: center;
     background: #000 !important;
@@ -6241,7 +6241,7 @@ tspan {
     font-weight: 300;
     color: #7e7172;
     line-height: 12px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 .single_tilt {
@@ -10035,7 +10035,7 @@ html[dir="rtl"] .error-message {
     color: #707DB7;
     font-weight: 500;
     margin-bottom: 0;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     text-transform: uppercase;
 }
 
