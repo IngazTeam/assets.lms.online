@@ -430,6 +430,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .med-new-content .left-sidebar .link-box-top .box span {
@@ -456,6 +457,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .med-new-content .left-sidebar .link-box-bottom .box span {
