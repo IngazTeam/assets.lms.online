@@ -70,8 +70,6 @@ body {
     top: 70px;
     right: -255px;
     width: 250px;
-    height: 575px;
-    overflow: scroll;
   }
   .med-new-content #rightSidebar.active {
     position: fixed;
@@ -79,6 +77,8 @@ body {
     right: 5px;
     z-index: 9999;
     width: 250px;
+    height: 575px;
+    overflow: scroll;
   }
   .med-new-content #rightSidebar.active::before {
     content: '';
