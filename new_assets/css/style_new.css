@@ -90,7 +90,7 @@ body {
   .med-new-content #rightSidebar.active::-webkit-scrollbar-thumb {
     border-radius: 100px;
     background-clip: content-box;
-    background-color: #3b459c;
+    background-color: #29bcb0;
   }
   .med-new-content #rightSidebar.active::before {
     content: '';
