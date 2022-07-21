@@ -10,7 +10,7 @@ function test_collapse(that) {
 
 // Tooltip Toggle
 
-$(function(){
+$(function () {
     $("[data-toggle=tooltip]").tooltip();
 })
 
@@ -21,14 +21,16 @@ $(function(){
 //     $(that).parent().closest('.question_box_body').append(`<div class="row row_content">` + $(that).closest('.row_content').html() +`</div>`);
 //     $(that).remove()
 // }
-function AppendQuestion(parentId,childId){
-    $('#'+childId).clone().appendTo($('#'+parentId));
+function AppendQuestion(parentId, childId) {
+    $('#' + childId).clone().appendTo($('#' + parentId));
 }
 // Remove Question
-function RemoveQuestion(that,row_content){
+function RemoveQuestion(that, row_content) {
     // $(that).closest('.'+ row_content).prev().find('.action_buttons').append($(that).siblings().html())
-    $(that).closest('.'+ row_content).remove();
-    
+    $(that).closest('.' + row_content).remove();
+
 }
 
-
+$('.popup_input').click(function(){
+    $(this).siblings().click();
+})

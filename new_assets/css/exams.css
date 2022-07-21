@@ -25,7 +25,7 @@
   outline: none !important;
 }
 
-.button_style, .tab_part .main_collapese_card .inner_collapese_card .close_button, .tab_part .main_collapese_card .inner_big_cart .close_button, .tab_part .main_collapese_card .inner_collapese_card .confirm_button, .tab_part .main_collapese_card .inner_big_cart .confirm_button {
+.button_style, #add_content .modal-content .modal-footer button, .tab_part .main_collapese_card .inner_collapese_card .close_button, .tab_part .main_collapese_card .inner_big_cart .close_button, .tab_part .main_collapese_card .inner_collapese_card .confirm_button, .tab_part .main_collapese_card .inner_big_cart .confirm_button {
   border-radius: 31px;
   padding: 5px 33px;
   border: 0px solid transparent;
@@ -575,6 +575,90 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
 
 .first_row .remove_row {
   margin-left: 29% !important;
+}
+
+#add_content .modal-content {
+  background-color: #F2F3F7;
+  border-radius: 35px;
+  padding: 0 15px;
+  max-width: 340px !important;
+  margin: auto !important;
+  border: 0px solid transparent !important;
+}
+#add_content .modal-content .modal-header {
+  border-bottom-color: #70707010;
+}
+#add_content .modal-content .modal-header .modal-title {
+  position: relative;
+  font-size: 16px;
+  color: #525F77;
+}
+#add_content .modal-content .modal-header .modal-title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #29BCB0;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#add_content .modal-content .modal-header .close-btn {
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+#add_content .modal-content .modal-footer {
+  border-top-color: transparent !important;
+  align-items: center;
+  justify-content: center;
+}
+#add_content .modal-content .modal-footer button {
+  background-color: #29BCB0;
+  font-size: 12px;
+}
+#add_content input {
+  border-radius: 31px;
+  border: 0.1px solid #F2F2F2;
+  padding: 5px 15px;
+  color: #9F9F9F;
+  font-weight: 700;
+  font-size: 14px;
+  appearance: none;
+  height: 33px;
+}
+#add_content .box_action {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 13px 6px;
+  margin-left: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #525C72;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 120px;
+}
+#add_content .box_action span {
+  padding-right: 10px;
+}
+#add_content .box_action.youtube {
+  background-color: #29BCB0 !important;
+  padding-right: 15px;
+  color: #fff;
+}
+#add_content .frist_section p {
+  border-bottom: 1px solid #70707010;
+  font-size: 9px;
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+  padding-bottom: 5px;
+  color: #525F77;
 }
 
 /*# sourceMappingURL=exams.css.map */

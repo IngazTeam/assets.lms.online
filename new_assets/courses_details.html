@@ -105,7 +105,7 @@
                                         aria-controls="certifications" aria-selected="false"> الشهادة</button>
                                 </li>
                             </ul>
-                            <button class="add_content d-flex justify-content-start">
+                            <button class="add_content d-flex justify-content-start"  data-bs-toggle="modal" data-bs-target="#add_content">
                                 <div class="img_box">
                                     <img src="imgs/message-add.svg" alt="" width="" />
                                 </div>
@@ -849,6 +849,99 @@
                     <div id="leftSidebar"></div>
                 </div>
             </div>
+            <!--****************** start exams popup****************-->
+            <div class="modal fade" id="add_content" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center justify-content-between">
+                            <h5 class="modal-title" id="exampleModalLabel"> إضافة محتوى </h5>
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close"><img src="imgs/icons/add.png" alt=""></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="add_section">
+                                <a href="" class="box_action">
+                                    <img src="imgs/add.svg" alt="" width="">
+                                    <span>  إضافة فصل</span>
+                                </a>
+                            </div>
+                            <div class="add_section_body">
+                               <div class="frist_section">
+                                <p>إضافة درس</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="javascript:;" class="box_action youtube">
+                                            <img src="imgs/youtube.svg" alt="" width="">
+                                            <span>  إضافة فصل</span>
+                                        </a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="javascript:;" class="box_action popup_input">
+                                            <img src="imgs/add.svg" alt="" width="">
+                                            <span>  إضافة فصل</span>
+                                        </a>
+                                        <input class="d-none" type="file" name="" id="">
+                                    </div>
+                                    <div class="col-6 mt-2">
+                                        <a href="javascript:;" class="box_action popup_input">
+                                            <img src="imgs/add.svg" alt="" width="">
+                                            <span>  إضافة فصل</span>
+                                        </a>
+                                        <input class="d-none" type="file" name="" id="">
+                                    </div>
+                                    <div class="col-6 mt-2">
+                                        <a href="javascript:;" class="box_action popup_input">
+                                            <img src="imgs/add.svg" alt="" width="">
+                                            <span>  إضافة فصل</span>
+                                        </a>
+                                        <input class="d-none" type="file" name="" id="">
+                                    </div>
+                                    <div class="col-6 mt-2">
+                                        <a href="javascript:;" class="box_action popup_input">
+                                            <img src="imgs/add.svg" alt="" width="">
+                                            <span>  إضافة فصل</span>
+                                        </a>
+                                        <input class="d-none" type="file" name="" id="">
+                                    </div>
+                                    <div class="col-6 mt-2">
+                                        <a href="javascript:;" class="box_action popup_input">
+                                            <img src="imgs/vuesax-broken-monitor-recorder.svg" alt="" width="">
+                                            <span>  إضافة فصل</span>
+                                        </a>
+                                        <input class="d-none" type="file" name="" id="">
+                                    </div>
+                                    
+                                </div>
+                               </div>
+                               <div class="frist_section">
+                                <p> إضافة إختبار</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="javascript:;" class="box_action popup_input">
+                                            <img src="imgs/add.svg" alt="" width="">
+                                            <span>  إضافة فصل</span>
+                                        </a>
+                                        <input class="d-none" type="file" name="" id="">
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="javascript:;" class="box_action popup_input">
+                                            <img src="imgs/vuesax-broken-monitor-recorder.svg" alt="" width="">
+                                            <span>  إضافة فصل</span>
+                                        </a>
+                                        <input class="d-none" type="file" name="" id="">
+                                    </div>
+                                    
+                                </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button>تأكيد</button>
+                            <button type="button" class="submit-btn btn-danger" data-bs-dismiss="modal" style="background-color:#dc3545;">إغلاق</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ******************end exams popup***************** -->
         </div>
     </div>
     <!-- javascript links  -->

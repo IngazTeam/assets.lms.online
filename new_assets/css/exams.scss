@@ -687,3 +687,99 @@ input[type='date']{
         margin-left: 29% !important; 
      }
 }
+
+#add_content {
+    .modal-content {
+        background-color: #F2F3F7;
+        border-radius: 35px;
+        padding: 0 15px;
+        max-width: 340px !important;
+        margin: auto !important;
+        border: 0px solid transparent !important;
+
+        .modal-header {
+            border-bottom-color: #70707010;
+
+            .modal-title {
+                position: relative;
+                font-size: 16px;
+                color: #525F77;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $circle_color;
+                    right: -15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .close-btn {
+                background-color: #fff;
+                border-radius: 50%;
+                border: none;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .modal-footer {
+            border-top-color: transparent !important;
+            align-items: center;
+            justify-content: center;
+            button{
+                @extend .button_style;
+                background-color:$circle_color;
+                font-size: 12px
+            }
+        }
+    }
+    input{
+        border-radius: 31px;
+        border: 0.1px solid #F2F2F2;
+        padding: 5px 15px;
+        color: $gray_color;
+        font-weight: 700;
+        font-size: 14px;
+        appearance: none;
+        height: 33px;
+    }
+    .box_action{
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 13px 6px;
+        margin-left: 5px;
+        font-size: 11px;
+        font-weight: 700;
+        color: #525C72;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 120px;
+        span{
+            padding-right: 10px;
+        }
+        &.youtube{
+            background-color: $circle_color !important;
+            padding-right: 15px;
+            color:#fff;
+        }
+    }
+    .frist_section{
+        p{
+            border-bottom: 1px solid #70707010;
+            font-size: 9px;
+            margin-top: 10px;
+            margin-bottom: 10px !important;
+            padding-bottom:5px;
+            color: #525F77;
+        }
+    }
+
+}
+
