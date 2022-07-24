@@ -68,17 +68,23 @@
             <div class="row">
                 <!-- right sidebar area  -->
                 <!-- ========================================================================== -->
-                <div class="col-2 pe-0">
+                <div class="col-2 pe-0 ">
                     <div id="rightSidebar"></div>
                 </div>
                 <!-- main content area  -->
                 <!-- ========================================================================== -->
-                <div class="col-7">
+                <div class="col-lg-7">
                     <div class="row mt-3">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 d-flex justify-content-between">
                             <div class="section_title">
                                 الكورسات
                             </div>
+                            <button class="add_content_button d-flex d-md-none justify-content-start"  data-bs-toggle="modal" data-bs-target="#add_content">
+                                <div class="img_box">
+                                    <img src="imgs/message-add.svg" alt="" width="" />
+                                </div>
+                                <span>إضافة محتوى</span>
+                            </button>
                         </div>
                     </div>
                     <div class="tab_part">
@@ -105,7 +111,7 @@
                                         aria-controls="certifications" aria-selected="false"> الشهادة</button>
                                 </li>
                             </ul>
-                            <button class="add_content d-flex justify-content-start"  data-bs-toggle="modal" data-bs-target="#add_content">
+                            <button class="add_content_button d-none d-md-flex justify-content-start"  data-bs-toggle="modal" data-bs-target="#add_content">
                                 <div class="img_box">
                                     <img src="imgs/message-add.svg" alt="" width="" />
                                 </div>
@@ -135,14 +141,14 @@
                                                 </div>
                                             </div>
                                             <div class="d-flex">
-                                                <a href="" class="box_action">
+                                                <a href="" class="box_action d-none d-md-flex">
                                                     <img src="imgs/Line 56.svg" alt="" width="" />
                                                 </a>
-                                                <a href="" class="box_action">
+                                                <a href="" class="box_action d-none d-md-flex">
                                                     <img src="imgs/add.svg" alt="" width="" />
                                                     <span>إضافة درس</span>
                                                 </a>
-                                                <a href="" class="box_action">
+                                                <a href="" class="box_action d-none d-md-flex">
                                                     <img src="imgs/add.svg" alt="" width="" />
                                                     <span> إضافة إختبار</span>
                                                 </a>
@@ -188,20 +194,20 @@
                                                     </button>
                                                     <div class="collapse inner_collapese_card  show"
                                                         id="frist_inner_collapese">
-                                                        <div class="d-flex justify-content-between">
+                                                        <div class="d-flex justify-content-between flex-wrap">
                                                             <div class="right_part">
                                                                 <div class="row">
-                                                                    <div class="input_box col-6">
+                                                                    <div class="input_box col-sm-6">
                                                                         <label for="">اسم الدرس</label>
                                                                         <input type="text"
                                                                             placeholder="  الدرس الثاني : مبادئ رقم 2">
                                                                     </div>
-                                                                    <div class="input_box col-6">
+                                                                    <div class="input_box col-sm-6">
                                                                         <label for=""> لينك الدرس</label>
                                                                         <input type="text"
                                                                             placeholder=" https://ui8.net/hello-picko/products/traver---traveling-apps">
                                                                     </div>
-                                                                    <div class="input_box col-6">
+                                                                    <div class="input_box col-sm-6">
                                                                         <label for=""> وقت الظهور</label>
                                                                         <div class="d-flex align-items-center">
                                                                             <div>
@@ -232,7 +238,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div
-                                                                        class="input_box col-6 d-flex justify-content-between align-items-center">
+                                                                        class="input_box col-sm-6 d-flex justify-content-between align-items-center flex-wrap">
                                                                         <div class="small_input">
                                                                             <label for=""> المدة بالدقائق</label>
                                                                             <input type="text" placeholder=" 85:45 ">
@@ -284,12 +290,12 @@
                                                     </div>
                                                     <div class="card_content">
                                                         <div class="row">
-                                                            <div class="input_box col-3">
+                                                            <div class="input_box col-md-3 col-sm-6">
                                                                 <label for=""> عنوان الإختبار</label>
                                                                 <input class="w-100" type="text"
                                                                     placeholder="  الدرس الثاني : مبادئ رقم 2">
                                                             </div>
-                                                            <div class="col-3 two_inputs d-flex justify-content-btween">
+                                                            <div class="col-md-3 col-12 two_inputs d-flex justify-content-btween">
                                                                 <div class="input_box">
                                                                     <label for="">أقل نسبة مئوية</label>
                                                                     <input class="w-100" type="text" placeholder="20 %">
@@ -299,24 +305,24 @@
                                                                     <input class="w-100" type="text" placeholder="60">
                                                                 </div>
                                                             </div>
-                                                            <div class="input_box col-3">
+                                                            <div class="input_box col-md-3 col-6">
                                                                 <label for=""> نوع الوقت</label>
                                                                 <select class="w-100" name="" id="">
                                                                     <option value="">تحديد وقت لكل سؤال</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="input_box col-3">
+                                                            <div class="input_box col-md-3 col-6">
                                                                 <label for="">سماحية الإختبار</label>
                                                                 <select class="w-100" name="" id="">
                                                                     <option value=""> اكمال الحضور عند انهاء الاجابات
                                                                     </option>
                                                                 </select>
                                                             </div>
-                                                            <div class="input_box col-3 mt-2">
+                                                            <div class="input_box col-md-3 col-6 mt-2">
                                                                 <label for=""> وقت الظهور</label>
                                                                 <input class="w-100" type="date" placeholder="60">
                                                             </div>
-                                                            <div class="input_box col-4 mt-2">
+                                                            <div class="input_box col-md-4 col-6 mt-2">
                                                                 <label for=""> تعليمات لدخول الاختبار</label>
                                                                 <input class="w-100" type="text" placeholder="60">
                                                             </div>
@@ -326,7 +332,7 @@
                                                             <div class="header d-flex justify-content-between">
                                                                 <div class="titlee">قسم الأسئلة</div>
                                                                 <button
-                                                                    class="add_content d-flex justify-content-start">
+                                                                    class="add_content_button d-flex justify-content-start">
                                                                     <div class="img_box">
                                                                         <img src="imgs/message-add.svg" alt=""
                                                                             width="" />
@@ -345,7 +351,7 @@
                                                                 <div class="question_box_body pb-2 " id="question_type_1">
                                                                     <!-- ********************* -->
                                                                     <div class="row first_row">
-                                                                        <div class="col-6 d-flex align-items-center">
+                                                                        <div class="col-md-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
                                                                                 <label for=""> اسم السؤال</label>
@@ -353,17 +359,16 @@
                                                                                     placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-2">
+                                                                        <div class="col-md-2 col-3">
                                                                             <div class="input_box">
                                                                                 <label for=""> الدرجة </label>
                                                                                 <input class="degree_input" type="text"
                                                                                     placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div
-                                                                            class="col-4 d-flex justify-content-around align-items-center">
+                                                                        <div class="col-md-4 col-9 d-flex justify-content-around align-items-center">
                                                                             <div class="row w-100">
-                                                                                <div class="col-3">
+                                                                                <div class="col-lg-3 col-4">
                                                                                     <div class="form-check">
                                                                                         <label class="form-check-label"
                                                                                             for="flexRadioDefault3">صح</label>
@@ -373,7 +378,7 @@
                                                                                             id="flexRadioDefault3">
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-3">
+                                                                                <div class="col-lg-3 col-4">
                                                                                     <div class="form-check">
                                                                                         <label class="form-check-label"
                                                                                             for="flexRadioDefault4">خطأ</label>
@@ -383,7 +388,7 @@
                                                                                             id="flexRadioDefault4">
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-6">
+                                                                                <div class="col-lg-6 col-4">
                                                                                     <a href="" class="box_action"
                                                                                         data-toggle="tooltip"
                                                                                         title="اغلاق ">
@@ -396,7 +401,7 @@
                                                                     </div>
                                                                     <!-- ********************* -->
                                                                     <div class="row row_content" id="row_content">
-                                                                        <div class="col-6 d-flex align-items-center">
+                                                                        <div class="col-md-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
                                                                                 <label for=""> اسم السؤال</label>
@@ -404,7 +409,7 @@
                                                                                     placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-2">
+                                                                        <div class="col-md-2 col-3">
                                                                             <div class="input_box">
                                                                                 <label for=""> الدرجة </label>
                                                                                 <input class="degree_input" type="text"
@@ -412,9 +417,9 @@
                                                                             </div>
                                                                         </div>
                                                                         <div
-                                                                            class="col-4 d-flex justify-content-around align-items-center">
+                                                                            class="col-md-4 col-9 d-flex justify-content-around align-items-center">
                                                                             <div class="row w-100">
-                                                                                <div class="col-3">
+                                                                                <div class="col-lg-3 col-4">
                                                                                     <div class="form-check">
                                                                                         <label class="form-check-label"
                                                                                             for="flexRadioDefault3">صح</label>
@@ -424,7 +429,7 @@
                                                                                             id="flexRadioDefault3">
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-3">
+                                                                                <div class="col-lg-3 col-4">
                                                                                     <div class="form-check">
                                                                                         <label class="form-check-label"
                                                                                             for="flexRadioDefault4">خطأ</label>
@@ -434,7 +439,7 @@
                                                                                             id="flexRadioDefault4">
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-6">
+                                                                                <div class="col-lg-6 col-4 mobile_right_padding">
                                                                                     <div class="d-flex action_buttons w-100">
                                                                                         <a href="javascript:;" onclick="RemoveQuestion(this,'row_content')" class="box_action"
                                                                                             data-toggle="tooltip"
@@ -468,7 +473,7 @@
                                                                 <div class="question_box_body multi_choose" id="question_type_2">
                                                                     <!-- ********************* -->
                                                                     <div class="row first_row">
-                                                                        <div class="col-6 d-flex align-items-center">
+                                                                        <div class="col-lg-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
                                                                                 <label for=""> اسم السؤال</label>
@@ -476,7 +481,7 @@
                                                                                     placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                        <div class="col-lg-3 col-8 d-flex justify-content-btween">
                                                                             <div class="input_box w-50">
                                                                                 <label for=""> الدرجة </label>
                                                                                 <input class="degree_input" type="text"
@@ -490,7 +495,7 @@
                                                                                 </select>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-end mt-2">
+                                                                        <div class="col-lg-3 col-4 d-flex justify-content-end mt-2">
                                                                             <a href="" class="box_action remove_row"
                                                                             data-toggle="tooltip"
                                                                             title="اغلاق ">
@@ -499,7 +504,7 @@
                                                                             </a>
                                                                         </div>
 
-                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                        <div class="col-lg-3 col-6 d-flex justify-content-start align-items-center">
                                                                             <div class="form-check mt-3">
                                                                                 <label class="form-check-label"
                                                                                     for="flexRadioDefault5"></label>
@@ -514,7 +519,7 @@
                                                                                     placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                        <div class="col-lg-3 col-6 d-flex justify-content-start align-items-center">
                                                                             <div class="form-check mt-3">
                                                                                 <label class="form-check-label"
                                                                                     for="flexRadioDefault5"></label>
@@ -529,7 +534,7 @@
                                                                                     placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                        <div class="col-lg-3 col-6 d-flex justify-content-start align-items-center">
                                                                             <div class="form-check mt-3">
                                                                                 <label class="form-check-label"
                                                                                     for="flexRadioDefault5"></label>
@@ -544,7 +549,7 @@
                                                                                     placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                        <div class="col-lg-3 col-6 d-flex justify-content-start align-items-center">
                                                                             <div class="form-check mt-3">
                                                                                 <label class="form-check-label"
                                                                                     for="flexRadioDefault5"></label>
@@ -563,7 +568,7 @@
                                                                     </div>
                                                                     <!-- ********************* -->
                                                                     <div class="row second_row_content" id="second_row_content">
-                                                                        <div class="col-6 d-flex align-items-center">
+                                                                        <div class="col-lg-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
                                                                                 <label for=""> اسم السؤال</label>
@@ -571,7 +576,7 @@
                                                                                     placeholder="هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                        <div class="col-lg-3 col-8 d-flex justify-content-btween">
                                                                             <div class="input_box w-50">
                                                                                 <label for=""> الدرجة </label>
                                                                                 <input class="degree_input" type="text"
@@ -585,7 +590,7 @@
                                                                                 </select>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 mt-2">
+                                                                        <div class="col-lg-3 col-4 mt-2">
                                                                             <div class="d-flex justify-content-end action_buttons w-100">
                                                                                 <a href="javascript:;" class="box_action remove_row" onclick="RemoveQuestion(this,'second_row_content')"
                                                                                     data-toggle="tooltip"
@@ -603,7 +608,7 @@
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                        <div class="col-lg-3 col-6  d-flex justify-content-start align-items-center">
                                                                             <div class="form-check mt-3">
                                                                                 <label class="form-check-label"
                                                                                     for="flexRadioDefault5"></label>
@@ -618,7 +623,7 @@
                                                                                     placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                        <div class="col-lg-3 col-6  d-flex justify-content-start align-items-center">
                                                                             <div class="form-check mt-3">
                                                                                 <label class="form-check-label"
                                                                                     for="flexRadioDefault5"></label>
@@ -633,7 +638,7 @@
                                                                                     placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                        <div class="col-lg-3 col-6  d-flex justify-content-start align-items-center">
                                                                             <div class="form-check mt-3">
                                                                                 <label class="form-check-label"
                                                                                     for="flexRadioDefault5"></label>
@@ -648,7 +653,7 @@
                                                                                     placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-start align-items-center">
+                                                                        <div class="col-lg-3 col-6  d-flex justify-content-start align-items-center">
                                                                             <div class="form-check mt-3">
                                                                                 <label class="form-check-label"
                                                                                     for="flexRadioDefault5"></label>
@@ -679,7 +684,7 @@
                                                                 <div class="question_box_body multi_choose " id="question_type_3">
                                                                     <!-- ********************* -->
                                                                     <div class="row my-1 first_row">
-                                                                        <div class="col-6 d-flex align-items-center">
+                                                                        <div class="col-sm-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
                                                                                 <label for=""> اسم السؤال</label>
@@ -687,7 +692,7 @@
                                                                                     placeholder="2+6+58989+20*50/1112+20-55">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                        <div class="col-sm-3 col-8 d-flex justify-content-btween">
                                                                             <div class="input_box w-50">
                                                                                 <label for=""> الدرجة </label>
                                                                                 <input class="degree_input" type="text"
@@ -699,7 +704,7 @@
                                                                                     placeholder="4">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-end mt-2">
+                                                                        <div class="col-sm-3 col-4 d-flex justify-content-end mt-2">
                                                                             <a href="" class="box_action remove_row"
                                                                             data-toggle="tooltip"
                                                                             title="اغلاق ">
@@ -711,7 +716,7 @@
                                                                     </div>
                                                                     <!-- ********************* -->
                                                                     <div class="row my-1  third_row_content" id="third_row_content">
-                                                                        <div class="col-6 d-flex align-items-center">
+                                                                        <div class="col-sm-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
                                                                                 <label for=""> اسم السؤال</label>
@@ -719,7 +724,7 @@
                                                                                     placeholder="2+6+58989+20*50/1112+20-55">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                        <div class="col-sm-3 col-8 d-flex justify-content-btween">
                                                                             <div class="input_box w-50">
                                                                                 <label for=""> الدرجة </label>
                                                                                 <input class="degree_input" type="text"
@@ -731,7 +736,7 @@
                                                                                     placeholder="4">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 mt-2">
+                                                                        <div class="col-sm-3 col-4 mt-2">
                                                                             <div class="d-flex justify-content-end action_buttons w-100">
                                                                                 <a href="javascript:;" class="box_action remove_row" onclick="RemoveQuestion(this,'third_row_content')"
                                                                                     data-toggle="tooltip"
@@ -763,7 +768,7 @@
                                                                 <div class="question_box_body multi_choose " id="question_type_4">
                                                                     <!-- ********************* -->
                                                                     <div class="row my-1 first_row">
-                                                                        <div class="col-6 d-flex align-items-center">
+                                                                        <div class="col-sm-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
                                                                                 <label for=""> اسم السؤال</label>
@@ -771,14 +776,14 @@
                                                                                     placeholder="ماهي عوامل سقوط الدولة العثمانية؟(اكتب بإيجاز)">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                        <div class="col-sm-3 col-6 d-flex justify-content-btween">
                                                                             <div class="input_box w-50">
                                                                                 <label for=""> الدرجة </label>
                                                                                 <input class="degree_input" type="text"
                                                                                     placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-end mt-2">
+                                                                        <div class="col-sm-3 col-6 d-flex justify-content-end mt-2">
                                                                             <a href="" class="box_action remove_row"
                                                                             data-toggle="tooltip"
                                                                             title="اغلاق ">
@@ -789,7 +794,7 @@
                                                                     </div>
                                                                     <!-- ********************* -->
                                                                     <div class="row my-1 fourth_row_content" id="fourth_row_content">
-                                                                        <div class="col-6 d-flex align-items-center">
+                                                                        <div class="col-sm-6 d-flex align-items-center">
                                                                             <div class="circle"></div>
                                                                             <div class="input_box frist_input">
                                                                                 <label for=""> اسم السؤال</label>
@@ -797,14 +802,14 @@
                                                                                     placeholder="ماهي عوامل سقوط الدولة العثمانية؟(اكتب بإيجاز)">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 d-flex justify-content-btween">
+                                                                        <div class="col-sm-3 col-6 d-flex justify-content-btween">
                                                                             <div class="input_box w-50">
                                                                                 <label for=""> الدرجة </label>
                                                                                 <input class="degree_input" type="text"
                                                                                     placeholder="60">
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-3 mt-2">
+                                                                        <div class="col-sm-3 col-6 mt-2">
                                                                             <div class="d-flex justify-content-end action_buttons w-100">
                                                                                 <a href="javascript:;" class="box_action remove_row " onclick="RemoveQuestion(this,'fourth_row_content')"
                                                                                     data-toggle="tooltip"
@@ -845,7 +850,7 @@
                 </div>
                 <!-- left sidebar area  -->
                 <!-- ========================================================================== -->
-                <div class="col-3 ps-0">
+                <div class="col-3 ps-0 ">
                     <div id="leftSidebar"></div>
                 </div>
             </div>
