@@ -253,9 +253,9 @@ html[dir="rtl"] .timeline a:hover i {
 .owl-card {
     position: relative;
 }
-.owl-dots {
+/* .owl-dots {
     display: none;
-}
+} */
 .owl-card .card-body {
     margin: 0 20px;
 }
