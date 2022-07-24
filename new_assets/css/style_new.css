@@ -1104,6 +1104,7 @@ body {
 .med-new-content .card-box {
   background-color: #fff;
   border-radius: 25px;
+  height: 310px;
 }
 
 .med-new-content .card-box .img-box {
