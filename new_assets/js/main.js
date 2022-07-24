@@ -30,7 +30,7 @@ function RemoveQuestion(that, row_content) {
     $(that).closest('.' + row_content).remove();
 
 }
-
+//  uploading files
 $('.popup_input').click(function(){
     $(this).siblings().click();
 })
