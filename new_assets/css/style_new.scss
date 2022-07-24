@@ -1104,7 +1104,7 @@ body {
     .card-box {
         background-color: #fff;
         border-radius: 25px;
-        height: 310px;
+        height: 325px;
 
         .img-box {
             background-color: #FFCB57;
@@ -1128,6 +1128,9 @@ body {
                     color: $secoundryColor;
                 }
             }
+        }
+        .text-box{
+            flex: 1;
         }
 
         .course-name {

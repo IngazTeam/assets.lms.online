@@ -1104,7 +1104,7 @@ body {
 .med-new-content .card-box {
   background-color: #fff;
   border-radius: 25px;
-  height: 310px;
+  height: 325px;
 }
 
 .med-new-content .card-box .img-box {
@@ -1131,6 +1131,12 @@ body {
   font-size: 14px;
   font-weight: bold;
   color: #3b459c;
+}
+
+.med-new-content .card-box .text-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .med-new-content .card-box .course-name {
