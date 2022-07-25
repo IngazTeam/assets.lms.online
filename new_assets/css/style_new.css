@@ -405,12 +405,12 @@ body {
   content: "";
   position: absolute;
   width: 60px;
-  height: 100%;
+  height: 125%;
   border-radius: 50%;
   background-color: #3b459c;
   opacity: 0.33;
   right: 0px;
-  top: 0;
+  top: -5px;
   z-index: 0;
 }
 
