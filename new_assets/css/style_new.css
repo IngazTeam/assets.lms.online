@@ -1120,6 +1120,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-height: 175px;
 }
 
 .med-new-content .card-box .rating-box span {
