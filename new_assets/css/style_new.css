@@ -81,7 +81,7 @@ body {
     overflow: scroll;
   }
   .med-new-content #rightSidebar.active::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
   }
   .med-new-content #rightSidebar.active::-webkit-scrollbar-track {
     background-color: #e4e4e4;
@@ -1120,7 +1120,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-height: 175px;
+  height: 150px;
 }
 
 .med-new-content .card-box .rating-box span {
