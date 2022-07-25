@@ -596,6 +596,9 @@ input , textarea,select{
                         &:nth-of-type(1){
                             margin-left: 10px;
                         }
+                        @media(max-width:767px) and (min-width:500px){
+                            width: 50%;
+                        }
                         
                     }
                 }
@@ -715,8 +718,11 @@ input , textarea,select{
                         @media(max-width:500px){
                             margin-left: 46px;
                         }
-                        @media(max-width:767px) and (min-width:500px){
-                            margin-left: 5.5rem;
+                        @media(max-width:767px) and (min-width:575px){
+                            margin-left: 5.3rem;
+                        }
+                        @media(max-width:500px) and (min-width:450px){
+                            margin-left: 65px ;
                         }
                     }
                 }

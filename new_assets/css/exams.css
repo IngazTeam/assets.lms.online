@@ -520,6 +520,11 @@ input:focus, textarea:focus, select:focus {
 .tab_part .main_collapese_card .inner_big_cart .card_content .two_inputs .input_box:nth-of-type(1) {
   margin-left: 10px;
 }
+@media (max-width: 767px) and (min-width: 500px) {
+  .tab_part .main_collapese_card .inner_big_cart .card_content .two_inputs .input_box {
+    width: 50%;
+  }
+}
 .tab_part .question_section .header {
   margin-top: 25px;
   margin-bottom: 10px;
@@ -630,9 +635,14 @@ input:focus, textarea:focus, select:focus {
     margin-left: 46px;
   }
 }
-@media (max-width: 767px) and (min-width: 500px) {
+@media (max-width: 767px) and (min-width: 575px) {
   .tab_part .question_section .question_box .question_box_body#question_type_1 .remove_frist_row {
-    margin-left: 5.5rem;
+    margin-left: 5.3rem;
+  }
+}
+@media (max-width: 500px) and (min-width: 450px) {
+  .tab_part .question_section .question_box .question_box_body#question_type_1 .remove_frist_row {
+    margin-left: 65px;
   }
 }
 
