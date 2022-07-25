@@ -141,7 +141,9 @@ input , textarea,select{
     position: relative;
     margin-top: 30px;
     padding: 27px 23px;
-
+    @media(max-width:767px){
+        padding: 27px 7px !important;
+    }
     .add_course {
         background-color: $circle_color;
         @include flex(row, center, center);
@@ -158,7 +160,9 @@ input , textarea,select{
         font-size: 20px;
         font-weight: 600;
         padding-right: 10px;
-
+        @media(max-width:767px){
+            padding-right: 25px;
+        }
         &::before {
             @extend .circle_before;
             right: 13px !important;
@@ -357,6 +361,9 @@ input , textarea,select{
 
             &::before {
                 top: 29px !important;
+                @media(max-width:767px){
+                    top:35px !important
+                }
             }
         }
     }
@@ -383,9 +390,12 @@ input , textarea,select{
         .inner_title {
             color: $blue_color;
             font-weight: 700;
+            
             @media(max-width:767px){
                 font-size: 11px;
                 font-weight: 500 !important;
+                display:flex;
+                align-items: center;
             }
         }
 
@@ -522,6 +532,11 @@ input , textarea,select{
                         border-radius: 50%;
                         background-color: $blue_color;
                     }
+                    &{
+                        @media(max-width:767px){
+                            margin-top: 5px;
+                        }
+                    }
                 }
                 
             }
@@ -644,7 +659,7 @@ input , textarea,select{
                     margin-left: 10px;
                     margin-top: 24px;
                     @media(max-width:767px){
-                        padding-left: 0px !important;
+                        margin-left: 5px !important;
                     }
                 }
                 .form-check{
@@ -695,6 +710,16 @@ input , textarea,select{
                         }
                     }
                 }
+                &#question_type_1{
+                    .remove_frist_row{
+                        @media(max-width:500px){
+                            margin-left: 46px;
+                        }
+                        @media(max-width:767px) and (min-width:500px){
+                            margin-left: 5.5rem;
+                        }
+                    }
+                }
             }
         }
     }
@@ -732,6 +757,34 @@ input[type='date']{
     .remove_row{
         margin-left: 29% !important; 
      }
+}
+#question_type_4,
+#question_type_3{
+    .first_row,
+    .fourth_row_content:not(:last-child) ,
+    .third_row_content:not(:last-child){
+        @media(max-width:767px){
+            .remove_row{
+                margin-left: 45% !important; 
+             }
+        }
+        @media(max-width:575px){
+            .remove_row{
+            margin-left: 29% !important;
+            }
+        }
+    }
+    
+}
+#question_type_4{
+    .fourth_row_content:not(:last-child),.first_row {
+        @media(max-width:575px){
+            .remove_row {
+                margin-left: 19% !important;
+            }
+        }
+        
+    }
 }
 
 #add_content {
