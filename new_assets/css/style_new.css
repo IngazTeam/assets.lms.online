@@ -410,7 +410,9 @@ body {
   background-color: #3b459c;
   opacity: 0.33;
   right: 0px;
-  top: -5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 0;
 }
 
