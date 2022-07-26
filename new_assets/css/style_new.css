@@ -1106,6 +1106,9 @@ body {
 .med-new-content .card-box {
   background-color: #fff;
   border-radius: 25px;
+}
+
+.med-new-content .card-box.owl-card {
   height: 325px;
 }
 

@@ -1105,7 +1105,10 @@ body {
     .card-box {
         background-color: #fff;
         border-radius: 25px;
-        height: 325px;
+
+        &.owl-card {
+            height: 325px;
+        }
 
         .img-box {
             background-color: #FFCB57;
@@ -1131,7 +1134,8 @@ body {
                 }
             }
         }
-        .text-box{
+
+        .text-box {
             flex: 1;
         }
 
