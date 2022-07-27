@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="css/style_new.css" />
   <link rel="stylesheet" href="css/course-details.css" />
   <link rel="stylesheet" href="css/bottom-navbar.css">
+  <link rel="stylesheet" href="css/exams.css">
 </head>
 
 
@@ -39,7 +40,7 @@
 <body>
   <!-- left and right and buttom dots  -->
   <!-- ========================================================================================================================= -->
-  <div class="left-dots">
+  <div class="left-dots"> 
     <img src="imgs/Layer 4 copy 9.png" alt="" width="100" />
   </div>
   <div class="right-dots">
@@ -69,7 +70,7 @@
         <!-- ========================================================================== -->
         <div class="col-lg-2 pe-0">
           <div id="rightSidebar" class="d-lg-block hidden"></div>
-      </div>
+        </div>
 
 
         <!-- main content area  -->
@@ -77,20 +78,42 @@
         <div class="col-lg-7">
           <div class="row">
             <div class="col-12">
-              <div id="tabs" class="tabs-container">
+              
 
-                <div class="tabs">
-                  <a id="tab1" data-tab="1" class="tab">تفاصيل الكورس</a>
-                  <a id="tab2" data-tab="2" class="tab">منهج الكورس</a>
-                  <a id="tab3" data-tab="3" class="tab">الملفات المرفقة</a>
-                  <a id="tab4" data-tab="4" class="tab">الشهادة</a>
+
+              <div class="row mt-3">
+                <div class="col-sm-12">
+                  <div class="section_title">
+                    الكورسات
+                  </div>
                 </div>
-
-                <!-- the first content  -->
-                <div class="content">
-                  <div id="tabcontent1" data-tab="1" class="tabcontent">
-
-                    <!-- course details row  -->
+              </div>
+              <div class="tab_part">
+                <div class=" d-flex justify-content-between mb-3">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="course_details-tab" data-bs-toggle="tab" data-bs-target="#course_details" type="button" role="tab" aria-controls="course_details" aria-selected="true">تفاصيل الكورس</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="course_data-tab" data-bs-toggle="tab" data-bs-target="#course_data" type="button" role="tab" aria-controls="course_data" aria-selected="false">منهج الكورس</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="uploaded_files-tab" data-bs-toggle="tab" data-bs-target="#uploaded_files" type="button" role="tab" aria-controls="uploaded_files" aria-selected="false">الملفات المرفقة</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="certifications-tab" data-bs-toggle="tab" data-bs-target="#certifications" type="button" role="tab" aria-controls="certifications" aria-selected="false"> الشهادة</button>
+                    </li>
+                  </ul>
+                  <button class="add_content d-flex justify-content-start">
+                    <div class="img_box">
+                      <img src="imgs/message-add.svg" alt="" width="" />
+                    </div>
+                    <span>إضافة محتوى</span>
+                  </button>
+                </div>
+                <!--******* start tab conenet****** -->
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="course_details" role="tabpanel" aria-labelledby="course_details-tab">
                     <div class="row">
                       <div class="col-lg-8">
                         <div class="about-the-course p-4 d-flex flex-column flex-lg-row">
@@ -238,24 +261,14 @@
                       </div>
                     </div>
                   </div>
-
-
-
-
-                  <!-- the secound content  -->
-                  <div id="tabcontent2" data-tab="2" class="tabcontent">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores corrupti accusantium porro placeat officia eaque dicta vitae distinctio eligendi, error, architecto deserunt deleniti sunt iusto fugit odio dignissimos sint modi?</p>
+                  <div class="tab-pane fade" id="course_data" role="tabpanel" aria-labelledby="course_data-tab">
+                    2
                   </div>
-                  <div id="tabcontent3" data-tab="3" class="tabcontent">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis labore at nam nulla quos vitae atque minima beatae eos ducimus nihil, officiis modi. Id sapiente suscipit assumenda blanditiis voluptatem officia?</p>
-                  </div>
-                  <div id="tabcontent4" data-tab="4" class="tabcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illo nihil porro architecto, quae error non sunt, recusandae veniam neque eos ut voluptatibus vero distinctio ipsum eaque quia fugiat mollitia?</p>
-                  </div>
+                  <div class="tab-pane fade" id="uploaded_files" role="tabpanel" aria-labelledby="uploaded_files-tab">3</div>
+                  <div class="tab-pane fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab">4</div>
                 </div>
-
+                <!-- end tab conenet -->
               </div>
-
             </div>
 
           </div>
@@ -265,15 +278,15 @@
         <!-- left sidebar area  -->
         <!-- ========================================================================== -->
         <!-- left sidebar area  -->
-                <!-- ========================================================================== -->
-              <div class="col-3 ps-0 d-none d-lg-block">
-                  <div id="leftSidebar"></div>
-              </div>
+        <!-- ========================================================================== -->
+        <div class="col-3 ps-0 d-none d-lg-block">
+          <div id="leftSidebar"></div>
+        </div>
 
-              <!-- bottom navbar  -->
-              <div class="col-12 d-lg-none">
-                  <div id="bottomNavBar" ></div>
-              </div>
+        <!-- bottom navbar  -->
+        <div class="col-12 d-lg-none">
+          <div id="bottomNavBar"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -297,44 +310,43 @@
     $("#rightSidebar").load("right-sidebar.html");
     $("#leftSidebar").load("left-sidebar.html");
     $("#bottomNavBar").load("bottom-navbar.html");
-
   </script>
 
 
   <script src="js/main.js"></script>
   <script>
-    // DOM Elements
-    const tabs = document.querySelectorAll('.tab')
-    const tabContents = document.querySelectorAll('.tabcontent')
+    // // DOM Elements
+    // const tabs = document.querySelectorAll('.tab')
+    // const tabContents = document.querySelectorAll('.tabcontent')
 
-    // Functions
-    const activateTab = tabnum => {
+    // // Functions
+    // const activateTab = tabnum => {
 
-      tabs.forEach(tab => {
-        tab.classList.remove('active')
-      })
+    //   tabs.forEach(tab => {
+    //     tab.classList.remove('active')
+    //   })
 
-      tabContents.forEach(tabContent => {
-        tabContent.classList.remove('active')
-      })
+    //   tabContents.forEach(tabContent => {
+    //     tabContent.classList.remove('active')
+    //   })
 
-      document.querySelector('#tab' + tabnum).classList.add('active')
-      document.querySelector('#tabcontent' + tabnum).classList.add('active')
-      localStorage.setItem('jstabs-opentab', JSON.stringify(tabnum))
+    //   document.querySelector('#tab' + tabnum).classList.add('active')
+    //   document.querySelector('#tabcontent' + tabnum).classList.add('active')
+    //   localStorage.setItem('jstabs-opentab', JSON.stringify(tabnum))
 
-    }
+    // }
 
-    // Event Listeners
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        activateTab(tab.dataset.tab)
-      })
-    })
+    // // Event Listeners
+    // tabs.forEach(tab => {
+    //   tab.addEventListener('click', () => {
+    //     activateTab(tab.dataset.tab)
+    //   })
+    // })
 
 
-    // Retrieve stored data
-    const opentab = JSON.parse(localStorage.getItem('jstabs-opentab')) || '3'
-    activateTab(opentab)
+    // // Retrieve stored data
+    // const opentab = JSON.parse(localStorage.getItem('jstabs-opentab')) || '3'
+    // activateTab(opentab)
   </script>
   <script>
     $('.teachers.owl-carousel').owlCarousel({

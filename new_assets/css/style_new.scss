@@ -94,7 +94,7 @@ body {
                 overflow: scroll;
 
                 &::-webkit-scrollbar {
-                    width: 5px;
+                    width: 0px;
                 }
 
                 &::-webkit-scrollbar-track {
@@ -392,12 +392,13 @@ body {
                     content: "";
                     position: absolute;
                     width: 60px;
-                    height: 50px;
+                    height: 125%;
                     border-radius: 50%;
                     background-color: $secoundryColor;
                     opacity: 0.33;
                     right: 0px;
-                    top: -10px;
+                    top: 50%;
+                    transform: translateY(-50%);
                     z-index: 0;
                 }
             }
@@ -1105,6 +1106,10 @@ body {
         background-color: #fff;
         border-radius: 25px;
 
+        &.owl-card {
+            height: 325px;
+        }
+
         .img-box {
             background-color: #FFCB57;
             border-radius: 25px;
@@ -1112,6 +1117,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 150px;
         }
 
         .rating-box {
@@ -1127,6 +1133,10 @@ body {
                     color: $secoundryColor;
                 }
             }
+        }
+
+        .text-box {
+            flex: 1;
         }
 
         .course-name {
