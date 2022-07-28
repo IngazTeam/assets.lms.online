@@ -80,14 +80,14 @@ body {
             &.hidden {
                 position: fixed;
                 top: 70px;
-                right: -255px;
+                right: -100%;
                 width: 250px;
             }
 
             &.active {
                 position: fixed;
                 top: 70px;
-                right: 5px;
+                right: 2.5%;
                 z-index: 9999;
                 width: 250px;
                 height: 575px;
@@ -116,6 +116,7 @@ body {
                     background-color: #00000080;
                     position: fixed;
                     top: 0;
+                    right: 0;
                 }
 
                 .right-sidebar {
