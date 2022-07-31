@@ -3012,7 +3012,7 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child::before
     font-size: 8px;
     line-height: 14px;
     font-weight: 600;
-    background-color: #fb6d3a;
+    background-color: #29bcb0;
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.08), -6px -6px 12px white;
 }
 
@@ -12364,7 +12364,7 @@ fc-dayGrid-view .fc-week-number,
 table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child::before,
 table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child::before {
     content: "\e622";
-    background: red;
+    background: #d7d7d7;
     box-shadow: none;
 }
 
