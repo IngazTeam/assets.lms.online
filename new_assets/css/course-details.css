@@ -1,4 +1,7 @@
 /* Style the tabs */
+.tab_part .nav-link{
+  width: 120px;
+}
 .tabs {
   margin-bottom: 28px;
   display: flex;

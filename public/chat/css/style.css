@@ -5349,7 +5349,7 @@ span.inactive_chat {
     border: 0;
     padding: 4px 0;
     border-bottom: 1px solid rgba(130, 139, 178, 0.3);
-    background-color: transparent;
+    background-color: #fff;
     padding-bottom: 8px;
     position: relative;
     border-radius: 0px;

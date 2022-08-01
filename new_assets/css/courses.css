@@ -489,6 +489,7 @@
 
 #popupModal .modal-content .modal-header {
   border-bottom-color: #70707010;
+  background-color: transparent !important;
 }
 
 #popupModal .modal-content .modal-header .modal-title {

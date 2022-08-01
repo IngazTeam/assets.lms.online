@@ -80,21 +80,22 @@ body {
             &.hidden {
                 position: fixed;
                 top: 70px;
-                right: -255px;
+                right: -100%;
                 width: 250px;
+                z-index: 9999;
             }
 
             &.active {
                 position: fixed;
                 top: 70px;
-                right: 5px;
+                right: 2.5%;
                 z-index: 9999;
                 width: 250px;
                 height: 575px;
                 overflow: scroll;
 
                 &::-webkit-scrollbar {
-                    width: 5px;
+                    width: 0px;
                 }
 
                 &::-webkit-scrollbar-track {
@@ -116,6 +117,7 @@ body {
                     background-color: #00000080;
                     position: fixed;
                     top: 0;
+                    right: 0;
                 }
 
                 .right-sidebar {
@@ -310,8 +312,9 @@ body {
                 background-color: $backgroundColor;
                 border: 1px solid $borderColor;
                 border-radius: 50px;
-                padding: 0 10px;
+                padding: 5px 10px;
                 margin: 0 5px;
+                width: calc(100% - 10px);
             }
 
             .notafication-content.unread {
@@ -319,10 +322,10 @@ body {
             }
 
             .image {
-                width: 75px;
+                width: 50px;
 
                 img {
-                    width: 100%;
+                    width: 45px;
                 }
             }
 
@@ -340,6 +343,7 @@ body {
                     color: $lightText;
                     margin-bottom: 0;
                     padding: 0 0 0 15px;
+                    word-break: break-word;
                 }
             }
         }
@@ -361,7 +365,6 @@ body {
     // right sidebar style
     .right-sidebar {
         .navbar {
-            height: 100%;
             padding: 20px 10px;
             border-radius: 25px;
             margin: 0;
@@ -392,12 +395,13 @@ body {
                     content: "";
                     position: absolute;
                     width: 60px;
-                    height: 50px;
+                    height: 125%;
                     border-radius: 50%;
                     background-color: $secoundryColor;
                     opacity: 0.33;
                     right: 0px;
-                    top: -10px;
+                    top: 50%;
+                    transform: translateY(-50%);
                     z-index: 0;
                 }
             }
@@ -1105,6 +1109,10 @@ body {
         background-color: #fff;
         border-radius: 25px;
 
+        &.owl-card {
+            height: 325px;
+        }
+
         .img-box {
             background-color: #FFCB57;
             border-radius: 25px;
@@ -1112,6 +1120,7 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 150px;
         }
 
         .rating-box {
@@ -1127,6 +1136,10 @@ body {
                     color: $secoundryColor;
                 }
             }
+        }
+
+        .text-box {
+            flex: 1;
         }
 
         .course-name {
