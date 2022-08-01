@@ -88,7 +88,8 @@
 .indexResponsive .cards-container {
     position: relative;
 }
+@media (max-width: 576px) {
 .indexResponsive .cards-container .cards-owl{
     position: unset;
     width: calc(100% - 68px);
-} 
+} }
