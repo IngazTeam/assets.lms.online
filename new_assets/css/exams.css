@@ -248,6 +248,11 @@ input:focus, textarea:focus, select:focus {
   margin-left: 4px;
   text-align: right;
 }
+@media (max-width: 1200px) {
+  .card_box .card_info .time .training_salary {
+    width: 100%;
+  }
+}
 .card_box .card_info .create_group {
   width: 90%;
   background-color: #29BCB0;

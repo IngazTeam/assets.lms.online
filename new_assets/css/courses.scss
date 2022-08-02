@@ -91,7 +91,7 @@ $gray_color:#9F9F9F;
 
     .card_info {
         background-color: #F7F8FB;
-        padding: 17px 10px;
+        padding: 17px 17px;
         position: relative;
         border-radius: 31px;
         padding-bottom: 30px;
@@ -216,6 +216,9 @@ $gray_color:#9F9F9F;
                 width: 225px;
                 margin-left: 4px;
                 text-align: right;
+                @media(max-width:1200px){
+                    width: 100% !important;
+                }
             }
 
 
@@ -359,7 +362,9 @@ $gray_color:#9F9F9F;
 // customize the file upload style 
 .bootstrap-filestyle {
     width: 225px;
-
+    @media(max-width:1200px){
+        width: 100%;
+    }
     .form-control {
         display: none;
     }
@@ -374,6 +379,9 @@ $gray_color:#9F9F9F;
             border-radius: 35px;
             background-color: #fff;
             border: 1px solid #F2F2F2;
+            @media(max-width:1200px){
+                width: 100%;
+            }
         }
     }
 }
