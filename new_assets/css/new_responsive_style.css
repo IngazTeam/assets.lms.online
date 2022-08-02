@@ -1,21 +1,21 @@
 .responsive_box .header_chart {
     margin-bottom: 0px !important;
-    border-bottom: 0px solid transparent;
+    border-bottom: 0px solid transparent !important;
 }
 .responsive_box .primary_select{
-    border: 0pc solid transparent;
+    border: 0px solid transparent !important;
 }
-.responsive_box .section_title h1{
-    font-size: 24px;
+.section_title h1{
+    font-size: 24px !important;
 }
-.responsive_box .up_st_admin_visitor .dataTables_filter>label{
-    box-shadow: 0px 0px 2px 0px rgb(0 0 0 / 21%);
+.responsive_box  .dataTables_filter>label{
+    box-shadow: 0px 0px 2px 0px rgb(0 0 0 / 21%) !important;
 }
 .responsive_box .section_title::before{
-    margin-top: 0px;
+    margin-top: 0px !important; 
 }
 tr{
-    text-align: center;
+    text-align: center !important;
 }
 .responsive_box .select2-search__field{
     height: 100% !important;
@@ -34,5 +34,9 @@ tr{
     line-height: 26px !important;
 }
 .responsive_box .time .boxed_input{
- width: 100%;
+ width: 100% !important;
+}
+
+body{
+    /* background-color: yellow !important; */
 }
