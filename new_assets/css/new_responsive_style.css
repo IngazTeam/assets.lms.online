@@ -37,6 +37,10 @@ tr{
  width: 100% !important;
 }
 
-body{
-    /* background-color: yellow !important; */
+.responsive_box  .group-span-filestyle.input-group-btn{
+    width: 100%;
+    text-align: right;
+}
+.responsive_box  .group-span-filestyle.input-group-btn label{
+    text-align: right;
 }

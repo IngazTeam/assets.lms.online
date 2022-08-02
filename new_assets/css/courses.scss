@@ -142,6 +142,9 @@ $gray_color:#9F9F9F;
         .bi-caret-left-fill {
             color: #D5D4D4;
             font-size: 22px;
+            @media(max-width:600px){
+                display:  none;
+            }
         }
 
         .time {
@@ -150,11 +153,23 @@ $gray_color:#9F9F9F;
                 color: $gray_color;
                 font-weight: 700;
                 margin: 0 10px;
+                @media(max-width:1300px) and (min-width:1200px){
+                    font-size: 12px;
+                }
+                @media(max-width:600px){
+                    font-size: 12px;
+                }
             }
 
             input {
                 width: 72px;
                 text-align: center;
+                @media(max-width:1300px) and (min-width:1200px){
+                    width:60px;
+                }
+                @media(max-width:600px){
+                    width:60px;
+                }
             }
 
             .training_hours {
@@ -224,14 +239,17 @@ $gray_color:#9F9F9F;
 
 
             .image {
-                width: 50px;
+                width: fit-content;
                 height: 33px;
                 background-color: #fff;
-                border-radius: 10px;
+                border-radius: 31px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 border: 1px solid #F2F2F2;
+                margin-right: 9px;
+                border-radius: 31px;
+                padding: 4px 14px;
             }
         }
 
@@ -275,9 +293,7 @@ $gray_color:#9F9F9F;
         .create_group.level {
             background-color: #fff;
             color: $gray_color;
-
-
-
+            margin-right: 9px;
             img {
                 background-color: $circle_color;
                 width: 25px;
