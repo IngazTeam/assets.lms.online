@@ -282,6 +282,9 @@ input , textarea,select{
                 width: 225px;
                 margin-left: 4px;
                 text-align: right;
+                @media(max-width:1200px){
+                    width: 100%;
+                }
             }
         }
 
