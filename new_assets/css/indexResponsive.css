@@ -6,7 +6,7 @@
     }
     .p-7px-start{
         padding-inline-start: 7px;
-    } 
+    }
 }
 @media (max-width: 576px) {
     .p-mobile-0{
@@ -95,7 +95,7 @@
 } }
 /*********************courses***********************/
 .xd_courses_table.card_box{
-  background-color: transparent!important;  
+  background-color: transparent!important;
 }
 @media (max-width:576px) {
     .xd_courses_table.card_box{
@@ -134,7 +134,7 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
         margin: auto;
         border-radius: 8px;
         /* background-color: white; */
-     }  
+     }
     html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody th,
     html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody td:first-child{
         border-radius: 8px 8px 0 0!important;
@@ -152,17 +152,17 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
     }
     .xd_courses_table.card_box .cards tbody td {
         display: block;
-        padding: 11px 40px;
-        font-size: 10px;
+        padding: 7px 40px;
+        font-size: 14px;
         color: #3B459C!important;
-        font-weight: bold;
+        font-weight: 900;
         text-align: left!important;
      }
-     
+
      .xd_courses_table.card_box .cards thead {
         display: none;
      }
-     
+
      .xd_courses_table.card_box .cards td:before {
         content: attr(data-label);
         position: relative;
@@ -171,7 +171,7 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
         min-width: 4rem;
         margin-right: 0;
         margin-left: 1rem;
-        text-align: right;   
+        text-align: right;
      }
-    
+
 }
