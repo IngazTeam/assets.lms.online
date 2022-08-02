@@ -1,0 +1,99 @@
+/*shared_style*/
+
+@media (min-width:992px) {
+    .p-7px-end{
+        padding-inline-end: 7px;
+    }
+    .p-7px-start{
+        padding-inline-start: 7px;
+    } 
+}
+@media (max-width: 576px) {
+    .p-mobile-0{
+        padding-inline-end: 0px!important;
+        padding-inline-start: 0px!important;
+    }
+    .p-mobile-0-end{
+        padding-inline-end: 0!important;
+    }
+    .p-mobile-0-start{
+        padding-inline-start: 0!important;
+    }
+}
+.flex-align-center{
+    display: flex;
+    align-items: center;
+}
+.flex-justify-end{
+    display: flex;
+    justify-content: end;
+}
+.indexResponsive .hello-user{
+    padding: 25px 20px!important;
+}
+@media (max-width: 576px) {
+    .indexResponsive .hello-user{
+        margin-bottom:10px ;
+        height: unset;
+    }
+}
+.indexResponsive .hello-user .hello-text{
+    font-size: 22px;
+    font-weight: 500;
+}
+.indexResponsive .m-user-subscriptions{
+    padding: 10px 26px;
+}
+.indexResponsive .m-user-subscriptions .def{
+    font-size: 16px!important;
+    font-weight: 500!important;
+    margin-bottom: 0!important;
+}
+.indexResponsive .m-user-subscriptions .m-subscription-name{
+    margin-inline-start: 7px;
+}
+.indexResponsive .select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow{
+    left: 7px!important;
+}
+.indexResponsive .dropDowns .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border: 0!important;
+    background: url('../imgs/down.png');
+    width: 14px;
+    height: 11px;
+    margin-top: 0;
+    margin-left: 0;
+    transform: translateY(-50%);
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+.indexResponsive .dropDowns .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    transform: rotate(180deg) translateY(50%)!important;
+}
+.indexResponsive .dropDowns .icon.icon-more{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.indexResponsive .cards-container .owl-carousel .owl-nav .owl-prev,
+.indexResponsive .cards-container .owl-carousel .owl-nav .owl-next{
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.indexResponsive .cards-container {
+    position: relative;
+}
+@media (max-width: 576px) {
+.indexResponsive .cards-container .cards-owl{
+    position: unset;
+    width: calc(100% - 68px);
+} }
+
+
+
+

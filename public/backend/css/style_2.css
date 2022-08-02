@@ -2255,7 +2255,7 @@ input::placeholder {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-bottom: 1px solid #edeff6;
     padding-bottom: 10px;
 }
@@ -7332,7 +7332,7 @@ tspan {
 }
 
 .dataTables_paginate a:hover {
-    background: #fb6d3a !important;
+    background: #36bcb0 !important;
     box-shadow: 0px 5px 10px rgba(108, 39, 255, 0.25) !important;
     border: 0 !important;
     color: #fff !important;
@@ -8381,7 +8381,7 @@ html[dir="rtl"] .error-message {
     border-radius: 0px 0px 10px 10px;
     margin-top: 1px;
     z-index: 9999 !important;
-    box-shadow: 0px 10px 20px rgba(108, 39, 255, 0.3);
+    box-shadow: 0px 10px 20px rgb(159 159 159 / 30%)
 }
 
 .primary_select .list .option {
@@ -13388,7 +13388,7 @@ body.admin {
 .select2-container--default .select2-selection--multiple {
     border: 1px solid #ced4da;
     border-radius: 25px !important;
-    min-height: 40px;
+    min-height: 46px !important;
     position: relative;
 }
 

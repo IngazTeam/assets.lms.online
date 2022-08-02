@@ -25,7 +25,7 @@
   outline: none !important;
 }
 
-.button_style, #add_content .modal-content .modal-footer button, .tab_part .main_collapese_card .inner_collapese_card .close_button, .tab_part .main_collapese_card .inner_big_cart .close_button, .tab_part .main_collapese_card .inner_collapese_card .confirm_button, .tab_part .main_collapese_card .inner_big_cart .confirm_button {
+.button_style, .add__content .modal-content .modal-footer button, .tab_part .main_collapese_card .inner_collapese_card .close_button, .tab_part .main_collapese_card .inner_big_cart .close_button, .tab_part .main_collapese_card .inner_collapese_card .confirm_button, .tab_part .main_collapese_card .inner_big_cart .confirm_button {
   border-radius: 31px;
   padding: 5px 33px;
   border: 0px solid transparent;
@@ -247,6 +247,11 @@ input:focus, textarea:focus, select:focus {
   width: 225px;
   margin-left: 4px;
   text-align: right;
+}
+@media (max-width: 1200px) {
+  .card_box .card_info .time .training_salary {
+    width: 100%;
+  }
 }
 .card_box .card_info .create_group {
   width: 90%;
@@ -719,7 +724,7 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   }
 }
 
-#add_content .modal-content {
+.add__content .modal-content {
   background-color: #F2F3F7;
   border-radius: 35px;
   padding: 0 15px;
@@ -727,15 +732,15 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   margin: auto !important;
   border: 0px solid transparent !important;
 }
-#add_content .modal-content .modal-header {
+.add__content .modal-content .modal-header {
   border-bottom-color: #70707010;
 }
-#add_content .modal-content .modal-header .modal-title {
+.add__content .modal-content .modal-header .modal-title {
   position: relative;
   font-size: 16px;
   color: #525F77;
 }
-#add_content .modal-content .modal-header .modal-title::before {
+.add__content .modal-content .modal-header .modal-title::before {
   content: "";
   position: absolute;
   width: 10px;
@@ -746,23 +751,23 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   top: 50%;
   transform: translateY(-50%);
 }
-#add_content .modal-content .modal-header .close-btn {
+.add__content .modal-content .modal-header .close-btn {
   background-color: #fff;
   border-radius: 50%;
   border: none;
   width: 25px;
   height: 25px;
 }
-#add_content .modal-content .modal-footer {
+.add__content .modal-content .modal-footer {
   border-top-color: transparent !important;
   align-items: center;
   justify-content: center;
 }
-#add_content .modal-content .modal-footer button {
+.add__content .modal-content .modal-footer button {
   background-color: #29BCB0;
   font-size: 12px;
 }
-#add_content input {
+.add__content input {
   border-radius: 31px;
   border: 0.1px solid #F2F2F2;
   padding: 5px 15px;
@@ -772,7 +777,7 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   appearance: none;
   height: 33px;
 }
-#add_content .box_action {
+.add__content .box_action {
   background-color: #fff;
   border-radius: 10px;
   padding: 13px 6px;
@@ -786,15 +791,15 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   text-align: center;
   width: 120px;
 }
-#add_content .box_action span {
+.add__content .box_action span {
   padding-right: 10px;
 }
-#add_content .box_action.youtube {
+.add__content .box_action.youtube {
   background-color: #29BCB0 !important;
   padding-right: 15px;
   color: #fff;
 }
-#add_content .frist_section p {
+.add__content .frist_section p {
   border-bottom: 1px solid #70707010;
   font-size: 9px;
   margin-top: 10px;
