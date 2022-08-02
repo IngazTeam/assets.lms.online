@@ -12,6 +12,10 @@ function test_collapse(that) {
 
 $(function () {
     $("[data-toggle=tooltip]").tooltip();
+    if($(window).width() < 567){
+        $('.toggle__collapese').removeClass('show');
+        console.log('tetetetet');
+    }
 })
 
 // Append Question
@@ -34,3 +38,5 @@ function RemoveQuestion(that, row_content) {
 $('.popup_input').click(function(){
     $(this).siblings().click();
 })
+
+
