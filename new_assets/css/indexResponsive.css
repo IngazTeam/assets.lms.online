@@ -8,6 +8,17 @@
         padding-inline-start: 7px;
     }
 }
+@media (max-width:992px) {
+    .p-sm-7px-end{
+        padding-inline-end: 7px;
+    }
+    .p-sm-7px{
+        padding-inline: 7px!important;
+    }
+    .p-sm-7px-start{
+        padding-inline-start: 7px;
+    }
+}
 @media (max-width: 576px) {
     .p-mobile-0{
         padding-inline-end: 0px!important;
@@ -113,39 +124,90 @@
 .xd_courses_table.card_box table.dataTable{
     border-spacing: 0 10px!important;
 }
-.xd_courses_table.card_box .QA_section .QA_table tbody th,
-.xd_courses_table.card_box .QA_section .QA_table tbody td{
+.xd_courses_table.card_box .QA_table tbody th,
+.xd_courses_table.card_box .QA_table tbody td{
     border-bottom: 0!important;
 }
 html[dir="rtl"] .xd_courses_table.card_box .table.dataTable tbody th,
 html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
     border-radius:0 8px 8px 0!important;
 }
-.xd_courses_table.card_box .QA_section .QA_table .table td.lastVisibleChild {
+html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:last-child{
+    border-radius: 8px!important;
+}
+.xd_courses_table.card_box .QA_table .table td.lastVisibleChild {
     border-radius:8px 0 0 8px!important;
     }
-.xd_courses_table.card_box .QA_section .QA_table .table  th.lastVisibleChild {
+.xd_courses_table.card_box .QA_table .table  th.lastVisibleChild {
     border-radius:8px 0 0 8px!important;
     }
+.xd_courses_table.card_box .QA_table .table.cards td.firstVisibleChild {
+    border-radius: 8px 8px 0 0!important;
+    }
+.xd_courses_table.card_box .QA_table .table.cards  th.firstVisibleChild {
+    border-radius: 8px 8px 0 0!important;
+    }
+.xd_courses_table.card_box table.dataTable.display tbody tr.selected > .sorting_1,
+.xd_courses_table.card_box table.dataTable.order-column.stripe tbody tr.selected > .sorting_1{
+    background-color: white!important;
+}
+.xd_courses_table.card_box table.dataTable tbody tr.selected{
+    background-color: transparent;
+    box-shadow: 0 0 0 2px #29BCB0!important;
+    border-radius: 8px!important;
+}
+.xd_courses_table.card_box #lms_table.cards .form-check{
+    padding:0 ;
+}
+.xd_courses_table.card_box table.dataTable .common-radio:checked~label:before,
+.xd_courses_table.card_box table.dataTable .common-radio:empty~label:before{
+    width: 17px!important;
+    height: 17px !important;
+    border-radius: 5px!important;
+    left: 50%!important;
+    transform: translate(-50%,-50%)!important;
+}
+.xd_courses_table.card_box table.dataTable .common-radio:checked~label:after{
+    content:"";
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    background-color: #29BCB0;
+    left: 50%!important;
+    transform: translate(-50%,-50%)!important;
+}
+.xd_courses_table.card_box table.dataTable .cannotAdd:checked~label:after{
+    content: ""!important;
+}
 /******************************************************************/
 @media (max-width:576px) {
     .xd_courses_table.card_box .cards tbody tr {
         width: 336px;
         margin: auto;
         border-radius: 8px;
+        position: relative;
         /* background-color: white; */
      }
+
+    .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell a{
+        display: inline!important;
+    }
+    .xd_courses_table td.inline-cell .CRM_dropdown.dropdown .dropdown-toggle{
+        height:auto!important ;
+        padding-block: 0!important;
+    }
     html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody th,
     html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody td:first-child{
         border-radius: 8px 8px 0 0!important;
     }
-    .xd_courses_table.card_box .QA_section .QA_table .table.cards td.lastVisibleChild{
+    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild{
         border-radius: 0 0 8px 8px !important;
     }
-    .xd_courses_table.card_box table.dataTable tbody tr.selected{
-        background-color: transparent;
-        box-shadow: 0 0 2px #29BCB0!important;
+    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild.inline-cell{
+        border-radius: 0!important;
+        border-bottom-left-radius: 8px!important;
     }
+
     .xd_courses_table.card_box table.dataTable.display tbody tr.odd.selected > .sorting_1,
     .xd_courses_table.card_box table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_1{
         background-color: white!important;
@@ -173,5 +235,46 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
         margin-left: 1rem;
         text-align: right;
      }
+     /**************************************/
+     .xd_courses_table.card_box .table.dataTable tbody tr td.d-table-cell,
+     .xd_courses_table.card_box .table.dataTable tbody tr th.d-table-cell{
+         display: none!important;
+     }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell,
+     .xd_courses_table.card_box .table.dataTable tbody tr th.inline-cell{
+         display: inline-block!important;
+         width: 33.3333%;
+         font-weight: normal!important;
+     }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell.bord-rad-right{
+         border-radius: 0!important;
+         border-bottom-right-radius: 8px!important;
+ 
+     }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell.bord-rad-left{
+         border-radius: 0!important;
+         border-bottom-left-radius: 8px!important;
+     }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.absolute_check{
+        background-color: transparent!important;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        z-index: 9;
+        padding: 0!important;
+        width: 17px;
+        height: 17px;
+     }
+    .xd_courses_table.card_box .table.dataTable tbody tr td.as_first_col{
+        border-radius: 8px 8px 0 0!important;
+        padding-top: 13px!important;
+    }
 
+
+}
+@media (min-width:576px) {
+.xd_courses_table.card_box .table.dataTable tbody tr td.d-table-cell,
+.xd_courses_table.card_box .table.dataTable tbody tr th.d-table-cell{
+    display: table-cell!important;
+ }
 }

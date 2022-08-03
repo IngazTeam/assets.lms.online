@@ -1315,6 +1315,141 @@ body {
             }
         }
     }
+    
+}
+
+
+// cart style 
+.shoping_wrapper .dark_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 8, 34, 0.4);
+    z-index: 2222;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+/* line 14, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .dark_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width: 767.98px) {
+
+    /* line 19, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+    .shoping_wrapper .chart_close {
+        display: none;
+    }
+}
+
+/* line 24, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 2223;
+    height: 100%;
+    /* width: 519px; */
+    width: 450px;
+    padding: 35px 15px 35px 15px;
+    opacity: 0;
+    visibility: hidden;
+    overflow: auto;
+    transition: 0.3s;
+}
+
+@media (max-width: 575.98px) {
+
+    /* line 24, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+    .shoping_wrapper .shoping_cart {
+        width: 100%;
+        padding: 50px 25px 70px 26px;
+    }
+}
+
+/* line 42, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* line 49, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart .shoping_cart_inner .cart_header h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--system_secendory_color);
+    margin-bottom: 15px;
+}
+
+/* line 56, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart .shoping_cart_inner .single_cart {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #e1e2e6;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+/* line 61, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart .shoping_cart_inner .single_cart:last-child {
+    margin-bottom: 30px;
+}
+
+.shoping_wrapper .shoping_cart .shoping_cart_inner .single_cart .cart_content {
+    padding: 0px 15px 0 20px;
+}
+
+/* line 68, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart .shoping_cart_inner .single_cart .thumb img {
+    width: 120px;
+}
+
+/* line 73, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart .shoping_cart_inner .single_cart .cart_content h5 {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    color: #373737;
+    margin-bottom: 10px;
+}
+
+.remove_cart i {
+    color: #a4a4a4;
+    transition: color 0.3s ease-in-out;
+}
+
+.remove_cart i:hover {
+    color: red !important;
+}
+
+/* line 80, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart .shoping_cart_inner .single_cart .cart_content p {
+    font-size: 13px;
+    font-weight: normal;
+    color: #373737;
+    font-family: "Jost", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+/* line 87, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart .shoping_cart_inner .single_cart .cart_content p .multy_icon {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 13px;
+    margin-left: 5px;
+    color: #373737;
+}
+
+/* line 94, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_cart.scss */
+.shoping_wrapper .shoping_cart .shoping_cart_inner .single_cart .cart_content p .prise {
+    color: #49a60a;
 }
 
 // select custom style 
