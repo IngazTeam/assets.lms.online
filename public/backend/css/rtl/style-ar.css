@@ -370,6 +370,14 @@ select[name=lms_table_length] {
     margin: 0 0 0 15px !important;
 }
 
+.chat-container .chat-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 .chat-container .chat-box li .chat-avatar {
     margin-right: unset !important;
     margin-left: 0 !important;
