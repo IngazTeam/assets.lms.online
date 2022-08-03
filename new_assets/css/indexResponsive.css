@@ -278,3 +278,6 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
     display: table-cell!important;
  }
 }
+.responsive_box .left_links a{
+    flex-shrink: 0;
+}
