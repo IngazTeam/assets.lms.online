@@ -14,8 +14,10 @@ $(function () {
     $("[data-toggle=tooltip]").tooltip();
     if($(window).width() < 567){
         $('.toggle__collapese').removeClass('show');
-        console.log('tetetetet');
     }
+    // if($('.toggle__collapese').hasClass('show')){
+    //     console.log('tetetet');
+    // }
 })
 
 // Append Question

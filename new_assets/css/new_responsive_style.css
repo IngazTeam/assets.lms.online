@@ -44,3 +44,8 @@ tr{
 .responsive_box  .group-span-filestyle.input-group-btn label{
     text-align: right;
 }
+@media(max-width:567px){
+    .whats-new,.adds {
+        display: none !important;
+    }
+}
