@@ -8,6 +8,17 @@
         padding-inline-start: 7px;
     }
 }
+@media (max-width:992px) {
+    .p-sm-7px-end{
+        padding-inline-end: 7px;
+    }
+    .p-sm-7px{
+        padding-inline: 7px!important;
+    }
+    .p-sm-7px-start{
+        padding-inline-start: 7px;
+    }
+}
 @media (max-width: 576px) {
     .p-mobile-0{
         padding-inline-end: 0px!important;
@@ -113,8 +124,8 @@
 .xd_courses_table.card_box table.dataTable{
     border-spacing: 0 10px!important;
 }
-.xd_courses_table.card_box .QA_section .QA_table tbody th,
-.xd_courses_table.card_box .QA_section .QA_table tbody td{
+.xd_courses_table.card_box .QA_table tbody th,
+.xd_courses_table.card_box .QA_table tbody td{
     border-bottom: 0!important;
 }
 html[dir="rtl"] .xd_courses_table.card_box .table.dataTable tbody th,
@@ -124,16 +135,16 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
 html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:last-child{
     border-radius: 8px!important;
 }
-.xd_courses_table.card_box .QA_section .QA_table .table td.lastVisibleChild {
+.xd_courses_table.card_box .QA_table .table td.lastVisibleChild {
     border-radius:8px 0 0 8px!important;
     }
-.xd_courses_table.card_box .QA_section .QA_table .table  th.lastVisibleChild {
+.xd_courses_table.card_box .QA_table .table  th.lastVisibleChild {
     border-radius:8px 0 0 8px!important;
     }
-.xd_courses_table.card_box .QA_section .QA_table .table.cards td.firstVisibleChild {
+.xd_courses_table.card_box .QA_table .table.cards td.firstVisibleChild {
     border-radius: 8px 8px 0 0!important;
     }
-.xd_courses_table.card_box .QA_section .QA_table .table.cards  th.firstVisibleChild {
+.xd_courses_table.card_box .QA_table .table.cards  th.firstVisibleChild {
     border-radius: 8px 8px 0 0!important;
     }
 .xd_courses_table.card_box table.dataTable.display tbody tr.selected > .sorting_1,
@@ -165,10 +176,10 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
     html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody td:first-child{
         border-radius: 8px 8px 0 0!important;
     }
-    .xd_courses_table.card_box .QA_section .QA_table .table.cards td.lastVisibleChild{
+    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild{
         border-radius: 0 0 8px 8px !important;
     }
-    .xd_courses_table.card_box .QA_section .QA_table .table.cards td.lastVisibleChild.inline-cell{
+    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild.inline-cell{
         border-radius: 0!important;
         border-bottom-left-radius: 8px!important;
     }
