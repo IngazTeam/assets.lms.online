@@ -121,12 +121,30 @@ html[dir="rtl"] .xd_courses_table.card_box .table.dataTable tbody th,
 html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
     border-radius:0 8px 8px 0!important;
 }
+html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:last-child{
+    border-radius: 8px!important;
+}
 .xd_courses_table.card_box .QA_section .QA_table .table td.lastVisibleChild {
     border-radius:8px 0 0 8px!important;
     }
 .xd_courses_table.card_box .QA_section .QA_table .table  th.lastVisibleChild {
     border-radius:8px 0 0 8px!important;
     }
+.xd_courses_table.card_box .QA_section .QA_table .table.cards td.firstVisibleChild {
+    border-radius: 8px 8px 0 0!important;
+    }
+.xd_courses_table.card_box .QA_section .QA_table .table.cards  th.firstVisibleChild {
+    border-radius: 8px 8px 0 0!important;
+    }
+.xd_courses_table.card_box table.dataTable.display tbody tr.selected > .sorting_1,
+.xd_courses_table.card_box table.dataTable.order-column.stripe tbody tr.selected > .sorting_1{
+    background-color: white!important;
+}
+.xd_courses_table.card_box table.dataTable tbody tr.selected{
+    background-color: transparent;
+    box-shadow: 0 0 0 2px #29BCB0!important;
+    border-radius: 8px!important;
+}
 /******************************************************************/
 @media (max-width:576px) {
     .xd_courses_table.card_box .cards tbody tr {
@@ -135,6 +153,14 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
         border-radius: 8px;
         /* background-color: white; */
      }
+
+    .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell a{
+        display: inline!important;
+    }
+    .xd_courses_table td.inline-cell .CRM_dropdown.dropdown .dropdown-toggle{
+        height:auto!important ;
+        padding-block: 0!important;
+    }
     html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody th,
     html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody td:first-child{
         border-radius: 8px 8px 0 0!important;
@@ -142,10 +168,11 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
     .xd_courses_table.card_box .QA_section .QA_table .table.cards td.lastVisibleChild{
         border-radius: 0 0 8px 8px !important;
     }
-    .xd_courses_table.card_box table.dataTable tbody tr.selected{
-        background-color: transparent;
-        box-shadow: 0 0 2px #29BCB0!important;
+    .xd_courses_table.card_box .QA_section .QA_table .table.cards td.lastVisibleChild.inline-cell{
+        border-radius: 0!important;
+        border-bottom-left-radius: 8px!important;
     }
+
     .xd_courses_table.card_box table.dataTable.display tbody tr.odd.selected > .sorting_1,
     .xd_courses_table.card_box table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_1{
         background-color: white!important;
@@ -173,5 +200,31 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
         margin-left: 1rem;
         text-align: right;
      }
+     /**************************************/
+     .xd_courses_table.card_box .table.dataTable tbody tr td.d-table-cell,
+     .xd_courses_table.card_box .table.dataTable tbody tr th.d-table-cell{
+         display: none!important;
+     }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell,
+     .xd_courses_table.card_box .table.dataTable tbody tr th.inline-cell{
+         display: inline-block!important;
+         width: 33.3333%;
+         font-weight: normal!important;
+     }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell.bord-rad-right{
+         border-radius: 0!important;
+         border-bottom-right-radius: 8px!important;
+ 
+     }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell.bord-rad-left{
+         border-radius: 0!important;
+         border-bottom-left-radius: 8px!important;
+     }
 
+}
+@media (min-width:576px) {
+.xd_courses_table.card_box .table.dataTable tbody tr td.d-table-cell,
+.xd_courses_table.card_box .table.dataTable tbody tr th.d-table-cell{
+    display: table-cell!important;
+ }
 }
