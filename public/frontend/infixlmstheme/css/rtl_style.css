@@ -610,7 +610,7 @@ html[dir=rtl] .course__details .course__details_title .single__details:not(:last
 }
 
 .chat-container .chat-box li .chat-avatar {
-    margin-left: 20px !important;
+    margin-left: 0 !important;
     margin-right: unset !important;
 }
 

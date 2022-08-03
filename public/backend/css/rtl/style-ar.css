@@ -372,7 +372,7 @@ select[name=lms_table_length] {
 
 .chat-container .chat-box li .chat-avatar {
     margin-right: unset !important;
-    margin-left: 20px !important;
+    margin-left: 0 !important;
 }
 
 .chat-container .chat-box li .chat-text-wrapper .chat-text:first-child:before {
