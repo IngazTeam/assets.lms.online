@@ -13,9 +13,12 @@ function test_collapse(that) {
 $(function () {
     $("[data-toggle=tooltip]").tooltip();
     if($(window).width() < 567){
-        $('.toggle__collapese').removeClass('show');
-        console.log('tetetetet');
+        $('.toggle__collapese').toggleClass('show');
+        console.log('tesdt coll');
     }
+    // if($('.toggle__collapese').hasClass('show')){
+    //     console.log('tetetet');
+    // }
 })
 
 // Append Question
