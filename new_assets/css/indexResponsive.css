@@ -156,12 +156,36 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
     box-shadow: 0 0 0 2px #29BCB0!important;
     border-radius: 8px!important;
 }
+.xd_courses_table.card_box #lms_table.cards .form-check{
+    padding:0 ;
+}
+.xd_courses_table.card_box table.dataTable .common-radio:checked~label:before,
+.xd_courses_table.card_box table.dataTable .common-radio:empty~label:before{
+    width: 17px!important;
+    height: 17px !important;
+    border-radius: 5px!important;
+    left: 50%!important;
+    transform: translate(-50%,-50%)!important;
+}
+.xd_courses_table.card_box table.dataTable .common-radio:checked~label:after{
+    content:"";
+    width: 11px;
+    height: 11px;
+    border-radius: 2px;
+    background-color: #29BCB0;
+    left: 50%!important;
+    transform: translate(-50%,-50%)!important;
+}
+.xd_courses_table.card_box table.dataTable .cannotAdd:checked~label:after{
+    content: ""!important;
+}
 /******************************************************************/
 @media (max-width:576px) {
     .xd_courses_table.card_box .cards tbody tr {
         width: 336px;
         margin: auto;
         border-radius: 8px;
+        position: relative;
         /* background-color: white; */
      }
 
@@ -231,6 +255,21 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
          border-radius: 0!important;
          border-bottom-left-radius: 8px!important;
      }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.absolute_check{
+        background-color: transparent!important;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        z-index: 9;
+        padding: 0!important;
+        width: 17px;
+        height: 17px;
+     }
+    .xd_courses_table.card_box .table.dataTable tbody tr td.as_first_col{
+        border-radius: 8px 8px 0 0!important;
+        padding-top: 13px!important;
+    }
+
 
 }
 @media (min-width:576px) {
