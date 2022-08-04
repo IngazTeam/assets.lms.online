@@ -8106,7 +8106,7 @@ html[dir="rtl"] .error-message {
     border: 0 !important;
 }
 
-.primary_input_field {
+.primary_input_field , .primary_input4 {
     border: 1px solid #ededed;
     font-size: 12px;
     color: #58548E;
@@ -8296,7 +8296,7 @@ html[dir="rtl"] .error-message {
     color: #828BB2;
 }
 
-.primary_input_label {
+.primary_input_label , .primary_label2 {
     font-size: 12px;
     text-transform: capitalize;
     color: #828BB2;
@@ -14623,5 +14623,251 @@ html[dir="rtl"] .social-panel button.close-btn {
     20% {
         transform: scaleY(1);
         -webkit-transform: scaleY(1);
+    }
+}
+
+
+
+
+
+
+
+/* from frontend style.css */
+
+
+.account_profile_thumb {
+
+    padding-top: 12px ;
+     border-radius: 14px;
+     background: #f2f3f7;
+}
+
+/* line 21, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .account_profile_thumb .thumb {
+    width: 272px;
+    height: 272px;
+    margin-bottom: 27px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767.98px) {
+
+    /* line 21, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+    .account_profile_wrapper .account_profile_thumb .thumb {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* line 31, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .account_profile_thumb .thumb img {
+    width: 272px;
+    height: 272px;
+    border-radius: 50%;
+}
+
+/* line 37, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .account_profile_thumb h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--system_secendory_color);
+    margin-bottom: 5px;
+    background: white;
+    padding: 10px;
+    box-shadow: 7px 7px #29bcb04f;
+    border-radius: 0 0 10px 10px;
+}
+
+/* line 43, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .account_profile_thumb p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #373737;
+    margin-bottom: 0;
+}
+
+/* line 50, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .preview_upload {
+    display: grid;
+    grid-template-columns: 180px auto;
+    grid-gap: 30px;
+    grid-template-rows: 180px;
+    margin-bottom: 57px;
+}
+
+@media (max-width: 575.98px) {
+
+    /* line 50, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+    .account_profile_wrapper .preview_upload {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* line 59, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .preview_upload .preview_upload_thumb {
+    background: #f4f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* line 65, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .preview_upload .preview_upload_thumb span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--system_secendory_color);
+}
+
+/* line 71, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .preview_upload .preview_drag {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23E1E2E6FF' stroke-width='1' stroke-dasharray='4' stroke-dashoffset='8' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 575.98px) {
+
+    /* line 71, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+    .account_profile_wrapper .preview_upload .preview_drag {
+        height: 180px;
+    }
+}
+
+/* line 81, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .preview_upload .preview_drag .preview_drag_inner {
+    text-align: center;
+}
+
+/* line 86, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .preview_upload .preview_drag .preview_drag_inner p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #828bb2;
+    margin: 12px 0 2px 0;
+}
+
+/* line 92, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .preview_upload .preview_drag .preview_drag_inner .chose_file {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4265ff;
+    position: relative;
+    text-decoration: underline;
+}
+
+/* line 98, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .preview_upload .preview_drag .preview_drag_inner .chose_file input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* line 112, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .account_title h3 {
+    margin-bottom: 2px;
+}
+
+/* line 116, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .email_grid_input {
+    display: grid;
+    grid-template-columns: auto 50px;
+    grid-gap: 5px;
+}
+
+/* line 120, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .email_grid_input .editor_icon {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #e1e2e6;
+    background: #f9f9fd;
+}
+
+/* line 127, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .email_grid_input .editor_icon i {
+    font-size: 16px;
+    font-weight: 400;
+    color: #687083;
+}
+
+/* line 134, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .privacy_permission {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 56px;
+}
+
+@media (max-width: 767.98px) {
+
+    /* line 134, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+    .account_profile_wrapper .privacy_permission {
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /* line 134, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+    .account_profile_wrapper .privacy_permission {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+/* line 145, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .privacy_permission .single_privacy_permission {
+    display: flex;
+}
+
+/* line 147, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .privacy_permission .single_privacy_permission .primary_bulet_checkbox {
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+
+/* line 153, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .privacy_permission .single_privacy_permission .permission_text .icon {
+    margin-right: 12px;
+    position: relative;
+    top: -3px;
+}
+
+/* line 159, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .privacy_permission .single_privacy_permission .permission_text .permission_content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--system_secendory_color);
+    margin-bottom: 0;
+}
+
+/* line 165, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .privacy_permission .single_privacy_permission .permission_text .permission_content p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #373737;
+    line-height: 24px;
+}
+
+/* line 170, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+.account_profile_wrapper .privacy_permission .single_privacy_permission .permission_text .permission_content p br {
+    display: inline-block;
+}
+
+@media (min-width: 1200px) and (max-width: 1250.98px) {
+
+    /* line 170, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
+    .account_profile_wrapper .privacy_permission .single_privacy_permission .permission_text .permission_content p br {
+        display: none;
     }
 }

@@ -42,4 +42,12 @@ $('.popup_input').click(function(){
     $(this).siblings().click();
 })
 
-
+// toggle password type
+function PasswordType(that){
+    if($(that).siblings().attr('type') === 'password'){
+        $(that).siblings().attr('type','text')
+    }
+    else{
+        $(that).siblings().attr('type','password')
+    }
+}
