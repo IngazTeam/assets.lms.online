@@ -124,6 +124,9 @@
 .xd_courses_table.card_box table.dataTable{
     border-spacing: 0 10px!important;
 }
+.xd_courses_table.card_box  table.dataTable tr{
+    height: auto!important;
+}
 .xd_courses_table.card_box .QA_table tbody th,
 .xd_courses_table.card_box .QA_table tbody td{
     border-bottom: 0!important;
@@ -222,11 +225,12 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
         font-weight: 900;
         text-align: left!important;
      }
-
+     .xd_courses_table.card_box .cards tbody td:not(.absolute_check) {
+        min-height: 40px;
+     }
      .xd_courses_table.card_box .cards thead {
         display: none;
      }
-
      .xd_courses_table.card_box .cards td:before {
         content: attr(data-label);
         position: relative;
@@ -249,9 +253,22 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
          font-weight: normal!important;
          height: 72px;
          padding-top: 0;
+         text-align: center!important;
+     }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell-50,
+     .xd_courses_table.card_box .table.dataTable tbody tr th.inline-cell-50{
+         display: inline-block!important;
+         width: 50%;
+         font-weight: normal!important;
+         height: 72px;
+         padding-top: 0;
+         text-align: center!important;
      }
      .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell
-      .profile_info img{
+      .profile_info img,
+      .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell-50
+      .profile_info img
+      {
         width: 27px!important;
         height: 27px!important;
       }
@@ -259,17 +276,18 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
       .switch_toggle{
         margin-top: 5px;
       }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell::before{
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell::before,
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell-50::before{
         float: none;
         margin-left: 0;
         text-align: center;
      }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell.bord-rad-right{
+     .xd_courses_table.card_box .table.dataTable tbody tr td.bord-rad-right{
          border-radius: 0!important;
          border-bottom-right-radius: 8px!important;
  
      }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell.bord-rad-left{
+     .xd_courses_table.card_box .table.dataTable tbody tr td.bord-rad-left{
          border-radius: 0!important;
          border-bottom-left-radius: 8px!important;
      }
