@@ -284,5 +284,11 @@ ul.main-tabs li {
   cursor: pointer;
   color: #3B459C;
   margin-bottom: 0.75rem;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.foot-box.active {
+  background-color: #29BCB0;
+  color: #fff;
 }
