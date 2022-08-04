@@ -114,6 +114,8 @@ $("#addinstructor").submit("submit", function (event) {
         data: formData,
         beforeSend: function () {
             $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+            disabled_button("#save_button_parent");
+
         },
         success: function (data) {
             console.log(data);
@@ -145,6 +147,10 @@ $("#addinstructor").submit("submit", function (event) {
         error: function (data) {
             // error method
         },
+        complete:function(){
+
+            realase_disabled_button("#save_button_parent");
+        },
         cache: false,
         contentType: false,
         processData: false
@@ -163,6 +169,7 @@ $("#editinstructor").submit("submit", function (event) {
         data: formData,
         beforeSend: function () {
             $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+            disabled_button("#update_button_parent");
         },
         success: function (data) {
             console.log(data);
@@ -187,8 +194,14 @@ $("#editinstructor").submit("submit", function (event) {
         error: function (data) {
             // error method
         },
+        complete: function () {
+            realase_disabled_button("#update_button_parent");
+
+        },
         cache: false,
         contentType: false,
         processData: false
     });
 });
+
+
