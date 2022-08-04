@@ -2127,7 +2127,7 @@ table.dataTable tbody td .form-check-input {
 
 /* line 129, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-btn {
+.primary-btn , .theme_btn{
     display: flex;
     align-items: center;
     color: #58548e;
@@ -2261,7 +2261,7 @@ table.dataTable tbody td .form-check-input {
 
 /* line 198, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-btn.fix-gr-bg {
+.primary-btn.fix-gr-bg , .theme_btn{
     display: flex;
     background: #29bcb0;
     padding: 5px 11px;
