@@ -14628,9 +14628,31 @@ html[dir="rtl"] .social-panel button.close-btn {
 }
 
 
+.fc-theme-standard td, .fc-theme-standard th {
+    border: 4px solid #fff;
+}
 
+.fc-theme-standard .fc-scrollgrid {
+    border: none;
+}
 
+.fc .fc-daygrid-day-number {
+    color: #8f8f8f
+}
 
+.fc .fc-daygrid-day-frame {
+    border-radius: 20px;
+    background: #29bcb017;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #cfd8ff;
+    border-radius: 20px;
+}
+
+.fc .fc-button-primary {
+    background: #29bcb0 !important;
+}
 
 
 /* from frontend style.css */
@@ -14640,7 +14662,7 @@ html[dir="rtl"] .social-panel button.close-btn {
 
     padding-top: 12px ;
      border-radius: 14px;
-     background: #f2f3f7;
+     background: #bdeae729;
 }
 
 /* line 21, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */
