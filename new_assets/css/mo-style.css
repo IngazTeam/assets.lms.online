@@ -82,7 +82,7 @@ img {
   padding: 0 10px;
 }
 
-.login .form-div .bottom-text {
+.login   .bottom-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +92,7 @@ img {
   right: 0;
 }
 
-.login .form-div .bottom-text .txt-div {
+.login   .bottom-text .txt-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,21 +105,41 @@ img {
           justify-content: center;
 }
 
-.login .form-div .bottom-text .txt-div p {
+
+@media(max-width:576px) {
+  .login .row {
+    flex-direction: column-reverse;
+  }
+  .login .login-img {
+    height: auto !important;
+  }
+
+  .login {
+    min-height: auto !important;
+  }
+
+  .login .form-div {
+    justify-content: center;
+  }
+}
+
+
+
+.login   .bottom-text .txt-div p {
   color: #3b459c;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0px;
 }
 
-.login .form-div .bottom-text .txt-div span {
+.login   .bottom-text .txt-div span {
   color: #b8b8b8;
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 0px;
 }
 
-.login .form-div .bot-anker {
+.login   .bot-anker {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
