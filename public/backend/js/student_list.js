@@ -230,3 +230,18 @@ $("#editstudent").submit("submit", function (event) {
 
 
 
+          /***
+     * helper function
+     * ****/
+           function disabled_button(selector) {
+
+            $(selector).attr("disabled", true);
+            
+            }
+            
+            function realase_disabled_button(selector) {
+            
+            
+            $(selector).removeAttr("disabled");
+            
+            }
