@@ -40,6 +40,9 @@ $(document).on('click', '.editInstructor', function () {
             $('#instructorTwitter').val(instructor.twitter);
             $('#instructorLinkedin').val(instructor.linkedin);
             $('#instructorInstragram').val(instructor.instagram);
+            $('#select_role').val(instructor.role_id);
+            let c=$('#select_role').niceSelect('update');
+            
             $("#editInstructor").modal('show');
         },
         error: function (data) {
