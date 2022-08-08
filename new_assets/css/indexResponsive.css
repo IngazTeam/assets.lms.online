@@ -123,6 +123,10 @@
 }
 .xd_courses_table.card_box table.dataTable{
     border-spacing: 0 10px!important;
+    box-shadow: none!important;
+}
+.xd_courses_table.card_box .QA_table tbody tr:hover{
+    background-color: unset!important;
 }
 .xd_courses_table.card_box  table.dataTable tr{
     height: auto!important;
@@ -134,6 +138,12 @@
 html[dir="rtl"] .xd_courses_table.card_box .table.dataTable tbody th,
 html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
     border-radius:0 8px 8px 0!important;
+}
+@media (min-width:576px) {
+html[dir="rtl"] .xd_courses_table.card_box .table.dataTable tbody th,
+html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:last-child{
+    border-radius: 8px 0 0 8px !important;
+}
 }
 html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:last-child{
     border-radius: 8px!important;
@@ -197,9 +207,13 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell a{
         display: inline!important;
     }
+
     .xd_courses_table td.inline-cell .CRM_dropdown.dropdown .dropdown-toggle{
         height:auto!important ;
         padding-block: 0!important;
+    }
+    .xd_courses_table td .CRM_dropdown.dropdown .dropdown-toggle{
+        padding: 0!important;
     }
     html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody th,
     html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody td:first-child{
@@ -282,6 +296,10 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
         margin-left: 0;
         text-align: center;
      }
+     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell-50 .switch_toggle{
+        display: block!important;
+        margin: auto;
+    }
      .xd_courses_table.card_box .table.dataTable tbody tr td.bord-rad-right{
          border-radius: 0!important;
          border-bottom-right-radius: 8px!important;

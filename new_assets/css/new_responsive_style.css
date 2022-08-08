@@ -181,10 +181,17 @@ tr{
 .header_chart h3{
     font-size: 20px !important;
 }
-html[dir="rtl"] .error-message{
+.error-message{
     display: block;
     width: 100%;
-    top: 74px;
+    /* top: 74px; */
+    top: 50px !important;
+    height: 0px !important;
+}
+
+#add_student  .error-message {
+    top: 50px !important;
+    height: 0px !important;
 }
 .invalid-feedback strong {
     top: 0px !important;
@@ -197,4 +204,8 @@ html[dir="rtl"] .error-message{
     /* height: auto !important; */
     line-height: 34px;
     min-height: 39px !important;
+}
+#coupon-form .error-message{
+    top: 69px !important;
+    /* height: 0px !important; */
 }
