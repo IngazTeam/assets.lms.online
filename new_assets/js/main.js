@@ -12,6 +12,13 @@ function test_collapse(that) {
 
 $(function () {
     $("[data-toggle=tooltip]").tooltip();
+    if($(window).width() < 567){
+        $('.toggle__collapese').toggleClass('show');
+        // console.log('tesdt coll');
+    }
+    // if($('.toggle__collapese').hasClass('show')){
+    //     console.log('tetetet');
+    // }
 })
 
 // Append Question
@@ -34,3 +41,13 @@ function RemoveQuestion(that, row_content) {
 $('.popup_input').click(function(){
     $(this).siblings().click();
 })
+
+// toggle password type
+function PasswordType(that){
+    if($(that).siblings().attr('type') === 'password'){
+        $(that).siblings().attr('type','text')
+    }
+    else{
+        $(that).siblings().attr('type','password')
+    }
+}

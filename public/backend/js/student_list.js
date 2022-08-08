@@ -132,8 +132,10 @@ $("#addstudent").submit("submit", function (event) {
         data: formData,
         beforeSend: function () {
             $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+            disabled_button("#save_button_parent");
         },
         success: function (data) {
+
             console.log(data);
             $('.error-message').remove();
             $('input').removeClass('red-border');
@@ -153,11 +155,17 @@ $("#addstudent").submit("submit", function (event) {
             }
             if (status == 500) {
                 $("#save_button_parent").html(`save`);
+
             }
 
         },
         error: function (data) {
             // error method
+
+        },
+        complete: function(data) {
+            realase_disabled_button("#save_button_parent");
+
         },
         cache: false,
         contentType: false,
@@ -177,8 +185,10 @@ $("#editstudent").submit("submit", function (event) {
         data: formData,
         beforeSend: function () {
             $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+           disabled_button("#update_button_parent");
         },
         success: function (data) {
+
             console.log(data);
             $('.error-message').remove();
             $('input').removeClass('red-border');
@@ -209,6 +219,8 @@ $("#editstudent").submit("submit", function (event) {
         },
         complete: function(data) {
             // $("#update_button_parent").html(`save`);
+            realase_disabled_button("#update_button_parent");
+
         },
         cache: false,
         contentType: false,
@@ -216,3 +228,20 @@ $("#editstudent").submit("submit", function (event) {
     });
 });
 
+
+
+          /***
+     * helper function
+     * ****/
+           function disabled_button(selector) {
+
+            $(selector).attr("disabled", true);
+            
+            }
+            
+            function realase_disabled_button(selector) {
+            
+            
+            $(selector).removeAttr("disabled");
+            
+            }

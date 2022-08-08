@@ -135,7 +135,7 @@ input , textarea,select{
 }
 
 .card_box {
-    background-color: #fff;
+    background-color: #fff !important;
     border-radius: 31px;
     width: 100%;
     position: relative;
@@ -282,6 +282,9 @@ input , textarea,select{
                 width: 225px;
                 margin-left: 4px;
                 text-align: right;
+                @media(max-width:1200px){
+                    width: 100%;
+                }
             }
         }
 
@@ -803,7 +806,7 @@ input[type='date']{
     }
 }
 
-#add_content {
+.add__content {
     .modal-content {
         background-color: #F2F3F7;
         border-radius: 35px;

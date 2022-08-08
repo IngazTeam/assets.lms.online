@@ -1,19 +1,47 @@
 <nav class="amazing-tabs">
   <div class="filters-container">
+    <div class="close-button text-center py-2" style="color: #29BCB0;">
+      <i class="fas fa-angle-double-down close-button-icon" style="cursor: pointer"></i>
+    </div>
     <div class="filters-wrapper">
-      <ul class="filter-tabs">
+      <ul class="filter-tabs flex-wrap">
         <li>
-          <button class="filter-button filter-active" data-translate-value="0">
+          <button class="filter-button filter-active" data-translate-value="">
             profile
           </button>
         </li>
         <li>
-          <button class="filter-button" data-translate-value="-100%">
+          <button class="filter-button" data-translate-value="">
             edit
           </button>
         </li>
         <li>
-          <button class="filter-button" data-translate-value="-200%">
+          <button class="filter-button" data-translate-value="">
+            username
+          </button>
+        </li>
+        <li>
+          <button class="filter-button" data-translate-value="">
+            username
+          </button>
+        </li>
+        <li>
+          <button class="filter-button" data-translate-value="">
+            username
+          </button>
+        </li>
+        <li>
+          <button class="filter-button" data-translate-value="">
+            username
+          </button>
+        </li>
+        <li>
+          <button class="filter-button" data-translate-value="">
+            username
+          </button>
+        </li>
+        <li>
+          <button class="filter-button" data-translate-value="">
             username
           </button>
         </li>
@@ -169,4 +197,21 @@
       handleActiveTab(filterButtons, event, "filter-active");
     }
   });
+  
+</script>
+<script>
+  $(".close-button-icon").on('click', function () {
+    $('.filters-container').toggleClass('active')
+  })
+  $(".round-button.user-btn").on('click', function () {
+    $('.filters-container').toggleClass('active')
+  })
+  $(document).click(function (e) {
+    var $tgt = $(e.target);
+    if ( !$tgt.closest(".round-button.user-btn").length) {
+      $('.filters-container').removeClass('active');
+    }   
+    
+});
+  
 </script>
