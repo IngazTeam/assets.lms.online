@@ -4610,9 +4610,10 @@ table.dataTable {
 
 #lmss_table tbody td {
     font-size: 12px;
-    background: #f9f9f9;
+    background: #ffffff;
     color: #828BB2;
-    border-bottom: 12px solid #fff;
+    border-radius: 0;
+    border-bottom: 10px solid #f2f3f7;
 }
 
 .QA_section_white.QA_section .QA_table .table {
@@ -5387,6 +5388,19 @@ html[dir="rtl"] .linkIcons-bottom.admn-pg .notify-drop.show {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#lms_table tbody select[name='role_id'] {
+    font-size: 10px;
+    background: #29bcb014;
+    border: none;
+    border-radius: 7px !important;
+}
+
+#lms_table tbody form .primary-btn{
+    font-size: 10px;
+    padding: 6px;
+    border-radius: 7px !important;
 }
 
 .QA_section .QA_table .table thead th {
@@ -13399,7 +13413,7 @@ body.admin {
 .select2-container--default.select2-container--focus .select2-selection--multiple {
     border: 1px solid #ced4da;
     outline: 0;
-    border-radius: 4px !important;
+    border-radius: 25px !important;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
@@ -14627,9 +14641,31 @@ html[dir="rtl"] .social-panel button.close-btn {
 }
 
 
+.fc-theme-standard td, .fc-theme-standard th {
+    border: 4px solid #fff;
+}
 
+.fc-theme-standard .fc-scrollgrid {
+    border: none;
+}
 
+.fc .fc-daygrid-day-number {
+    color: #8f8f8f
+}
 
+.fc .fc-daygrid-day-frame {
+    border-radius: 20px;
+    background: #29bcb017;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #cfd8ff;
+    border-radius: 20px;
+}
+
+.fc .fc-button-primary {
+    background: #29bcb0 !important;
+}
 
 
 /* from frontend style.css */
@@ -14639,7 +14675,7 @@ html[dir="rtl"] .social-panel button.close-btn {
 
     padding-top: 12px ;
      border-radius: 14px;
-     background: #f2f3f7;
+     background: #bdeae729;
 }
 
 /* line 21, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_account_profile.scss */

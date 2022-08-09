@@ -40,6 +40,9 @@ $(document).on('click', '.editInstructor', function () {
             $('#instructorTwitter').val(instructor.twitter);
             $('#instructorLinkedin').val(instructor.linkedin);
             $('#instructorInstragram').val(instructor.instagram);
+            $('#select_role').val(instructor.role_id);
+            let c=$('#select_role').niceSelect('update');
+            
             $("#editInstructor").modal('show');
         },
         error: function (data) {
@@ -114,6 +117,8 @@ $("#addinstructor").submit("submit", function (event) {
         data: formData,
         beforeSend: function () {
             $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+            disabled_button("#save_button_parent");
+
         },
         success: function (data) {
             console.log(data);
@@ -145,6 +150,10 @@ $("#addinstructor").submit("submit", function (event) {
         error: function (data) {
             // error method
         },
+        complete:function(){
+
+            realase_disabled_button("#save_button_parent");
+        },
         cache: false,
         contentType: false,
         processData: false
@@ -163,6 +172,7 @@ $("#editinstructor").submit("submit", function (event) {
         data: formData,
         beforeSend: function () {
             $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+            disabled_button("#update_button_parent");
         },
         success: function (data) {
             console.log(data);
@@ -187,8 +197,29 @@ $("#editinstructor").submit("submit", function (event) {
         error: function (data) {
             // error method
         },
+        complete: function () {
+            realase_disabled_button("#update_button_parent");
+
+        },
         cache: false,
         contentType: false,
         processData: false
     });
 });
+
+
+          /***
+     * helper function
+     * ****/
+           function disabled_button(selector) {
+
+            $(selector).attr("disabled", true);
+            
+            }
+            
+            function realase_disabled_button(selector) {
+            
+            
+            $(selector).removeAttr("disabled");
+            
+            }
