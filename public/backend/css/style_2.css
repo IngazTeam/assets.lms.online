@@ -5390,6 +5390,19 @@ html[dir="rtl"] .linkIcons-bottom.admn-pg .notify-drop.show {
     justify-content: center;
 }
 
+#lms_table tbody select[name='role_id'] {
+    font-size: 10px;
+    background: #29bcb014;
+    border: none;
+    border-radius: 7px !important;
+}
+
+#lms_table tbody form .primary-btn{
+    font-size: 10px;
+    padding: 6px;
+    border-radius: 7px !important;
+}
+
 .QA_section .QA_table .table thead th {
     padding: 17px 22px;
     line-height: 16px;
@@ -13400,7 +13413,7 @@ body.admin {
 .select2-container--default.select2-container--focus .select2-selection--multiple {
     border: 1px solid #ced4da;
     outline: 0;
-    border-radius: 4px !important;
+    border-radius: 25px !important;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
