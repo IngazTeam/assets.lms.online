@@ -106,8 +106,15 @@
     width: calc(100% - 68px);
 } }
 /*********************courses***********************/
+.AddListButton{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-left: 0!important;
+}
 .xd_courses_table.card_box{
   background-color: transparent!important;
+  padding-inline: 0!important;
 }
 @media (max-width:576px) {
     .xd_courses_table.card_box{
@@ -354,4 +361,16 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
 }
 .responsive_box.title_with_breadcrumbs  .section_title h1{
     margin-bottom: 0!important;
+}
+.selectFormINDatatable{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.selectFormINDatatable button{
+    padding:5px !important;
+}
+.selectFormINDatatable select[name='role_id']{
+    width: 120px;
 }
