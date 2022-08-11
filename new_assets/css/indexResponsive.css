@@ -63,6 +63,7 @@
 .indexResponsive .m-user-subscriptions .m-subscription-name{
     margin-inline-start: 7px;
 }
+
 .indexResponsive .select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow{
     left: 7px!important;
 }
@@ -105,15 +106,22 @@
     width: calc(100% - 68px);
 } }
 /*********************courses***********************/
+.AddListButton{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-left: 0!important;
+}
 .xd_courses_table.card_box{
   background-color: transparent!important;
+  padding-inline: 0!important;
 }
 @media (max-width:576px) {
     .xd_courses_table.card_box{
         padding: 0!important;
         margin-top: 10px!important;
     }
-    .xd_courses_table.card_box .classList.cards{
+    .xd_courses_table.card_box .table.cards{
         padding: 0!important;
     }
     .xd_courses_table.card_box .dataTables_filter>label{
@@ -124,6 +132,9 @@
 .xd_courses_table.card_box table.dataTable{
     border-spacing: 0 10px!important;
     box-shadow: none!important;
+}
+.xd_courses_table.card_box div.dt-buttons{
+    background: white!important;
 }
 .xd_courses_table.card_box .QA_table tbody tr:hover{
     background-color: unset!important;
@@ -148,6 +159,10 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:last-child{
 html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:last-child{
     border-radius: 8px!important;
 }
+.xd_courses_table.card_box td .CRM_dropdown.dropdown .dropdown-menu{
+    border-radius: 5px;
+    box-shadow: 0PX 3PX 6PX rgb(0 0 0 / 16%)!important;
+}
 .xd_courses_table.card_box .QA_table .table td.lastVisibleChild {
     border-radius:8px 0 0 8px!important;
     }
@@ -165,7 +180,7 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
     background-color: white!important;
 }
 .xd_courses_table.card_box table.dataTable tbody tr.selected{
-    background-color: #fff;
+    /*background-color: transparent;*/
     box-shadow: 0 0 0 2px #29BCB0!important;
     border-radius: 8px!important;
 
@@ -222,7 +237,8 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
     .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild{
         border-radius: 0 0 8px 8px !important;
     }
-    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild.inline-cell{
+    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild.inline-cell,
+    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild.inline-cell-50{
         border-radius: 0!important;
         border-bottom-left-radius: 8px!important;
     }
@@ -332,6 +348,29 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
     display: table-cell!important;
  }
 }
-.responsive_box .left_links a{
-    flex-shrink: 0;
+.responsive_box.title_with_breadcrumbs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    gap:15px;
+    margin-bottom: 10px;
+}
+.responsive_box.title_with_breadcrumbs .left_links{
+   margin-inline-start: auto;
+}
+.responsive_box.title_with_breadcrumbs  .section_title h1{
+    margin-bottom: 0!important;
+}
+.selectFormINDatatable{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.selectFormINDatatable button{
+    padding:5px !important;
+}
+.selectFormINDatatable select[name='role_id']{
+    width: 120px;
 }
