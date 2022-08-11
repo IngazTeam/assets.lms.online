@@ -324,8 +324,13 @@ input:focus, textarea:focus, select:focus {
     top: 35px !important;
   }
 }
+.tab_part .inner_box_collapse button.main_collapese {
+  width: 70% !important;
+}
+.tab_part .form-check {
+  padding-left: 1em !important;
+}
 .tab_part .main_collapese {
-  width: 100%;
   display: flex;
   background-color: #F2F3F7;
   padding: 10px 15px;
@@ -333,6 +338,11 @@ input:focus, textarea:focus, select:focus {
   border: 0px solid transparent;
   align-items: center;
   height: 38px;
+}
+@media (min-width: 767px) {
+  .tab_part .main_collapese button.main_collapese {
+    width: 54%;
+  }
 }
 .tab_part .main_collapese .bi-caret-down-fill,
 .tab_part .main_collapese .bi-caret-left-fill {
@@ -392,6 +402,8 @@ input:focus, textarea:focus, select:focus {
   font-size: 10px;
   color: #525C72;
   display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 @media (max-width: 767px) {
   .tab_part .main_collapese_card .inner_collapese_card label, .tab_part .main_collapese_card .inner_big_cart label {
@@ -471,7 +483,7 @@ input:focus, textarea:focus, select:focus {
 }
 @media (max-width: 767px) {
   .tab_part .main_collapese_card .inner_collapese_card .form-check .form-check-input, .tab_part .main_collapese_card .inner_big_cart .form-check .form-check-input {
-    margin-top: 5px;
+    margin-top: 15px;
   }
 }
 @media (min-width: 767px) {
