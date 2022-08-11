@@ -8,6 +8,7 @@ $(document).ready(function () {
     // form submit event
     form.on('submit', function (e) {
         grecaptcha.ready(function() {
+            grecaptcha.ready(function() {
             grecaptcha.execute('6LcGulQhAAAAADPmaRhvnck9r_IwjvKkLSYd7OFZ', {action: 'submit'}).then(function(token) {
                 e.preventDefault(); // prevent default form submit
 
@@ -75,6 +76,7 @@ $(document).ready(function () {
                     }
                 });
             });
+        });
         });
     });
 });

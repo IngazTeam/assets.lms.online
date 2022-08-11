@@ -5382,6 +5382,10 @@ html[dir="rtl"] .linkIcons-bottom.admn-pg .notify-drop.show {
     border: 1px solid green !important;
 }
 
+html[dir="rtl"] .fc .fc-daygrid-day-top {
+    flex-direction: row !important;
+}
+
 #lms_table .form-check {
     margin: 0 !important;
     padding: 0 27px !important;
@@ -5401,6 +5405,10 @@ html[dir="rtl"] .linkIcons-bottom.admn-pg .notify-drop.show {
     font-size: 10px;
     padding: 6px;
     border-radius: 7px !important;
+}
+
+.fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk {
+    display: flex;
 }
 
 .QA_section .QA_table .table thead th {

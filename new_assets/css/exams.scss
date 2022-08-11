@@ -371,10 +371,14 @@ input , textarea,select{
         }
     }
 
-   
-
+    .inner_box_collapse button.main_collapese{
+        width: 70% !important;
+    }
+    .form-check{
+        padding-left: 1em !important;
+    }
     .main_collapese {
-        width: 100%;
+        // width: 100%;
         display: flex;
         background-color: $simple_gray;
         padding: 10px 15px;
@@ -382,7 +386,11 @@ input , textarea,select{
         border: 0px solid transparent;
         align-items: center;
         height: 38px;
-
+        button.main_collapese{
+            @media(min-width:767px){
+                width: 54%;
+            }
+        }
         .bi-caret-down-fill,
         .bi-caret-left-fill {
             color: #fff;
@@ -448,6 +456,8 @@ input , textarea,select{
                 font-size: 10px;
                 color: $main_course_color;
                 display: block;
+                margin-top: 5px;
+                margin-bottom: 5px;
                 @media(max-width:767px){
                     padding-top: 8px;
                 }
@@ -537,7 +547,7 @@ input , textarea,select{
                     }
                     &{
                         @media(max-width:767px){
-                            margin-top: 5px;
+                            margin-top: 15px;
                         }
                     }
                 }
