@@ -208,6 +208,34 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
 .xd_courses_table.card_box table.dataTable .cannotAdd:checked~label:after{
     content: ""!important;
 }
+.xd_courses_table.card_box table.dataTable td .large_text{
+    max-width: 200px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.large_text::-webkit-scrollbar-track
+{
+    border-radius: 5px;
+    background-color: #f2f3f7;
+}
+
+.large_text::-webkit-scrollbar
+{
+    width: 8px;
+    background-color:#f2f3f7 ;
+}
+
+.large_text::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: #29bcb0;
+}
+.xd_courses_table.card_box table.dataTable td .colorValues{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
 /******************************************************************/
 @media (max-width:576px) {
     .xd_courses_table.card_box .cards tbody tr {
@@ -222,7 +250,9 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell a{
         display: inline!important;
     }
-
+    .xd_courses_table.card_box table.dataTable td .colorValues {
+        justify-content: end;
+    }
     .xd_courses_table td.inline-cell .CRM_dropdown.dropdown .dropdown-toggle{
         height:auto!important ;
         padding-block: 0!important;
@@ -373,4 +403,21 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
 }
 .selectFormINDatatable select[name='role_id']{
     width: 120px;
+}
+.collapse_Change_radius .card-header[aria-expanded='true']{
+    border-radius: 15px 15px 0 0!important;
+}
+.collapse_Change_radius .card-header[aria-expanded='false']{
+    border-radius: 15px!important;
+}
+.collapse_Change_radius .card-header button{
+    color: #3B459C;
+    font-weight: 500;
+}
+.without-bg{
+    background: unset!important;
+}
+.DragableHeaderTitle{
+    display: flex;
+    justify-content: space-between;
 }
