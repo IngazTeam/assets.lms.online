@@ -5410,6 +5410,16 @@ html[dir="rtl"] .fc .fc-daygrid-day-top {
 .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk {
     display: flex;
 }
+@media(max-width:575px){
+    .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:first-child {
+        flex: 1;
+        justify-content: space-between;
+    }
+    .fc-direction-rtl .fc-toolbar>*>:not(:first-child){
+        margin-right: 0;
+    }
+}
+
 
 .QA_section .QA_table .table thead th {
     padding: 17px 22px;
