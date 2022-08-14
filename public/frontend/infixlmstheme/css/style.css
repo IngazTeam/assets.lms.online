@@ -14066,7 +14066,9 @@ footer .footer_top_area .footer__cta .thumb {
 }
 
 footer .footer_top_area .footer__cta .thumb img {
-    filter: brightness(0);
+    /* filter: brightness(0); */
+    height: 70px !important;
+    width: 100% !important;
 }
 
 @media (max-width: 575.98px) {
