@@ -2063,7 +2063,7 @@ label {
 }*/
 
 .index-header-search {
-    background-color: #f7f7f7 !important;
+    background-color: #e9f6f7 !important;
     box-shadow: none !important;
 }
 
@@ -4027,7 +4027,7 @@ input[type="number"] {
 }
 
 .funfact-section {
-    background: #f7f7f7;
+    background: #e9f6f7;
 }
 
 /*----------------------------------------------------*/
@@ -4905,7 +4905,7 @@ only screen and (max-width:767px) {
 }
 
 .my-hero-input-search {
-    background-color: #00000008;
+    background-color: #d7eff18c;
     border: 1px solid #ddd;
     margin-top: 40px;
     box-shadow: unset !important;
