@@ -14210,12 +14210,12 @@ footer ul.social-network li {
 
 /* line 133, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer .social-circle i {
-    width: 25px;
-    height: 20px;
-    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 23px;
     color: #58548e;
     text-align: center;
-    margin-left: -2px;
 }
 
 /* line 140, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
