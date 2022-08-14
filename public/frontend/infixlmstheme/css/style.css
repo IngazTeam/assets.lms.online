@@ -128,6 +128,16 @@ body .dashboard_main_wrapper {
     /*EDEFF6*/
 }
 
+ 
+.intro2-image {
+    height: 450px;
+}
+
+.intro2-image img {
+    height: 100%;
+    width: auto;
+}
+
 /* line 64, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_reset.scss */
 .img {
     max-width: 100%;
@@ -3726,6 +3736,7 @@ input[type="number"] {
     display: flex;
     align-items: center;
     justify-content: end;
+    padding: 5px;
 }
 
 .quiz_wizged .course_content .rating_cart a {
@@ -4952,6 +4963,11 @@ only screen and (max-width:767px) {
 /* line 126, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_category.scss */
 .category_area .couses_category .single_course_cat {
     display: flex;
+}
+
+.single_course_cat .icon img {
+    width: auto;
+    height: 80px;
 }
 
 .category_area .couses_category .single_course_cat .course_content {
@@ -16177,12 +16193,12 @@ body {
 }
 
 .funfact.funfact-style-two .title {
-    max-width: 180px;
+    max-width: 198px;
     font-size: 18px;
     line-height: 1.34;
     color: #3f3a64;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
 }
 
 .funfact .number {
