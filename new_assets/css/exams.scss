@@ -911,3 +911,28 @@ input[type='date']{
 
 }
 
+.custom_radio  .form-check {
+    min-height: 0rem;
+    margin-bottom: -0.5rem;
+    margin-top: -5px;
+}
+
+.custom_radio .form-check {
+    padding-left: 1em !important;
+}
+.custom_radio .form-check .form-check-input {
+    width: 11px !important;
+    height: 11px !important;
+}
+ .custom_radio  .form-check label {
+    display: inline-block !important;
+}
+
+.custom_radio .form-check label {
+    font-weight: 600;
+    font-size: 8px;
+}
+.add__content .box_action:hover{
+    background-color: #29BCB0 !important;
+    color:#fff
+}
