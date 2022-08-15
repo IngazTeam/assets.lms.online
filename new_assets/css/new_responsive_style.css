@@ -226,14 +226,14 @@ tr{
     background-color: #29BCB0 !important;
 }
 
-.select2-selection--single{
-    border-radius: 31px !important;
-    border:0px solid #aaa !important;
-    padding: 5px 15px !important;
-    color: #8f2222 !important;
-    font-weight: 700 !important;
-    font-size: 10px !important;
-    appearance: none !important;
-    height: 33px !important;
-    background-color: #F2F3F7 !important;
-}
+/*.select2-selection--single{*/
+/*    border-radius: 31px !important;*/
+/*    border:0px solid #aaa !important;*/
+/*    padding: 5px 15px !important;*/
+/*    color: #8f2222 !important;*/
+/*    font-weight: 700 !important;*/
+/*    font-size: 10px !important;*/
+/*    appearance: none !important;*/
+/*    height: 33px !important;*/
+/*    background-color: #F2F3F7 !important;*/
+/*}*/
