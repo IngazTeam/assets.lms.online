@@ -8144,7 +8144,7 @@ html[dir="rtl"] .error-message {
     border: 1px solid #ededed;
     font-size: 12px;
     color: #58548E;
-    padding-left: 20px;
+    padding-left: 40px;
     height: 40px;
     border-radius: 25px;
     width: 100%;
@@ -14970,4 +14970,38 @@ right: -280px;
     border-bottom-left-radius: 10px;
     cursor: pointer;
     border: 1px solid #e0e0e0;
+}
+.dataTables_wrapper .dataTables_processing{
+    z-index: 999;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff !important;
+    line-height: unset;
+    height: unset;
+    padding: 15px;
+}
+@media (max-width:375px){
+    .dd-handle{
+        font-size: 12px !important; 
+        letter-spacing: -0.04rem;  
+        }
+        .left_links a{
+            font-size: 10px !important;
+        }
+}
+.col-xl-3 .primary_input.mb-25{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal.show .modal-dialog .modal-content .input-effect .form-control{
+    border-radius: 15px !important;
+    margin-top: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.modal.show .modal-dialog .modal-content .input-effect .nice-select:after{
+    margin-top: -6px;
 }
