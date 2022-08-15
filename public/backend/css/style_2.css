@@ -14979,6 +14979,7 @@ right: -280px;
     line-height: unset;
     height: unset;
     padding: 15px;
+    box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.5);
 }
 @media (max-width:375px){
     .dd-handle{
