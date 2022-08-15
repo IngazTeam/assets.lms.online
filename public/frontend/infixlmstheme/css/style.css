@@ -2063,7 +2063,7 @@ label {
 }*/
 
 .index-header-search {
-    background-color: #f7f7f7 !important;
+    background-color: #e9f6f7 !important;
     box-shadow: none !important;
 }
 
@@ -4027,7 +4027,7 @@ input[type="number"] {
 }
 
 .funfact-section {
-    background: #f7f7f7;
+    background: #e9f6f7;
 }
 
 /*----------------------------------------------------*/
@@ -4905,7 +4905,7 @@ only screen and (max-width:767px) {
 }
 
 .my-hero-input-search {
-    background-color: #00000008;
+    background-color: #d7eff18c;
     border: 1px solid #ddd;
     margin-top: 40px;
     box-shadow: unset !important;
@@ -14210,12 +14210,12 @@ footer ul.social-network li {
 
 /* line 133, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer .social-circle i {
-    width: 25px;
-    height: 20px;
-    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 23px;
     color: #58548e;
     text-align: center;
-    margin-left: -2px;
 }
 
 /* line 140, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */

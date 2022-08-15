@@ -51,3 +51,14 @@ function PasswordType(that){
         $(that).siblings().attr('type','password')
     }
 }
+
+// toggle background color between popup buttons
+
+$(function(){
+    // $('.box_action').removeClass('youtube')
+    $('.box_action').click(function(){
+       $(this).addClass('youtube');
+       console.log($(this).parent().html())
+       $(this).parent().siblings().find('.box_action').removeClass('youtube')
+    })
+})
