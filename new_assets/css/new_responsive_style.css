@@ -226,7 +226,8 @@ tr{
     background-color: #29BCB0 !important;
 }
 
-.select2-selection--single{
+
+/* .select2-selection--single{
     border-radius: 31px !important;
     border:0px solid #aaa !important;
     padding: 5px 15px !important;
@@ -236,7 +237,7 @@ tr{
     appearance: none !important;
     height: 33px !important;
     background-color: #F2F3F7 !important;
-}
+} */
 .custom__upload div{ 
     width: 100%;
     border-radius: 35px;
@@ -257,5 +258,4 @@ tr{
     height: 24px;
     
 }
-
 

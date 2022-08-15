@@ -5409,11 +5409,13 @@ html[dir="rtl"] .fc .fc-daygrid-day-top {
 
 .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk {
     display: flex;
+    
 }
 @media(max-width:575px){
     .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:first-child {
         flex: 1;
         justify-content: space-between;
+        margin-left: 15px;
     }
     .fc-direction-rtl .fc-toolbar>*>:not(:first-child){
         margin-right: 0;
