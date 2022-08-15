@@ -226,7 +226,8 @@ tr{
     background-color: #29BCB0 !important;
 }
 
-.select2-selection--single{
+
+.collapse_content .right_part .select2-selection--single{
     border-radius: 31px !important;
     border:0px solid #aaa !important;
     padding: 5px 15px !important;
@@ -236,4 +237,38 @@ tr{
     appearance: none !important;
     height: 33px !important;
     background-color: #F2F3F7 !important;
+}
+.custom__upload div{ 
+    width: 100%;
+    border-radius: 35px;
+    background-color:rgb(242 243 247);
+    border: 1px solid rgb(242, 242, 242);
+    font-size: 10px;
+    color:#525C72;
+    position: relative;
+    padding: 5px 15px;
+    height: 24px;
+    cursor: pointer;
+    line-height: 10px;
+}
+.custom__upload div img{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    height: 24px;
+    
+}
+
+.certfication_tabel .form-check .form-check-label{
+    font-size: 11px;
+    color:#525C72;
+    width: 10px;
+}
+.certfication_tabel .firstVisibleChild span{ 
+    font-weight: 800 !important;
+    /* color:#29bcb0 !important; */
+}
+
+.certfication_tabel .QA_table tbody td{
+    /* color:transparent !important */
 }
