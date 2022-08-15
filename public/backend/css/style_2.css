@@ -5409,11 +5409,13 @@ html[dir="rtl"] .fc .fc-daygrid-day-top {
 
 .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk {
     display: flex;
+    
 }
 @media(max-width:575px){
     .fc .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk:first-child {
         flex: 1;
         justify-content: space-between;
+        margin-left: 15px;
     }
     .fc-direction-rtl .fc-toolbar>*>:not(:first-child){
         margin-right: 0;
@@ -14924,4 +14926,48 @@ html[dir="rtl"] .social-panel button.close-btn {
     .account_profile_wrapper .privacy_permission .single_privacy_permission .permission_text .permission_content p br {
         display: none;
     }
+}
+@media (max-width: 576px){
+.chat-users-container {
+overflow-y: unset !important;
+position: absolute;
+z-index: 999;
+height: 450px !important;
+transition: 1s;
+width: 280px !important;
+box-shadow: -5px 5px 15px 0px rgba(0,0,0,0.2);
+right: 0;
+}
+.chat-users-container .users-container ul.users-list li a .users-list-body{
+    display: flex !important;
+}
+.chat-users-container.hide {
+right: -280px;
+}
+.empty-chat-screen{
+    height: calc(100vh - 190px) !important;
+}
+.chat-container{
+    height: calc(100vh - 190px) !important;
+}
+}
+#chat-hide-btn{
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    left: -30px;
+    top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #29bcb0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
 }
