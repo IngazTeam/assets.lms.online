@@ -259,3 +259,16 @@ tr{
     
 }
 
+.certfication_tabel .form-check .form-check-label{
+    font-size: 11px;
+    color:#525C72;
+    width: 10px;
+}
+.certfication_tabel .firstVisibleChild span{ 
+    font-weight: 800 !important;
+    /* color:#29bcb0 !important; */
+}
+
+.certfication_tabel .QA_table tbody td{
+    /* color:transparent !important */
+}
