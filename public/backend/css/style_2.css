@@ -15016,3 +15016,6 @@ right: -280px;
     font-size: 12px;
     font-weight: 500;
 }
+.fc .fc-button:focus{
+    box-shadow: 0 0 0 0.05rem rgb(59 69 156 / 50%) !important;
+}
