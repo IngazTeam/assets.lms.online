@@ -259,3 +259,38 @@ tr{
     
 }
 
+.certfication_tabel .form-check .form-check-label{
+    font-size: 11px;
+    color:#525C72;
+    width: 10px;
+}
+.certfication_tabel .firstVisibleChild span{ 
+    font-weight: 800 !important;
+    /* color:#29bcb0 !important; */
+}
+
+.certfication_tabel .QA_table tbody td{
+    /* color:transparent !important */
+}
+@media(min-width:992px) and (max-width:1150px){
+    .med-new-content .left-sidebar .links-container{
+        padding: 7px !important;
+    }
+    
+    .med-new-content .left-sidebar .link-box-top .box span{
+        font-size: 8px;
+    }
+    
+}
+@media(max-width:1300px) and (min-width:1200px){
+    ::placeholder ,
+    span.current{
+        font-size: 12px !important;
+    }
+}
+@media(max-width:576px){
+    ::placeholder ,
+    span.current{
+        font-size: 12px !important;
+    }
+}
