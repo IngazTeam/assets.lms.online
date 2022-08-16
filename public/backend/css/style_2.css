@@ -15006,3 +15006,13 @@ right: -280px;
 .modal.show .modal-dialog .modal-content .input-effect .nice-select:after{
     margin-top: -6px;
 }
+.fc .fc-daygrid-body-balanced .fc-daygrid-day-events{
+    top: 52%;
+    transform: translateY(-50%);
+}
+.fc .fc-daygrid-body-balanced .fc-daygrid-day-events a{
+    color: #3b459c;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 12px;
+    font-weight: 500;
+}
