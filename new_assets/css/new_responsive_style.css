@@ -272,3 +272,19 @@ tr{
 .certfication_tabel .QA_table tbody td{
     /* color:transparent !important */
 }
+@media(min-width:992px) and (max-width:1150px){
+    .med-new-content .left-sidebar .links-container{
+        padding: 7px !important;
+    }
+    
+    .med-new-content .left-sidebar .link-box-top .box span{
+        font-size: 8px;
+    }
+    
+}
+@media(max-width:1300px) and (min-width:1200px){
+    ::placeholder ,
+    span.current{
+        font-size: 12px !important;
+    }
+}
