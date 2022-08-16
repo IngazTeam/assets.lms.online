@@ -2259,6 +2259,10 @@ table.dataTable tbody td .form-check-input {
     color: #58548e;
 }
 
+.xd_courses_table.card_box div.dt-buttons {
+    background: white!important;
+}
+
 /* line 198, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
 .primary-btn.fix-gr-bg , .theme_btn{

@@ -5386,6 +5386,8 @@ html[dir="rtl"] .fc .fc-daygrid-day-top {
     flex-direction: row !important;
 }
 
+
+
 #lms_table .form-check {
     margin: 0 !important;
     padding: 0 27px !important;
@@ -15015,4 +15017,7 @@ right: -280px;
     font-family: var(--bs-font-sans-serif);
     font-size: 12px;
     font-weight: 500;
+}
+.fc .fc-button:focus{
+    box-shadow: 0 0 0 0.05rem rgb(59 69 156 / 50%) !important;
 }
