@@ -8353,7 +8353,7 @@ html[dir="rtl"] .error-message {
 
 .primary_select {
     width: 100%;
-    border: 1px solid #ced4da;
+    border: 1px solid transparent;
     height: 40px;
     line-height: 40px;
     font-size: 13px;
