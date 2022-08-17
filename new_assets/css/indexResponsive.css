@@ -40,7 +40,7 @@
     justify-content: end;
 }
 .indexResponsive .hello-user{
-    padding: 25px 20px!important;
+    padding: 20px 15px!important;
 }
 @media (max-width: 768px) {
     .indexResponsive .hello-user{

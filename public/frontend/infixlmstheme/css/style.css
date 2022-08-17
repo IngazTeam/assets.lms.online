@@ -3724,6 +3724,7 @@ input[type="number"] {
     font-weight: 700;
     transition: .3s;
     font-size: 17px !important;
+    color: #565656;
 }
 
 /* line 160, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_courses.scss */
@@ -3897,15 +3898,15 @@ input[type="number"] {
 /* line 1, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_testimoanial.scss */
 .testmonial_area {
     background: #f8f8fe;
-    padding-top: 140px;
-    padding-bottom: 240px;
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 @media (max-width: 767.98px) {
 
     /* line 1, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_testimoanial.scss */
     .testmonial_area {
-        padding-top: 65px;
+        padding-top: 30px;
         padding-bottom: 75px;
     }
 }
@@ -4813,12 +4814,12 @@ only screen and (max-width:767px) {
     left: 30px;
     bottom: 30px;
     right: 30px;
-    background: rgba(255, 255, 255, 0.78);
+    background: rgb(0 195 180);
     border-radius: 5px 0 6px 0;
     display: inline-block;
     font-family: "Jost", sans-serif;
     font-size: 16px;
-    color: var(--system_secendory_color);
+    color: #fff;
     font-weight: 600;
     padding: 8px 8px;
     border: 1px solid transparent;
@@ -4846,12 +4847,12 @@ only screen and (max-width:767px) {
 /* line 77, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_category.scss */
 .category_area .brouse_cat_btn {
     display: block;
-    background: var(--system_primery_color);
+    background: #00c3b4;
     font-size: 30px;
     /*font-family: "Cerebri Sans";*/
     font-weight: 700;
     line-height: 38px;
-    color: #fff;
+    color: #ffffff;
     text-align: right;
     padding: 50px;
     min-height: 180px;
@@ -9539,7 +9540,7 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
     box-shadow: 0px 0px 3px #ddd;
     padding: 10px;
     border-radius: 6px;
-    background-color: #f7f7f7;
+    background-color: #f1f8f9;
 }
 
 /*-------------------------------------------------*/
@@ -9571,11 +9572,12 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 .contact_section .contact_info .address_lines .single_address_line .address_info h3 {
     font-size: 20px;
     margin-bottom: 5px;
+    color: #3b459c;
 }
 
 .contact_section .contact_info .address_lines .single_address_line .address_info p {
     margin-bottom: 0;
-    color: #696969;
+    color: #666666;
     font-size: 14px;
     font-weight: 400;
 }
