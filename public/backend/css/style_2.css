@@ -5428,8 +5428,6 @@ html[dir="rtl"] .fc .fc-daygrid-day-top {
   flex-direction: row !important;
 }
 
-
-
 #lms_table .form-check {
   margin: 0 !important;
   padding: 0 27px !important;
@@ -15268,8 +15266,4 @@ html[dir="rtl"] .social-panel button.close-btn {
 }
 .fc .fc-button:focus {
   box-shadow: 0 0 0 0.05rem rgb(59 69 156 / 50%) !important;
-}
-
-.xd_courses_table.card_box .QA_table tbody td {
-  padding: 10px !important;
 }
