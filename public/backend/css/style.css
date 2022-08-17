@@ -2253,6 +2253,14 @@ table.dataTable tbody td .form-check-input {
     font-size: 24px;
 }
 
+.select2-container .select2-search--inline .select2-search__field {
+    height: 22px !important;
+}
+
+.select2-container .select2-search--inline {
+    vertical-align: middle !important;
+}
+
 /* line 194, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
 .primary-btn.large:hover {
