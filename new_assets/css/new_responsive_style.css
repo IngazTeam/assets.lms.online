@@ -303,10 +303,12 @@ tr{
     height: 19px;
     overflow: hidden;
 }
-.avatar-img-box img {
+/* hashed by mostafa saeed */
+
+/* .avatar-img-box img {
     width: 35px !important;
     height: 35px !important;
-}
+} */
 .med-new-content .search-box input{
     width: 100%;
     height: 100%;

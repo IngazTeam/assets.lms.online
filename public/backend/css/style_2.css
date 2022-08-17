@@ -8436,16 +8436,45 @@ html[dir="rtl"] .error-message {
 }
 
 .primary_select {
-  width: 100%;
-  border: 1px solid #ced4da;
-  height: 40px;
-  line-height: 40px;
-  font-size: 13px;
-  color: #58548e;
-  padding: 0px 25px;
-  padding-left: 20px;
-  font-weight: 300;
-  border-radius: 25px;
+    width: 100%;
+    border: 1px solid transparent;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #58548E;
+    padding: 0px 25px;
+    padding-left: 20px;
+    font-weight: 300;
+    border-radius: 25px;
+}
+
+.about-the-course .img-box img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.next-courses .sidebar__widget p {
+    font-weight: normal;
+    color: #6f6f70;
+}
+
+.single_qualification {
+    display:flex ;
+    align-items: center;
+
+}
+.next-courses .sidebar__widget h4 , .next-courses .sidebar__widget i {
+    color: #29bcb0;
+}
+
+@media (min-width:767px) {
+    .about-the-course {
+        height: 306px;
+     }
+}
+
+.about-the-course {
+    overflow: hidden;
 }
 
 .primary_select::placeholder {
