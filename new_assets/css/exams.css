@@ -396,7 +396,7 @@ input:focus, textarea:focus, select:focus {
 }
 .tab_part .main_collapese_card .inner_collapese_card, .tab_part .main_collapese_card .inner_big_cart {
   border-top: 1PX solid #E1E1E1;
-  padding: 10px;
+  padding: 10px 0px;
 }
 .tab_part .main_collapese_card .inner_collapese_card label, .tab_part .main_collapese_card .inner_big_cart label {
   font-size: 10px;
