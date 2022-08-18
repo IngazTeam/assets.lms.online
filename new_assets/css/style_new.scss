@@ -1585,7 +1585,18 @@ body {
 }
 #payment_method {
   .nice-select {
-    background-color: unset;
+    background-color: #fff;
     border: 1px solid $borderColor;
+  }
+}
+.single-summery {
+  .card-content {
+    height: 100%;
+    .gradient-color2 {
+      font-size: 1.25rem;
+      @media (max-width: 578px) {
+        font-size: 1rem;
+      }
+    }
   }
 }
