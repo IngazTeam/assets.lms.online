@@ -8448,6 +8448,35 @@ html[dir="rtl"] .error-message {
     border-radius: 25px;
 }
 
+.about-the-course .img-box img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.next-courses .sidebar__widget p {
+    font-weight: normal;
+    color: #6f6f70;
+}
+
+.single_qualification {
+    display:flex ;
+    align-items: center;
+
+}
+.next-courses .sidebar__widget h4 , .next-courses .sidebar__widget i {
+    color: #29bcb0;
+}
+
+@media (min-width:767px) {
+    .about-the-course {
+        height: 306px;
+     }
+}
+
+.about-the-course {
+    overflow: hidden;
+}
+
 .primary_select::placeholder {
   color: #58548e;
   font-weight: 300;
