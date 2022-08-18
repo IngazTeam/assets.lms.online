@@ -1256,4 +1256,8 @@ body {
   .fc .fc-col-header-cell-cushion {
     font-size: 8px;
   }
+}
+
+.commissionsSection .nice-select {
+  border: 1px solid #eaeaea;
 }/*# sourceMappingURL=style_new.css.map */
