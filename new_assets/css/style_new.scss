@@ -1600,3 +1600,14 @@ body {
     }
   }
 }
+
+// <----------------------requird in add content page --------------------------->
+.input_box {
+  .error-message {
+    right: 0 !important;
+    font-size: 8px;
+    top: 30px !important;
+    margin-top: -7px;
+    white-space: nowrap;
+  }
+}

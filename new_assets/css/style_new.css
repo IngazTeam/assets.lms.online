@@ -1277,4 +1277,12 @@ body {
   .single-summery .card-content .gradient-color2 {
     font-size: 1rem;
   }
+}
+
+.input_box .error-message {
+  right: 0 !important;
+  font-size: 8px;
+  top: 30px !important;
+  margin-top: -7px;
+  white-space: nowrap;
 }/*# sourceMappingURL=style_new.css.map */
