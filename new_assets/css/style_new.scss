@@ -1576,3 +1576,38 @@ body {
     }
   }
 }
+
+//<-------------------- commissions style ------------------->
+.commissionsSection {
+  .nice-select {
+    border: 1px solid $borderColor;
+  }
+}
+#payment_method {
+  .nice-select {
+    background-color: #fff;
+    border: 1px solid $borderColor;
+  }
+}
+.single-summery {
+  .card-content {
+    height: 100%;
+    .gradient-color2 {
+      font-size: 1.25rem;
+      @media (max-width: 578px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// <----------------------requird in add content page --------------------------->
+.input_box {
+  .error-message {
+    right: 0 !important;
+    font-size: 8px;
+    top: 30px !important;
+    margin-top: -7px;
+    white-space: nowrap;
+  }
+}
