@@ -1583,3 +1583,9 @@ body {
     border: 1px solid $borderColor;
   }
 }
+#payment_method {
+  .nice-select {
+    background-color: unset;
+    border: 1px solid $borderColor;
+  }
+}
