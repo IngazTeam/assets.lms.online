@@ -3754,6 +3754,7 @@ input[type="number"] {
     align-items: center;
     justify-content: end;
     padding: 5px;
+    height: 40px;
 }
 
 .quiz_wizged .course_content .rating_cart a {
@@ -13753,14 +13754,10 @@ html[dir="rtl"] .checkout_wrapper .order_wrapper .ordered_products .single_order
 /* line 1, G:/laragon/www/Tuties/scss/_fullview.scss */
 /* line 80, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_last_update.scss */
 .course_fullview_wrapper {
-    min-height: 100vh;
-    /*background-image: url(../img/banner/full_view_bg.png);*/
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    /* min-height: 100vh; */
     position: relative;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     width: calc(100% - 340px);
     transition: 0.3s;
@@ -13786,13 +13783,14 @@ html[dir="rtl"] .checkout_wrapper .order_wrapper .ordered_products .single_order
 /* line 24, G:/laragon/www/Tuties/scss/_fullview.scss */
 /* line 110, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_last_update.scss */
 .course_fullview_wrapper .course__play_warp {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     width: 340px;
     transform: translateX(0%);
     transition: 0.3s;
     z-index: 5;
+    background:#f8f8f8  !important;
 }
 
 /* line 32, G:/laragon/www/Tuties/scss/_fullview.scss */
@@ -13813,13 +13811,7 @@ html[dir="rtl"] .checkout_wrapper .order_wrapper .ordered_products .single_order
     }
 }
 
-/* line 35, G:/laragon/www/Tuties/scss/_fullview.scss */
-/* line 126, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_last_update.scss */
-.course_fullview_wrapper .course__play_warp .course__play_list {
-    min-height: calc(100vh - 50px);
-    max-height: calc(100vh - 50px);
-    /*padding-bottom: 80px;*/
-}
+ 
 
 /* line 39, G:/laragon/www/Tuties/scss/_fullview.scss */
 /* line 132, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_last_update.scss */
@@ -13836,18 +13828,6 @@ html[dir="rtl"] .checkout_wrapper .order_wrapper .ordered_products .single_order
 }
 
 
-html[dir='rtl'] .course_fullview_wrapper .course__play_warp .play_toggle_btn {
-    left: unset !important;
-    right: -16% !important;
-}
-
-html[dir='rtl'] .course_fullview_wrapper .course__play_warp.active {
-    position: absolute !important;
-    left: 0 !important;
-    right: unset !important;
-    z-index: 3;
-    transform: translateX(-100%) !important;
-}
 
 /* line 49, G:/laragon/www/Tuties/scss/_fullview.scss */
 /* line 145, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_last_update.scss */
@@ -14363,6 +14343,13 @@ footer .social-network a {
         left: -35px;
     }
 }*/
+
+.header__right .contact_wrap .contact_btn {
+    background: #ffffff;
+    padding: 11px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px #e9e9e9;
+}
 
 @media (max-width: 575.98px) {
     .profile_info img {
