@@ -2063,7 +2063,6 @@ label {
 }*/
 
 .index-header-search {
-    background-color: #e9f6f7 !important;
     box-shadow: none !important;
 }
 
@@ -5996,16 +5995,15 @@ html[dir="rtl"] .counter_area::before {
 
 /* line 331, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_predefine.scss */
 .play_button {
-    width: 75px;
-    height: 75px;
-    background: #fff;
-    border-radius: 50%;
+    width: 74px;
+    height: 50px;
+    background: #29BCB0;
+    border-radius: 31px;
     color: var(--system_primery_color);
-    display: inline-block;
-    text-align: center;
-    line-height: 80px;
-    position: relative;
-    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -6044,8 +6042,7 @@ html[dir="rtl"] .counter_area::before {
 
 .course__details .course_tabs .lms_tabmenu {
     background: #fff !important;
-    justify-content: center;
-    border: 1px solid #0000001f;
+    justify-content: start;
     padding: 10px 4px;
 }
 
@@ -6053,10 +6050,11 @@ html[dir="rtl"] .counter_area::before {
 .lms_tabmenu li a {
     font-size: 16px;
     font-weight: 600;
-    /*font-family: "Cerebri Sans";*/
-    color: var(--system_secendory_color);
-    border-radius: 10px;
-    padding: 12px 20px;
+    color: #29bcb0;
+    border-radius: 24px;
+    margin: 0 4px;
+    padding: 8px 24px;
+    background: #F9F9F9;
 }
 
 @media (max-width: 767.98px) {
@@ -6078,9 +6076,10 @@ html[dir="rtl"] .counter_area::before {
 
 /* line 384, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_predefine.scss */
 .lms_tabmenu li a.active {
-    background: var(--system_primery_color);
+    background: #29bcb0;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 24px;
+    padding: 8px 20px;
 }
 
 /* line 393, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_predefine.scss */
@@ -6614,21 +6613,8 @@ html[dir="rtl"] .counter_area::before {
     border-radius: 3px;
 }
 
-/* line 7, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-.course__details .course__details_title {
-    display: flex;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 15px 0;
-}
-
-@media (max-width: 767.98px) {
-    /* line 7, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-
-    /*.course__details .course__details_title {
-        flex-direction: column;
-    }*/
-}
+ 
+ 
 
 /* line 13, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .course__details .course__details_title .single__details {
@@ -6640,66 +6626,8 @@ html[dir="rtl"] .counter_area::before {
     margin: 8px 0;
 }
 
-@media (max-width: 575px) {
-    .course__details .course__details_title .user-single {
-        background: #f7f7f7;
-        padding: 10px;
-        border-radius: 6px;
-    }
-}
 
-/* line 24, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-.course__details .course__details_title .single__details:not(:last-child) {
-    /*margin-right: 60px;*/
-    padding-right: 60px;
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-    /* line 24, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-    .course__details .course__details_title .single__details:not(:last-child) {
-        /*margin-right: 10px;*/
-        padding-right: 10px;
-    }
-}
-
-@media (max-width: 767.98px) {
-
-    /* line 24, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-    .course__details .course__details_title .single__details:not(:last-child) {
-        /*margin-right: 0;*/
-        padding-right: 0;
-    }
-}
-
-/* line 36, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-.course__details .course__details_title .single__details:not(:last-child)::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    background: #e9e7f7;
-    width: 1px;
-    height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-@media (max-width: 767.98px) {
-
-    /* line 36, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-    .course__details .course__details_title .single__details:not(:last-child)::before {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-    /* line 36, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-    .course__details .course__details_title .single__details:not(:last-child)::before {
-        display: none;
-    }
-}
+ 
 
 /* line 55, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .course__details .course__details_title .single__details .thumb {
@@ -6721,13 +6649,14 @@ html[dir="rtl"] .counter_area::before {
     height: 100%;
 }
 
+
 /* line 70, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .course__details .course__details_title .single__details .details_content span {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     color: #a1a1a1;
     display: inline-block;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -6781,24 +6710,27 @@ html[dir="rtl"] .counter_area::before {
 /* line 117, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .course__details .video_screen {
     background-image: url(../img/course_details/banner.jpg);
-    height: 400px;
+    height: 180px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
+    border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0px 0px 20px #00000030;
 }
 
 @media (max-width: 767.98px) {
 
     /* line 117, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-    .course__details .video_screen {
+    /* .course__details .video_screen {
         height: 300px;
-    }
+    } */
+}
+
+.xd-video-scr {
+    height: 60vh !important;
 }
 
 /* line 130, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
@@ -6810,19 +6742,49 @@ html[dir="rtl"] .counter_area::before {
     margin-top: 14px;
 }
 
+.co-det-add-cart {
+    margin: auto;
+    color: white;
+    background: #52c6bd;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 15px;
+    width: 75%;
+}
+
 /* line 142, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .sidebar__widget .sidebar__title {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 21px;
+    margin-bottom: 15px;
+}
+
+.course-title {
+    color: #0E1133;
+}
+
+.course-det-disc {
+    width: fit-content;
+    background: #FF3636;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 13px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.course-det-disc span {
+    text-decoration: line-through;
+    padding-left: 10px;
 }
 
 /* line 147, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .sidebar__widget .sidebar__title h3 {
-    font-size: 36px;
+    font-size: 27px;
     font-weight: 700;
-    color: var(--system_secendory_color);
+    color: #1C1F44;
     margin-bottom: 0;
     margin-right: 23px;
 }
@@ -6831,25 +6793,13 @@ html[dir="rtl"] .counter_area::before {
 
     /* line 147, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
     .sidebar__widget .sidebar__title h3 {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
 
-    /* line 147, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-    .sidebar__widget .sidebar__title h3 {
-        font-size: 30px;
-    }
-}
 
-@media (min-width: 1200px) and (max-width: 1599.98px) {
 
-    /* line 147, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
-    .sidebar__widget .sidebar__title h3 {
-        font-size: 30px;
-    }
-}
 
 /* line 164, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .sidebar__widget .sidebar__title p {
@@ -6884,16 +6834,29 @@ html[dir="rtl"] .counter_area::before {
 
 /* line 191, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .sidebar__widget .course_includes li:not(:last-child) {
-    margin-bottom: 6px;
+    margin-bottom: 12px;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 6px;
+    padding-bottom: 10px;
+}
+
+.color-main {
+    color: #00C3B3;
 }
 
 .sidebar__widget {
-    padding: 30px 20px 10px 20px;
-    border-radius: 6px;
+    padding: 15px;
+    border-radius: 30px;
     background: #fff;
-    box-shadow: 0px 0px 10px #0000001f;
+    box-shadow: 0px 0px 4px #0000001a;
+}
+
+.co-det-cat {
+    font-weight: 600;
+    width: 100%;
+    background: #29bcb0;
+    color: white;
+    padding: 2px 12px;
+    border-radius: 12px;
 }
 
 /* line 195, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
@@ -6906,9 +6869,9 @@ html[dir="rtl"] .counter_area::before {
 
 /* line 202, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .sidebar__widget .course_includes li p {
-    font-size: 16px;
-    font-weight: 500;
-    color: #373737;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0E1133;
     margin-bottom: 0;
 }
 
