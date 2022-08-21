@@ -45,9 +45,9 @@
     height: 500px;
 }
 
-.course_fullview_wrapper .course__play_warp {
+/* .course_fullview_wrapper .course__play_warp {
     top: 160px;
-}
+} */
 
 .course_fullview_wrapper {
     min-height: calc(100vh - 53px);
