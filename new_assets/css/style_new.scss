@@ -19,10 +19,14 @@ $lightText: #b8b8b8;
 }
 
 .avatar-img-box {
-  border-radius: 50%;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  width: 40px !important;
+  height: 40px !important;
 
   img {
-    border-radius: 50%;
+    width: 100% !important;
+    height: 100% !important;
   }
 }
 

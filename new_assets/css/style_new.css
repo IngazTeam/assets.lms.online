@@ -8,10 +8,14 @@
 }
 
 .avatar-img-box {
-  border-radius: 50%;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  width: 40px !important;
+  height: 40px !important;
 }
 .avatar-img-box img {
-  border-radius: 50%;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .main-title {
