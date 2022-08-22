@@ -6057,8 +6057,16 @@ html[dir="rtl"] .counter_area::before {
   justify-content: space-between;
   margin-bottom: 20px;
   align-items: center;
+  border-radius: 30px;
+  background: #fff;
+  padding: 5px 15px;
+  border: 1px solid #e1e1e1;
+  flex-direction: row-reverse;
+  gap: 10px;
 }
-
+.theme_according .card-body .curriculam_list hr {
+  display: none;
+}
 @media (max-width: 767.98px) {
   /* line 456, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_predefine.scss */
   .theme_according .card-body .curriculam_list .curriculam_single {
@@ -6079,6 +6087,10 @@ html[dir="rtl"] .counter_area::before {
   .curriculam_left {
   display: flex;
   align-items: center;
+  flex: 1;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  max-width: 500px;
 }
 
 @media (max-width: 767.98px) {
@@ -6099,9 +6111,14 @@ html[dir="rtl"] .counter_area::before {
   .curriculam_single
   .curriculam_left
   i {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 900;
   margin-right: 15px;
+  color: #3b459c;
+  background-color: #f4f4f4;
+  padding: 6px;
+  border-radius: 10px;
+  display: flex;
 }
 
 /* line 478, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_predefine.scss */
@@ -6112,8 +6129,8 @@ html[dir="rtl"] .counter_area::before {
   .curriculam_left
   span {
   font-size: 16px;
-  font-weight: 500;
-  color: #373737;
+  font-weight: 600;
+  color: #3b459c;
 }
 
 /* line 484, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_predefine.scss */
@@ -6134,6 +6151,9 @@ html[dir="rtl"] .counter_area::before {
   .curriculam_right
   .theme_btn_lite {
   margin-right: 30px;
+  background: #00c3b3;
+  color: #fff;
+  border: none;
 }
 
 /* line 491, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_predefine.scss */
@@ -6143,9 +6163,9 @@ html[dir="rtl"] .counter_area::before {
   .curriculam_single
   .curriculam_right
   span {
-  font-size: 14px;
-  font-weight: 500;
-  color: #373737;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3b459c;
 }
 
 /*----------------------------------------------------*/
@@ -15115,10 +15135,10 @@ footer .social-network a {
   position: absolute;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-size: 16px;
-  color: #373737;
-  top: 50%;
-  content: "\f107";
+  font-size: 20px;
+  color: #fff;
+  top: 60%;
+  content: "\f0de";
   font-family: "Font Awesome 5 free";
   transform: translateY(-50%);
   left: auto;
@@ -15127,8 +15147,8 @@ footer .social-network a {
 }
 
 html[dir="rtl"] .theme_according button::before {
-  right: auto !important;
-  left: 20px !important;
+  right: 10px !important;
+  /* left: 20px !important; */
 }
 
 html[dir="rtl"] .theme_according .card .card-header h5 button {
@@ -15136,10 +15156,12 @@ html[dir="rtl"] .theme_according .card .card-header h5 button {
 }
 
 .theme_according button.collapsed::before {
-  content: "\f107";
+  content: "\f0dd";
   font-family: "Font Awesome 5 free";
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
 }
 
 .theme_according .card {
@@ -15171,20 +15193,27 @@ html[dir="rtl"] .theme_according .card .card-header h5 button {
 }
 
 .course__details .theme_according .card .card-header button.collapsed {
-  background: #f7f7f7 !important;
+  background: #f2f3f7 !important;
+  border-radius: 40px;
+  color: #3b459c;
+  padding: 10px 30px;
 }
 
 .theme_according .card .card-header h5 button {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 600;
-  color: var(--system_secendory_color);
+  font-weight: 500;
+  color: #3b459c;
   display: block;
   width: 100%;
   border: 0;
   text-decoration: none !important;
   text-align: left;
   box-shadow: none !important;
+  background-color: #f2f3f7;
+  border-radius: 45px;
+  margin-bottom: 10px;
+  padding: 10px 30px;
 }
 
 .theme_according .card .card-header h5 button span {
@@ -15238,7 +15267,7 @@ html[dir="rtl"] .theme_according .card .card-header h5 button {
   font-size: 14px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  color: #373737;
+  color: #3b459c;
 }
 
 .theme_according .card-body {
@@ -15248,7 +15277,7 @@ html[dir="rtl"] .theme_according .card .card-header h5 button {
   padding: 15px 30px 15px 30px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  border: 1px solid #ececec;
+  /* border: 1px solid #ececec; */
   border-top: 0;
   transition: 0.3s;
 }
@@ -15258,9 +15287,12 @@ html[dir="rtl"] .theme_according .card .card-header h5 button {
 }
 
 .theme_according .card-body p {
-  font-size: 16px;
-  color: var(--system_secendory_color);
+  font-size: 12px;
+  color: #999;
   font-weight: 400;
+  margin-bottom: 15px;
+  margin-top: -15px;
+  padding: 0 20px;
 }
 
 .description_grid {
