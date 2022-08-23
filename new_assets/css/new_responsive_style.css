@@ -272,3 +272,62 @@ tr{
 .certfication_tabel .QA_table tbody td{
     /* color:transparent !important */
 }
+@media(min-width:992px) and (max-width:1150px){
+    .med-new-content .left-sidebar .links-container{
+        padding: 7px !important;
+    }
+    
+    .med-new-content .left-sidebar .link-box-top .box span{
+        font-size: 8px;
+    }
+    
+}
+@media(max-width:1300px) and (min-width:1200px){
+    ::placeholder ,
+    span.current{
+        font-size: 12px !important;
+    }
+}
+@media(max-width:576px){
+    ::placeholder ,
+    span.current{
+        font-size: 12px !important;
+    }
+}
+
+
+
+
+/*********************************** student dashboard**************************************/
+.med-new-content .cards-container .Card .main-title{
+    height: 19px;
+    overflow: hidden;
+}
+/* hashed by mostafa saeed */
+
+/* .avatar-img-box img {
+    width: 35px !important;
+    height: 35px !important;
+} */
+.med-new-content .search-box input{
+    width: 100%;
+    height: 100%;
+}
+.account_profile_wrapper .account_profile_thumb h4{
+    box-shadow: 0px 7px #29bcb04f !important;
+}
+.chat-container .chat-box li .chat-text-wrapper .chat-text p{
+    word-break: break-all !important;
+}
+
+.chat-users-container .users-container ul.users-list li a .users-list-body .chat-msg {
+    max-width: 192px;
+}
+@media(max-width:576px){
+    .empty-chat-screen{
+        width: 100% !important;
+    }
+    .about-the-course .img-box {
+        width: 100% !important;
+    }
+}
