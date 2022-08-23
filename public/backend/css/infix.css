@@ -401,20 +401,35 @@ creator:rashed;
 #livesearch{
     position: absolute;
     background-color: #FFF;
-    box-shadow: 0px 10px 20px rgba(108, 39, 255, 0.3);
-    width: 100%;
-    border-radius: 0 0 10px 10px;
-    z-index: 999 !important;
+    box-shadow: 0px 10px 20px rgb(159 159 159 / 30%);
+    width: 293px;
+    border-radius: 12px;
+    z-index: 9999999999999999999 !important;
     max-height: 400px;
+    left: 50%;
     overflow-y: scroll;
+    top: 55px;
+    transform: translateX(-50%);
+}
+
+#livesearch::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgba(255, 255, 255, 0);
+}
+#livesearch::-webkit-scrollbar-thumb {
+    background-color: rgb(182, 182, 182);
+    border-radius: 20px 0px 0px 20px;
 
 }
+
 #livesearch a{
     display: inline-block;
     padding: 8px 20px;
-    color: #828bb2;
+    color: #525c72;
     width: 100%;
+    font-size: 14px;
 }
+
 #livesearch a:hover{
     background-color: #f6f6f6;
 }

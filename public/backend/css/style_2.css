@@ -9562,6 +9562,11 @@ html[dir="rtl"] .error-message {
   transition: 0.3s;
 }
 
+.disabled-btn {
+  opacity: .7 !important;
+  cursor: not-allowed;
+}
+
 .contact_form_box  input , .contact_form_box textarea {
   background: #f1f1f1;
 
