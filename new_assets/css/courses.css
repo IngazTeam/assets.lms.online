@@ -96,7 +96,9 @@
   color: #9F9F9F;
   font-weight: 700;
   font-size: 14px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   height: 33px;
 }
 .card_box .card_info select:focus,
@@ -104,6 +106,20 @@
 .card_box .card_info .primary_select:focus,
 .card_box .card_info .select2-selection--single:focus {
   outline: none !important;
+}
+.card_box .card_info select::-moz-placeholder, .card_box .card_info input::-moz-placeholder, .card_box .card_info .primary_select::-moz-placeholder, .card_box .card_info .select2-selection--single::-moz-placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
+  font-weight: 700;
+  padding: 0 !important;
+  line-height: unset;
+}
+.card_box .card_info select:-ms-input-placeholder, .card_box .card_info input:-ms-input-placeholder, .card_box .card_info .primary_select:-ms-input-placeholder, .card_box .card_info .select2-selection--single:-ms-input-placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
+  font-weight: 700;
+  padding: 0 !important;
+  line-height: unset;
 }
 .card_box .card_info select::placeholder,
 .card_box .card_info select .select2-selection__rendered,
@@ -214,6 +230,8 @@
   }
 }
 .card_box .card_info .time .image {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   height: 33px;
   background-color: #fff;
@@ -239,7 +257,7 @@
   width: 15px;
 }
 .card_box .card_info .group_content {
-  border-top: 0.1px solid #70707021;
+  border-top: 0.1px solid rgba(112, 112, 112, 0.1294117647);
   margin-top: 15px;
 }
 .card_box .card_info .group_content .delet_tag {
@@ -276,11 +294,21 @@
   color: #9F9F9F;
   font-weight: 700;
   font-size: 14px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 90%;
   resize: none;
   outline: none;
   padding: 10px 15px;
+}
+.card_box .card_info .course-discription::-moz-placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
+}
+.card_box .card_info .course-discription:-ms-input-placeholder {
+  font-size: 14px;
+  color: #9F9F9F;
 }
 .card_box .card_info .course-discription::placeholder {
   font-size: 14px;
@@ -326,6 +354,14 @@
   margin-top: 0;
   width: unset !important;
   padding: 0 10px;
+}
+.select2-container--default .select2-search--inline .select2-search__field::-moz-placeholder {
+  color: #9F9F9F;
+  font-weight: 600;
+}
+.select2-container--default .select2-search--inline .select2-search__field:-ms-input-placeholder {
+  color: #9F9F9F;
+  font-weight: 600;
 }
 .select2-container--default .select2-search--inline .select2-search__field::placeholder {
   color: #9F9F9F;
@@ -380,7 +416,7 @@
   padding: 0 35px;
 }
 #popupModal .modal-content .modal-header {
-  border-bottom-color: #70707010;
+  border-bottom-color: rgba(112, 112, 112, 0.062745098);
   background-color: transparent !important;
 }
 #popupModal .modal-content .modal-header .modal-title {
@@ -407,9 +443,45 @@
   height: 25px;
 }
 #popupModal .modal-content .modal-footer {
-  border-top-color: #70707010;
+  border-top-color: rgba(112, 112, 112, 0.062745098);
   align-items: center;
   justify-content: center;
 }
 
-/*# sourceMappingURL=courses.css.map */
+.popupModal .modal-content {
+  background-color: #F2F3F7;
+  border-radius: 35px;
+  padding: 0 35px;
+}
+.popupModal .modal-content .modal-header {
+  border-bottom-color: rgba(112, 112, 112, 0.062745098);
+  background-color: transparent !important;
+}
+.popupModal .modal-content .modal-header .modal-title {
+  position: relative;
+  font-size: 16px;
+  color: #525F77;
+}
+.popupModal .modal-content .modal-header .modal-title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #29BCB0;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.popupModal .modal-content .modal-header .close-btn {
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+.popupModal .modal-content .modal-footer {
+  border-top-color: rgba(112, 112, 112, 0.062745098);
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=courses.css.map */
