@@ -1,0 +1,78 @@
+.exam-content-div {
+  padding: 15px;
+  background: white;
+  border-radius: 25px;
+}
+.exam-content-div .exam-title {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #F2F3F7;
+  font-size: 15px;
+  color: #525F77;
+  padding: 14px 14px 12px;
+  border-radius: 20px 20px 0 0;
+}
+.exam-content-div .exam-title:before {
+  position: absolute;
+  content: "";
+  background-color: #f2f3f7;
+  bottom: 0;
+  right: 0;
+}
+.exam-content-div .check-label {
+  font-size: 12px;
+  color: #525F77;
+}
+.exam-content-div .input_box .quest-name {
+  font-size: 12px;
+}
+.exam-content-div .input_box .quest-text {
+  margin: 0;
+  background: #f2f3f7;
+  padding: 6px 4px;
+  font-size: 12px;
+  border-radius: 12px;
+  margin-top: 5px;
+  border: none;
+}
+
+#exam-modal .modal-body::-webkit-scrollbar {
+  width: 4px;
+  background-color: #F2F3F7;
+}
+
+#exam-modal .modal-body::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+}
+
+#myTabContent .image-content {
+  width: 100%;
+  border-radius: 25px;
+}
+#myTabContent .image-content img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#myTabContent .download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #02c2b3;
+  padding: 10px 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+#myTabContent .download-btn:hover {
+  background-color: #3b449c;
+}/*# sourceMappingURL=exam-modal.css.map */
