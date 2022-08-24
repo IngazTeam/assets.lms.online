@@ -125,13 +125,15 @@ $("#addstudent").submit("submit", function (event) {
     event.preventDefault();
     let url = $(this).attr('action');
     let formData = new FormData(this);
+    let saving =$('#saving').val();
+    let save   =$('#save').val();
     /*console.log( formData );*/
     $.ajax({
         url: url,
         type: 'post',
         data: formData,
         beforeSend: function () {
-            $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+            $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>`+saving);
             disabled_button("#save_button_parent");
         },
         success: function (data) {
@@ -148,13 +150,13 @@ $("#addstudent").submit("submit", function (event) {
 
             if (status == 310) {
                 formValidateRequest(data);
-                $("#save_button_parent").html(`<i class="ti-check"></i> save`);
+                $("#save_button_parent").html(`<i class="ti-check"></i>`+save);
             }
             if (status == 200) {
                 location.reload();
             }
             if (status == 500) {
-                $("#save_button_parent").html(`save`);
+                $("#save_button_parent").html(save);
 
             }
 
@@ -178,13 +180,15 @@ $("#editstudent").submit("submit", function (event) {
     event.preventDefault();
     let url = $(this).attr('action');
     let formData = new FormData(this);
+    let saving =$('#saving').val();
+    let save   =$('#save').val();
     /*console.log( formData );*/
     $.ajax({
         url: url,
         type: 'post',
         data: formData,
         beforeSend: function () {
-            $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+            $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> `+saving);
            disabled_button("#update_button_parent");
         },
         success: function (data) {
@@ -201,7 +205,7 @@ $("#editstudent").submit("submit", function (event) {
 
             if (status == 310) {
                 formValidateRequest(data);
-                $("#update_button_parent").html(`<i class="ti-check"></i> save`);
+                $("#update_button_parent").html(`<i class="ti-check"></i>`+save);
             }
 
 
