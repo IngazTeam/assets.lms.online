@@ -1,493 +1,564 @@
 /*shared_style*/
 
-@media (min-width:992px) {
-    .p-7px-end{
-        padding-inline-end: 7px;
-    }
-    .p-7px-start{
-        padding-inline-start: 7px;
-    }
+@media (min-width: 992px) {
+  .p-7px-end {
+    padding-inline-end: 7px;
+  }
+  .p-7px-start {
+    padding-inline-start: 7px;
+  }
 }
-@media (max-width:992px) {
-    .p-sm-7px-end{
-        padding-inline-end: 7px;
-    }
-    .p-sm-7px{
-        padding-inline: 7px!important;
-    }
-    .p-sm-7px-start{
-        padding-inline-start: 7px;
-    }
+@media (max-width: 992px) {
+  .p-sm-7px-end {
+    padding-inline-end: 7px;
+  }
+  .p-sm-7px {
+    padding-inline: 7px !important;
+  }
+  .p-sm-7px-start {
+    padding-inline-start: 7px;
+  }
 }
 @media (max-width: 576px) {
-    .p-mobile-0{
-        padding-inline-end: 0px!important;
-        padding-inline-start: 0px!important;
-    }
-    .p-mobile-0-end{
-        padding-inline-end: 0!important;
-    }
-    .p-mobile-0-start{
-        padding-inline-start: 0!important;
-    }
+  .p-mobile-0 {
+    padding-inline-end: 0px !important;
+    padding-inline-start: 0px !important;
+  }
+  .p-mobile-0-end {
+    padding-inline-end: 0 !important;
+  }
+  .p-mobile-0-start {
+    padding-inline-start: 0 !important;
+  }
 }
-.flex-align-center{
-    display: flex;
-    align-items: center;
+.flex-align-center {
+  display: flex;
+  align-items: center;
 }
-.flex-justify-end{
-    display: flex;
-    justify-content: end;
+.flex-justify-end {
+  display: flex;
+  justify-content: end;
 }
-.indexResponsive .hello-user{
-    padding: 20px 15px!important;
+.indexResponsive .hello-user {
+  padding: 20px 15px !important;
 }
 @media (max-width: 768px) {
-    .indexResponsive .hello-user{
-        margin-bottom:10px ;
-        height: unset;
-    }
+  .indexResponsive .hello-user {
+    margin-bottom: 10px;
+    height: unset;
+  }
 }
 .indexResponsive .hello-user .hello-text {
-    font-size: 22px;
-    font-weight: 500;
+  font-size: 22px;
+  font-weight: 500;
 }
-.indexResponsive .m-user-subscriptions{
-    padding: 10px 26px;
-    height: 100%;
+.indexResponsive .m-user-subscriptions {
+  padding: 10px 26px;
+  height: 100%;
 }
-.indexResponsive .m-user-subscriptions .def{
-    font-size: 16px!important;
-    font-weight: 500!important;
-    margin-bottom: 0!important;
+.indexResponsive .m-user-subscriptions .def {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  margin-bottom: 0 !important;
 }
-.indexResponsive .m-user-subscriptions .m-subscription-name{
-    margin-inline-start: 7px;
+.indexResponsive .m-user-subscriptions .m-subscription-name {
+  margin-inline-start: 7px;
 }
 
-.indexResponsive .select2-container--default[dir="rtl"] .select2-selection--single .select2-selection__arrow{
-    left: 7px!important;
+.indexResponsive
+  .select2-container--default[dir="rtl"]
+  .select2-selection--single
+  .select2-selection__arrow {
+  left: 7px !important;
 }
-.indexResponsive .dropDowns .select2-container--default .select2-selection--single .select2-selection__arrow b{
-    border: 0!important;
-    background: url('../imgs/down.png');
-    width: 14px;
-    height: 11px;
-    margin-top: 0;
-    margin-left: 0;
-    transform: translateY(-50%);
-    left: 0;
-    transition: all .3s ease-in-out;
+.indexResponsive
+  .dropDowns
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  border: 0 !important;
+  background: url("../imgs/down.png");
+  width: 14px;
+  height: 11px;
+  margin-top: 0;
+  margin-left: 0;
+  transform: translateY(-50%);
+  left: 0;
+  transition: all 0.3s ease-in-out;
 }
-.indexResponsive .dropDowns .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
-    transform: rotate(180deg) translateY(50%)!important;
+.indexResponsive
+  .dropDowns
+  .select2-container--default.select2-container--open
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  transform: rotate(180deg) translateY(50%) !important;
 }
-.indexResponsive .dropDowns .icon.icon-more{
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.indexResponsive .dropDowns .icon.icon-more {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .indexResponsive .cards-container .owl-carousel .owl-nav .owl-prev,
 .indexResponsive .cards-container .owl-carousel .owl-nav .owl-next,
 .indexResponsive .culender.owl-carousel .owl-nav .owl-prev,
-.indexResponsive .culender.owl-carousel .owl-nav .owl-nex{
-    width: 38px;
-    height: 38px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.indexResponsive .culender.owl-carousel .owl-nav .owl-nex {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .indexResponsive .cards-container {
-    position: relative;
+  position: relative;
+  z-index: 0;
 }
-@media (min-width:375px) and (max-width: 400px) {
-.indexResponsive .cards-container .cards-owl{
+@media (min-width: 375px) and (max-width: 400px) {
+  .indexResponsive .cards-container .cards-owl {
     position: unset;
     width: calc(100% - 68px) !important;
-} }
+  }
+}
 @media (max-width: 600px) {
-    .indexResponsive .cards-container .cards-owl{
-        position: unset;
-        width: calc(100% - 38px);
-    } }
+  .indexResponsive .cards-container .cards-owl {
+    position: unset;
+    width: calc(100% - 38px);
+  }
+}
 @media (max-width: 576px) {
-    .indexResponsive .culender{
-        gap: 5px;
-        flex-wrap: wrap;
-    }
-    .indexResponsive .culender .title{
+  .indexResponsive .culender {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .indexResponsive .culender .title {
     margin-bottom: 0;
-}  .indexResponsive .culender .selectors{
+  }
+  .indexResponsive .culender .selectors {
     margin-inline-start: auto;
-       }
+  }
 }
-.indexResponsive .courses-active-not{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap:wrap ;
-    width: 100%;
+.indexResponsive .courses-active-not {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.indexResponsive .courses-active-not .selectors{
-    margin-inline-start: auto;
+.indexResponsive .courses-active-not .selectors {
+  margin-inline-start: auto;
 }
 /*********************courses***********************/
-.AddListButton{
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    padding-left: 0!important;
+.AddListButton {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding-left: 0 !important;
 }
-.xd_courses_table.card_box{
-  background-color: transparent!important;
-  padding-inline: 0!important;
-}
-@media (max-width:576px) {
-    .xd_courses_table.card_box{
-        padding: 0!important;
-        margin-top: 10px!important;
-    }
-    .xd_courses_table.card_box .table.cards{
-        padding: 0!important;
-    }
-    .xd_courses_table.card_box .dataTables_filter>label{
-        margin-bottom: 0!important;
-        margin-inline: auto;
-    }
-}
-.xd_courses_table.card_box table.dataTable{
-    border-spacing: 0 10px!important;
-    box-shadow: none!important;
-}
-.xd_courses_table.card_box div.dt-buttons{
-    background: white!important;
-}
-.xd_courses_table.card_box .QA_table tbody tr:hover{
-    background-color: unset!important;
-}
-.xd_courses_table.card_box  table.dataTable tr{
-    height: auto!important;
-}
-.xd_courses_table.card_box .QA_table tbody th,
-.xd_courses_table.card_box .QA_table tbody td{
-    border-bottom: 0!important;
-}
-html[dir="rtl"] .xd_courses_table.card_box .table.dataTable tbody th,
-html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child{
-    border-radius:0 8px 8px 0!important;
-}
-@media (min-width:576px) {
-html[dir="rtl"] .xd_courses_table.card_box .table.dataTable tbody th,
-html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:last-child{
-    border-radius: 8px 0 0 8px !important;
-}
-}
-html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:last-child{
-    border-radius: 8px!important;
-}
-.xd_courses_table.card_box td .CRM_dropdown.dropdown .dropdown-menu{
-    border-radius: 5px;
-    box-shadow: 0PX 3PX 6PX rgb(0 0 0 / 16%)!important;
-}
-.xd_courses_table.card_box .QA_table .table td.lastVisibleChild {
-    border-radius:8px 0 0 8px!important;
-    }
-.xd_courses_table.card_box .QA_table .table  th.lastVisibleChild {
-    border-radius:8px 0 0 8px!important;
-    }
-.xd_courses_table.card_box .QA_table .table.cards td.firstVisibleChild {
-    border-radius: 8px 8px 0 0!important;
-    }
-.xd_courses_table.card_box .QA_table .table.cards  th.firstVisibleChild {
-    border-radius: 8px 8px 0 0!important;
-    }
-.xd_courses_table.card_box table.dataTable.display tbody tr.selected > .sorting_1,
-.xd_courses_table.card_box table.dataTable.order-column.stripe tbody tr.selected > .sorting_1{
-    background-color: white!important;
-}
-.xd_courses_table.card_box table.dataTable tbody tr.selected{
-    /*background-color: transparent;*/
-    box-shadow: 0 0 0 2px #29BCB0!important;
-    border-radius: 8px!important;
-
-}
-.xd_courses_table.card_box #lms_table.cards .form-check{
-    padding:0 ;
-}
-.xd_courses_table.card_box table.dataTable .common-radio:checked~label:before,
-.xd_courses_table.card_box table.dataTable .common-radio:empty~label:before{
-    width: 17px!important;
-    height: 17px !important;
-    border-radius: 5px!important;
-    left: 50%!important;
-    transform: translate(-50%,-50%)!important;
-}
-.xd_courses_table.card_box table.dataTable .common-radio:checked~label:after{
-    content:"";
-    width: 11px;
-    height: 11px;
-    border-radius: 2px;
-    background-color: #29BCB0;
-    left: 50%!important;
-    transform: translate(-50%,-50%)!important;
-}
-.xd_courses_table.card_box table.dataTable .cannotAdd:checked~label:after{
-    content: ""!important;
-}
-.xd_courses_table.card_box table.dataTable td .large_text{
-    max-width: 200px;
-    max-height: 100px;
-    overflow-y: auto;
-}
-
-.large_text::-webkit-scrollbar-track
-{
-    border-radius: 5px;
-    background-color: #f2f3f7;
-}
-
-.large_text::-webkit-scrollbar
-{
-    width: 8px;
-    background-color:#f2f3f7 ;
-}
-
-.large_text::-webkit-scrollbar-thumb
-{
-    border-radius: 5px;
-    background-color: #29bcb0;
-}
-.xd_courses_table.card_box table.dataTable td .colorValues{
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-}
-.xd_courses_table.card_box table.dataTable td .profile_info img{
-    overflow: hidden;
-}
-/******************************************************************/
-@media (max-width:576px) {
-    .xd_courses_table.card_box .cards tbody tr {
-        width: 336px;
-        margin: auto;
-        border-radius: 8px;
-        position: relative;
-        height: 100%!important;
-        /* background-color: white; */
-     }
-
-    .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell a{
-        display: inline!important;
-    }
-    .xd_courses_table.card_box table.dataTable td .colorValues {
-        justify-content: end;
-    }
-    .xd_courses_table td.inline-cell .CRM_dropdown.dropdown .dropdown-toggle{
-        height:auto!important ;
-        padding-block: 0!important;
-    }
-    .xd_courses_table td .CRM_dropdown.dropdown .dropdown-toggle{
-        padding: 0!important;
-    }
-    html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody th,
-    html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody td:first-child{
-        border-radius: 8px 8px 0 0!important;
-    }
-    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild{
-        border-radius: 0 0 8px 8px !important;
-    }
-    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild.inline-cell,
-    .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild.inline-cell-50{
-        border-radius: 0!important;
-        border-bottom-left-radius: 8px!important;
-    }
-
-    .xd_courses_table.card_box table.dataTable.display tbody tr.odd.selected > .sorting_1,
-    .xd_courses_table.card_box table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_1{
-        background-color: white!important;
-    }
-    .xd_courses_table.card_box .cards tbody td {
-        display: block;
-        padding: 7px 40px;
-        font-size: 14px;
-        color: #3B459C!important;
-        font-weight: 900;
-        text-align: left!important;
-     }
-     .xd_courses_table.card_box .cards tbody td:not(.absolute_check) {
-        min-height: 40px;
-     }
-     .xd_courses_table.card_box .cards thead {
-        display: none;
-     }
-     .xd_courses_table.card_box .cards td:before {
-        content: attr(data-label);
-        position: relative;
-        float: right;
-        color: #091B3D!important;
-        min-width: 4rem;
-        margin-right: 0;
-        margin-left: 1rem;
-        text-align: right;
-     }
-     /**************************************/
-     .xd_courses_table.card_box .table.dataTable tbody tr td.d-table-cell,
-     .xd_courses_table.card_box .table.dataTable tbody tr th.d-table-cell{
-         display: none!important;
-     }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell,
-     .xd_courses_table.card_box .table.dataTable tbody tr th.inline-cell{
-         display: inline-block!important;
-         width: 33.3333%;
-         font-weight: normal!important;
-         height: 72px;
-         padding-top: 0;
-         text-align: center!important;
-     }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell-50,
-     .xd_courses_table.card_box .table.dataTable tbody tr th.inline-cell-50{
-         display: inline-block!important;
-         width: 50%;
-         font-weight: normal!important;
-         height: 72px;
-         padding-top: 0;
-         text-align: center!important;
-     }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell
-      .profile_info img,
-      .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell-50
-      .profile_info img
-      {
-        width: 27px!important;
-        height: 27px!important;
-      }
-      .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell
-      .switch_toggle{
-        margin-top: 5px;
-      }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell::before,
-     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell-50::before{
-        float: none;
-        margin-left: 0;
-        text-align: center;
-     }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell-50 .switch_toggle{
-        display: block!important;
-        margin: auto;
-    }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.bord-rad-right{
-         border-radius: 0!important;
-         border-bottom-right-radius: 8px!important;
- 
-     }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.bord-rad-left{
-         border-radius: 0!important;
-         border-bottom-left-radius: 8px!important;
-     }
-     .xd_courses_table.card_box .table.dataTable tbody tr td.absolute_check{
-        background-color: transparent!important;
-        position: absolute;
-        right: 16px;
-        top: 16px;
-        z-index: 9;
-        padding: 0!important;
-        width: 17px;
-        height: 17px;
-     }
-    .xd_courses_table.card_box .table.dataTable tbody tr td.as_first_col{
-        border-radius: 8px 8px 0 0!important;
-        padding-top: 13px!important;
-    }
-
-
-}
-@media (min-width:576px) {
-.xd_courses_table.card_box .table.dataTable tbody tr td.d-table-cell,
-.xd_courses_table.card_box .table.dataTable tbody tr th.d-table-cell{
-    display: table-cell!important;
- }
-}
-.responsive_box.title_with_breadcrumbs{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap-reverse;
-    gap:15px;
-    margin-bottom: 10px;
-}
-.responsive_box.title_with_breadcrumbs .left_links{
-   margin-inline-start: auto;
-}
-.responsive_box.title_with_breadcrumbs  .section_title h1{
-    margin-bottom: 0!important;
-}
-.selectFormINDatatable{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
-}
-.selectFormINDatatable button{
-    padding:5px !important;
-}
-.selectFormINDatatable select[name='role_id']{
-    width: 120px;
-}
-.collapse_Change_radius .card-header[aria-expanded='true']{
-    border-radius: 15px 15px 0 0!important;
-}
-.collapse_Change_radius .card-header[aria-expanded='false']{
-    border-radius: 15px!important;
-}
-.collapse_Change_radius .card-header button{
-    color: #3B459C;
-    font-weight: 500;
-}
-.without-bg{
-    background: unset!important;
-}
-.DragableHeaderTitle{
-    display: flex;
-    justify-content: space-between;
-}
-.LabelSwitchBox{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.theme_box_container{
-    margin-bottom: 0;
+.xd_courses_table.card_box {
+  background-color: transparent !important;
+  padding-inline: 0 !important;
 }
 @media (max-width: 576px) {
-    .theme_box_container {
-        margin-bottom: 10px!important;
-    }}
-.theme_box_container .card{
-    height: 100%;
-    margin-bottom: 0;
-    overflow:hidden;
-    border: 1px solid rgba(0,0,0,.125);
-    min-height: 250px;
+  .xd_courses_table.card_box {
+    padding: 0 !important;
+    margin-top: 10px !important;
+  }
+  .xd_courses_table.card_box .table.cards {
+    padding: 0 !important;
+  }
+  .xd_courses_table.card_box .dataTables_filter > label {
+    margin-bottom: 0 !important;
+    margin-inline: auto;
+  }
+}
+.xd_courses_table.card_box table.dataTable {
+  border-spacing: 0 10px !important;
+  box-shadow: none !important;
+}
+.xd_courses_table.card_box div.dt-buttons {
+  background: white !important;
+}
+.xd_courses_table.card_box .QA_table tbody tr:hover {
+  background-color: unset !important;
+}
+.xd_courses_table.card_box table.dataTable tr {
+  height: auto !important;
+}
+.xd_courses_table.card_box .QA_table tbody th,
+.xd_courses_table.card_box .QA_table tbody td {
+  border-bottom: 0 !important;
+}
+html[dir="rtl"] .xd_courses_table.card_box .table.dataTable tbody th,
+html[dir="rtl"]
+  .xd_courses_table.card_box
+  table.dataTable
+  tbody
+  td:first-child {
+  border-radius: 0 8px 8px 0 !important;
+}
+@media (min-width: 576px) {
+  html[dir="rtl"] .xd_courses_table.card_box .table.dataTable tbody th,
+  html[dir="rtl"]
+    .xd_courses_table.card_box
+    table.dataTable
+    tbody
+    td:last-child {
+    border-radius: 8px 0 0 8px !important;
+  }
+}
+html[dir="rtl"]
+  .xd_courses_table.card_box
+  table.dataTable
+  tbody
+  td:first-child:last-child {
+  border-radius: 8px !important;
+}
+.xd_courses_table.card_box td .CRM_dropdown.dropdown .dropdown-menu {
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 16%) !important;
+}
+.xd_courses_table.card_box .QA_table .table td.lastVisibleChild {
+  border-radius: 8px 0 0 8px !important;
+}
+.xd_courses_table.card_box .QA_table .table th.lastVisibleChild {
+  border-radius: 8px 0 0 8px !important;
+}
+.xd_courses_table.card_box .QA_table .table.cards td.firstVisibleChild {
+  border-radius: 8px 8px 0 0 !important;
+}
+.xd_courses_table.card_box .QA_table .table.cards th.firstVisibleChild {
+  border-radius: 8px 8px 0 0 !important;
+}
+.xd_courses_table.card_box
+  table.dataTable.display
+  tbody
+  tr.selected
+  > .sorting_1,
+.xd_courses_table.card_box
+  table.dataTable.order-column.stripe
+  tbody
+  tr.selected
+  > .sorting_1 {
+  background-color: white !important;
+}
+.xd_courses_table.card_box table.dataTable tbody tr.selected {
+  /*background-color: transparent;*/
+  box-shadow: 0 0 0 2px #29bcb0 !important;
+  border-radius: 8px !important;
+}
+.xd_courses_table.card_box #lms_table.cards .form-check {
+  padding: 0;
+}
+.xd_courses_table.card_box table.dataTable .common-radio:checked ~ label:before,
+.xd_courses_table.card_box table.dataTable .common-radio:empty ~ label:before {
+  width: 17px !important;
+  height: 17px !important;
+  border-radius: 5px !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.xd_courses_table.card_box table.dataTable .common-radio:checked ~ label:after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 2px;
+  background-color: #29bcb0;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+.xd_courses_table.card_box table.dataTable .cannotAdd:checked ~ label:after {
+  content: "" !important;
+}
+.xd_courses_table.card_box table.dataTable td .large_text {
+  max-width: 200px;
+  max-height: 100px;
+  overflow-y: auto;
 }
 
-.theme_box_container .card:hover .detail_btn{
-    top: 0;
-    bottom: unset;
-    left: 0;
-    right: 0;
+.large_text::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #f2f3f7;
 }
-.theme_box_container .card .detail_btn h4 a{
-    font-size: 18px;
+
+.large_text::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f2f3f7;
+}
+
+.large_text::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #29bcb0;
+}
+.xd_courses_table.card_box table.dataTable td .colorValues {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.xd_courses_table.card_box table.dataTable td .profile_info img {
+  overflow: hidden;
+}
+/******************************************************************/
+@media (max-width: 576px) {
+  .xd_courses_table.card_box .cards tbody tr {
+    width: 336px;
+    margin: auto;
+    border-radius: 8px;
+    position: relative;
+    height: 100% !important;
+    /* background-color: white; */
+  }
+
+  .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell a {
+    display: inline !important;
+  }
+  .xd_courses_table.card_box table.dataTable td .colorValues {
+    justify-content: end;
+  }
+  .xd_courses_table td.inline-cell .CRM_dropdown.dropdown .dropdown-toggle {
+    height: auto !important ;
+    padding-block: 0 !important;
+  }
+  .xd_courses_table td .CRM_dropdown.dropdown .dropdown-toggle {
+    padding: 0 !important;
+  }
+  html[dir="rtl"] .xd_courses_table.card_box table.dataTable.cards tbody th,
+  html[dir="rtl"]
+    .xd_courses_table.card_box
+    table.dataTable.cards
+    tbody
+    td:first-child {
+    border-radius: 8px 8px 0 0 !important;
+  }
+  .xd_courses_table.card_box .QA_table .table.cards td.lastVisibleChild {
+    border-radius: 0 0 8px 8px !important;
+  }
+  .xd_courses_table.card_box
+    .QA_table
+    .table.cards
+    td.lastVisibleChild.inline-cell,
+  .xd_courses_table.card_box
+    .QA_table
+    .table.cards
+    td.lastVisibleChild.inline-cell-50 {
+    border-radius: 0 !important;
+    border-bottom-left-radius: 8px !important;
+  }
+
+  .xd_courses_table.card_box
+    table.dataTable.display
+    tbody
+    tr.odd.selected
+    > .sorting_1,
+  .xd_courses_table.card_box
+    table.dataTable.order-column.stripe
+    tbody
+    tr.odd.selected
+    > .sorting_1 {
+    background-color: white !important;
+  }
+  .xd_courses_table.card_box .cards tbody td {
+    display: block;
+    padding: 7px 40px;
+    font-size: 14px;
+    color: #3b459c !important;
+    font-weight: 900;
+    text-align: left !important;
+  }
+  .xd_courses_table.card_box .cards tbody td:not(.absolute_check) {
+    min-height: 40px;
+  }
+  .xd_courses_table.card_box .cards thead {
+    display: none;
+  }
+  .xd_courses_table.card_box .cards td:before {
+    content: attr(data-label);
+    position: relative;
+    float: right;
+    color: #091b3d !important;
+    min-width: 4rem;
+    margin-right: 0;
+    margin-left: 1rem;
+    text-align: right;
+  }
+  /**************************************/
+  .xd_courses_table.card_box .table.dataTable tbody tr td.d-table-cell,
+  .xd_courses_table.card_box .table.dataTable tbody tr th.d-table-cell {
+    display: none !important;
+  }
+  .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell,
+  .xd_courses_table.card_box .table.dataTable tbody tr th.inline-cell {
+    display: inline-block !important;
+    width: 33.3333%;
+    font-weight: normal !important;
+    height: 72px;
+    padding-top: 0;
+    text-align: center !important;
+  }
+  .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell-50,
+  .xd_courses_table.card_box .table.dataTable tbody tr th.inline-cell-50 {
+    display: inline-block !important;
+    width: 50%;
+    font-weight: normal !important;
+    height: 72px;
+    padding-top: 0;
+    text-align: center !important;
+  }
+  .xd_courses_table.card_box
+    .table.dataTable
+    tbody
+    tr
+    td.inline-cell
+    .profile_info
+    img,
+  .xd_courses_table.card_box
+    .table.dataTable
+    tbody
+    tr
+    td.inline-cell-50
+    .profile_info
+    img {
+    width: 27px !important;
+    height: 27px !important;
+  }
+  .xd_courses_table.card_box
+    .table.dataTable
+    tbody
+    tr
+    td.inline-cell
+    .switch_toggle {
+    margin-top: 5px;
+  }
+  .xd_courses_table.card_box .table.dataTable tbody tr td.inline-cell::before,
+  .xd_courses_table.card_box
+    .table.dataTable
+    tbody
+    tr
+    td.inline-cell-50::before {
+    float: none;
+    margin-left: 0;
+    text-align: center;
+  }
+  .xd_courses_table.card_box
+    .table.dataTable
+    tbody
+    tr
+    td.inline-cell-50
+    .switch_toggle {
+    display: block !important;
+    margin: auto;
+  }
+  .xd_courses_table.card_box .table.dataTable tbody tr td.bord-rad-right {
+    border-radius: 0 !important;
+    border-bottom-right-radius: 8px !important;
+  }
+  .xd_courses_table.card_box .table.dataTable tbody tr td.bord-rad-left {
+    border-radius: 0 !important;
+    border-bottom-left-radius: 8px !important;
+  }
+  .xd_courses_table.card_box .table.dataTable tbody tr td.absolute_check {
+    background-color: transparent !important;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    z-index: 9;
+    padding: 0 !important;
+    width: 17px;
+    height: 17px;
+  }
+  .xd_courses_table.card_box .table.dataTable tbody tr td.as_first_col {
+    border-radius: 8px 8px 0 0 !important;
+    padding-top: 13px !important;
+  }
+}
+@media (min-width: 576px) {
+  .xd_courses_table.card_box .table.dataTable tbody tr td.d-table-cell,
+  .xd_courses_table.card_box .table.dataTable tbody tr th.d-table-cell {
+    display: table-cell !important;
+  }
+}
+.responsive_box.title_with_breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.responsive_box.title_with_breadcrumbs .left_links {
+  margin-inline-start: auto;
+}
+.responsive_box.title_with_breadcrumbs .section_title h1 {
+  margin-bottom: 0 !important;
+}
+.selectFormINDatatable {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.selectFormINDatatable button {
+  padding: 5px !important;
+}
+.selectFormINDatatable select[name="role_id"] {
+  width: 120px;
+}
+.collapse_Change_radius .card-header[aria-expanded="true"] {
+  border-radius: 15px 15px 0 0 !important;
+}
+.collapse_Change_radius .card-header[aria-expanded="false"] {
+  border-radius: 15px !important;
+}
+.collapse_Change_radius .card-header button {
+  color: #3b459c;
+  font-weight: 500;
+}
+.without-bg {
+  background: unset !important;
+}
+.DragableHeaderTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.LabelSwitchBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.theme_box_container {
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .theme_box_container {
+    margin-bottom: 10px !important;
+  }
+}
+.theme_box_container .card {
+  height: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  min-height: 250px;
+}
+
+.theme_box_container .card:hover .detail_btn {
+  top: 0;
+  bottom: unset;
+  left: 0;
+  right: 0;
+}
+.theme_box_container .card .detail_btn h4 a {
+  font-size: 18px;
 }
 .theme_box_container .card .screenshot,
-.theme_box_container .card .single_item_img_div{
-    height: 100%;
+.theme_box_container .card .single_item_img_div {
+  height: 100%;
 }
-.theme_box_container .card .single_item_img_div img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.theme_box_container .card .single_item_img_div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

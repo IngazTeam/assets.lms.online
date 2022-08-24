@@ -1104,6 +1104,66 @@ body {
   font-size: 18px;
   margin: 3px 0 0 0;
 }
+.med-new-content .watch {
+  top: -12px;
+  left: 20px;
+  font-size: 12px;
+  padding: 0 10px;
+  background: #707070;
+  border-radius: 7px;
+  color: #fff;
+}
+.med-new-content .video_screen {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.med-new-content .theme__overlay {
+  position: relative;
+  z-index: 2;
+}
+.med-new-content .theme__overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a0b21;
+  opacity: 0.4;
+  z-index: -1;
+}
+.med-new-content .play_button {
+  width: 70px;
+  height: 50px;
+  background: #29bcb0;
+  border-radius: 15px;
+  color: #3b459c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.med-new-content .play_button:hover {
+  background: #3b459c;
+  color: #fff;
+}
+.med-new-content .inner_title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.med-new-content .course-details {
+  font-size: 14px;
+  color: #3B459C;
+}
 
 .shoping_wrapper .dark_overlay {
   position: fixed;

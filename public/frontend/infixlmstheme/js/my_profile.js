@@ -47,6 +47,25 @@ function upload(img) {
         contentType: false,
         processData: false,
         success: function (data) {
+
+            let status = data.status;
+            let open_toastr = data.open_toastr;
+
+            if (open_toastr == "yes") {
+                showToastr(data, status);
+            }
+
+            if (status == 310) {
+                // console.log(310);
+                // alert(data.error_messages);
+              // formValidateRequest(data);
+                
+            }
+            if (status == 200) {
+                location.reload();
+                /*$("#form-submit").html(`<i class="ti-check"></i> save`);*/
+            }
+
             // console.log(data);
             if (data.fail) {
                 $('#show_profile_image').attr('src', url+'/public/demo/user/admin.jpg');

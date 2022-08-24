@@ -463,3 +463,49 @@ $gray_color:#9F9F9F;
 
 
 }
+.popupModal {
+    .modal-content {
+        background-color: #F2F3F7;
+        border-radius: 35px;
+        padding: 0 35px;
+
+        .modal-header {
+            border-bottom-color: #70707010;
+            background-color: transparent !important;
+
+            .modal-title {
+                position: relative;
+                font-size: 16px;
+                color: #525F77;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $circle_color;
+                    right: -15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .close-btn {
+                background-color: #fff;
+                border-radius: 50%;
+                border: none;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .modal-footer {
+            border-top-color: #70707010;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+}
