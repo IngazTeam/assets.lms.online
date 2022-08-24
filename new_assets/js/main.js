@@ -29,7 +29,10 @@ $(function () {
 //     $(that).remove()
 // }
 function AppendQuestion(parentId, childId) {
-    $('#' + childId).clone().appendTo($('#' + parentId));
+    // $('#' + childId).clone().appendTo($('#' + parentId));
+   var id=$('#' + childId).clone();
+   id.find('input').val('');
+   id.appendTo($('#' + parentId));
 }
 // Remove Question
 function RemoveQuestion(that, row_content) {
