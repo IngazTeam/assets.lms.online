@@ -38,6 +38,8 @@
   <link rel="stylesheet" href="css/exams.css" />
   <!-- courses style -->
   <link rel="stylesheet" href="css/courses.css" />
+  <!-- courses style -->
+  <link rel="stylesheet" href="css/exam-modal.css" />
 </head>
 
 <body>
@@ -112,7 +114,33 @@
             <div class="tab-content" id="myTabContent">
               <div class="tab-pane fade show active" id="course_details" role="tabpanel"
                 aria-labelledby="course_details-tab">
-                1
+                <div class="card_content" style="
+    overflow: hidden;
+    padding: 25px;
+    background: #fff;
+    border-radius: 35px;
+">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <embed style="border-radius: 15px;" width="100%" height="315"
+                      src="https://www.youtube.com/embed/7p2_Qd7scWM" title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></embed>
+                  </div>
+
+                  <div class="image-content">
+                    <img src="imgs/icons/Mask Group 2.png" alt="" width="100%">
+                  </div>
+
+                  <a class="download-btn" download="Mask Group 2.png" href="./imgs/icons/Mask Group 2.png">
+                    تحميل الملف<i class="bi bi-cloud-arrow-down mx-2 fs-5"></i>
+                  </a>
+
+                  <object style="border-radius: 25px;"
+                    data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf" width="100%"
+                    height="500">
+                  </object>
+                </div>
+
               </div>
               <div class="tab-pane fade" id="course_data" role="tabpanel" aria-labelledby="course_data-tab">
                 <div class="card_box">
@@ -132,17 +160,16 @@
                     <div class="collapse main_collapese_card show" id="main_collapese">
                       <div class="card card-body inner_collapses">
                         <!-- start frist inner collapse -->
-                        <div class="collapse_content position-relative py-1">
+                        <div class="collapse_content py-1">
                           <button class="main_collapese frist_inner_collapse d-flex justify-content-between w-100">
                             <div class="d-flex">
                               <i class="bi bi-caret-left-fill"></i>
                               <div class="inner_title">
                                 الدرس الأول : مبادئ رقم 1
                               </div>
-                              <span class="watch position-absolute">مشاهدة</span>
                             </div>
                             <div class="d-flex">
-                              <a href="" class="box_action" data-toggle="tooltip" title="معاينة " data-bs-toggle="modal"
+                              <a href="" class="box_action" data-toggle="tooltip" title="مشاهدة " data-bs-toggle="modal"
                                 data-bs-target="#popupModal">
                                 <img src="imgs/eye.svg" alt="" width="20" />
                               </a>
@@ -166,7 +193,8 @@
                               </div>
                             </button>
                             <div class="d-flex">
-                              <a href="" class="box_action" data-toggle="tooltip" title="معاينة ">
+                              <a href="" class="box_action" data-toggle="tooltip" title="أختبر " data-bs-toggle="modal"
+                                data-bs-target="#exam-modal">
                                 <img src="imgs/eye.svg" alt="" width="20" />
                               </a>
                             </div>
@@ -220,6 +248,279 @@
                             </div>
                           </div>
                         </div>
+                        <!-- end watch video modal  -->
+                        <!-- Exam modal  -->
+                        <!-- Modal -->
+                        <div class="modal fade popupModal" id="exam-modal" data-bs-backdrop="static"
+                          data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <div class="d-flex align-items-center">
+                                  <img src="./imgs/icons/dot.png" class="" width="15px" height="15px" alt="">
+                                  <h5 class="modal-title px-1" id="staticBackdropLabel">اختبار الفصل الأول و الثاني</h5>
+                                </div>
+
+                                <button type="button" class="btn-close" style="margin:unset ;" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body p-1">
+                                <div class="exam-content-div">
+                                  <h4 class="exam-title"> قسم الأسئلة </h4>
+
+
+                                  <div class=" mt-1 ">
+
+
+                                    <div class="" id="new__collapse">
+
+                                      <!-- start question part -->
+                                      <div class="question_section">
+
+                                        <!-- ****************start frist type of questions ************-->
+                                        <div class="question_box">
+                                          <div class="question_title d-flex justify-content-center align-items-center">
+                                            <img src="imgs/vuesax-broken-task-square.svg" alt="" />
+                                            <p>أسئلة صح و خطأ</p>
+                                          </div>
+                                          <div class="question_box_body pb-2" id="question_type_1">
+                                            <!-- ********************* -->
+                                            <div class="row first_row">
+                                              <div class="col-md-6 d-flex align-items-center">
+                                                <div class="circle"></div>
+                                                <div class="input_box frist_input">
+                                                  <span class="quest-name"> اسم السؤال</span>
+                                                  <p class="quest-text">هل تحتوي الحمم البركانية على حمض الهيدروكلوريك ؟
+                                                  </p>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-2 col-3">
+                                                <div class="input_box">
+                                                  <span class="quest-name"> الدرجة </span>
+                                                  <p class="quest-text"> 60 </p>
+                                                </div>
+                                              </div>
+                                              <div
+                                                class="col-md-4 col-9 d-flex justify-content-around align-items-center">
+                                                <div class="row w-100">
+                                                  <div class="col-lg-5 col-6">
+                                                    <div class="form-check">
+                                                      <label class="form-check-label check-label"
+                                                        for="flexRadioDefault3">صح</label>
+                                                      <input class="form-check-input" type="radio"
+                                                        name="flexRadioDefault3" id="flexRadioDefault3" />
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-5 col-6">
+                                                    <div class="form-check">
+                                                      <label class="form-check-label check-label"
+                                                        for="flexRadioDefault4">خطأ</label>
+                                                      <input class="form-check-input" type="radio"
+                                                        name="flexRadioDefault3" id="flexRadioDefault4" />
+                                                    </div>
+                                                  </div>
+
+                                                </div>
+                                              </div>
+                                            </div>
+
+
+
+
+                                          </div>
+                                        </div>
+                                        <!-- ****************End frist type of questions************* -->
+                                        <!-- ****************start second type of questions ************-->
+                                        <div class="question_box mt-3 pb-2">
+                                          <div class="question_title d-flex justify-content-center align-items-center">
+                                            <img src="imgs/vuesax-broken-task.svg" alt="" />
+                                            <p>أسئلة اختيار متعدد</p>
+                                          </div>
+                                          <div class="question_box_body multi_choose" id="question_type_2">
+                                            <!-- ********************* -->
+                                            <div class="row first_row">
+                                              <div class="col-lg-6 d-flex align-items-center">
+                                                <div class="circle"></div>
+                                                <div class="input_box frist_input">
+                                                  <span class="quest-name"> اسم السؤال</span>
+                                                  <p class="quest-text"> ما هي العناصر المكونة للتصميم المميز </p>
+                                                </div>
+                                              </div>
+                                              <div class="col-lg-3 col-8 d-flex justify-content-btween">
+                                                <div class="input_box w-50">
+                                                  <span class="quest-name"> الدرجة </span>
+                                                  <p class="quest-text"> 60 </p>
+                                                </div>
+
+                                              </div>
+
+
+                                              <div class="row">
+                                                <div
+                                                  class="col-lg-3 col-6 d-flex justify-content-start align-items-center">
+                                                  <div class="form-check mt-3">
+                                                    <label class="form-check-label check-label"
+                                                      for="flexRadioDefault5"></label>
+                                                    <input class="form-check-input" type="radio"
+                                                      name="flexRadioDefault5" id="flexRadioDefault3" />
+                                                  </div>
+                                                  <div class="input_box w-100">
+                                                    <span class="quest-name"> إجابة رقم </span>
+                                                    <p class="quest-text"> إجابة رقم </p>
+                                                  </div>
+                                                </div>
+                                                <div
+                                                  class="col-lg-3 col-6 d-flex justify-content-start align-items-center">
+                                                  <div class="form-check mt-3">
+                                                    <label class="form-check-label check-label"
+                                                      for="flexRadioDefault5"></label>
+                                                    <input class="form-check-input" type="radio"
+                                                      name="flexRadioDefault5" id="flexRadioDefault3" />
+                                                  </div>
+                                                  <div class="input_box w-100">
+                                                    <span class="quest-name"> إجابة رقم </span>
+                                                    <p class="quest-text"> إجابة رقم </p>
+                                                  </div>
+                                                </div>
+                                                <div
+                                                  class="col-lg-3 col-6 d-flex justify-content-start align-items-center">
+                                                  <div class="form-check mt-3">
+                                                    <label class="form-check-label check-label"
+                                                      for="flexRadioDefault5"></label>
+                                                    <input class="form-check-input" type="radio"
+                                                      name="flexRadioDefault5" id="flexRadioDefault3" />
+                                                  </div>
+                                                  <div class="input_box w-100">
+                                                    <span class="quest-name"> إجابة رقم </span>
+                                                    <p class="quest-text"> إجابة رقم </p>
+                                                  </div>
+                                                </div>
+                                                <div
+                                                  class="col-lg-3 col-6 d-flex justify-content-start align-items-center">
+                                                  <div class="form-check mt-3">
+                                                    <label class="form-check-label check-label"
+                                                      for="flexRadioDefault5"></label>
+                                                    <input class="form-check-input" type="radio"
+                                                      name="flexRadioDefault5" id="flexRadioDefault3" />
+                                                  </div>
+                                                  <div class="input_box w-100">
+                                                    <span class="quest-name"> إجابة رقم </span>
+                                                    <p class="quest-text"> إجابة رقم </p>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                            </div>
+
+                                          </div>
+                                        </div>
+                                        <!-- ****************End second type of questions************* -->
+                                        <!-- ****************start third type of questions ************-->
+                                        <div class="question_box mt-3 pb-2">
+                                          <div class="question_title d-flex justify-content-center align-items-center">
+                                            <img src="imgs/vuesax-broken-task-square_2.svg" alt="" />
+                                            <p>عمليات حسابية</p>
+                                          </div>
+                                          <div class="question_box_body multi_choose" id="question_type_3">
+                                            <!-- ********************* -->
+                                            <div class="row my-1 first_row">
+                                              <div class="col-sm-6 d-flex align-items-center">
+                                                <div class="circle"></div>
+                                                <div class="input_box frist_input">
+                                                  <span class="quest-name"> اسم السؤال</span>
+                                                  <p class="quest-text">2+6+58989+20*50/1112+20-55</p>
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-6 col-8 d-flex justify-content-btween">
+                                                <div class="input_box w-25">
+                                                  <span class="quest-name"> الدرجة </span>
+                                                  <p class="quest-text ms-1"> 60 </p>
+                                                </div>
+                                                <div class="input_box w-75">
+                                                  <span class="quest-name">الاجابة </span>
+                                                  <input class="w-100 quest-text" type="text" placeholder="" />
+                                                </div>
+                                              </div>
+
+                                            </div>
+                                            <!-- ********************* -->
+                                            <div class="row my-1 third_row_content" id="third_row_content">
+                                              <div class="col-sm-6 d-flex align-items-center">
+                                                <div class="circle"></div>
+                                                <div class="input_box frist_input">
+                                                  <span class="quest-name"> اسم السؤال</span>
+                                                  <p class="quest-text">2+6+58989+20*50/1112+20-55</p>
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-6 col-8 d-flex justify-content-btween">
+                                                <div class="input_box w-25">
+                                                  <span class="quest-name"> الدرجة </span>
+                                                  <p class="quest-text ms-1"> 60 </p>
+                                                </div>
+                                                <div class="input_box w-75">
+                                                  <span class="quest-name">الاجابة </span>
+                                                  <input class="w-100 quest-text" type="text" placeholder="" />
+                                                </div>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <!-- ****************End third type of questions************* -->
+                                        <!-- ****************start fourth type of questions ************-->
+                                        <div class="question_box mt-3 pb-2">
+                                          <div class="question_title d-flex justify-content-center align-items-center">
+                                            <img src="imgs/Icon.svg" alt="" width="10" height="13" />
+                                            <p>سؤال مقالي</p>
+                                          </div>
+                                          <div class="question_box_body multi_choose" id="question_type_4">
+                                            <!-- ********************* -->
+                                            <div class="row my-1 first_row">
+                                              <div class="col-sm-6 d-flex align-items-center">
+                                                <div class="circle"></div>
+                                                <div class="input_box frist_input">
+                                                  <span class="quest-name"> اسم السؤال</span>
+                                                  <p class="quest-text"> ماهي عوامل سقوط الدولة العثمانية؟(اكتب بإيجاز)
+                                                  </p>
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-3 col-6 d-flex justify-content-btween">
+                                                <div class="input_box w-50">
+                                                  <span class="quest-name"> الدرجة </span>
+                                                  <p class="quest-text"> 60 </p>
+                                                </div>
+                                              </div>
+                                              <div class="col-12">
+                                                <div class="input_box">
+                                                  <label for="txt-area" class="quest-name"> الإجابة </label>
+                                                  <textarea class="quest-text form-control w-100" name="" id=""
+                                                    rows="10"></textarea>
+
+                                                </div>
+                                              </div>
+
+                                            </div>
+
+                                          </div>
+                                        </div>
+                                        <!-- ****************End fourth type of questions************* -->
+                                      </div>
+                                      <!-- end question section -->
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="submit-btn btn-danger" data-bs-dismiss="modal"
+                                  style="background-color:#dc3545;">إغلاق</button>
+                                <button type="submit" class="submit-btn"> إنتهيت </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end exam modal  -->
                       </div>
                     </div>
                   </div>
