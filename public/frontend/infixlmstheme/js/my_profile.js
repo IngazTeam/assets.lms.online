@@ -47,7 +47,7 @@ function upload(img) {
         contentType: false,
         processData: false,
         success: function (data) {
-
+            // console.log(data.data);
             let status = data.status;
             let open_toastr = data.open_toastr;
 
@@ -56,6 +56,8 @@ function upload(img) {
             }
 
             if (status == 310) {
+                // alert(url+'/'+data.data);
+                $('#show_profile_image').attr('src', url+'/' +data.data);
                 // console.log(310);
                 // alert(data.error_messages);
               // formValidateRequest(data);
