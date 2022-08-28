@@ -6610,11 +6610,11 @@ html[dir="rtl"] .counter_area::before {
 
 /* line 70, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .course__details .course__details_title .single__details .details_content span {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
-  color: #a1a1a1;
-  display: inline-block;
-  margin-bottom: 10px;
+  display: block;
+  color: #707070;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -9076,8 +9076,7 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 
 /* line 62, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
 .instractos_details_wrapper .instractos_profile .thumb img {
-  width: 100%;
-  border-radius: 50%;
+  width: auto;
 }
 
 /* line 67, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
@@ -9177,10 +9176,17 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 .instractos_details_wrapper .instractos_main_details .course__details_title {
   display: flex;
   border-radius: 6px;
-  background: #f6f6f6;
-  margin-bottom: 20px;
+  align-items: end;
   justify-content: space-between;
   padding: 10px 30px;
+  border-bottom: 1px solid #e8eaf0;
+  padding-bottom: 20px;
+}
+
+.instractos_main_details .instractor_meta h4 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #484848;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -9397,13 +9403,8 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 /* line 214, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
 .instractos_details_wrapper
   .instractos_main_details
-  .course__details_title
-  .single__details
-  .details_content
-  .rating_star
-  .stars
-  i {
-  font-size: 15px;
+  .course__details_title .single__details .details_content .rating_star .stars i {
+  font-size: 13px;
   color: #ffc107;
 }
 
@@ -9451,8 +9452,13 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 .instractos_details_wrapper .instractos_main_details .instractos_info_Details {
   padding: 10px 15px;
   margin: 10px;
-  background: white;
   border-radius: 6px;
+}
+
+.instractos_info_Details h5 {
+  color: #4e4848;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .instractos_main_details {
@@ -9460,16 +9466,11 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 }
 
 /* line 238, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
-.instractos_details_wrapper
-  .instractos_main_details
-  .instractos_info_Details
-  p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #929090;
+.instractos_details_wrapper .instractos_main_details .instractos_info_Details p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #858585;
   margin-bottom: 30px;
-  line-break: anywhere;
 }
 
 /* line 249, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
@@ -14381,28 +14382,24 @@ html[dir="rtl"]
   object-fit: contain;
 }
 
-.instractos_details_wrapper .instractos_profile {
-  box-shadow: 0px 0px 2px #ddd;
-  border-radius: 12px;
-  padding: 8px 8px;
-  background: #ffffff;
-}
-
 /* line 203, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_last_update.scss */
 .instractos_details_wrapper .instractos_profile .thumb {
-  max-height: 300px;
+  height: 360px;
+}
+
+.contact__shape img.contact-shape-4 {
+  top: -5px;
+  right: 0px;
+  z-index: -1;
 }
 
 @media (max-width: 450px) {
   .instractos_details_wrapper .instractos_profile .thumb {
-    max-height: 200px !important;
+    height: 230px !important;
   }
 }
 
-/* line 207, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_last_update.scss */
-.instractos_details_wrapper .instractos_profile .thumb img {
-  border-radius: 0%;
-}
+ 
 
 /* line 211, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_last_update.scss */
 .payment_btn_text {
@@ -16783,6 +16780,7 @@ body {
 
 .funfact.funfact-style-two .number {
   font-size: 64px;
+  direction: ltr;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
