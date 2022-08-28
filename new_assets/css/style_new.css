@@ -1433,7 +1433,8 @@ body {
   margin-top: -7px;
   white-space: nowrap;
 }
-.input_box .form-error.help-block {
+
+.form-error.help-block {
   right: 0 !important;
   font-size: 8px;
   top: 30px !important;
