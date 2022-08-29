@@ -526,7 +526,8 @@ html[dir="rtl"]
 .LabelSwitchBox {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
+  font-size: 13px;
 }
 .theme_box_container {
   margin-bottom: 0;
