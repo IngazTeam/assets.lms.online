@@ -17425,3 +17425,7 @@ html[dir="rtl"] .social-panel button.close-btn {
     /*grid-gap: 4px;*/
   }
 }
+/* rating style in full view vedio  */
+.rating_star .star_icon .rating .half {
+  margin-right: -16px;
+}
