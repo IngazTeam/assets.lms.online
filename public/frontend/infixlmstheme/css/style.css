@@ -9011,9 +9011,9 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 }
 
 .instractors_wrapper .single_instractor {
-  box-shadow: 0px 0px 4px #ddd;
-  padding: 10px;
-  border-radius: 12px;
+  box-shadow: 0px 4px 30px #ddd;
+    padding: 10px;
+    border-radius: 12px;
 }
 
 /* line 15, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
@@ -9022,7 +9022,7 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
   overflow: hidden;
   display: block;
   border-radius: 6px;
-  height: 190px;
+  height: 260px;
 }
 
 /* line 19, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
@@ -9038,7 +9038,6 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 /* line 25, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
 .single_instractor h4 {
   font-size: 18px;
-  background: #f7f7f7;
   padding: 8px 4px;
   border-radius: 6px;
   text-align: center;
@@ -9076,7 +9075,9 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 
 /* line 62, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
 .instractos_details_wrapper .instractos_profile .thumb img {
-  width: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* line 67, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
@@ -11181,8 +11182,8 @@ html[dir="rtl"]
 
 /* line 237, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_dash_menu.scss */
 .profile_info span {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 400;
   color: #202e3b;
   line-height: 18px;
   text-align: right;
@@ -14612,7 +14613,7 @@ footer .copyright_area .footer_widget .footer_title h3 {
 
 /* line 70, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer .copyright_area .footer_widget .footer_links li a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #58548e;
   line-height: 35px;
@@ -14830,11 +14831,11 @@ footer .social-network a {
 }
 
 .profile_info .studentProfileThumb {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0px 0px 6px #ddd;
+  box-shadow: 0px 4px 6px #ddd;
   margin: 0 10px;
   background-size: cover;
   background-position: center center;
@@ -16535,8 +16536,7 @@ body {
   }
 
   .profile_info span {
-    font-size: 13px;
-    line-height: 14px;
+    font-size: 12px;
   }
 
   .widegt h3 {
@@ -16685,8 +16685,8 @@ body {
 }
 
 .quiz_wizged {
-  border: 1px solid #eee;
-  border-radius: 9px;
+  box-shadow: 0px 6px 30px #ddd;
+   border-radius: 9px;
 }
 
 @media (max-width: 767.98px) {
