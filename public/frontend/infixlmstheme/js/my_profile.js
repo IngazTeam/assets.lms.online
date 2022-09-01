@@ -78,7 +78,7 @@ function upload(img) {
             }else {
                 // $('#file_name').val(data);
                 // console.log(data);
-                $('#show_profile_image').attr('src',data);
+                // $('#show_profile_image').attr('src',data);
                 var header_image='background-image: url('+data+')';
                 $('.studentProfileThumb').attr('style',header_image);
                 // console.log('success');
