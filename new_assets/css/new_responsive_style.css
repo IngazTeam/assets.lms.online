@@ -331,3 +331,9 @@ tr{
         width: 100% !important;
     }
 }
+
+.profile_info span {
+    font-size: 14px !important;
+    color: #B8B8B8 !important;
+}
+
