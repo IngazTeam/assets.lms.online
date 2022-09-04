@@ -11182,9 +11182,9 @@ html[dir="rtl"]
 
 /* line 237, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_dash_menu.scss */
 .profile_info span {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
-  color: #202e3b;
+  color: #B8B8B8;
   line-height: 18px;
   text-align: right;
 }
@@ -14600,6 +14600,9 @@ footer .copyright_area .footer_widget {
 /* line 54, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer .copyright_area .footer_widget .footer_logo {
   margin-bottom: 10px;
+  width: 130px !important;
+  height: 66px !important;
+
 }
 
 /* line 59, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
@@ -14614,7 +14617,7 @@ footer .copyright_area .footer_widget .footer_title h3 {
 /* line 70, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer .copyright_area .footer_widget .footer_links li a {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #58548e;
   line-height: 35px;
   font-family: "Jost", sans-serif;
@@ -14627,11 +14630,12 @@ footer .copyright_area .footer_widget .footer_links li a:hover {
 
 /* line 84, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer .copyright_area .footer_widget p {
-  font-size: 16px;
-  color: #58548e;
+  font-size: 20px;
+  color: #000;
   margin-bottom: 0;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 600;
+  padding-right: 10px;
 }
 
 /* line 91, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
@@ -14671,15 +14675,15 @@ footer .copyright_area .footer_border {
 /* line 121, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer ul.social-network {
   display: flex;
-  margin: 15px auto 0 auto;
+  /* margin: 15px auto 0 auto; */
   list-style-type: none;
 }
 
 /* line 127, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer ul.social-network li {
-  padding-right: 5px;
+  padding-left: 5px;
   padding-top: 10px;
-  float: left;
+  float: right;
 }
 
 /* line 133, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
@@ -14836,7 +14840,7 @@ footer .social-network a {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 4px 6px #ddd;
-  margin: 0 10px;
+  margin: 0 5px;
   background-size: cover;
   background-position: center center;
 }

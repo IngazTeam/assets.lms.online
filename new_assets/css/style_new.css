@@ -373,6 +373,9 @@ body {
 .med-new-content .left-sidebar .link-box-top .box.active span {
   color: #fff;
 }
+.med-new-content .left-sidebar .link-box-top .box.active i {
+  color: #fff !important;
+}
 .med-new-content .left-sidebar .link-box-bottom .box {
   background-color: #f2f3f7;
   border-radius: 20px;
@@ -885,6 +888,11 @@ body {
   justify-content: center;
   height: 150px;
 }
+.med-new-content .card-box .img-box img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .med-new-content .card-box .rating-box span {
   color: #b8b8b8;
   font-size: 12px;
@@ -1159,6 +1167,10 @@ body {
 .med-new-content .inner_title {
   font-size: 16px;
   font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 320px;
 }
 .med-new-content .course-details {
   font-size: 14px;
@@ -1444,4 +1456,8 @@ body {
   font-weight: bold;
   display: block;
   width: 100%;
+}
+
+.QA_section .QA_table tbody td a {
+  border-radius: 5px;
 }/*# sourceMappingURL=style_new.css.map */
