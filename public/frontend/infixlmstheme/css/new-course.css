@@ -12,6 +12,7 @@
     border: 1px solid #DFDFDF;
     border-radius: 20px;
     padding: 12px 16px;
+    gap: 15px;
 }
 .course_header_filter .course_select_filter .small_select{
     background:#F2F3F7 ;
