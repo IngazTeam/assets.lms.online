@@ -337,3 +337,15 @@ tr{
     color: #B8B8B8 !important;
 }
 
+
+
+.course__box .has-error{
+    position: relative;
+}
+
+.course__box .form-error.help-block {
+    width: 0 !important;
+    position: absolute !important;
+    font-size: 12px !important;
+    top: 34px !important;
+}
