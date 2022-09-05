@@ -32,38 +32,35 @@ $(document).on('click', '.editStudent', function () {
     url = url + '/admin/get-user-data/' + student_id
     let token = $('.csrf_token').val();
 
-
-    $.ajax({
-        type: 'POST',
-        url: url,
-        data: {
-            '_token': token,
-        },
-        success: function (student) {
-            console.log(student.gender)
-            $('#studentId').val(student.id);
-            $('#studentName').val(student.name);
-            $('#studentAbout').summernote("code", student.about);
-            $('#studentDob').val(student.dob);
-            $('#studentPhone').val(student.phone);
-            $('#identity_document').val(student.identity_document);
-            $('#editBalance').val(student.balance);
-            $('#studentEmail').val(student.email);
-            $('#studentGender').val(student.gender);
-            $('#studentGender').niceSelect('update');
-            $('#studentImage').val(student.image);
-            $('#studentFacebook').val(student.facebook);
-            $('#studentTwitter').val(student.twitter);
-            $('#studentLinkedin').val(student.linkedin);
-            $('#studentYoutube').val(student.youtube);
-            $("#editStudent").modal('show');
-        },
-        error: function (data) {
-            toastr.error(__('common.Something Went Wrong'), __('common.Error'));
-        }
-    });
-
-
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: {
+                '_token': token,
+            },
+            success: function (student) {
+                console.log(student.gender)
+                $('#studentId').val(student.id);
+                $('#studentName').val(student.name);
+                $('#studentAbout').summernote("code", student.about);
+                $('#studentDob').val(student.dob);
+                $('#studentPhone').val(student.phone);
+                $('#identity_document').val(student.identity_document);
+                $('#editBalance').val(student.balance);
+                $('#studentEmail').val(student.email);
+                $('#studentGender').val(student.gender);
+                $('#studentGender').niceSelect('update');
+                $('#studentImage').val(student.image);
+                $('#studentFacebook').val(student.facebook);
+                $('#studentTwitter').val(student.twitter);
+                $('#studentLinkedin').val(student.linkedin);
+                $('#studentYoutube').val(student.youtube);
+                $("#editStudent").modal('show');
+            },
+            error: function (data) {
+                toastr.error(__('common.Something Went Wrong'), __('common.Error'));
+            }
+        });
 });
 
 
@@ -128,51 +125,53 @@ $("#addstudent").submit("submit", function (event) {
     let saving =$('#saving').val();
     let save   =$('#save').val();
     /*console.log( formData );*/
-    $.ajax({
-        url: url,
-        type: 'post',
-        data: formData,
-        beforeSend: function () {
-            $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>`+saving);
-            disabled_button("#save_button_parent");
-        },
-        success: function (data) {
+    if($(this).isValid()) {
+        $.ajax({
+            url: url,
+            type: 'post',
+            data: formData,
+            beforeSend: function () {
+                $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>` + saving);
+                disabled_button("#save_button_parent");
+            },
+            success: function (data) {
 
-            console.log(data);
-            $('.error-message').remove();
-            $('input').removeClass('red-border');
-            $('.nice-select').removeClass('red-border');
-            let status = data.status;
+                console.log(data);
+                $('.error-message').remove();
+                $('input').removeClass('red-border');
+                $('.nice-select').removeClass('red-border');
+                let status = data.status;
 
-            if (data.open_toastr == "yes") {
-                showToastr(data, status);
-            }
+                if (data.open_toastr == "yes") {
+                    showToastr(data, status);
+                }
 
-            if (status == 310) {
-                formValidateRequest(data);
-                $("#save_button_parent").html(`<i class="ti-check"></i>`+save);
-            }
-            if (status == 200) {
-                location.reload();
-            }
-            if (status == 500) {
-                $("#save_button_parent").html(save);
+                if (status == 310) {
+                    formValidateRequest(data);
+                    $("#save_button_parent").html(`<i class="ti-check"></i>` + save);
+                }
+                if (status == 200) {
+                    location.reload();
+                }
+                if (status == 500) {
+                    $("#save_button_parent").html(save);
 
-            }
+                }
 
-        },
-        error: function (data) {
-            // error method
+            },
+            error: function (data) {
+                // error method
 
-        },
-        complete: function(data) {
-            realase_disabled_button("#save_button_parent");
+            },
+            complete: function (data) {
+                realase_disabled_button("#save_button_parent");
 
-        },
-        cache: false,
-        contentType: false,
-        processData: false
-    });
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+    }
 });
 
 /* edit student */
@@ -183,53 +182,55 @@ $("#editstudent").submit("submit", function (event) {
     let saving =$('#saving').val();
     let save   =$('#save').val();
     /*console.log( formData );*/
-    $.ajax({
-        url: url,
-        type: 'post',
-        data: formData,
-        beforeSend: function () {
-            $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> `+saving);
-           disabled_button("#update_button_parent");
-        },
-        success: function (data) {
+    if($(this).isValid()) {
+        $.ajax({
+            url: url,
+            type: 'post',
+            data: formData,
+            beforeSend: function () {
+                $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> ` + saving);
+                disabled_button("#update_button_parent");
+            },
+            success: function (data) {
 
-            console.log(data);
-            $('.error-message').remove();
-            $('input').removeClass('red-border');
-            $('.nice-select').removeClass('red-border');
-            let status = data.status;
+                console.log(data);
+                $('.error-message').remove();
+                $('input').removeClass('red-border');
+                $('.nice-select').removeClass('red-border');
+                let status = data.status;
 
-            if (data.open_toastr == "yes") {
-                showToastr(data, status);
-            }
+                if (data.open_toastr == "yes") {
+                    showToastr(data, status);
+                }
 
-            if (status == 310) {
-                formValidateRequest(data);
-                $("#update_button_parent").html(`<i class="ti-check"></i>`+save);
-            }
+                if (status == 310) {
+                    formValidateRequest(data);
+                    $("#update_button_parent").html(`<i class="ti-check"></i>` + save);
+                }
 
 
-            if (status == 200) {
-                location.reload();
-            }
+                if (status == 200) {
+                    location.reload();
+                }
 
-            if (status == 500) {
-                $("#update_button_parent").html(`save`);
-            }
+                if (status == 500) {
+                    $("#update_button_parent").html(`save`);
+                }
 
-        },
-        error: function (data) {
-            // $("#update_button_parent").html(`save`);
-        },
-        complete: function(data) {
-            // $("#update_button_parent").html(`save`);
-            realase_disabled_button("#update_button_parent");
+            },
+            error: function (data) {
+                // $("#update_button_parent").html(`save`);
+            },
+            complete: function (data) {
+                // $("#update_button_parent").html(`save`);
+                realase_disabled_button("#update_button_parent");
 
-        },
-        cache: false,
-        contentType: false,
-        processData: false
-    });
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
+    }
 });
 
 
