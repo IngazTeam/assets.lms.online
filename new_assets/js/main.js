@@ -66,15 +66,7 @@ $(function(){
     })
 })
 
-// image
-// $('#upload__file').on('change',function(){
-//     console.log($(this).val())
-//    console.log('test')
-//     // $('#image_box').append($(this).clone()).html()
-//     $('#choosen_img').attr('src',$(this).val())
-// })
-
-
+// image file
 function GetURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
