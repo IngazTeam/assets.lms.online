@@ -223,7 +223,7 @@
         item.select2({
             placeholder: {
                 id: '-1',
-                text: 'Select an option'
+                text: $('#select_option').val()
             }
         });
 
