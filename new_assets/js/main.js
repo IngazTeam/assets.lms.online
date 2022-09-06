@@ -65,3 +65,31 @@ $(function(){
        $(this).parent().siblings().find('.box_action').removeClass('youtube')
     })
 })
+
+// image
+// $('#upload__file').on('change',function(){
+//     console.log($(this).val())
+//    console.log('test')
+//     // $('#image_box').append($(this).clone()).html()
+//     $('#choosen_img').attr('src',$(this).val())
+// })
+
+
+function GetURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            if(e.target.result.includes('image')){
+                $('#choosen_img').attr('src', e.target.result);
+            }else{
+                $('#choosen_img').attr('src', 'https://www.creativefabrica.com/wp-content/uploads/2018/12/Document-icon-by-rudezstudio-8-580x386.jpg');
+            }
+            
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$("#upload__file").change(function(){
+    GetURL(this);
+});

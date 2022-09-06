@@ -891,6 +891,19 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   width: 100% !important;
 }
 
+#image_box {
+  width: 100%;
+  min-width: 0px;
+  max-height: 100px;
+}
+#image_box img {
+  max-width: 100%;
+  max-height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .has-error .error {
   border: 1px solid #dc3545 !important;
 }
