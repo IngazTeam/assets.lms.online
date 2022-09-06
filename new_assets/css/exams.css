@@ -19,9 +19,7 @@
   padding: 5px 15px;
   font-weight: 700;
   font-size: 14px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   height: 33px;
 }
 .input_design:focus, .tab_part .main_collapese_card .inner_collapese_card .left_part textarea:focus,
@@ -53,7 +51,7 @@
   color: white;
 }
 .add_content_button .img_box {
-  background-color: rgba(59, 69, 156, 0.4);
+  background-color: #3b459c66;
   border-radius: 20px;
   width: 50px;
   display: flex;
@@ -188,16 +186,6 @@ select:focus {
 .card_box .card_info input:focus {
   outline: none !important;
 }
-.card_box .card_info select::-moz-placeholder, .card_box .card_info input::-moz-placeholder {
-  font-size: 14px;
-  color: #9F9F9F;
-  font-weight: 700;
-}
-.card_box .card_info select:-ms-input-placeholder, .card_box .card_info input:-ms-input-placeholder {
-  font-size: 14px;
-  color: #9F9F9F;
-  font-weight: 700;
-}
 .card_box .card_info select::placeholder,
 .card_box .card_info input::placeholder {
   font-size: 14px;
@@ -286,7 +274,7 @@ select:focus {
   width: 15px;
 }
 .card_box .card_info .group_content {
-  border-top: 0.1px solid rgba(112, 112, 112, 0.1294117647);
+  border-top: 0.1px solid #70707021;
   margin-top: 15px;
 }
 .card_box .card_info .group_content .delet_tag {
@@ -564,9 +552,7 @@ select:focus {
   border-top: 1px solid #E1E1E1;
 }
 .tab_part .main_collapese_card .inner_big_cart .card_content select {
-  -webkit-appearance: none !important;
-     -moz-appearance: none !important;
-          appearance: none !important;
+  appearance: none !important;
   background: #F2F3F7 url(../imgs/arrow-down.svg) no-repeat 6px;
   background-size: 15px !important;
 }
@@ -714,9 +700,7 @@ select:focus {
 }
 
 input[type=date] {
-  -webkit-appearance: none !important;
-     -moz-appearance: none !important;
-          appearance: none !important;
+  appearance: none !important;
   background: #F2F3F7 url(../imgs/calendar-2.svg) no-repeat 6px;
   background-size: 15px !important;
   text-align: right;
@@ -799,7 +783,7 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   border: 0px solid transparent !important;
 }
 .add__content .modal-content .modal-header {
-  border-bottom-color: rgba(112, 112, 112, 0.062745098);
+  border-bottom-color: #70707010;
 }
 .add__content .modal-content .modal-header .modal-title {
   position: relative;
@@ -840,9 +824,7 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   color: #9F9F9F;
   font-weight: 700;
   font-size: 14px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   height: 33px;
 }
 .add__content .box_action {
@@ -868,7 +850,7 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   color: #fff;
 }
 .add__content .frist_section p {
-  border-bottom: 1px solid rgba(112, 112, 112, 0.062745098);
+  border-bottom: 1px solid #70707010;
   font-size: 9px;
   margin-top: 10px;
   margin-bottom: 10px !important;
@@ -905,6 +887,12 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-
   color: #fff;
 }
 
+.tab_part .main_collapese_card .inner_collapese_card .right_part .choose_date {
+  width: 100% !important;
+}
+
 .has-error .error {
   border: 1px solid #dc3545 !important;
-}/*# sourceMappingURL=exams.css.map */
+}
+
+/*# sourceMappingURL=exams.css.map */

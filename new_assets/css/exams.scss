@@ -1040,6 +1040,12 @@ input[type='date'] {
     background-color: #29BCB0 !important;
     color: #fff
 }
+// @media(min-width:767px){
+    .tab_part .main_collapese_card .inner_collapese_card .right_part .choose_date{
+        width: 100% !important;
+    }
+// }
+
 
 // code added by muhammad medhat 
 
@@ -1048,3 +1054,4 @@ input[type='date'] {
         border: 1px solid #dc3545 !important;
     }
 }
+
