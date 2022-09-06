@@ -1040,6 +1040,26 @@ input[type='date'] {
     background-color: #29BCB0 !important;
     color: #fff
 }
+// @media(min-width:767px){
+    .tab_part .main_collapese_card .inner_collapese_card .right_part .choose_date{
+        width: 100% !important;
+    }
+// }
+
+#image_box{
+    width: 100%;
+    min-width: 0px;
+    max-height: 100px;
+   img{
+        max-width: 100%;
+        max-height: 100px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
 
 // code added by muhammad medhat 
 
@@ -1048,3 +1068,4 @@ input[type='date'] {
         border: 1px solid #dc3545 !important;
     }
 }
+
