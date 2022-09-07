@@ -563,3 +563,21 @@ html[dir="rtl"]
   height: 100%;
   object-fit: contain;
 }
+.custom-video-flex{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap:10px
+}
+.video-name_flex{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.video-name_flex h6{
+  font-size: 14px;
+  height: 18px;
+  overflow: hidden;
+  line-height: 18px;
+}
