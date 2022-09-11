@@ -7,7 +7,6 @@ function test_collapse(that) {
         $(that).find('.bi-caret-down-fill').toggleClass('bi-caret-down-fill  bi-caret-left-fill')
     }
 }
-
 // Tooltip Toggle
 
 $(function () {
@@ -68,6 +67,8 @@ $(function(){
 
 // image file
 function GetURL(input) {
+        console.log('in function change');
+
     if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function (e) {
@@ -82,6 +83,6 @@ function GetURL(input) {
     }
 }
 
-$("#upload__file").change(function(){
+$(document).on('change',"#video_url-image", function() {
     GetURL(this);
 });
