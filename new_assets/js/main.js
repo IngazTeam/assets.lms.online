@@ -36,8 +36,25 @@ function AppendQuestion(parentId, childId) {
 }
 // Remove Question
 function RemoveQuestion(that, row_content) {
-    // $(that).closest('.'+ row_content).prev().find('.action_buttons').append($(that).siblings().html())
-    $(that).closest('.' + row_content).remove();
+    if (row_content == 'first_row') {
+        $(that).closest('.' + row_content).remove();
+        var  ele= document.getElementsByClassName('question_box');
+        $(ele).remove();
+        // location.reload(true);
+
+    }else if(row_content == 'rm_div') {
+        $(that).closest('.' + row_content).remove();
+        var  ele= document.getElementsByClassName('question_box');
+        $(ele).remove();
+        // location.reload(true);
+
+    }
+    else {
+        $(that).closest('.' + row_content).remove();
+    }
+
+    // // $(that).closest('.'+ row_content).prev().find('.action_buttons').append($(that).siblings().html())
+    // $(that).closest('.' + row_content).remove();
 
 }
 //  uploading files
