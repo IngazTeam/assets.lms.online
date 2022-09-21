@@ -331,3 +331,32 @@ tr{
         width: 100% !important;
     }
 }
+
+.profile_info span {
+    font-size: 14px !important;
+    color: #B8B8B8 !important;
+}
+
+
+
+.course__box .has-error{
+    position: relative;
+}
+
+.course__box .form-error.help-block {
+    width: 0 !important;
+    position: absolute !important;
+    font-size: 12px !important;
+    top: 34px !important;
+}
+.remove_add_quiz_section .form-check{
+    min-height: auto !important;
+    width: 100% !important;
+}
+.remove_add_quiz_section .form-check label{
+    display: flex !important;
+}
+.custom_radio .custom_radio_content,.custom__radio_buttons{
+    width: 100% !important;
+}
+
