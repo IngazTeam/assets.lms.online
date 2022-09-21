@@ -118,7 +118,7 @@ $("#addinstructor").submit("submit", function (event) {
             type: 'post',
             data: formData,
             beforeSend: function () {
-                $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+                $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> جار حفظ`);
                 disabled_button("#save_button_parent");
 
             },
@@ -137,13 +137,13 @@ $("#addinstructor").submit("submit", function (event) {
 
                 if (status == 310) {
                     formValidateRequest(data);
-                    $("#save_button_parent").html(`<i class="ti-check"></i> save`);
+                    $("#save_button_parent").html(`<i class="ti-check"></i> جار حفظ`);
                 }
 
 
                 if (status == 200) {
                     location.reload();
-                    /*$("#form-submit").html(`<i class="ti-check"></i> save`);*/
+                    /*$("#form-submit").html(`<i class="ti-check"></i> جار حفظ`);*/
                 }
 
 
@@ -174,7 +174,7 @@ $("#editinstructor").submit("submit", function (event) {
             type: 'post',
             data: formData,
             beforeSend: function () {
-                $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+                $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> جار حفظ`);
                 disabled_button("#update_button_parent");
             },
             success: function (data) {
@@ -190,11 +190,11 @@ $("#editinstructor").submit("submit", function (event) {
                 }
                 if (status == 310) {
                     formValidateRequest(data);
-                    $("#update_button_parent").html(`<i class="ti-check"></i> save`);
+                    $("#update_button_parent").html(`<i class="ti-check"></i> جار حفظ`);
                 }
                 if (status == 200) {
                     location.reload();
-                    /*$("#form-submit").html(`<i class="ti-check"></i> save`);*/
+                    /*$("#form-submit").html(`<i class="ti-check"></i> جار حفظ`);*/
                 }
             },
             error: function (data) {
