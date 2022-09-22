@@ -15453,7 +15453,7 @@ footer .copyright_area .footer_widget .footer_title h3::before {
 footer .copyright_area .footer_widget .footer_links li a {
   color: #0b1236;
   line-height: unset;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 5px;
   display: inline-block;
 }
@@ -15470,8 +15470,8 @@ footer .copyright_area .footer_widget .footer_links li a:hover {
   gap: 5px;
 }
 .cobyrights .copy {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 900;
   color: #0e1133;
 }
 .cobyrights .fi-cls {

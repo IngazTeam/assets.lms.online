@@ -2114,6 +2114,14 @@ label {
   -ms-justify-content: space-between;
   justify-content: space-between;
 }
+@media(max-width:992px){
+  .header_area .header__wrapper{
+    -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+  }
+}
 
 /* line 42, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_header.scss */
 .header_area .header__wrapper .header__left .logo_img {
@@ -5893,10 +5901,10 @@ html[dir="rtl"] .counter_area::before {
 
 /* line 331, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_predefine.scss */
 .play_button {
-  width: 74px;
+  width: 59px;
   height: 50px;
   background: #29bcb0;
-  border-radius: 31px;
+  border-radius: 18px;
   color: var(--system_primery_color);
   display: flex;
   align-items: center;
@@ -6587,7 +6595,10 @@ html[dir="rtl"] .counter_area::before {
   z-index: 1;
   margin: 8px 0;
 }
-
+.course__details .course__details_title .single__details h4{
+  font-size: 14px !important;
+  color: #0E1133;
+}
 /* line 55, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .course__details .course__details_title .single__details .thumb {
   margin-right: 25px;
@@ -6613,8 +6624,8 @@ html[dir="rtl"] .counter_area::before {
   font-size: 13px;
   font-weight: 500;
   display: block;
-  color: #707070;
-  padding-bottom: 10px;
+  color: #949494;
+  padding-bottom: 7px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -6816,7 +6827,7 @@ html[dir="rtl"] .counter_area::before {
 /* line 191, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
 .sidebar__widget .course_includes li:not(:last-child) {
   margin-bottom: 12px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #F2F3F7;
   padding-bottom: 10px;
 }
 
@@ -6837,7 +6848,7 @@ html[dir="rtl"] .counter_area::before {
   background: #29bcb0;
   color: white;
   padding: 2px 12px;
-  border-radius: 12px;
+  border-radius: 7px;
 }
 
 /* line 195, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_course_details.scss */
@@ -11182,9 +11193,9 @@ html[dir="rtl"]
 
 /* line 237, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_dash_menu.scss */
 .profile_info span {
-  font-size: 15px;
-  font-weight: 400;
-  color: #202e3b;
+  font-size: 14px;
+  font-weight: 600;
+  color: #B8B8B8;
   line-height: 18px;
   text-align: right;
 }
@@ -14600,6 +14611,9 @@ footer .copyright_area .footer_widget {
 /* line 54, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer .copyright_area .footer_widget .footer_logo {
   margin-bottom: 10px;
+  width: 130px !important;
+  height: 66px !important;
+
 }
 
 /* line 59, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
@@ -14614,7 +14628,7 @@ footer .copyright_area .footer_widget .footer_title h3 {
 /* line 70, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer .copyright_area .footer_widget .footer_links li a {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #58548e;
   line-height: 35px;
   font-family: "Jost", sans-serif;
@@ -14627,11 +14641,12 @@ footer .copyright_area .footer_widget .footer_links li a:hover {
 
 /* line 84, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer .copyright_area .footer_widget p {
-  font-size: 16px;
-  color: #58548e;
+  font-size: 20px;
+  color: #000;
   margin-bottom: 0;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 600;
+  padding-right: 10px;
 }
 
 /* line 91, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
@@ -14671,15 +14686,15 @@ footer .copyright_area .footer_border {
 /* line 121, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer ul.social-network {
   display: flex;
-  margin: 15px auto 0 auto;
+  /* margin: 15px auto 0 auto; */
   list-style-type: none;
 }
 
 /* line 127, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
 footer ul.social-network li {
-  padding-right: 5px;
+  padding-left: 5px;
   padding-top: 10px;
-  float: left;
+  float: right;
 }
 
 /* line 133, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_footer.scss */
@@ -14836,7 +14851,7 @@ footer .social-network a {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 4px 6px #ddd;
-  margin: 0 10px;
+  margin: 0 5px;
   background-size: cover;
   background-position: center center;
 }
@@ -15184,7 +15199,7 @@ html[dir="rtl"] .theme_according .card .card-header h5 button {
 }
 
 .theme_according .card .card-header button.collapsed {
-  border: 1px solid #ececec !important;
+  border: 0px solid #ececec !important;
   background: transparent;
   padding: 12.3px 25px 18px 30px;
   transition: 0.3s;

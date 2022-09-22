@@ -446,6 +446,10 @@ body {
         span {
           color: #fff;
         }
+
+        i {
+          color: #fff !important;
+        }
       }
     }
 
@@ -1108,6 +1112,11 @@ body {
       align-items: center;
       justify-content: center;
       height: 150px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .rating-box {
@@ -1460,6 +1469,10 @@ body {
   .inner_title {
     font-size: 16px;
     font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 320px;
   }
 
   .course-details {
@@ -1792,5 +1805,17 @@ body {
     font-weight: bold;
     display: block;
     width: 100%;
+  }
+}
+
+.QA_section {
+  .QA_table {
+    tbody {
+      td {
+        a {
+          border-radius: 5px;
+        }
+      }
+    }
   }
 }

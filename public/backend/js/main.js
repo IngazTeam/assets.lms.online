@@ -1169,7 +1169,7 @@ function showToastr(data, status){
     if (status == 200) {
         toastr.success(data.message, data.title)
     }else if (status == 310) {
-        toastr.warning(data.message, data.title)
+        toastr.warning(data.message, data.title, {timeOut: 5000})
     }else {
         toastr.error(data.message, data.title)
     }

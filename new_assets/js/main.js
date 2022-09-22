@@ -7,7 +7,6 @@ function test_collapse(that) {
         $(that).find('.bi-caret-down-fill').toggleClass('bi-caret-down-fill  bi-caret-left-fill')
     }
 }
-
 // Tooltip Toggle
 
 $(function () {
@@ -71,7 +70,29 @@ $(function(){
     // $('.box_action').removeClass('youtube')
     $('.box_action').click(function(){
        $(this).addClass('youtube');
-       console.log($(this).parent().html())
+      // console.log($(this).parent().html())
        $(this).parent().siblings().find('.box_action').removeClass('youtube')
     })
 })
+
+// image file
+function GetURL(input) {
+        console.log('in function change');
+
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            if(e.target.result.includes('image')){
+                $('#choosen_img').attr('src', e.target.result);
+            }else{
+                $('#choosen_img').attr('src', 'https://www.creativefabrica.com/wp-content/uploads/2018/12/Document-icon-by-rudezstudio-8-580x386.jpg');
+            }
+            
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$(document).on('change',"#video_url-image", function() {
+    GetURL(this);
+});
