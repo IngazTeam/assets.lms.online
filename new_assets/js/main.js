@@ -37,6 +37,16 @@ function AppendQuestion(parentId, childId) {
 // Remove Question
 function RemoveQuestion(that, row_content) {
     // $(that).closest('.'+ row_content).prev().find('.action_buttons').append($(that).siblings().html())
+    let allDivs=document.querySelectorAll('.question_box_body .row-question');
+    // alert(allDivs.length);
+
+    if(allDivs.length==1){
+        // allDivs.parenElement.remove('.question_box');
+        // alert('sfd');
+        console.log($(that).closest('.question_box'));
+        $(that).closest('.question_box').remove();
+        // console.log($('.'+ row_content).find('.question_box'));
+    }
     $(that).closest('.' + row_content).remove();
 
 }
