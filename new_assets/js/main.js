@@ -35,16 +35,27 @@ function AppendQuestion(parentId, childId) {
 }
 // Remove Question
 function RemoveQuestion(that, row_content) {
+   
     // $(that).closest('.'+ row_content).prev().find('.action_buttons').append($(that).siblings().html())
     let allDivs=document.querySelectorAll('.question_box_body .row-question');
-    // alert(allDivs.length);
+    let all_Divs=document.querySelectorAll('#question_type_3 .row');
+    let all_Divs_2=document.querySelectorAll('#question_type_4 .row');
+    // alert(allDivs.legnth);
 
     if(allDivs.length==1){
-        // allDivs.parenElement.remove('.question_box');
-        // alert('sfd');
+   
         console.log($(that).closest('.question_box'));
         $(that).closest('.question_box').remove();
-        // console.log($('.'+ row_content).find('.question_box'));
+    }
+    if(all_Divs.length==1){
+   
+        console.log($(that).closest('.question_box'));
+        $(that).closest('.question_box').remove();
+    }
+    if(all_Divs_2.length==1){
+   
+        console.log($(that).closest('.question_box'));
+        $(that).closest('.question_box').remove();
     }
     $(that).closest('.' + row_content).remove();
 
