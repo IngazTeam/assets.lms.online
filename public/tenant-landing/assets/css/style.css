@@ -9936,7 +9936,7 @@ border: none;
 
 .domspan {
   font-size: 12px;
-  background: #00bff2;
+  background: #29bcb0;
   color: white;
   height: 38px;
   border-radius: 4px ;
@@ -9951,7 +9951,11 @@ border: none;
   user-select: none;
 }
 
-
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .domain {
   padding: 10px 70px 10px 10px !important;

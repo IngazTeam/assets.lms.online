@@ -20,7 +20,7 @@ $(document).on('click', '.editInstructor', function () {
     let url = $('#url').val();
     url = url + '/admin/get-user-data/' + instructor_id
     let token = $('.csrf_token').val();
-    if($(this).isValid()) {
+    if ($(this).isValid()) {
 
         $.ajax({
             type: 'POST',
@@ -75,6 +75,13 @@ $(document).on('click', '#add_instructor_btn', function () {
     $('#addInstagram').val('');
 });
 
+function isNumber(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+
+    return true;
+}
 
 
 function formValidateRequest(data) {
@@ -105,14 +112,13 @@ function formValidateRequest(data) {
 }
 
 
-
 /* store instructor */
 $("#addinstructor").submit("submit", function (event) {
     event.preventDefault();
     let url = $(this).attr('action');
     let formData = new FormData(this);
     /*console.log( formData );*/
-    if($(this).isValid()) {
+    if ($(this).isValid()) {
         $.ajax({
             url: url,
             type: 'post',
@@ -168,7 +174,7 @@ $("#editinstructor").submit("submit", function (event) {
     let url = $(this).attr('action');
     let formData = new FormData(this);
     /*console.log( formData );*/
-    if($(this).isValid()) {
+    if ($(this).isValid()) {
         $.ajax({
             url: url,
             type: 'post',
@@ -212,18 +218,18 @@ $("#editinstructor").submit("submit", function (event) {
 });
 
 
-          /***
-     * helper function
-     * ****/
-           function disabled_button(selector) {
+/***
+ * helper function
+ * ****/
+function disabled_button(selector) {
 
-            $(selector).attr("disabled", true);
+    $(selector).attr("disabled", true);
 
-            }
+}
 
-            function realase_disabled_button(selector) {
+function realase_disabled_button(selector) {
 
 
-            $(selector).removeAttr("disabled");
+    $(selector).removeAttr("disabled");
 
-            }
+}
