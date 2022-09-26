@@ -556,7 +556,7 @@ body {
 .med-new-content .cards-container .owl-dots .owl-dot.active span {
   background: #29bcb0;
 }
-.med-new-content .cards-container .owl-carousel .owl-nav {
+.med-new-content .cards-container .owl-carousel.culender .owl-nav {
   margin-top: 0;
   position: absolute;
   left: -15px;
@@ -566,18 +566,18 @@ body {
   transform: translateY(-50%);
 }
 @media (max-width: 600px) {
-  .med-new-content .cards-container .owl-carousel .owl-nav {
+  .med-new-content .cards-container .owl-carousel.culender .owl-nav {
     display: flex;
   }
 }
-.med-new-content .cards-container .owl-carousel .owl-nav .owl-prev span::before {
+.med-new-content .cards-container .owl-carousel.culender .owl-nav .owl-prev span::before {
   content: "\f053";
 }
-.med-new-content .cards-container .owl-carousel .owl-nav .owl-next span::before {
+.med-new-content .cards-container .owl-carousel.culender .owl-nav .owl-next span::before {
   content: "\f054";
 }
-.med-new-content .cards-container .owl-carousel .owl-nav .owl-prev,
-.med-new-content .cards-container .owl-carousel .owl-nav .owl-next {
+.med-new-content .cards-container .owl-carousel.culender .owl-nav .owl-prev,
+.med-new-content .cards-container .owl-carousel.culender .owl-nav .owl-next {
   margin: 5px;
   padding: 10px !important;
   background-color: #fff !important;
@@ -585,20 +585,15 @@ body {
   display: flex;
   font-size: 20px;
 }
-.med-new-content .cards-container .owl-carousel .owl-nav .owl-prev span,
-.med-new-content .cards-container .owl-carousel .owl-nav .owl-next span {
+.med-new-content .cards-container .owl-carousel.culender .owl-nav .owl-prev span,
+.med-new-content .cards-container .owl-carousel.culender .owl-nav .owl-next span {
   color: #29bcb0;
 }
 .med-new-content .cards-container .Card {
   background-color: #fff;
   border-radius: 25px;
-  padding: 15px 5px;
-}
-@media (max-width: 600px) {
-  .med-new-content .cards-container .Card {
-    width: 125px;
-    padding: 20px 0px;
-  }
+  padding: 20px 5px;
+  margin-bottom: 10px;
 }
 .med-new-content .cards-container .Card .card-head img {
   width: 20px;
@@ -634,6 +629,7 @@ body {
   color: #29bcb0;
   margin-bottom: 0;
   font-weight: 700;
+  font-size: 20px;
 }
 .med-new-content .cards-container .Card .main-title {
   color: #b8b8b8;
@@ -1448,7 +1444,7 @@ body {
 
 .form-error.help-block {
   right: 0 !important;
-  font-size: 10px;
+  font-size: 8px;
   top: 30px !important;
   white-space: nowrap;
   color: #dc3545 !important;
@@ -1460,4 +1456,13 @@ body {
 
 .QA_section .QA_table tbody td a {
   border-radius: 5px;
+}
+
+.tab_part .main_collapese_card .inner_collapese_card .left_part textarea,
+.tab_part .main_collapese_card .inner_big_cart .left_part textarea {
+  height: 80px !important;
+}
+
+.tab_part .nav-link {
+  margin-bottom: 0 !important;
 }/*# sourceMappingURL=style_new.css.map */

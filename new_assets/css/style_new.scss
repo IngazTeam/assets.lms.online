@@ -692,7 +692,7 @@ body {
       }
     }
 
-    .owl-carousel {
+    .owl-carousel.culender {
       .owl-nav {
         margin-top: 0;
         position: absolute;
@@ -741,12 +741,8 @@ body {
     .Card {
       background-color: #fff;
       border-radius: 25px;
-      padding: 15px 5px;
-
-      @media (max-width: 600px) {
-        width: 125px;
-        padding: 20px 0px;
-      }
+      padding: 20px 5px;
+      margin-bottom: 10px;
 
       .card-head {
         img {
@@ -791,6 +787,7 @@ body {
         color: $mainColor;
         margin-bottom: 0;
         font-weight: 700;
+        font-size: 20px;
       }
 
       .main-title {
@@ -1818,4 +1815,13 @@ body {
       }
     }
   }
+}
+
+.tab_part .main_collapese_card .inner_collapese_card .left_part textarea,
+.tab_part .main_collapese_card .inner_big_cart .left_part textarea {
+  height: 80px !important;
+}
+
+.tab_part .nav-link {
+  margin-bottom: 0 !important;
 }
