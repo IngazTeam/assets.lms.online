@@ -67,6 +67,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 55, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_main_wrapper {
         display: block;
@@ -74,6 +75,7 @@ span.active_chat {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 55, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_main_wrapper {
         grid-template-columns: 1fr;
@@ -89,6 +91,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 66, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_flow_list {
         padding: 25px;
@@ -120,6 +123,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 88, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_flow_list .chat_flow_list_inner ul li .single_list .thumb img {
         width: 40px;
@@ -134,6 +138,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 98, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_flow_list .chat_flow_list_inner ul li .single_list .list_name {
         margin-left: 10px;
@@ -178,6 +183,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 127, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_view_list .chat_view_list_inner {
         padding: 25px;
@@ -199,6 +205,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 146, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_view_list .chat_view_list_inner .chat_single {
         width: 100%;
@@ -206,6 +213,7 @@ span.active_chat {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     /* line 146, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_view_list .chat_view_list_inner .chat_single {
         width: 100%;
@@ -213,6 +221,7 @@ span.active_chat {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
     /* line 146, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_view_list .chat_view_list_inner .chat_single {
         width: 100%;
@@ -246,6 +255,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 173, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_view_list .chat_view_list_inner .chat_single .thumb img {
         width: 40px;
@@ -254,6 +264,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 183, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_view_list .chat_view_list_inner .chat_single .chat_text_info_wraper {
         display: block !important;
@@ -300,6 +311,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 212, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .chat_view_list .chat_input_box {
         padding: 0 25px 25px 30px;
@@ -544,6 +556,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 388, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .Discission_list_wrap .single_discission_list {
         grid-template-columns: auto;
@@ -551,6 +564,7 @@ span.active_chat {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
     /* line 388, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .Discission_list_wrap .single_discission_list {
         grid-template-columns: 155px auto;
@@ -558,6 +572,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 408, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_chat.scss */
     .Discission_list_wrap .single_discission_list .discission_profile {
         margin-bottom: 20px;
@@ -748,6 +763,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 31, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_body_content.scss */
     .box_header.box_header_block {
         flex-direction: column;
@@ -756,6 +772,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 36, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_body_content.scss */
     .box_header.box_header_block .main-title {
         margin-bottom: 15px;
@@ -825,6 +842,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 41, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .btn_1.form_big_btn_1 {
         padding: 16px 30px !important;
@@ -945,6 +963,7 @@ span.active_chat {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 133, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .btn_5.small_btn {
         padding: 11px 19px !important;
@@ -952,6 +971,7 @@ span.active_chat {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 133, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .btn_5.small_btn {
         padding: 11px 19px !important;
@@ -1144,8 +1164,8 @@ span.active_chat {
 }
 
 /* line 307, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child::before,
-table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child::before {
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child::before,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child::before {
     z-index: 9;
     top: 50%;
     transform: translateY(-50%);
@@ -1159,8 +1179,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child::
 }
 
 /* line 323, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child::before,
-table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::before {
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child::before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child::before {
     content: "\e622";
     box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.08), inset -6px -6px 12px white;
 }
@@ -1181,6 +1201,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
+
     /* line 337, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .CRM_dropdown.dropdown .dropdown-toggle {
         padding: 2px 30px 5px 23px;
@@ -1205,7 +1226,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 367, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-.CRM_dropdown.dropdown .dropdown-toggle:hover, .CRM_dropdown.dropdown .dropdown-toggle:focus {
+.CRM_dropdown.dropdown .dropdown-toggle:hover,
+.CRM_dropdown.dropdown .dropdown-toggle:focus {
     color: #fff;
     border: 1px solid transparent;
     box-shadow: none !important;
@@ -1241,7 +1263,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 401, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-.CRM_dropdown.dropdown .dropdown-menu .dropdown-item .active, .CRM_dropdown.dropdown .dropdown-menu .dropdown-item:active {
+.CRM_dropdown.dropdown .dropdown-menu .dropdown-item .active,
+.CRM_dropdown.dropdown .dropdown-menu .dropdown-item:active {
     color: #415094;
     background-color: #f8f9fa;
 }
@@ -1263,7 +1286,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 419, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-.CRM_dropdown.dropdown.CRM_dropdown_default button:hover, .CRM_dropdown.dropdown.CRM_dropdown_default button:focus {
+.CRM_dropdown.dropdown.CRM_dropdown_default button:hover,
+.CRM_dropdown.dropdown.CRM_dropdown_default button:focus {
     border: 0;
     box-shadow: none !important;
     background: transparent;
@@ -1567,6 +1591,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 645, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .pos_tab_btn ul li a {
         margin-bottom: 10px;
@@ -1791,6 +1816,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 41, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .btn_1.form_big_btn_1 {
         padding: 16px 30px !important;
@@ -1911,6 +1937,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 133, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .btn_5.small_btn {
         padding: 11px 19px !important;
@@ -1918,6 +1945,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 133, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .btn_5.small_btn {
         padding: 11px 19px !important;
@@ -2110,8 +2138,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 307, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td:first-child::before,
-table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child::before {
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child::before,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child::before {
     z-index: 9;
     top: 50%;
     transform: translateY(-50%);
@@ -2125,8 +2153,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child::
 }
 
 /* line 323, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child::before,
-table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::before {
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child::before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child::before {
     content: "\e622";
     box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.08), inset -6px -6px 12px white;
 }
@@ -2147,6 +2175,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1400px) {
+
     /* line 337, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .CRM_dropdown.dropdown .dropdown-toggle {
         padding: 2px 30px 5px 23px;
@@ -2171,7 +2200,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 367, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-.CRM_dropdown.dropdown .dropdown-toggle:hover, .CRM_dropdown.dropdown .dropdown-toggle:focus {
+.CRM_dropdown.dropdown .dropdown-toggle:hover,
+.CRM_dropdown.dropdown .dropdown-toggle:focus {
     color: #fff;
     border: 1px solid transparent;
     box-shadow: none !important;
@@ -2207,7 +2237,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 401, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-.CRM_dropdown.dropdown .dropdown-menu .dropdown-item .active, .CRM_dropdown.dropdown .dropdown-menu .dropdown-item:active {
+.CRM_dropdown.dropdown .dropdown-menu .dropdown-item .active,
+.CRM_dropdown.dropdown .dropdown-menu .dropdown-item:active {
     color: #415094;
     background-color: #f8f9fa;
 }
@@ -2229,7 +2260,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 419, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
-.CRM_dropdown.dropdown.CRM_dropdown_default button:hover, .CRM_dropdown.dropdown.CRM_dropdown_default button:focus {
+.CRM_dropdown.dropdown.CRM_dropdown_default button:hover,
+.CRM_dropdown.dropdown.CRM_dropdown_default button:focus {
     border: 0;
     box-shadow: none !important;
     background: transparent;
@@ -2533,6 +2565,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 645, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_button.scss */
     .pos_tab_btn ul li a {
         margin-bottom: 10px;
@@ -2707,11 +2740,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
     white-space: nowrap;
 }
 
-.chat_flow_list_inner ul{
+.chat_flow_list_inner ul {
     margin-top: 20px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1600px) {
+
     /* line 1, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .none_form_small {
         display: none !important;
@@ -3386,7 +3420,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 533, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
-.primary_select:active, .primary_select.open, .primary_select:focus, .primary_select:hover {
+.primary_select:active,
+.primary_select.open,
+.primary_select:focus,
+.primary_select:hover {
     border-color: #ECEEF4;
 }
 
@@ -3578,6 +3615,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 672, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .email_test {
         grid-template-columns: repeat(1, 1fr);
@@ -3585,6 +3623,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 672, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .email_test {
         grid-template-columns: repeat(1, 1fr);
@@ -3760,6 +3799,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 991px) {
+
     /* line 824, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .crm_full_tab_header ul li a {
         padding: 15px;
@@ -3833,6 +3873,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (min-width: 992px) {
+
     /* line 897, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .modal_800px {
         max-width: 811px;
@@ -3840,6 +3881,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (min-width: 992px) {
+
     /* line 903, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .modal_230px {
         max-width: 230px;
@@ -3852,6 +3894,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (min-width: 992px) {
+
     /* line 912, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .modal_1000px {
         max-width: 900px;
@@ -3859,6 +3902,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
+
     /* line 912, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .modal_1000px {
         max-width: 700px;
@@ -3866,6 +3910,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (min-width: 1200px) {
+
     /* line 912, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .modal_1000px {
         max-width: 1000px;
@@ -3873,6 +3918,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (min-width: 992px) {
+
     /* line 924, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_CRM_form.scss */
     .modal_650px {
         max-width: 650px;
@@ -3968,6 +4014,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 2, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner {
         justify-content: flex-end !important;
@@ -3975,6 +4022,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 2, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner {
         justify-content: flex-end !important;
@@ -3982,6 +4030,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 991px) {
+
     /* line 2, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner {
         margin: 0;
@@ -3989,6 +4038,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 2, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner {
         margin: 0;
@@ -3996,6 +4046,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 2, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner {
         margin: 0;
@@ -4012,6 +4063,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 991px) {
+
     /* line 48, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner .page_tittle h3 {
         margin-right: 15px;
@@ -4052,6 +4104,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 74, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner .page_tittle .page_subtitle .page_subtitle_inenr svg {
         margin: 0 2px 0 2px;
@@ -4064,6 +4117,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 991px) {
+
     /* line 89, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .notification {
         margin: 0 10px;
@@ -4090,6 +4144,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 767.98px) {
+
     /* line 109, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner .serach_field-area {
         display: none;
@@ -4097,6 +4152,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     /* line 109, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner .serach_field-area {
         width: auto;
@@ -4105,6 +4161,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     /* line 109, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner .serach_field-area {
         display: none;
@@ -4112,6 +4169,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     /* line 109, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner .serach_field-area {
         width: auto;
@@ -4120,6 +4178,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     /* line 126, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner .header_middle .select_style {
         margin-left: 150px;
@@ -4133,6 +4192,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 134, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_notification_warp {
         margin-right: 25px;
@@ -4141,6 +4201,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     /* line 134, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_notification_warp {
         margin-right: 35px;
@@ -4155,6 +4216,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 145, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_notification_warp li {
         position: static;
@@ -4162,6 +4224,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 145, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_notification_warp li {
         position: static;
@@ -4169,6 +4232,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 991px) {
+
     /* line 145, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_notification_warp li {
         position: static;
@@ -4181,7 +4245,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 160, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
-.header_notification_warp li > a {
+.header_notification_warp li>a {
     font-size: 20px;
     color: #415094;
     position: relative;
@@ -4190,21 +4254,22 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 /* line 166, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
-.header_notification_warp li > a i {
+.header_notification_warp li>a i {
     transition: .3s;
     color: #707DB7;
 }
 
 @media (max-width: 575.98px) {
+
     /* line 160, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
-    .header_notification_warp li > a {
+    .header_notification_warp li>a {
         margin-right: 15px;
         font-size: 15px;
     }
 }
 
 /* line 182, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
-.header_notification_warp li > a > span.notification_count {
+.header_notification_warp li>a>span.notification_count {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -4224,6 +4289,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 205, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner .header_right .select_style {
         display: none !important;
@@ -4231,6 +4297,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 205, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .header_iner .header_right .select_style {
         display: none !important;
@@ -4251,6 +4318,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 991px) {
+
     /* line 219, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .profile_info img {
         max-width: 30px;
@@ -4360,6 +4428,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 295, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .admin .sidebar_icon {
         right: auto;
@@ -4369,6 +4438,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 295, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .admin .sidebar_icon {
         right: auto;
@@ -4377,6 +4447,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 991px) {
+
     /* line 295, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .admin .sidebar_icon {
         right: auto;
@@ -4393,6 +4464,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 319, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .admin .sidebar_icon i {
         font-size: 18px;
@@ -4407,6 +4479,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     /* line 332, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .serach_field-area {
         width: 400px;
@@ -4466,6 +4539,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (max-width: 575.98px) {
+
     /* line 381, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .serach_field_2 {
         width: 100%;
@@ -4473,6 +4547,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 381, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .serach_field_2 {
         width: 190px;
@@ -4480,6 +4555,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     /* line 381, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .serach_field_2 {
         width: 230px;
@@ -4487,6 +4563,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
     /* line 381, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .serach_field_2 {
         width: 300px;
@@ -4558,6 +4635,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::befor
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     /* line 446, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .serach_field-area3 {
         width: 200px;
@@ -4620,7 +4698,8 @@ table.dataTable {
 }
 
 /* line 509, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
-.table td, .table th {
+.table td,
+.table th {
     padding: .75rem;
     vertical-align: top;
     border-top: 0 !important;
@@ -4649,6 +4728,7 @@ table.dataTable {
 }
 
 @media (max-width: 1200px) {
+
     /* line 530, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_header.scss */
     .lms_header .header_middle .add_course_btn {
         display: none;
@@ -4660,19 +4740,21 @@ table.dataTable {
     margin: 0 6px;
 }
 
-.fileshow{
+.fileshow {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 120px;
     grid-gap: 30px;
 }
-.single-entry{
+
+.single-entry {
     width: 100%;
     flex: 100% 0 0;
     max-width: 100%;
 }
-.chat_input_box{
-    right: 10px!important;
+
+.chat_input_box {
+    right: 10px !important;
 }
 
 /* line 168, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_common_grid_style.scss */
@@ -4691,6 +4773,7 @@ table.dataTable {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 168, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_common_grid_style.scss */
     .Menu_NOtification_Wrap {
         width: 300px;
@@ -4706,6 +4789,7 @@ table.dataTable {
 }
 
 @media (max-width: 575.98px) {
+
     /* line 183, G:/laragon/www/CRM_frontend/Admin_crm/public/frontend/scss/_common_grid_style.scss */
     .Menu_NOtification_Wrap.active {
         transform: translateY(16px) translateX(55px);
@@ -4781,7 +4865,7 @@ table.dataTable {
     color: #fff !important;
 }
 
-.scroll_notification_list{
+.scroll_notification_list {
     position: relative;
 }
 
@@ -4799,32 +4883,35 @@ table.dataTable {
     background: #9e35ed;
 }
 
-.chat-icon-size{
+.chat-icon-size {
     font-size: 1.35em;
 }
 
-.chat-quick-link{
+.chat-quick-link {
     padding: 5px;
     font-size: 1.75em;
     cursor: pointer;
 }
-#ui-id-1{
-    max-width: 385px!important;
+
+#ui-id-1 {
+    max-width: 385px !important;
 }
 
-.flaticon-notification:before{
-    margin-left: 0!important;
+.flaticon-notification:before {
+    margin-left: 0 !important;
 }
 
 
 /* update css  */
-.CRM_dropdown.dropdown .dropdown-toggle:hover, .CRM_dropdown.dropdown .dropdown-toggle:focus {
+.CRM_dropdown.dropdown .dropdown-toggle:hover,
+.CRM_dropdown.dropdown .dropdown-toggle:focus {
     color: #fff;
     border: 1px solid transparent;
     box-shadow: none !important;
     background: var(--system_primery_color);
 
 }
+
 span.inactive_chat {
     display: inline-block;
     width: 6px;
@@ -4911,7 +4998,7 @@ span.inactive_chat {
 .sms-accordion .card,
 .admin .navbar .right-navbar .dropdown .badge,
 .single-cms-box:hover .single-cms {
-    box-shadow: 0px 10px 20px rgba(251, 17, 89,.02);
+    box-shadow: 0px 10px 20px rgba(251, 17, 89, .02);
 }
 
 
@@ -4969,6 +5056,7 @@ span.inactive_chat {
 }
 
 @media (max-width: 1370px) {
+
     /* line 62, ../../xampp/htdocs/infixeduB/public/backEnd/scss/admin/_predefine.scss */
     #main-content {
         margin-left: 20%;
@@ -4977,6 +5065,7 @@ span.inactive_chat {
 }
 
 @media (max-width: 991px) {
+
     /* line 62, ../../xampp/htdocs/infixeduB/public/backEnd/scss/admin/_predefine.scss */
     #main-content {
         margin-left: 0;
@@ -4985,6 +5074,7 @@ span.inactive_chat {
 }
 
 @media (max-width: 575px) {
+
     /* line 62, ../../xampp/htdocs/infixeduB/public/backEnd/scss/admin/_predefine.scss */
     #main-content {
         padding: 15px;
@@ -5047,6 +5137,7 @@ span.inactive_chat {
     background: -moz-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
     background: -o-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
     background: linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
+    background: #29bcb0;
 }
 
 
@@ -5387,20 +5478,21 @@ span.inactive_chat {
     transition: all 0.4s ease 0s;
 }
 
-.chat-menu-ul li{
+.chat-menu-ul li {
     padding: 5px 0;
 }
 
-.chat-menu-ul{
-    padding: 5px 30px!important;
+.chat-menu-ul {
+    padding: 5px 30px !important;
 }
 
-.chat-submenu{
+.chat-submenu {
     padding: 5px 20px !important;
     color: black;
 }
-.text-black{
-    color: black!important;
+
+.text-black {
+    color: black !important;
 }
 
 .primary_input_name {
@@ -5414,18 +5506,19 @@ span.inactive_chat {
     padding: 10px 20px;
     width: 100%;
 }
-.round-icon{
-    border-radius: 50%!important;
-    padding: 5px 5px 5px 14px!important;
+
+.round-icon {
+    border-radius: 50% !important;
+    padding: 5px 5px 5px 14px !important;
 }
 
 
 .chat_view_list .chat_view_list_inner .chat_view_list_inner_scrolled {
-	margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 
-.select2-container{
+.select2-container {
     height: 50px;
     border-radius: 5px;
     border: 1px solid #EBEBEB;
@@ -5433,6 +5526,7 @@ span.inactive_chat {
     font-weight: 400;
     color: #202E3B;
 }
+
 .select2-container--default .select2-selection--multiple {
     background-color: white;
     border: 0;
@@ -5442,6 +5536,7 @@ span.inactive_chat {
     padding-right: 5px;
     position: relative;
 }
+
 .select2-container .select2-selection--multiple {
     box-sizing: border-box;
     cursor: pointer;
@@ -5453,10 +5548,9 @@ span.inactive_chat {
     padding: 0;
 }
 
-.select2-container  .select2-selection__rendered{
+.select2-container .select2-selection__rendered {}
 
-}
-.select2-container  .select2-selection__rendered .select2-selection__choice{
+.select2-container .select2-selection__rendered .select2-selection__choice {
     background: #F5F7FB;
     font-size: 14px;
     font-weight: 400;
@@ -5468,14 +5562,16 @@ span.inactive_chat {
     align-items: center;
     border: 0;
 }
-.select2-container  .select2-selection__rendered .select2-selection__choice button{
+
+.select2-container .select2-selection__rendered .select2-selection__choice button {
     font-size: 14px;
     font-weight: 900;
     color: #415094;
     padding: 3px 8px;
     border: 0;
 }
-.select2-container  .select2-selection__rendered .select2-selection__choice > span{
+
+.select2-container .select2-selection__rendered .select2-selection__choice>span {
     font-size: 14px;
     font-weight: 400;
     color: #415094;
@@ -5491,26 +5587,28 @@ span.inactive_chat {
 }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-	border: 1px solid #EBEBEB;
-	outline: 0;
+    border: 1px solid #EBEBEB;
+    outline: 0;
 }
+
 .select2-selection.select2-selection--multiple {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.select2-container--default .select2-results > .select2-results__options {
-	max-height: 200px;
-	overflow-y: auto;
-	margin: 4px 4px 4px 0;
-	padding: 0 0 0 4px;
-	position: relative;
-	overflow-x: hidden;
-	overflow-y: auto;
-	max-height: 200px;
-	border: 0 !important;
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 4px 4px 4px 0;
+    padding: 0 0 0 4px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 200px;
+    border: 0 !important;
 }
-.chat_badge{
-    background: var(--system_primery_color)!important;
+
+.chat_badge {
+    background: var(--system_primery_color) !important;
 }
