@@ -2074,6 +2074,7 @@ table.dataTable tbody td .form-check-input {
     background: -moz-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
     background: -o-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
     background: linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
+    background: #29bcb0;
 }
 
 /* line 104, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
@@ -2127,7 +2128,8 @@ table.dataTable tbody td .form-check-input {
 
 /* line 129, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-btn , .theme_btn{
+.primary-btn,
+.theme_btn {
     display: flex;
     align-items: center;
     color: #58548e;
@@ -2268,12 +2270,13 @@ table.dataTable tbody td .form-check-input {
 }
 
 .xd_courses_table.card_box div.dt-buttons {
-    background: white!important;
+    background: white !important;
 }
 
 /* line 198, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-btn.fix-gr-bg , .theme_btn{
+.primary-btn.fix-gr-bg,
+.theme_btn {
     display: flex;
     background: #29bcb0;
     padding: 5px 11px;
@@ -7596,7 +7599,7 @@ hr {
         background-color: #fff !important;
     }
 
-   
+
 
     .sidebar #sidebar_menu li a {
         background: #f3f5fc9e !important;

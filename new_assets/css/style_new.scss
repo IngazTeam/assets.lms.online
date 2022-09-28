@@ -144,12 +144,22 @@ body {
     align-items: center;
     gap: 0.75rem;
     border-radius: 40px;
+    width: 275px;
+    height: 44px;
+
+    @media(max-width:450px) {
+      width: unset;
+    }
+
     // flex-basis: 18%;
 
     .main-title {
       font-size: 1rem;
       margin-bottom: 0;
       font-weight: 600;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
   }
 
@@ -158,6 +168,7 @@ body {
     // flex-basis: 37%;
     gap: 0.25rem;
     justify-content: space-around;
+    height: 44px;
 
     marquee {
       font-size: 10px;
@@ -173,8 +184,15 @@ body {
   .search-box {
     border-radius: 40px;
     // flex-basis: 15%;
+    width: 215px;
     gap: 0.75px;
     z-index: 1;
+    height: 44px;
+
+    @media(max-width:992px) {
+      width: 100%;
+      height: 50px;
+    }
 
     i {
       color: $mainColor;
@@ -200,8 +218,8 @@ body {
   }
 
   .logo-img {
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,6 +230,8 @@ body {
     // flex-basis: 24%;
     gap: 0.75rem;
     justify-content: space-evenly;
+    width: 315px;
+    height: 44px;
 
     .user-name {
       font-size: 10px;
@@ -249,9 +269,14 @@ body {
     top: 60px;
     z-index: 999;
     box-shadow: 5px 10px 25px -10px rgba(0, 0, 0, 0.5);
+    transition: .5s all ease;
+
+    &.bottom {
+      top: -500px;
+    }
 
     &.hidden {
-      display: none;
+      top: -800px;
     }
 
     .notify {
@@ -412,6 +437,8 @@ body {
 
   // left sidebar style
   .left-sidebar {
+    // width: 275px;
+    // float: left;
 
     // links container
     .links-container {
@@ -589,6 +616,11 @@ body {
     padding: 15px 20px;
     border-radius: 30px;
     border: 1px solid $borderColor;
+    // width: 14rem;
+
+    @media(max-width:992px) {
+      width: unset;
+    }
 
     .def {
       color: $secoundryColor;
@@ -638,6 +670,11 @@ body {
   .dropDowns {
     .select2-container--default {
       width: 140px !important;
+
+      @media(min-width:320px)and (max-width:400px) {
+        width: 132px !important;
+      }
+
 
       .select2-selection--single {
         border: none;
@@ -692,7 +729,7 @@ body {
       }
     }
 
-    .owl-carousel {
+    .owl-carousel.culender {
       .owl-nav {
         margin-top: 0;
         position: absolute;
@@ -740,17 +777,24 @@ body {
 
     .Card {
       background-color: #fff;
-      border-radius: 25px;
-      padding: 15px 5px;
+      border-radius: 25px !important;
+      padding: 20px 5px;
+      margin-bottom: 10px;
+      border: none;
 
-      @media (max-width: 600px) {
-        width: 125px;
-        padding: 20px 0px;
+      @media(min-width:320px)and (max-width:400px) {
+        padding: 15px 0;
+        height: 108px;
+        width: 106px !important;
       }
 
       .card-head {
         img {
           width: 20px;
+
+          @media(min-width:320px)and (max-width:400px) {
+            width: 15px;
+          }
         }
       }
 
@@ -770,6 +814,10 @@ body {
         color: $lightText;
         font-size: 14px;
         font-weight: 700;
+
+        @media(min-width:320px)and (max-width:400px) {
+          font-size: 12px;
+        }
 
         &::before {
           content: "%";
@@ -791,12 +839,14 @@ body {
         color: $mainColor;
         margin-bottom: 0;
         font-weight: 700;
+        font-size: 20px;
       }
 
       .main-title {
         color: $lightText;
         margin-bottom: 0;
         font-weight: 700;
+        margin-top: unset;
       }
     }
   }
@@ -976,6 +1026,10 @@ body {
     padding: 4px 0;
     border-radius: 25px;
 
+    @media(min-width:320px)and (max-width:400px) {
+      width: 320px;
+    }
+
     .owl-card {
       border-radius: 30px;
       padding: 15px;
@@ -1083,10 +1137,16 @@ body {
         .owl-next {
           margin: 5px;
           padding: 10px !important;
-          background-color: #f0f0f0 !important;
+          background-color: #F2F3F7 !important;
           border-radius: 10px !important;
           display: flex;
           font-size: 20px;
+
+          @media(min-width:320px)and (max-width:400px) {
+            width: 32px !important;
+            height: 32px !important;
+            font-size: 16px;
+          }
 
           span {
             color: $mainColor;
@@ -1469,10 +1529,10 @@ body {
   .inner_title {
     font-size: 16px;
     font-weight: bold;
-    overflow: hidden;
+    // overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 320px;
+    // text-overflow: ellipsis;
+    // max-width: 320px;
   }
 
   .course-details {
@@ -1815,6 +1875,55 @@ body {
         a {
           border-radius: 5px;
         }
+      }
+    }
+  }
+}
+
+.tab_part .main_collapese_card .inner_collapese_card .left_part textarea,
+.tab_part .main_collapese_card .inner_big_cart .left_part textarea {
+  height: 80px !important;
+}
+
+.tab_part .nav-link {
+  margin-bottom: 0 !important;
+}
+
+.dataTables_wrapper {
+  .dataTables_length {
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    left: unset;
+    right: 50%;
+    transform: translateX(40%);
+
+    select {
+      background-color: #f2f3f7;
+      color: #707070;
+      padding: 1px 10px 1px 30px;
+      border-radius: 20px;
+      margin: 0 3px;
+      appearance: none !important;
+      background-image: url(../imgs/arrow-down.svg);
+      background-size: 15px !important;
+      background-repeat: no-repeat;
+      background-position: 5px;
+      cursor: pointer;
+      border: 1px solid #e0e0e0;
+
+      option {
+        margin: 40px;
+        background: #fff;
+        color: #707070;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        font-size: 12px;
       }
     }
   }

@@ -51,11 +51,13 @@ body.admin {
     background-attachment: fixed;
     background-position: top;
 }
+
 body.admin .main-wrapper {
     background-color: #f5f4fc;
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
+
     /* line 1, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_reset.scss */
     body.admin {
         font-size: 11px;
@@ -610,18 +612,22 @@ button:focus {
 /*---------------------------------------------------- */
 
 @media (max-width: 991px) {
+
     /* line 2, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_responsive.scss */
     .mb-20-lg {
         margin-bottom: 20px;
     }
+
     /* line 5, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_responsive.scss */
     .mb-30-lg {
         margin-bottom: 30px;
     }
+
     /* line 8, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_responsive.scss */
     .mt-20-lg {
         margin-top: 20px;
     }
+
     /* line 11, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_responsive.scss */
     .mt-30-lg {
         margin-top: 30px;
@@ -629,14 +635,17 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+
     /* line 17, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_responsive.scss */
     .mt-30-md {
         margin-top: 30px;
     }
+
     /* line 20, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_responsive.scss */
     .mt-30-md {
         margin-top: 30px;
     }
+
     /* line 23, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_responsive.scss */
     .mt-50-md {
         margin-top: 50px;
@@ -658,6 +667,7 @@ button:focus {
 }
 
 @media (max-width: 1300px) and (min-width: 992px) {
+
     /* line 3, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
     .white-box {
         padding: 30px 15px;
@@ -709,6 +719,7 @@ button:focus {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
 .white-box.single-summery h1.gradient-color2 {
     background: -webkit-linear-gradient(90deg, #fb6d3a 0%, #fb6d3a 100%);
     background: -moz-linear-gradient(90deg, #fb6d3a 0%, #fb6d3a 100%);
@@ -740,19 +751,24 @@ button:focus {
     box-shadow: 0px 10px 20px rgba(90 70 170 / 20%);
     background-size: 100% 100%;
 }
+
 .white-box.single-summery:hover .icon_summery {
     background: #fff;
 }
+
 .white-box.single-summery:hover .icon_summery i {
     color: #415094;
 }
+
 .white-box.single-summery:hover {
     background-image: none;
 }
+
 .white-box.single-summery:before,
 .white-box.single-summery:after {
     display: none;
 }
+
 /* line 51, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
 .white-box.single-summery:hover:before {
@@ -804,7 +820,7 @@ button:focus {
 
 /* line 90, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
-.no-search .dataTables_filter > label {
+.no-search .dataTables_filter>label {
     display: none;
 }
 
@@ -990,7 +1006,7 @@ button:focus {
 
 /* line 215, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
-.modal-content .dataTables_filter > label {
+.modal-content .dataTables_filter>label {
     top: -60px;
 }
 
@@ -1002,11 +1018,13 @@ button:focus {
 }
 
 @media (max-width: 1280px) and (min-width: 992px) {
+
     /* line 224, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
     .radio-btn-flex {
         -ms-flex-direction: column;
         flex-direction: column;
     }
+
     /* line 228, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
     .radio-btn-flex .mr-30 {
         margin-bottom: 15px;
@@ -1014,11 +1032,13 @@ button:focus {
 }
 
 @media (max-width: 359px) {
+
     /* line 224, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
     .radio-btn-flex {
         -ms-flex-direction: column;
         flex-direction: column;
     }
+
     /* line 235, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
     .radio-btn-flex .mr-30 {
         margin-bottom: 15px;
@@ -1051,7 +1071,7 @@ button:focus {
 
 /* line 251, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
-.common-radio:empty ~ label {
+.common-radio:empty~label {
     position: relative;
     float: left;
     line-height: 16px;
@@ -1067,7 +1087,7 @@ button:focus {
     text-transform: capitalize;
 }
 
-.common-radio2:empty ~ label {
+.common-radio2:empty~label {
     position: relative;
     float: left;
     line-height: 16px;
@@ -1254,7 +1274,7 @@ button:focus {
 
 /* line 408, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
-.common-radio:empty ~ label:before {
+.common-radio:empty~label:before {
     position: absolute;
     display: block;
     top: 50%;
@@ -1271,7 +1291,8 @@ button:focus {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
-.common-radio2:empty ~ label:before {
+
+.common-radio2:empty~label:before {
     position: absolute;
     display: block;
     top: 0;
@@ -1292,7 +1313,7 @@ button:focus {
 
 /* line 423, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
-.common-radio:checked ~ label:before {
+.common-radio:checked~label:before {
     content: "";
     text-indent: 1px;
     color: #fb6d3a;
@@ -1303,7 +1324,8 @@ button:focus {
     font-weight: 600;
     border-top-color: transparent;
 }
-.common-radio2:checked ~ label:before {
+
+.common-radio2:checked~label:before {
     content: "";
     text-indent: 1px;
     color: #58548e;
@@ -1321,7 +1343,7 @@ button:focus {
 
 /* line 434, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
-.common-radio:checked ~ label:after {
+.common-radio:checked~label:after {
     content: "\e64c";
     font-family: "themify";
     position: absolute;
@@ -1337,7 +1359,7 @@ button:focus {
     font-weight: 600;
 }
 
-.common-radio2:checked ~ label:after {
+.common-radio2:checked~label:after {
     content: "\e64c";
     font-family: "themify";
     position: absolute;
@@ -1460,6 +1482,7 @@ button:focus {
 }
 
 @media (max-width: 1300px) and (min-width: 992px) {
+
     /* line 490, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
     .sms-breadcrumb.white-box {
         padding: 12px 15px;
@@ -1505,6 +1528,7 @@ button:focus {
     top: 0;
     right: -9px;
 }
+
 .zoom-content {
     box-shadow: 0px 4px 15px #dfdfdf;
     border-radius: 12px;
@@ -1526,9 +1550,11 @@ table.dataTable tbody td .form-check-input {
     border-radius: 6px;
     box-shadow: 0px 0px 6px #ddd inset;
 }
+
 .zoom-heading h3 {
     color: #fb6d3a;
 }
+
 /* line 521, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
 .sms-breadcrumb .bc-pages a:last-child {
@@ -1710,7 +1736,7 @@ table.dataTable tbody td .form-check-input {
 
 /* line 652, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_component.scss */
 
-.common-calendar .fc .fc-button-group > * {
+.common-calendar .fc .fc-button-group>* {
     display: block;
 }
 
@@ -1820,6 +1846,7 @@ table.dataTable tbody td .form-check-input {
 .table-responsive {
     padding-bottom: 10px;
 }
+
 /* line 13, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
 .main-wrapper ::-webkit-scrollbar-track {
@@ -1858,10 +1885,7 @@ table.dataTable tbody td .form-check-input {
 .bootstrap-datetimepicker-widget table td.hour:hover,
 .bootstrap-datetimepicker-widget table td.minute:hover,
 .bootstrap-datetimepicker-widget table td span.glyphicon-chevron-up:hover:after,
-.bootstrap-datetimepicker-widget
-    table
-    td
-    span.glyphicon-chevron-down:hover:after,
+.bootstrap-datetimepicker-widget table td span.glyphicon-chevron-down:hover:after,
 .datepicker.dropdown-menu,
 .datepicker table tr td.active.day,
 .datepicker table tr td.day:hover,
@@ -1891,10 +1915,7 @@ table.dataTable tbody td .form-check-input {
 .bootstrap-datetimepicker-widget table td.hour:hover,
 .bootstrap-datetimepicker-widget table td.minute:hover,
 .bootstrap-datetimepicker-widget table td span.glyphicon-chevron-up:hover:after,
-.bootstrap-datetimepicker-widget
-    table
-    td
-    span.glyphicon-chevron-down:hover:after,
+.bootstrap-datetimepicker-widget table td span.glyphicon-chevron-down:hover:after,
 .datepicker table tr td.active.day,
 .datepicker table tr td.day:hover,
 .datepicker thead tr:first-child th:hover {
@@ -1930,10 +1951,12 @@ table.dataTable tbody td .form-check-input {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
 .mini_main_content {
     margin-left: 60px !important;
     width: 100% !important;
 }
+
 /* @media (max-width: 1370px) {
     #main-content {
         margin-left: 240px;
@@ -1981,10 +2004,7 @@ table.dataTable tbody td .form-check-input {
 .bootstrap-datetimepicker-widget table td.hour:hover,
 .bootstrap-datetimepicker-widget table td.minute:hover,
 .bootstrap-datetimepicker-widget table td span.glyphicon-chevron-up:hover:after,
-.bootstrap-datetimepicker-widget
-    table
-    td
-    span.glyphicon-chevron-down:hover:after,
+.bootstrap-datetimepicker-widget table td span.glyphicon-chevron-down:hover:after,
 .datepicker table tr td.active.day,
 .datepicker table tr td.day:hover,
 .datepicker thead tr:first-child th:hover,
@@ -2007,6 +2027,7 @@ table.dataTable tbody td .form-check-input {
     background: -moz-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
     background: -o-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
     background: linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
+    background: #29bcb0;
 }
 
 /* line 104, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
@@ -2098,14 +2119,14 @@ table.dataTable tbody td .form-check-input {
 
 /* line 153, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-btn .common-checkbox:checked + label:before {
+.primary-btn .common-checkbox:checked+label:before {
     color: #ffffff;
     top: -13px;
 }
 
 /* line 157, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-btn .common-checkbox + label:before {
+.primary-btn .common-checkbox+label:before {
     border: 1px solid #ffffff;
     top: -13px;
 }
@@ -2137,6 +2158,7 @@ table.dataTable tbody td .form-check-input {
     border-radius: 6px;
     font-weight: 500;
 }
+
 .btn_icon {
     width: 25px;
     height: 25px;
@@ -2219,6 +2241,7 @@ table.dataTable tbody td .form-check-input {
     background: #fb6d3a;
     color: #fff;
 }
+
 /* line 215, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
 .primary-btn.white:hover {
@@ -2304,7 +2327,7 @@ table.dataTable tbody td .form-check-input {
 
 /* line 280, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-input ~ .focus-border {
+.primary-input~.focus-border {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2319,7 +2342,7 @@ table.dataTable tbody td .form-check-input {
 
 /* line 289, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-input ~ label {
+.primary-input~label {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -2397,9 +2420,11 @@ table.dataTable tbody td .form-check-input {
 .input-effect .form-control.error {
     border-color: red !important;
 }
-.primary-input.error ~ .focus-border {
+
+.primary-input.error~.focus-border {
     display: none;
 }
+
 /* line 330, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
 textarea.primary-input {
@@ -2415,8 +2440,8 @@ textarea.primary-input {
 
 /* line 338, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-input:focus ~ .focus-border,
-.has-content.primary-input ~ .focus-border {
+.primary-input:focus~.focus-border,
+.has-content.primary-input~.focus-border {
     width: 100%;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -2426,9 +2451,9 @@ textarea.primary-input {
 
 /* line 344, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.primary-input:focus ~ label,
-.primary-input.read-only-input ~ label,
-.has-content.primary-input ~ label {
+.primary-input:focus~label,
+.primary-input.read-only-input~label,
+.has-content.primary-input~label {
     top: -14px;
     font-size: 11px;
     color: rgba(130, 139, 178, 0.8);
@@ -2447,7 +2472,7 @@ textarea.primary-input {
 
 /* line 360, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.common-checkbox + label {
+.common-checkbox+label {
     display: block;
     cursor: pointer;
     margin-bottom: 0;
@@ -2461,7 +2486,7 @@ textarea.primary-input {
 
 /* line 369, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.common-checkbox + label:before {
+.common-checkbox+label:before {
     content: "";
     border: 1px solid #c9c9c9;
     border-radius: 2px;
@@ -2485,13 +2510,13 @@ textarea.primary-input {
 
 /* line 388, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.common-checkbox + label:active:before {
+.common-checkbox+label:active:before {
     transform: scale(0);
 }
 
 /* line 392, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.common-checkbox:checked + label:before {
+.common-checkbox:checked+label:before {
     content: "\e64d";
     border: 0px;
     font-family: "themify";
@@ -2516,14 +2541,14 @@ textarea.primary-input {
 
 /* line 412, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.common-checkbox:disabled + label:before {
+.common-checkbox:disabled+label:before {
     transform: scale(1);
     border-color: #828bb2;
 }
 
 /* line 417, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.common-checkbox:checked:disabled + label:before {
+.common-checkbox:checked:disabled+label:before {
     transform: scale(1);
     background-color: #bfb;
     border-color: #bfb;
@@ -2826,16 +2851,13 @@ textarea.primary-input {
 
 /* line 609, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.select2-container-multi .select2-choices .select2-search-choice > div {
+.select2-container-multi .select2-choices .select2-search-choice>div {
     margin-left: 15px;
 }
 
 /* line 612, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.select2-container-multi
-    .select2-choices
-    .select2-search-choice
-    .select2-search-choice-close {
+.select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close {
     left: 6px;
     height: 16px;
     min-width: 17px;
@@ -2845,10 +2867,7 @@ textarea.primary-input {
 
 /* line 618, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_predefine.scss */
 
-.select2-container-multi
-    .select2-choices
-    .select2-search-choice
-    .select2-search-choice-close:hover {
+.select2-container-multi .select2-choices .select2-search-choice .select2-search-choice-close:hover {
     background-position: right 0px;
 }
 
@@ -2876,6 +2895,7 @@ body.login .footer_area {
 }
 
 @media (max-width: 1199px) {
+
     /* line 4, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_login.scss */
     body.login .footer_area {
         text-align: center;
@@ -2920,6 +2940,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
+
     /* line 26, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_login.scss */
     .login-area .form-wrap {
         padding: 50px 20px;
@@ -2927,6 +2948,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 480px) {
+
     /* line 26, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_login.scss */
     .login-area .form-wrap {
         padding: 50px 20px;
@@ -3050,7 +3072,7 @@ body.login .footer_area a {
 
 /* line 95, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_login.scss */
 
-.login-area input[type="checkbox"] + label {
+.login-area input[type="checkbox"]+label {
     display: block;
     position: relative;
     padding-left: 25px;
@@ -3065,13 +3087,13 @@ body.login .footer_area a {
 
 /* line 107, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_login.scss */
 
-.login-area input[type="checkbox"] + label:last-child {
+.login-area input[type="checkbox"]+label:last-child {
     margin-bottom: 0;
 }
 
 /* line 110, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_login.scss */
 
-.login-area input[type="checkbox"] + label:before {
+.login-area input[type="checkbox"]+label:before {
     content: "";
     display: block;
     width: 12px;
@@ -3090,7 +3112,7 @@ body.login .footer_area a {
 
 /* line 123, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_login.scss */
 
-.login-area input[type="checkbox"]:checked + label:before {
+.login-area input[type="checkbox"]:checked+label:before {
     width: 8px;
     top: 1px;
     left: 5px;
@@ -3147,6 +3169,7 @@ body.login .footer_area a {
     border-radius: 4px;
     padding-bottom: 100px;
 }
+
 /* @media (max-width: 1370px) {
     #sidebar {
         min-width: 20%;
@@ -3155,6 +3178,7 @@ body.login .footer_area a {
 } */
 
 @media (max-width: 991px) {
+
     /* line 1, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_sidebar.scss */
     #sidebar {
         min-width: 35%;
@@ -3167,6 +3191,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 991px) {
+
     /* line 25, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_sidebar.scss */
     #sidebar.active {
         margin-left: 0px;
@@ -3198,6 +3223,7 @@ body.login .footer_area a {
     /* border-bottom: 1px solid #6b5da1; */
     /* box-shadow: 0 8px 25px rgb(0 0 0 / 7%); */
 }
+
 #sidebar_menu {
     padding-top: 10px;
     min-height: calc(95vh - 132px);
@@ -3230,6 +3256,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 1300px) and (min-width: 992px) {
+
     /* line 46, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_sidebar.scss */
     #sidebar ul li a {
         padding: 8px 12px;
@@ -3274,6 +3301,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 1300px) and (min-width: 992px) {
+
     /* line 73, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_sidebar.scss */
     #sidebar ul li ul li a {
         font-size: 10px;
@@ -3321,6 +3349,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 991px) {
+
     /* line 5, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .admin .navbar {
         position: absolute;
@@ -3337,6 +3366,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 991px) {
+
     /* line 19, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .admin .navbar .navbar-collapse {
         margin-top: 10px;
@@ -3346,6 +3376,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 1150px) and (min-width: 992px) {
+
     /* line 28, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .admin .navbar .nav-buttons .nav-item .primary-btn {
         padding: 0px 8px;
@@ -3364,6 +3395,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 1150px) and (min-width: 992px) {
+
     /* line 38, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .admin .navbar .nav-setting .nice-select {
         padding-left: 5px;
@@ -3414,6 +3446,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 991px) {
+
     /* line 72, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .admin .navbar .right-navbar {
         -ms-flex-align: start;
@@ -3441,7 +3474,7 @@ body.login .footer_area a {
 
 /* line 95, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
 
-.admin .navbar .right-navbar .dropdown:hover > .dropdown-menu {
+.admin .navbar .right-navbar .dropdown:hover>.dropdown-menu {
     max-height: 200px;
     opacity: 1;
     visibility: visible;
@@ -3450,7 +3483,7 @@ body.login .footer_area a {
 
 /* line 101, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
 
-.admin .navbar .right-navbar .dropdown > .dropdown-toggle:active {
+.admin .navbar .right-navbar .dropdown>.dropdown-toggle:active {
     pointer-events: none;
 }
 
@@ -3462,6 +3495,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 1150px) and (min-width: 992px) {
+
     /* line 105, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .admin .navbar .right-navbar .dropdown .dropdown-toggle {
         margin-left: 2px;
@@ -3734,6 +3768,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 991px) {
+
     /* line 297, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .admin #sidebarCollapse {
         background: #000000;
@@ -3742,6 +3777,7 @@ body.login .footer_area a {
         z-index: 9999;
         cursor: pointer;
     }
+
     /* line 304, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .admin #sidebarCollapse:focus {
         box-shadow: none;
@@ -3750,6 +3786,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 991px) {
+
     /* line 312, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .search-bar {
         margin-bottom: 20px;
@@ -3792,6 +3829,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 1499px) {
+
     /* line 316, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_header.scss */
     .search-bar li {
         min-width: auto;
@@ -3944,6 +3982,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 615px) {
+
     /* line 2, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_student.scss */
     .student-details .nav-tabs {
         -ms-flex-pack: center;
@@ -4098,6 +4137,7 @@ body.login .footer_area a {
 .student-meta-box .single-meta {
     margin-bottom: 5px;
 }
+
 /* line 120, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_student.scss */
 
 .student-meta-box .value {
@@ -4218,6 +4258,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 1380px) {
+
     /* line 213, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_student.scss */
     .student-activities .single-activity .sub-activity {
         min-width: 48%;
@@ -4226,6 +4267,7 @@ body.login .footer_area a {
 }
 
 @media (max-width: 1199px) {
+
     /* line 213, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_student.scss */
     .student-activities .single-activity .sub-activity {
         min-width: 38%;
@@ -4358,7 +4400,7 @@ table.dataTable thead .sorting {
 
 /* line 357, ../../xampp/htdocs/infixeduB/public/backend/scss/admin/_student.scss */
 
-.radio-img input[type="radio"]:checked + img {
+.radio-img input[type="radio"]:checked+img {
     border: 2px solid #415094;
 }
 
@@ -4683,6 +4725,7 @@ body.client.color {
 }
 
 @media (min-width: 1200px) {
+
     /* line 23, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_reset.scss */
     .container.box-1420 {
         max-width: 1420px;
@@ -4753,24 +4796,18 @@ body.client.color {
 /* line 38, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_predefine.scss */
 
 .client .testimonial-area:after {
-    background-image: -moz-linear-gradient(
-        0deg,
-        #9054ff 0%,
-        #b256f0 70%,
-        #d458e0 100%
-    );
-    background-image: -webkit-linear-gradient(
-        0deg,
-        #9054ff 0%,
-        #b256f0 70%,
-        #d458e0 100%
-    );
-    background-image: -ms-linear-gradient(
-        0deg,
-        #9054ff 0%,
-        #b256f0 70%,
-        #d458e0 100%
-    );
+    background-image: -moz-linear-gradient(0deg,
+            #9054ff 0%,
+            #b256f0 70%,
+            #d458e0 100%);
+    background-image: -webkit-linear-gradient(0deg,
+            #9054ff 0%,
+            #b256f0 70%,
+            #d458e0 100%);
+    background-image: -ms-linear-gradient(0deg,
+            #9054ff 0%,
+            #b256f0 70%,
+            #d458e0 100%);
 }
 
 /*---------------------------------------------------- */
@@ -4785,6 +4822,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 2, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_header.scss */
     .client .header-area {
         position: fixed;
@@ -4795,6 +4833,7 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 2, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_header.scss */
     .client .header-area {
         padding: 10px 20px;
@@ -4802,6 +4841,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 16, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_header.scss */
     .client .header-area .navbar-collapse {
         margin-top: 20px;
@@ -4849,19 +4889,14 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 32, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_header.scss */
     .client .header-area .navbar .nav .nav-item .nav-link {
         padding: 10px !important;
     }
+
     /* line 48, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_header.scss */
-    .client
-        .header-area
-        .navbar
-        .nav
-        .nav-item
-        .nav-link
-        .navbar-right
-        .float-right {
+    .client .header-area .navbar .nav .nav-item .nav-link .navbar-right .float-right {
         float: left !important;
     }
 }
@@ -4891,6 +4926,7 @@ body.client.color {
 }
 
 @media (min-width: 992px) {
+
     /* line 61, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_header.scss */
     .client .header-area .navbar .nav .nav-item.submenu ul {
         position: absolute;
@@ -4955,19 +4991,13 @@ body.client.color {
 
 /* line 115, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_header.scss */
 
-.client
-    .header-area
-    .navbar
-    .nav
-    .nav-item.submenu
-    ul
-    .nav-item:hover
-    .nav-link {
+.client .header-area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
     background: #58548e;
     color: #fff;
 }
 
 @media (min-width: 992px) {
+
     /* line 123, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_header.scss */
     .client .header-area .navbar .nav .nav-item.submenu:hover ul {
         visibility: visible;
@@ -5064,6 +5094,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 189, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_header.scss */
     .client .nav.navbar-nav.navbar-right.float-right {
         float: left !important;
@@ -5126,17 +5157,16 @@ body.client.color {
 .client .home-banner-area {
     min-height: 720px;
     display: flex;
-    background: linear-gradient(
-            0deg,
+    background: linear-gradient(0deg,
             rgba(124, 50, 255, 0.6),
-            rgba(199, 56, 216, 0.6)
-        ),
+            rgba(199, 56, 216, 0.6)),
         url(../img/client/home-banner1.jpg) no-repeat center;
     background-size: cover;
     z-index: 1;
 }
 
 @media (max-width: 991px) {
+
     /* line 4, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .home-banner-area {
         margin-top: 120px;
@@ -5148,17 +5178,16 @@ body.client.color {
 .client .banner-area {
     min-height: 450px;
     display: flex;
-    background: linear-gradient(
-            0deg,
+    background: linear-gradient(0deg,
             rgba(124, 50, 255, 0.6),
-            rgba(199, 56, 216, 0.6)
-        ),
+            rgba(199, 56, 216, 0.6)),
         url(../img/client/common-banner1.jpg) no-repeat center;
     background-size: cover;
     z-index: 1;
 }
 
 @media (max-width: 991px) {
+
     /* line 15, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .banner-area {
         margin-top: 120px;
@@ -5175,6 +5204,7 @@ body.client.color {
 }
 
 @media (max-width: 767px) {
+
     /* line 27, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .banner-area .banner-inner .banner-content h2 {
         font-size: 40px;
@@ -5381,6 +5411,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 174, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .notice-board-area {
         margin-top: 50px;
@@ -5395,6 +5426,7 @@ body.client.color {
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
+
     /* line 179, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .notice-board {
         max-height: 270px;
@@ -5615,6 +5647,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 312, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .testimonial-area .owl-nav {
         display: none;
@@ -5690,6 +5723,7 @@ body.client.color {
 }
 
 @media (max-width: 800px) {
+
     /* line 398, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .info-area .info-content {
         text-align: center;
@@ -5707,6 +5741,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 404, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .info-area .info-content {
         margin-top: 30px;
@@ -5714,6 +5749,7 @@ body.client.color {
 }
 
 @media (max-width: 768px) {
+
     /* line 404, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .info-area .info-content {
         padding: 30px;
@@ -5740,6 +5776,7 @@ body.client.color {
 }
 
 @media (max-width: 800px) {
+
     /* line 424, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .info-area .info-left {
         margin-top: 0px;
@@ -5754,6 +5791,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 438, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .overview-area .nav-tabs {
         margin-top: 0px;
@@ -5800,6 +5838,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 475, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_home.scss */
     .client .contact_info {
         margin-top: 50px;
@@ -5911,6 +5950,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 6, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_footer.scss */
     .client .footer_area .f_widget .f_title {
         margin-bottom: 20px;
@@ -5968,6 +6008,7 @@ body.client.color {
 }
 
 @media (max-width: 767px) {
+
     /* line 38, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_footer.scss */
     .client .single-footer-widget .copy_right_text p {
         text-align: center;
@@ -5997,6 +6038,7 @@ body.client.color {
 }
 
 @media (max-width: 767px) {
+
     /* line 56, ../../xampp/htdocs/infixeduB/public/backend/scss/client/_footer.scss */
     .client .single-footer-widget .social_widget {
         text-align: center;
@@ -6110,20 +6152,24 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 14, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .update_menu {
         height: 80px;
         position: relative;
         padding: 10px !important;
     }
+
     /* line 51, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .update_menu .light_logo {
         max-width: 100px;
     }
+
     /* line 54, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .update_menu .menu_nav {
         background-color: #58548e;
     }
+
     /* line 57, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .update_menu .navbar .nav .nav-item .nav-link {
         padding: 10px 10px !important;
@@ -6144,35 +6190,43 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 72, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .client.light .header-area .navbar .nav .nav-item .nav-link,
     .client.color .header-area .navbar .nav .nav-item .nav-link {
         color: #fff !important;
     }
+
     /* line 75, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .single-testimonial {
         padding-bottom: 0 !important;
     }
+
     /* line 78, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .client .news-area {
         margin-bottom: 0;
     }
+
     /* line 81, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .client .mapBox {
         height: 350px;
     }
+
     /* line 84, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .client .section-gap-top {
         padding-top: 40px;
     }
+
     /* line 87, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .contact_area {
         margin-bottom: 40px;
     }
+
     /* line 90, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .client .banner-area {
         margin-top: 85px;
     }
+
     /* line 94, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .events-area .date {
         line-height: 18px;
@@ -6180,10 +6234,12 @@ body.client.color {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     /* line 102, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .update_menu .update_menu .menu_nav {
         margin-left: 10% !important;
     }
+
     /* line 106, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .update_menu .navbar-brand img {
         max-width: 100px;
@@ -6191,10 +6247,12 @@ body.client.color {
 }
 
 @media (min-width: 991px) {
+
     /* line 116, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .update_menu .menu_nav {
         margin-left: 25%;
     }
+
     /* line 119, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .update_menu .btn-dark:hover {
         color: #fff;
@@ -6211,6 +6269,7 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 126, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login-area table td {
         width: 50% !important;
@@ -6219,6 +6278,7 @@ body.client.color {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 126, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login-area table td {
         width: 50% !important;
@@ -6272,19 +6332,23 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 177, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login.admin.hight_100 .login-height .input-group-addon {
         width: 0;
     }
+
     /* line 180, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login.admin.hight_100 .login-height .form-group i {
         top: 7px;
         left: 4px;
     }
+
     /* line 184, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login.admin.hight_100 .login-height .form-wrap {
         padding: 50px 8px;
     }
+
     /* line 187, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login.admin.hight_100 .login-height a {
         font-size: 12px;
@@ -6292,10 +6356,12 @@ body.client.color {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 194, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login.admin.hight_100 .login-height .input-group-addon {
         width: 0;
     }
+
     /* line 197, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login.admin.hight_100 .login-height .form-group i {
         top: 7px;
@@ -6304,15 +6370,18 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 165, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login.admin.hight_100 {
         height: 100% !important;
         overflow: visible;
     }
+
     /* line 207, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login.admin.hight_100 .login-height .input-group-addon {
         width: 0;
     }
+
     /* line 210, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .login.admin.hight_100 .login-height .form-group i {
         top: 7px;
@@ -6327,6 +6396,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 217, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .hight_100 {
         height: 100% !important;
@@ -6334,6 +6404,7 @@ body.client.color {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+
     /* line 217, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .hight_100 {
         height: 100% !important;
@@ -6341,6 +6412,7 @@ body.client.color {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     /* line 217, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .hight_100 {
         height: 100% !important;
@@ -6366,6 +6438,7 @@ body.client.color {
 /******************************************************/
 
 @media (max-width: 991px) {
+
     /* line 241, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .main-title {
         margin-top: 20px;
@@ -6380,6 +6453,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 246, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .white-box.single-summery {
         margin-top: 20px;
@@ -6388,14 +6462,17 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 246, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .white-box.single-summery {
         padding: 10px;
     }
+
     /* line 253, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .white-box.single-summery h3 {
         margin-bottom: 0;
     }
+
     /* line 256, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     /* .white-box.single-summery .d-flex {
         display: block !important;
@@ -6403,17 +6480,20 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 261, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .nav_icon {
         background: #7c32ff !important;
         border: 1px solid #415094;
     }
+
     /* line 265, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .nav_icon i {
         font-size: 24px;
         padding: 4px 0px 0px;
         display: inline-block;
     }
+
     /* line 271, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .nav_icon .ti-more {
         padding: 6px 0 0;
@@ -6421,6 +6501,7 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 277, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     #sidebar {
         max-width: 60%;
@@ -6451,6 +6532,7 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 291, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .admin .navbar {
         z-index: 999;
@@ -6493,6 +6575,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 321, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_dashboard .main-title h3 {
         margin-top: 30px;
@@ -6510,6 +6593,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 328, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_dash_menu {
         width: auto;
@@ -6517,6 +6601,7 @@ body.client.color {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 328, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_dash_menu {
         width: 97%;
@@ -6524,6 +6609,7 @@ body.client.color {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     /* line 328, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_dash_menu {
         width: 100%;
@@ -6538,6 +6624,7 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 342, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_dash_menu ul.nav.navbar-nav.mr-auto.nav-buttons {
         text-align: left !important;
@@ -6552,6 +6639,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 350, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .search-bar {
         margin-bottom: 0;
@@ -6560,6 +6648,7 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 350, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .search-bar {
         padding-left: 0%;
@@ -6570,6 +6659,7 @@ body.client.color {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 350, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .search-bar {
         padding-left: 6%;
@@ -6577,6 +6667,7 @@ body.client.color {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     /* line 350, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .search-bar {
         padding-left: 11%;
@@ -6584,16 +6675,19 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 371, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_navbar {
         width: 97% !important;
     }
+
     /* line 373, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_navbar .btn-dark:hover,
     .up_navbar .btn-dark:focus {
         border-color: transparent;
         outline: 0;
     }
+
     /* line 379, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_dash_menu .navbar-collapse {
         margin-top: 10px;
@@ -6606,15 +6700,18 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 390, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_navbar {
         width: 91% !important;
     }
+
     /* line 392, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_navbar .col-lg-12 {
         padding-left: 0;
         padding-right: 0;
     }
+
     /* line 398, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_dash_menu .navbar-collapse {
         width: 100%;
@@ -6622,15 +6719,18 @@ body.client.color {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 404, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_navbar {
         width: 91% !important;
     }
+
     /* line 406, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_navbar .col-lg-12 {
         padding-left: 0;
         padding-right: 0;
     }
+
     /* line 412, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_dash_menu .navbar-collapse {
         width: 100%;
@@ -6638,6 +6738,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 417, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_ds_margin {
         margin-bottom: 15px;
@@ -6664,20 +6765,24 @@ body.client.color {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     /* line 432, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_toList .text-right {
         text-align: right !important;
     }
+
     .up_toList {
         margin-top: 40px;
     }
 }
 
 @media (max-width: 991px) {
+
     /* line 429, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_toList {
         margin-top: 20px;
     }
+
     /* line 438, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_toList .main-title {
         margin-top: 0;
@@ -6685,6 +6790,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 446, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_breadcrumb {
         margin: 40px 0 20px;
@@ -6692,17 +6798,20 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 454, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
-    .up_admin_visitor .dataTables_filter > label {
+    .up_admin_visitor .dataTables_filter>label {
         left: 47%;
         min-width: 280px;
         position: relative;
         top: -8px;
     }
+
     /* line 460, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_admin_visitor div.dt-buttons {
         display: none;
     }
+
     /* line 466, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_admin_visitor .main-title {
         margin: 40px 0 20px;
@@ -6710,31 +6819,36 @@ body.client.color {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     /* line 471, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
-    .up_admin_visitor .dataTables_filter > label {
+    .up_admin_visitor .dataTables_filter>label {
         left: 1%;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
     /* line 476, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
-    .up_admin_visitor .dataTables_filter > label {
+    .up_admin_visitor .dataTables_filter>label {
         left: -12%;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     /* line 482, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_admin_visitor .dataTables_wrapper .dataTables_filter input {
         width: 70%;
     }
+
     /* line 485, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
-    .up_admin_visitor .dataTables_filter > label {
+    .up_admin_visitor .dataTables_filter>label {
         left: 47%;
     }
 }
 
 @media (max-width: 991px) {
+
     /* line 492, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     /* .up_st_admin_visitor .dataTables_filter>label {
         left: 47%;
@@ -6746,6 +6860,7 @@ body.client.color {
     .up_st_admin_visitor div.dt-buttons {
         display: none;
     }
+
     /* line 504, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_st_admin_visitor .main-title {
         /* margin: 40px 0 20px; */
@@ -6767,10 +6882,12 @@ body.client.color {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
     /* line 520, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .up_st_admin_visitor .dataTables_wrapper .dataTables_filter input {
         width: 70%;
     }
+
     /* line 523, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     /* .up_st_admin_visitor .dataTables_filter>label {
         margin-bottom: 20px;
@@ -6785,6 +6902,7 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 536, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .sms-breadcrumb {
         margin: 40px 0 20px;
@@ -6809,7 +6927,7 @@ body.client.color {
 
 /* line 551, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
 
-.fc .fc-button-group > * {
+.fc .fc-button-group>* {
     float: left;
     margin: 0 0 10px 10px;
     border-radius: 30px;
@@ -6817,6 +6935,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 557, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .sms-breadcrumb {
         margin: 12px 0 20px;
@@ -6824,6 +6943,7 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 562, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .mb-40.up_dashboard {
         margin-bottom: 20px;
@@ -6831,6 +6951,7 @@ body.client.color {
 }
 
 @media (max-width: 575px) {
+
     /* line 570, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .fc-toolbar.fc-header-toolbar .fc-left,
     .fc-toolbar.fc-header-toolbar .fc-right,
@@ -6842,14 +6963,17 @@ body.client.color {
 }
 
 @media (max-width: 991px) {
+
     /* line 578, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .mt-40 {
         margin-top: 15px;
     }
+
     /* line 581, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     .mb-30-lg {
         margin-bottom: 0;
     }
+
     /* line 584, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
     /* .student-details {
         margin-top: 50px;
@@ -6943,7 +7067,7 @@ body.client.color {
 
 /* line 657, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
 
-.search_bar input:focus ~ .search {
+.search_bar input:focus~.search {
     right: 5px;
     background: #fff;
     z-index: 6;
@@ -6952,7 +7076,7 @@ body.client.color {
 
 /* line 662, ../../xampp/htdocs/infixeduB/public/backend/scss/_update.scss */
 
-.search_bar input:focus ~ .search::before {
+.search_bar input:focus~.search::before {
     top: 8px;
     right: 20px;
     content: "\e646";
@@ -6976,12 +7100,15 @@ body.client.color {
     .up_admin_visitor .primary-btn-sma2567ll-input {
         margin-bottom: 20px;
     }
+
     .xm_3 {
         margin: 20px 0;
     }
+
     .mt_4 {
         margin-top: 20px;
     }
+
     .col-lg-4.no-gutters {
         margin-top: 20px;
     }
@@ -6999,7 +7126,7 @@ body.client.color {
 
 .btn-dark:not(:disabled):not(.disabled).active:focus,
 .btn-dark:not(:disabled):not(.disabled):active:focus,
-.show > .btn-dark.dropdown-toggle:focus {
+.show>.btn-dark.dropdown-toggle:focus {
     box-shadow: none !important;
     border-color: transparent;
 }
@@ -7061,7 +7188,7 @@ body.client.color {
 
 /* 30-09-2020 */
 
-.up_st_admin_visitor .dataTables_filter > label {
+.up_st_admin_visitor .dataTables_filter>label {
     margin: 0;
     left: 0;
     opacity: 1;
@@ -7069,8 +7196,10 @@ body.client.color {
     transition: 0.3s;
     z-index: 1;
     /*z-index: 999;
-    */ /*left: 50%;
-    */ /*transform: translateX(-50%);
+    */
+    /*left: 50%;
+    */
+    /*transform: translateX(-50%);
     */
     max-width: 300px;
     display: flex;
@@ -7084,7 +7213,7 @@ body.client.color {
     flex-direction: row-reverse;
 }
 
-.up_st_admin_visitor .dataTables_filter > label i {
+.up_st_admin_visitor .dataTables_filter>label i {
     /* bottom: 4px; */
     opacity: 1;
     visibility: visible;
@@ -7093,19 +7222,19 @@ body.client.color {
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
-    .up_st_admin_visitor .dataTables_filter > label {
+    .up_st_admin_visitor .dataTables_filter>label {
         min-width: 190px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .up_st_admin_visitor .dataTables_filter > label {
+    .up_st_admin_visitor .dataTables_filter>label {
         min-width: 190px;
     }
 }
 
 @media (max-width: 575.98px) {
-    .up_st_admin_visitor .dataTables_filter > label {
+    .up_st_admin_visitor .dataTables_filter>label {
         margin-bottom: 0px;
         margin-top: 0px;
         position: relative;
@@ -7115,7 +7244,7 @@ body.client.color {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .up_st_admin_visitor .dataTables_filter > label {
+    .up_st_admin_visitor .dataTables_filter>label {
         margin-bottom: 0px;
         margin-top: 0px;
         position: relative;
@@ -7131,7 +7260,7 @@ body.client.color {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .up_st_admin_visitor .dataTables_filter > label {
+    .up_st_admin_visitor .dataTables_filter>label {
         right: 0;
         transform: translateX(0);
         left: auto;
@@ -7144,14 +7273,17 @@ div.dt-buttons {
     top: 0;
     right: 0;
 }
+
 div.dt-buttons button.dt-button:hover:not(.disabled),
 div.dt-button:hover:not(.disabled),
 a.dt-button:hover:not(.disabled) {
     background: transparent;
 }
+
 div.dt-buttons button.dt-button:hover span {
     color: #415094;
 }
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
     div.dt-buttons {
         /*top: -50px;*/
@@ -7174,20 +7306,25 @@ div.dt-buttons button.dt-button:hover span {
     top: 20% !important;
     /* right: 9%; */
 }
+
 .close {
     color: #7c32ff !important;
 }
+
 .padding_30 {
     padding-top: 30px !important;
 }
+
 .padding_40 {
     padding-left: 40px !important;
     padding-right: 40px !important;
 }
+
 .certificate hr {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
 }
+
 #livesearch a {
     width: 100%;
 }
@@ -7200,6 +7337,7 @@ hr {
     .white-box.single-summery {
         padding: 10px;
     }
+
     /* .btn_add_summary{
         font-size: 14px;
     }
@@ -7279,17 +7417,21 @@ hr {
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .btn_add_summary {
         font-size: 14px !important;
     }
+
     .white-box.single-summery .icon_summery {
         width: 60px !important;
         height: 60px !important;
         line-height: 60px !important;
     }
+
     .white-box.single-summery p {
         font-size: 13px !important;
     }
+
     .courses .item .course_info .course_name h4 {
         margin-bottom: 0;
         font-size: 14px;
