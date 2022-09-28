@@ -1928,3 +1928,88 @@ body {
     }
   }
 }
+
+.result_sheet_wrapper {
+  .card_box {
+    background: #f2f3f7;
+    padding: 0;
+  }
+
+  .quis-num {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .quis-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #828bb2;
+  }
+
+  .quis-desc {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3b459c;
+  }
+
+  .answ {
+    color: #707070;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px solid #efefef;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+
+  .ans-state {
+    color: #29bcb0;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .question-p {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    gap: 10px;
+
+    input {
+      appearance: none;
+      background-image: url("../imgs/new-icons/radio.svg");
+      width: 18px;
+      height: 18px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      transition: .5s;
+
+      &:checked {
+        appearance: none;
+        background-image: url("../imgs/new-icons/radiochecked.svg");
+      }
+    }
+  }
+}
+
+.primary_checkbox input:checked~.checkmark {
+  background: #00c3b3;
+  box-shadow: none;
+}
+
+.result_sheet_wrapper .quiz_test_body .result_sheet_view .single_result_view {
+  border: 1px solid #eaeaea !important;
+  padding: 25px 50px !important;
+  border-radius: 25px !important;
+  background: #fff;
+}
+
+.modal-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #909090;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
+}
