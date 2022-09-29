@@ -1646,4 +1646,80 @@ body {
   font-size: 20px;
   font-weight: 600;
   padding: 20px;
+}
+
+.new-modal .modal-content {
+  background-color: #fff !important;
+  border-radius: 10px !important;
+}
+.new-modal .modal-content .close i {
+  color: #404040;
+}
+.new-modal .modal-content .modal-title-1 {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.new-modal .modal-content .row i {
+  position: absolute;
+  padding: 15px;
+  color: #9ea1a5;
+}
+.new-modal .modal-content label {
+  font-size: 13px;
+  font-weight: bold;
+  color: #393939;
+}
+.new-modal .modal-content input {
+  border-radius: 5px;
+  background: #f2f3f7;
+  padding: 10px 40px;
+  font-weight: 500;
+  height: 45px;
+}
+.new-modal .modal-content .checkDiv .checkBox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../imgs/new-icons/radio.svg");
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0;
+}
+.new-modal .modal-content .checkDiv .checkBox:checked {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../imgs/new-icons/radiochecked.svg");
+}
+.new-modal .modal-content .checkDiv span {
+  font-size: 14px;
+  color: #b8b8b8;
+}
+.new-modal .modal-content .checkDiv a {
+  sz: 14px;
+  color: #3b459c;
+}
+.new-modal .modal-content .price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #393939;
+}
+.new-modal .modal-content .price span {
+  font-size: 14px;
+  color: #b8b8b8;
+}
+.new-modal .modal-content .primary-btn {
+  background-color: #3b459c;
+  color: #fff;
+  padding: 3px 15px;
+  border-radius: 5px;
+}
+.new-modal .modal-content .primary-btn:hover {
+  background-color: #1d2999;
 }/*# sourceMappingURL=style_new.css.map */
