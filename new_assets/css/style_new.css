@@ -1695,7 +1695,7 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-image: url("../imgs/new-icons/radiochecked.svg");
+  background-image: url("../imgs/new-icons/radio-2.svg");
 }
 .new-modal .modal-content .checkDiv span {
   font-size: 14px;
