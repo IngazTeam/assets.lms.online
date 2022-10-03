@@ -242,6 +242,9 @@ body {
 .med-new-content .noficationbox.bottom {
   top: -500px;
 }
+.med-new-content .noficationbox.bottom.hidden {
+  top: 250px;
+}
 .med-new-content .noficationbox.hidden {
   top: -800px;
 }
@@ -375,6 +378,19 @@ body {
   padding: 20px;
   border: 1px solid #eaeaea;
 }
+@media (max-width: 425px) {
+  .med-new-content .left-sidebar .links-container .content-box {
+    gap: 0.25rem !important;
+    margin-bottom: 5px !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .med-new-content .left-sidebar .link-box-top {
+    width: 23% !important;
+  }
+}
 .med-new-content .left-sidebar .link-box-top .box {
   background-color: #f2f3f7;
   border-radius: 20px;
@@ -382,6 +398,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+@media (max-width: 425px) {
+  .med-new-content .left-sidebar .link-box-top .box {
+    width: 65px !important;
+    padding: 10px 0;
+  }
 }
 .med-new-content .left-sidebar .link-box-top .box span {
   font-size: 10px;
@@ -554,7 +576,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 400px) {
   .med-new-content .dropDowns .select2-container--default {
-    width: 132px !important;
+    width: 148px !important;
   }
 }
 .med-new-content .dropDowns .select2-container--default .select2-selection--single {
@@ -831,7 +853,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 400px) {
   .med-new-content .content-box {
-    width: 320px;
+    width: 100%;
   }
 }
 .med-new-content .content-box .owl-card {
@@ -1702,7 +1724,7 @@ body {
   color: #b8b8b8;
 }
 .new-modal .modal-content .checkDiv a {
-  sz: 14px;
+  font-size: 14px;
   color: #3b459c;
 }
 .new-modal .modal-content .price {

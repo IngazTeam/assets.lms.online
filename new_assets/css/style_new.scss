@@ -273,6 +273,10 @@ body {
 
     &.bottom {
       top: -500px;
+
+      &.hidden {
+        top: 250px;
+      }
     }
 
     &.hidden {
@@ -445,9 +449,22 @@ body {
       border-radius: 30px;
       padding: 20px;
       border: 1px solid $borderColor;
+
+      .content-box {
+        @media(max-width:425px) {
+          gap: .25rem !important;
+          margin-bottom: 5px !important;
+          align-items: center;
+          justify-content: center;
+        }
+      }
     }
 
     .link-box-top {
+      @media(max-width:425px) {
+        width: 23% !important;
+      }
+
       .box {
         background-color: $backgroundColor;
         border-radius: 20px;
@@ -455,6 +472,11 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        @media(max-width:425px) {
+          width: 65px !important;
+          padding: 10px 0;
+        }
 
         span {
           font-size: 10px;
@@ -672,7 +694,7 @@ body {
       width: 140px !important;
 
       @media(min-width:320px)and (max-width:400px) {
-        width: 132px !important;
+        width: 148px !important;
       }
 
 
@@ -1027,7 +1049,7 @@ body {
     border-radius: 25px;
 
     @media(min-width:320px)and (max-width:400px) {
-      width: 320px;
+      width: 100%;
     }
 
     .owl-card {
@@ -2079,7 +2101,7 @@ body {
       }
 
       a {
-        sz: 14px;
+        font-size: 14px;
         color: $secoundryColor;
       }
     }

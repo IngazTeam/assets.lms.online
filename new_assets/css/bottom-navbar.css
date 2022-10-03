@@ -92,7 +92,8 @@ ul.main-tabs li {
 
 .round-button.active .avatar img {
   /* filter: invert(62%) sepia(96%) saturate(326%) hue-rotate(125deg) brightness(105%) contrast(93%); */
-  filter: invert(75%) sepia(95%) saturate(1610%) hue-rotate(135deg) brightness(147%) contrast(103%);
+  /* filter: invert(75%) sepia(95%) saturate(1610%) hue-rotate(135deg) brightness(147%) contrast(103%); */
+  filter: brightness(1000%) invert(0);
 }
 
 
@@ -124,7 +125,7 @@ ul.main-tabs li {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0.4rem .32rem;
+  padding: 0.42rem .32rem;
   z-index: 0;
   transition: transform 0.4s ease-in-out;
   transform: translateX(var(--translate-main-slider));
