@@ -1553,6 +1553,12 @@ body {
   margin-bottom: 0 !important;
 }
 
+@media (max-width: 767px) {
+  #delete_all_student .dataTables_length {
+    top: -30px;
+  }
+}
+
 .dataTables_wrapper .dataTables_length {
   position: absolute;
   top: 5px;
@@ -1565,10 +1571,17 @@ body {
   right: 50%;
   transform: translateX(40%);
 }
+@media (max-width: 767px) {
+  .dataTables_wrapper .dataTables_length {
+    top: -10px;
+    left: 25px;
+    right: unset;
+  }
+}
 .dataTables_wrapper .dataTables_length select {
   background-color: #f2f3f7;
   color: #707070;
-  padding: 1px 10px 1px 30px;
+  padding: 0px 10px 0px 30px;
   border-radius: 20px;
   margin: 0 3px;
   -webkit-appearance: none !important;
@@ -1744,4 +1757,10 @@ body {
 }
 .new-modal .modal-content .primary-btn:hover {
   background-color: #1d2999;
+}
+
+@media screen and (max-width: 640px) {
+  .dataTables_wrapper .dataTables_filter {
+    margin-top: 1.25rem;
+  }
 }/*# sourceMappingURL=style_new.css.map */

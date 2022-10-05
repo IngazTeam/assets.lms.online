@@ -1911,6 +1911,14 @@ body {
   margin-bottom: 0 !important;
 }
 
+#delete_all_student {
+  .dataTables_length {
+    @media(max-width:767px) {
+      top: -30px;
+    }
+  }
+}
+
 .dataTables_wrapper {
   .dataTables_length {
     position: absolute;
@@ -1924,10 +1932,16 @@ body {
     right: 50%;
     transform: translateX(40%);
 
+    @media(max-width:767px) {
+      top: -10px;
+      left: 25px;
+      right: unset;
+    }
+
     select {
       background-color: #f2f3f7;
       color: #707070;
-      padding: 1px 10px 1px 30px;
+      padding: 0px 10px 0px 30px;
       border-radius: 20px;
       margin: 0 3px;
       appearance: none !important;
@@ -2126,6 +2140,14 @@ body {
       &:hover {
         background-color: #1d2999;
       }
+    }
+  }
+}
+
+.dataTables_wrapper {
+  .dataTables_filter {
+    @media screen and (max-width: 640px) {
+      margin-top: 1.25rem;
     }
   }
 }
