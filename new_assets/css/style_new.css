@@ -1819,6 +1819,10 @@ body {
   font-weight: bold;
 }
 
+.domain {
+  padding: 6px 70px 6px 10px !important;
+}
+
 .domspan {
   height: 30px;
   border-radius: 30px;
