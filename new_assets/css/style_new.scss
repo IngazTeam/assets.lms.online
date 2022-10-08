@@ -929,7 +929,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 5px;
+      gap: 2px;
 
       .tab {
         padding: 5px 10px;
@@ -1329,7 +1329,7 @@ body {
         position: absolute;
         width: 15px;
         height: 15px;
-        right: -30px;
+        right: 0;
         top: 50%;
         transform: translateY(-50%);
         background-color: $mainColor;
