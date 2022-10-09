@@ -269,7 +269,7 @@ ul.main-tabs li {
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  transform: translateY(5%);
+  transform: translateY(10%);
   padding-bottom: 75px !important;
   transition: 1s;
 }

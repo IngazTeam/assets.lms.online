@@ -1342,7 +1342,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 5px;
+      gap: 3px;
 
       .tab {
         padding: 5px 10px;
@@ -2226,4 +2226,21 @@ body {
   transform: translateY(-50%);
   background: #29bcb0;
   font-weight: 600;
+}
+
+.user-logout-bottom-nav {
+  top: 0;
+  border: 1px solid #f0f0f0;
+  border-radius: 15px;
+  background-color: #fff;
+  right: -24px;
+  transition: 1s;
+  z-index: -1;
+  opacity: 0;
+
+  &.show {
+    top: -120%;
+    z-index: 1;
+    opacity: 1;
+  }
 }
