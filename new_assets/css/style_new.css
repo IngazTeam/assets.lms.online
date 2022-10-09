@@ -120,9 +120,9 @@ body {
   width: 275px;
   height: 44px;
 }
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .med-new-content .main-head {
-    width: unset;
+    width: 230px;
   }
 }
 .med-new-content .main-head .main-title {
