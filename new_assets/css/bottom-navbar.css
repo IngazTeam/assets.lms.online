@@ -250,32 +250,33 @@ ul.main-tabs li {
 } */
 
 
-.foot {
-  border-top: 1px solid #e0e0e0;
+.foot,
+.foot-uniqe {
   position: fixed;
   width: 100%;
   z-index: 99;
   text-align: center;
-  min-height: 250px;
+  min-height: 200px;
   max-height: 500px;
   font-size: 18px;
   color: #000;
   background: #FFF;
   display: flex;
   justify-content: center;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-radius: 25px;
   right: 0;
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  transform: translateY(10%);
-  padding-bottom: 75px !important;
+  transform: translateY(15%);
+  padding-bottom: 50px !important;
   transition: 1s;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.078);
 }
 
-.foot.active {
-  transform: translateY(-95%);
+.foot.active,
+.foot-uniqe.active {
+  transform: translateY(-100%);
 }
 
 .foot-box {
