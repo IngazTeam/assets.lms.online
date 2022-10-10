@@ -78,7 +78,7 @@ body {
     z-index: 9999;
     width: 250px;
     height: 575px;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .med-new-content #rightSidebar.active::-webkit-scrollbar {
     width: 0px;

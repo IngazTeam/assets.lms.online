@@ -93,7 +93,7 @@ body {
         z-index: 9999;
         width: 250px;
         height: 575px;
-        overflow: scroll;
+        overflow-y: scroll;
 
         &::-webkit-scrollbar {
           width: 0px;
