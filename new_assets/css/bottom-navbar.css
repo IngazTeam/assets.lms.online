@@ -251,7 +251,9 @@ ul.main-tabs li {
 
 
 .foot,
-.foot-uniqe {
+.foot-uniqe,
+.foot-user,
+.user-foot {
   position: fixed;
   width: 100%;
   z-index: 99;
@@ -275,6 +277,8 @@ ul.main-tabs li {
 }
 
 .foot.active,
+.user-foot.active,
+.foot-user.active,
 .foot-uniqe.active {
   transform: translateY(-100%);
 }
