@@ -1850,4 +1850,28 @@ body {
   top: -120%;
   z-index: 1;
   opacity: 1;
+}
+
+#meetingSDKElement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-draggable {
+  width: 100% !important;
+}
+
+.zmwebsdk-MuiBox-root div:last-child {
+  width: 100% !important;
+}
+
+@media (max-width: 450px) {
+  .zmwebsdk-MuiBox-root.zmwebsdk-MuiBox-root {
+    height: 200px;
+  }
+}
+
+.zoommtg-drag-video {
+  height: 50px;
 }/*# sourceMappingURL=style_new.css.map */

@@ -2244,3 +2244,35 @@ body {
     opacity: 1;
   }
 }
+
+
+
+// // zoom meeting sdk custom style 
+#meetingSDKElement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.react-draggable {
+  width: 100% !important;
+}
+
+.zmwebsdk-MuiBox-root div:last-child {
+  width: 100% !important;
+}
+
+.zmwebsdk-MuiBox-root.zmwebsdk-MuiBox-root {
+  @media (max-width:450px) {
+    height: 200px;
+  }
+}
+
+.zoommtg-drag-video {
+  height: 50px;
+}
+
+// .zmwebsdk-makeStyles-videoCustomize-8 {
+//   width: 100%;
+// }
