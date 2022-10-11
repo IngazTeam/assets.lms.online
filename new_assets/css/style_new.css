@@ -1866,12 +1866,15 @@ body {
   width: 100% !important;
 }
 
-@media (max-width: 450px) {
-  .zmwebsdk-MuiBox-root.zmwebsdk-MuiBox-root {
-    height: 200px;
-  }
+.zmwebsdk-MuiTypography-noWrap {
+  max-width: 250px !important;
 }
 
-.zoommtg-drag-video {
-  height: 50px;
+.timer {
+  background-color: #f2f3f7;
+  width: 55px;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
 }/*# sourceMappingURL=style_new.css.map */
