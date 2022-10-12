@@ -1857,6 +1857,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+#meetingSDKElement div:first-child {
+  transform: translate(0px, 0px) !important;
+}
 
 .react-draggable {
   width: 100% !important;
@@ -1877,4 +1880,31 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
+}
+
+.react-resizable-handle {
+  display: none;
+}
+
+.zoommtg-drag-video {
+  cursor: initial;
+}
+
+.new-page-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../imgs/new-icons/radio.svg");
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.new-page-input:checked {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../imgs/new-icons/radiochecked.svg");
 }/*# sourceMappingURL=style_new.css.map */
