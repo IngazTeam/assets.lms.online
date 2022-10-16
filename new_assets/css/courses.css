@@ -484,4 +484,24 @@
   border-top-color: rgba(112, 112, 112, 0.062745098);
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 425px) {
+  .card_box .card_info .form-error.help-block {
+    font-size: 10px !important;
+    top: 35px !important;
+  }
+}
+@media (max-width: 425px) {
+  .card_box .card_info .mt-3 {
+    margin-top: 20px !important;
+  }
+}
+.card_box .card_info .duration[type=date] {
+  width: 150px !important;
+}
+@media (max-width: 600px) {
+  .card_box .card_info .duration[type=date] {
+    width: 150px !important;
+  }
 }/*# sourceMappingURL=courses.css.map */

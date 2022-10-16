@@ -126,6 +126,7 @@ $gray_color:#9F9F9F;
             font-size: 14px;
             appearance: none;
             height: 33px;
+
             &:focus {
                 outline: none !important;
             }
@@ -143,8 +144,9 @@ $gray_color:#9F9F9F;
         .bi-caret-left-fill {
             color: #D5D4D4;
             font-size: 22px;
-            @media(max-width:600px){
-                display:  none;
+
+            @media(max-width:600px) {
+                display: none;
             }
         }
 
@@ -154,10 +156,12 @@ $gray_color:#9F9F9F;
                 color: $gray_color;
                 font-weight: 700;
                 margin: 0 10px;
-                @media(max-width:1300px) and (min-width:1200px){
+
+                @media(max-width:1300px) and (min-width:1200px) {
                     font-size: 12px;
                 }
-                @media(max-width:600px){
+
+                @media(max-width:600px) {
                     font-size: 12px;
                 }
             }
@@ -165,11 +169,13 @@ $gray_color:#9F9F9F;
             input {
                 width: 72px;
                 text-align: center;
-                @media(max-width:1300px) and (min-width:1200px){
-                    width:60px;
+
+                @media(max-width:1300px) and (min-width:1200px) {
+                    width: 60px;
                 }
-                @media(max-width:600px){
-                    width:60px;
+
+                @media(max-width:600px) {
+                    width: 60px;
                 }
             }
 
@@ -232,7 +238,8 @@ $gray_color:#9F9F9F;
                 width: 225px;
                 margin-left: 4px;
                 text-align: right;
-                @media(max-width:1200px){
+
+                @media(max-width:1200px) {
                     width: 100% !important;
                 }
             }
@@ -295,6 +302,7 @@ $gray_color:#9F9F9F;
             background-color: #fff;
             color: $gray_color;
             margin-right: 9px;
+
             img {
                 background-color: $circle_color;
                 width: 25px;
@@ -379,9 +387,11 @@ $gray_color:#9F9F9F;
 // customize the file upload style 
 .bootstrap-filestyle {
     width: 225px;
-    @media(max-width:1200px){
+
+    @media(max-width:1200px) {
         width: 100%;
     }
+
     .form-control {
         display: none;
     }
@@ -396,7 +406,8 @@ $gray_color:#9F9F9F;
             border-radius: 35px;
             background-color: #fff;
             border: 1px solid #F2F2F2;
-            @media(max-width:1200px){
+
+            @media(max-width:1200px) {
                 width: 100%;
             }
         }
@@ -463,6 +474,7 @@ $gray_color:#9F9F9F;
 
 
 }
+
 .popupModal {
     .modal-content {
         background-color: #F2F3F7;
@@ -508,4 +520,33 @@ $gray_color:#9F9F9F;
     }
 
 
+}
+
+.card_box {
+    .card_info {
+        .form-error {
+            &.help-block {
+                @media(max-width:425px) {
+                    font-size: 10px !important;
+                    top: 35px !important;
+                }
+            }
+        }
+
+        .mt-3 {
+            @media(max-width:425px) {
+                margin-top: 20px !important;
+            }
+        }
+
+        .duration {
+            &[type='date'] {
+                width: 150px !important;
+
+                @media(max-width:600px) {
+                    width: 150px !important;
+                }
+            }
+        }
+    }
 }
