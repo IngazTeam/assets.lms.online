@@ -2307,3 +2307,33 @@ body {
     background-image: url("../imgs/new-icons/radiochecked.svg");
   }
 }
+
+.loading-for-zoom {
+  color: #525c72;
+  font-size: 18px;
+  font-weight: bold;
+
+  .loading-text {
+    span {
+      display: inline-block;
+      margin: 0 2px;
+
+      @for $i from 0 through 6 {
+        &:nth-child(#{$i + 1}) {
+          filter: blur(0px);
+          animation: blur-text 1.5s (#{$i/5})+s infinite linear alternate;
+        }
+      }
+    }
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+
+  100% {
+    filter: blur(4px);
+  }
+}
