@@ -1525,7 +1525,7 @@ body {
   font-size: 8px;
   top: 30px !important;
   margin-top: -7px;
-  white-space: nowrap;
+  white-space: break-spaces;
 }
 
 .form-error.help-block {
