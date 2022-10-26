@@ -1879,7 +1879,7 @@ body {
 .form-error {
   &.help-block {
     right: 0 !important;
-    font-size: 8px;
+    font-size: 8px !important;
     top: 30px !important;
     white-space: nowrap;
     color: #dc3545 !important;
@@ -2335,5 +2335,20 @@ body {
 
   100% {
     filter: blur(4px);
+  }
+}
+
+.modal-body {
+  .primary_input {
+    .error-message {
+      top: 40px !important;
+    }
+  }
+}
+
+.card_info {
+  .form-error {
+    margin-right: 15px;
+    line-height: 4;
   }
 }
