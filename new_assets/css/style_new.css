@@ -111,10 +111,10 @@ body {
 @media (max-width: 992px) {
   .med-new-content .scroolable-div {
     overflow-y: auto;
-    max-height: 500px;
+    max-height: 420px;
   }
   .med-new-content .scroolable-div::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
   }
   .med-new-content .scroolable-div::-webkit-scrollbar-track {
     background-color: #fff;
@@ -372,8 +372,8 @@ body {
 }
 @media (max-width: 992px) {
   .med-new-content .right-sidebar .navbar .nav-item {
-    margin-top: 2px !important;
-    margin-bottom: 2px !important;
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
   }
 }
 .med-new-content .right-sidebar .navbar .nav-item span {
