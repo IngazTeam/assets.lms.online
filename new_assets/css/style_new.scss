@@ -92,8 +92,8 @@ body {
         right: 2.5%;
         z-index: 9999;
         width: 250px;
-        height: 575px;
-        overflow-y: scroll;
+        // max-height: 575px;
+        // overflow-y: auto;
 
         &::-webkit-scrollbar {
           width: 0px;
@@ -124,8 +124,39 @@ body {
         .right-sidebar {
           .navbar {
             box-shadow: 5px 10px 25px -10px #00000080;
+            display: block;
           }
         }
+      }
+    }
+  }
+
+  .scroolable-div {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 992px) {
+      overflow-y: auto;
+      max-height: 500px;
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #fff;
+        border-radius: 100px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        // border: 5px solid transparent;
+        background-clip: content-box;
+        background-color: $lightText;
+      }
+
+      li {
+        width: 90% !important;
       }
     }
   }
@@ -404,6 +435,16 @@ body {
         font-weight: 600;
         transition: 0.5s;
 
+        @media(max-width:992px) {
+          margin-top: 2px !important;
+          margin-bottom: 2px !important;
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: bold;
+        }
+
         @media (min-width: 992px) and (max-width: 1280px) {
           & {
             span {
@@ -434,6 +475,10 @@ body {
           top: 50%;
           transform: translateY(-50%);
           z-index: 0;
+        }
+
+        img {
+          filter: brightness(127);
         }
       }
     }
@@ -491,6 +536,10 @@ body {
 
       .box.active {
         background-color: $mainColor;
+
+        img {
+          filter: brightness(100.5);
+        }
 
         span {
           color: #fff;
