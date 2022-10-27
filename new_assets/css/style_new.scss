@@ -1870,7 +1870,7 @@ body {
     font-size: 8px;
     top: 30px !important;
     margin-top: -7px;
-    white-space: nowrap;
+    white-space: break-spaces;
   }
 
 }
@@ -1879,7 +1879,7 @@ body {
 .form-error {
   &.help-block {
     right: 0 !important;
-    font-size: 8px;
+    font-size: 8px !important;
     top: 30px !important;
     white-space: nowrap;
     color: #dc3545 !important;
@@ -2305,5 +2305,50 @@ body {
   &:checked {
     appearance: none;
     background-image: url("../imgs/new-icons/radiochecked.svg");
+  }
+}
+
+.loading-for-zoom {
+  color: #525c72;
+  font-size: 18px;
+  font-weight: bold;
+
+  .loading-text {
+    span {
+      display: inline-block;
+      margin: 0 2px;
+
+      @for $i from 0 through 6 {
+        &:nth-child(#{$i + 1}) {
+          filter: blur(0px);
+          animation: blur-text 1.5s (#{$i/5})+s infinite linear alternate;
+        }
+      }
+    }
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    filter: blur(0px);
+  }
+
+  100% {
+    filter: blur(4px);
+  }
+}
+
+.modal-body {
+  .primary_input {
+    .error-message {
+      top: 40px !important;
+    }
+  }
+}
+
+.card_info {
+  .form-error {
+    margin-right: 15px;
+    line-height: 4;
   }
 }
