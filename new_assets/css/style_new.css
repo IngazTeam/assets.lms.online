@@ -2013,4 +2013,9 @@ body {
 }
 .modal-body .primary_input .error-message {
   top: 40px !important;
+}
+
+#teacherAdd .error-message {
+  top: 55px !important;
+  right: 15px !important;
 }/*# sourceMappingURL=style_new.css.map */
