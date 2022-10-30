@@ -2401,3 +2401,11 @@ body {
     right: 15px !important;
   }
 }
+
+#edit-course-content {
+  .form-error {
+    &.help-block {
+      margin-right: 10px !important;
+    }
+  }
+}
