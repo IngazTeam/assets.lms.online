@@ -2409,3 +2409,20 @@ body {
     }
   }
 }
+
+#add-student-modal {
+  .form-error {
+    &.help-block {
+      font-size: 10px !important;
+      margin-top: -8px;
+    }
+  }
+
+  .password-feilds {
+    .form-error {
+      &.help-block {
+        margin-right: 50px !important;
+      }
+    }
+  }
+}

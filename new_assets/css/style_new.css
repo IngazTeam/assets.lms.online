@@ -2022,4 +2022,12 @@ body {
 
 #edit-course-content .form-error.help-block {
   margin-right: 10px !important;
+}
+
+#add-student-modal .form-error.help-block {
+  font-size: 10px !important;
+  margin-top: -8px;
+}
+#add-student-modal .password-feilds .form-error.help-block {
+  margin-right: 50px !important;
 }/*# sourceMappingURL=style_new.css.map */
