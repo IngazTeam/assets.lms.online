@@ -57,6 +57,7 @@ function RemoveQuestion(that, row_content) {
         console.log($(that).closest('.question_box'));
         $(that).closest('.question_box').remove();
     }
+
     $(that).closest('.' + row_content).remove();
 
 }

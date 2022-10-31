@@ -1979,3 +1979,7 @@ body {
   margin-right: 15px;
   line-height: 4;
 }/*# sourceMappingURL=style_new.css.map */
+
+.modal-body .password_tab .error-message{
+  top: 49px !important;
+}
