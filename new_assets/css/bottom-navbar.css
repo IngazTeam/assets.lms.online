@@ -298,3 +298,15 @@ ul.main-tabs li {
   background-color: #29BCB0;
   color: #fff;
 }
+
+.foot-box.active #icon {
+  fill: #fff;
+}
+
+#bottom-navbar-hidden-content .foot-box span {
+  font-size: 8px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}

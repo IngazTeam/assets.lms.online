@@ -419,7 +419,7 @@ body {
   // right sidebar style
   .right-sidebar {
     .navbar {
-      padding: 20px 10px;
+      padding: 10px 10px;
       border-radius: 25px;
       margin: 0;
       background-color: #fff;
@@ -428,7 +428,7 @@ body {
 
       .nav-item {
         list-style: none;
-        padding: 5px 20px;
+        padding: 0px 20px;
         width: 100%;
         border-radius: 30px;
         color: #6d6d78;
@@ -462,6 +462,7 @@ body {
         position: relative;
         z-index: 1;
         color: #fff;
+        padding: 5px 20px;
 
         &::before {
           content: "";
@@ -496,11 +497,14 @@ body {
       border: 1px solid $borderColor;
 
       .content-box {
+        margin: 0;
+        padding: 0;
+
         @media(max-width:425px) {
           gap: .25rem !important;
-          margin-bottom: 5px !important;
           align-items: center;
           justify-content: center;
+          margin: 0;
         }
       }
     }
@@ -512,8 +516,8 @@ body {
 
       .box {
         background-color: $backgroundColor;
-        border-radius: 20px;
-        padding: 10px;
+        border-radius: 10px;
+        padding: 10px 5px;
         align-items: center;
         justify-content: center;
         text-align: center;

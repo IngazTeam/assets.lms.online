@@ -354,7 +354,7 @@ body {
   font-weight: 600;
 }
 .med-new-content .right-sidebar .navbar {
-  padding: 20px 10px;
+  padding: 10px 10px;
   border-radius: 25px;
   margin: 0;
   background-color: #fff;
@@ -363,7 +363,7 @@ body {
 }
 .med-new-content .right-sidebar .navbar .nav-item {
   list-style: none;
-  padding: 5px 20px;
+  padding: 0px 20px;
   width: 100%;
   border-radius: 30px;
   color: #6d6d78;
@@ -393,6 +393,7 @@ body {
   position: relative;
   z-index: 1;
   color: #fff;
+  padding: 5px 20px;
 }
 .med-new-content .right-sidebar .navbar .nav-item.active::before {
   content: "";
@@ -415,12 +416,16 @@ body {
   padding: 20px;
   border: 1px solid #eaeaea;
 }
+.med-new-content .left-sidebar .links-container .content-box {
+  margin: 0;
+  padding: 0;
+}
 @media (max-width: 425px) {
   .med-new-content .left-sidebar .links-container .content-box {
     gap: 0.25rem !important;
-    margin-bottom: 5px !important;
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
 }
 @media (max-width: 425px) {
@@ -430,8 +435,8 @@ body {
 }
 .med-new-content .left-sidebar .link-box-top .box {
   background-color: #f2f3f7;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 10px 5px;
   align-items: center;
   justify-content: center;
   text-align: center;
