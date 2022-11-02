@@ -141,13 +141,7 @@ body {
   align-items: center;
   gap: 0.75rem;
   border-radius: 40px;
-  width: 275px;
   height: 44px;
-}
-@media (max-width: 400px) {
-  .med-new-content .main-head {
-    width: 230px;
-  }
 }
 .med-new-content .main-head .main-title {
   font-size: 1rem;
@@ -173,7 +167,6 @@ body {
 }
 .med-new-content .search-box {
   border-radius: 40px;
-  width: 215px;
   gap: 0.75px;
   z-index: 1;
   height: 44px;
@@ -226,7 +219,6 @@ body {
   border-radius: 40px;
   gap: 0.75rem;
   justify-content: space-evenly;
-  width: 315px;
   height: 44px;
 }
 .med-new-content .profile .user-name {
@@ -2035,4 +2027,32 @@ body {
 }
 #add-student-modal .password-feilds .form-error.help-block {
   margin-right: 50px !important;
+}
+
+#toGetAllIcons .current {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#toGetAllIcons .nice-select-search-box {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#toGetAllIcons .list {
+  max-width: 200px !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#toGetAllIcons .list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold !important;
+  font-size: 10px;
+  white-space: break-spaces;
+  line-height: 1;
+}
+#toGetAllIcons .list li i {
+  color: #3b459c;
+  font-size: 14px;
 }/*# sourceMappingURL=style_new.css.map */
