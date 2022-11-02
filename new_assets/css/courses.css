@@ -42,6 +42,9 @@
   position: relative;
   padding: 27px 23px;
 }
+.card_box .img-box {
+  height: 175px !important;
+}
 .card_box .add_course {
   background-color: #29BCB0;
   display: flex;

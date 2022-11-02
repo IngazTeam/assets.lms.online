@@ -398,8 +398,8 @@
  .course__box .form-error.help-block {
      width: 0 !important;
      position: absolute !important;
-     font-size: 12px !important;
-     top: 34px !important;
+     /* font-size: 12px !important; */
+     top: 35px !important;
  }
 
  .remove_add_quiz_section .form-check {

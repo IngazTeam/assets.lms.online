@@ -65,6 +65,10 @@ $gray_color:#9F9F9F;
     // margin-top: 30px;
     padding: 27px 23px;
 
+    .img-box {
+        height: 175px !important;
+    }
+
     .add_course {
         background-color: $circle_color;
         @include flex(row, center, center);

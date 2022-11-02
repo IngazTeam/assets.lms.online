@@ -92,8 +92,8 @@ body {
         right: 2.5%;
         z-index: 9999;
         width: 250px;
-        height: 575px;
-        overflow-y: scroll;
+        // max-height: 575px;
+        // overflow-y: auto;
 
         &::-webkit-scrollbar {
           width: 0px;
@@ -124,8 +124,39 @@ body {
         .right-sidebar {
           .navbar {
             box-shadow: 5px 10px 25px -10px #00000080;
+            display: block;
           }
         }
+      }
+    }
+  }
+
+  .scroolable-div {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 992px) {
+      overflow-y: auto;
+      max-height: 420px;
+
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #fff;
+        border-radius: 100px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 100px;
+        // border: 5px solid transparent;
+        background-clip: content-box;
+        background-color: $lightText;
+      }
+
+      li {
+        width: 90% !important;
       }
     }
   }
@@ -388,7 +419,7 @@ body {
   // right sidebar style
   .right-sidebar {
     .navbar {
-      padding: 20px 10px;
+      padding: 10px 10px;
       border-radius: 25px;
       margin: 0;
       background-color: #fff;
@@ -397,12 +428,22 @@ body {
 
       .nav-item {
         list-style: none;
-        padding: 5px 20px;
+        padding: 0px 20px;
         width: 100%;
         border-radius: 30px;
         color: #6d6d78;
         font-weight: 600;
         transition: 0.5s;
+
+        @media(max-width:992px) {
+          margin-top: 4px !important;
+          margin-bottom: 4px !important;
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: bold;
+        }
 
         @media (min-width: 992px) and (max-width: 1280px) {
           & {
@@ -421,6 +462,7 @@ body {
         position: relative;
         z-index: 1;
         color: #fff;
+        padding: 5px 20px;
 
         &::before {
           content: "";
@@ -434,6 +476,10 @@ body {
           top: 50%;
           transform: translateY(-50%);
           z-index: 0;
+        }
+
+        img {
+          filter: brightness(127);
         }
       }
     }
@@ -451,11 +497,14 @@ body {
       border: 1px solid $borderColor;
 
       .content-box {
+        margin: 0;
+        padding: 0;
+
         @media(max-width:425px) {
           gap: .25rem !important;
-          margin-bottom: 5px !important;
           align-items: center;
           justify-content: center;
+          margin: 0;
         }
       }
     }
@@ -467,8 +516,8 @@ body {
 
       .box {
         background-color: $backgroundColor;
-        border-radius: 20px;
-        padding: 10px;
+        border-radius: 10px;
+        padding: 10px 5px;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -491,6 +540,10 @@ body {
 
       .box.active {
         background-color: $mainColor;
+
+        img {
+          filter: brightness(100.5);
+        }
 
         span {
           color: #fff;
@@ -2346,9 +2399,34 @@ body {
   }
 }
 
-.card_info {
+#teacherAdd {
+  .error-message {
+    top: 55px !important;
+    right: 15px !important;
+  }
+}
+
+#edit-course-content {
   .form-error {
-    margin-right: 15px;
-    line-height: 4;
+    &.help-block {
+      margin-right: 10px !important;
+    }
+  }
+}
+
+#add-student-modal {
+  .form-error {
+    &.help-block {
+      font-size: 10px !important;
+      margin-top: -8px;
+    }
+  }
+
+  .password-feilds {
+    .form-error {
+      &.help-block {
+        margin-right: 50px !important;
+      }
+    }
   }
 }
