@@ -2464,3 +2464,10 @@ body {
     }
   }
 }
+
+input {
+  &::placeholder {
+    font-size: 12px;
+    opacity: .4 !important;
+  }
+}

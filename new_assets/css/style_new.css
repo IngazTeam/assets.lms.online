@@ -2055,4 +2055,19 @@ body {
 #toGetAllIcons .list li i {
   color: #3b459c;
   font-size: 14px;
+}
+
+input::-moz-placeholder {
+  font-size: 12px;
+  opacity: 0.4 !important;
+}
+
+input:-ms-input-placeholder {
+  font-size: 12px;
+  opacity: 0.4 !important;
+}
+
+input::placeholder {
+  font-size: 12px;
+  opacity: 0.4 !important;
 }/*# sourceMappingURL=style_new.css.map */
