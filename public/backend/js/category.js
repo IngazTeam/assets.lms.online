@@ -25,7 +25,15 @@ if ($('#table_id_table').length) {
             paginate: {
                 next: "<i class='ti-arrow-right'></i>",
                 previous: "<i class='ti-arrow-left'></i>"
-            }
+            }  ,
+        select: {
+            rows: "تم تحديد %d صف",
+        },
+        "info": "عرض صفحة _PAGE_ من _PAGES_ ",
+        "lengthMenu": "عرض سجلات _MENU_ لكل صفحة ",
+        "zeroRecords": "للاسف لايوجد صفوف ",
+        "infoEmpty": "لا توجد بيانات متوفره ",
+        "infoFiltered": "(تمت فلترة من إجمالي السجلات _MAX_ )"
         },
         bFilter: false,
         bLengthChange: false
@@ -38,7 +46,15 @@ if ($('#table_id_table_one').length) {
             paginate: {
                 next: "<i class='ti-arrow-right'></i>",
                 previous: "<i class='ti-arrow-left'></i>"
-            }
+            },
+            select: {
+                rows: "تم تحديد %d صف",
+            },
+            "info": "عرض صفحة _PAGE_ من _PAGES_ ",
+            "lengthMenu": "عرض سجلات _MENU_ لكل صفحة ",
+            "zeroRecords": "للاسف لايوجد صفوف ",
+            "infoEmpty": "لا توجد بيانات متوفره ",
+            "infoFiltered": "(تمت فلترة من إجمالي السجلات _MAX_ )"
         },
         bFilter: false,
         bLengthChange: false
@@ -55,7 +71,15 @@ if ($('#table_id, .school-table-data').length) {
             paginate: {
                 next: "<i class='ti-arrow-right'></i>",
                 previous: "<i class='ti-arrow-left'></i>"
-            }
+            },
+            select: {
+                rows: "تم تحديد %d صف",
+            },
+            "info": "عرض صفحة _PAGE_ من _PAGES_ ",
+            "lengthMenu": "عرض سجلات _MENU_ لكل صفحة ",
+            "zeroRecords": "للاسف لايوجد صفوف ",
+            "infoEmpty": "لا توجد بيانات متوفره ",
+            "infoFiltered": "(تمت فلترة من إجمالي السجلات _MAX_ )"
         },
         dom: 'Bfrtip',
         buttons: [

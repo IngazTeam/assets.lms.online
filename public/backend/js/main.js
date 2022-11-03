@@ -853,7 +853,15 @@
                 paginate: {
                     next: "<i class='ti-arrow-right'></i>",
                     previous: "<i class='ti-arrow-left'></i>"
-                }
+                },
+                select: {
+                    rows: "تم تحديد %d صف",
+                },
+                "info": "عرض صفحة _PAGE_ من _PAGES_ ",
+                "lengthMenu": "عرض سجلات _MENU_ لكل صفحة ",
+                "zeroRecords": "للاسف لايوجد صفوف ",
+                "infoEmpty": "لا توجد بيانات متوفره ",
+                "infoFiltered": "(تمت فلترة من إجمالي السجلات _MAX_ )"
             },
             columnDefs: [{
                 visible: false
@@ -874,7 +882,15 @@
                 paginate: {
                     next: "<i class='ti-arrow-right'></i>",
                     previous: "<i class='ti-arrow-left'></i>"
-                }
+                },
+                select: {
+                    rows: "تم تحديد %d صف",
+                },
+                "info": "عرض صفحة _PAGE_ من _PAGES_ ",
+                "lengthMenu": "عرض سجلات _MENU_ لكل صفحة ",
+                "zeroRecords": "للاسف لايوجد صفوف ",
+                "infoEmpty": "لا توجد بيانات متوفره ",
+                "infoFiltered": "(تمت فلترة من إجمالي السجلات _MAX_ )"
             },
             columnDefs: [{
                 visible: false
