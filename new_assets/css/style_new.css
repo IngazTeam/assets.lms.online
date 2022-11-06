@@ -689,6 +689,7 @@ body {
   padding: 20px 5px;
   margin-bottom: 10px;
   border: none;
+  transition: 0.5s;
 }
 @media (min-width: 320px) and (max-width: 400px) {
   .med-new-content .cards-container .Card {
@@ -705,13 +706,13 @@ body {
     width: 15px;
   }
 }
-.med-new-content .cards-container .Card.active {
+.med-new-content .cards-container .Card:hover {
   background-color: #29bcb0;
 }
-.med-new-content .cards-container .Card.active .main-number {
+.med-new-content .cards-container .Card:hover .main-number {
   color: #fff;
 }
-.med-new-content .cards-container .Card.active .main-title {
+.med-new-content .cards-container .Card:hover .main-title {
   color: #fff;
 }
 .med-new-content .cards-container .Card .perc {
@@ -2070,4 +2071,12 @@ input:-ms-input-placeholder {
 input::placeholder {
   font-size: 12px;
   opacity: 0.4 !important;
+}
+
+#lms_table .absolute_check .form-check {
+  padding: 0 !important;
+  padding-right: 5px !important;
+}
+#lms_table .absolute_check .form-check label::before, #lms_table .absolute_check .form-check label::after {
+  left: 10px !important;
 }/*# sourceMappingURL=style_new.css.map */

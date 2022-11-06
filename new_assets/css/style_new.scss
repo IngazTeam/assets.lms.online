@@ -856,6 +856,7 @@ body {
       padding: 20px 5px;
       margin-bottom: 10px;
       border: none;
+      transition: .5s;
 
       @media(min-width:320px)and (max-width:400px) {
         padding: 15px 0;
@@ -873,7 +874,7 @@ body {
         }
       }
 
-      &.active {
+      &:hover {
         background-color: $mainColor;
 
         .main-number {
@@ -2469,5 +2470,23 @@ input {
   &::placeholder {
     font-size: 12px;
     opacity: .4 !important;
+  }
+}
+
+#lms_table {
+  .absolute_check {
+    .form-check {
+      padding: 0 !important;
+      padding-right: 5px !important;
+
+      label {
+
+        &::before,
+        &::after {
+          left: 10px !important;
+        }
+
+      }
+    }
   }
 }
