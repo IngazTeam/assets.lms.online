@@ -420,6 +420,10 @@ body {
     margin: 0;
   }
 }
+.med-new-content .left-sidebar .links-container .routate-full {
+  transition: 0.5s;
+  transform: rotate(180deg);
+}
 @media (max-width: 425px) {
   .med-new-content .left-sidebar .link-box-top {
     width: 23% !important;

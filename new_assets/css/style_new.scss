@@ -507,6 +507,11 @@ body {
           margin: 0;
         }
       }
+
+      .routate-full {
+        transition: .5s;
+        transform: rotate(180deg);
+      }
     }
 
     .link-box-top {
