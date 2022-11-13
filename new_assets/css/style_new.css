@@ -2083,4 +2083,26 @@ input::placeholder {
 }
 #lms_table .absolute_check .form-check label::before, #lms_table .absolute_check .form-check label::after {
   left: 10px !important;
+}
+
+#ifreameTXT {
+  border-radius: 31px;
+  border: 0.1px solid rgb(237, 237, 237);
+  font-weight: 700;
+  font-size: 14px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  padding: 15px;
+  height: 300px;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+#ifreameTXT::-webkit-scrollbar {
+  display: none !important;
+}
+
+iframe::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=style_new.css.map */
