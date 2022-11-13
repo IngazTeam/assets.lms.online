@@ -2508,12 +2508,5 @@ input {
   overflow-y: scroll;
   background-color: #fff;
 
-  &::-webkit-scrollbar {
-    display: none !important;
-  }
 
-}
-
-iframe::-webkit-scrollbar {
-  display: none;
 }

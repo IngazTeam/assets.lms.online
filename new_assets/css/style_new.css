@@ -2098,11 +2098,4 @@ input::placeholder {
   height: 300px;
   overflow-y: scroll;
   background-color: #fff;
-}
-#ifreameTXT::-webkit-scrollbar {
-  display: none !important;
-}
-
-iframe::-webkit-scrollbar {
-  display: none;
 }/*# sourceMappingURL=style_new.css.map */
