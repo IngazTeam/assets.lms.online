@@ -171,10 +171,15 @@ body {
   z-index: 1;
   height: 44px;
 }
-@media (max-width: 992px) {
+@media (max-width: 545px) {
   .med-new-content .search-box {
     width: 100%;
     height: 50px;
+  }
+}
+@media (min-width: 922px) {
+  .med-new-content .search-box {
+    order: unset !important;
   }
 }
 .med-new-content .search-box i {
@@ -700,6 +705,11 @@ body {
     padding: 15px 0;
     height: 108px;
     width: 106px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .med-new-content .cards-container .Card {
+    padding: 50px 15px;
   }
 }
 .med-new-content .cards-container .Card .card-head img {
