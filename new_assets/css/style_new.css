@@ -620,9 +620,9 @@ body {
 .med-new-content .dropDowns .select2-container--default {
   width: 140px !important;
 }
-@media (min-width: 320px) and (max-width: 400px) {
+@media (min-width: 345px) and (max-width: 992px) {
   .med-new-content .dropDowns .select2-container--default {
-    width: 148px !important;
+    width: 100% !important;
   }
 }
 .med-new-content .dropDowns .select2-container--default .select2-selection--single {
@@ -707,9 +707,15 @@ body {
     width: 106px !important;
   }
 }
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .med-new-content .cards-container .Card {
     padding: 50px 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .med-new-content .cards-container .Card {
+    padding: 20px 15px;
+    margin: 0 !important;
   }
 }
 .med-new-content .cards-container .Card .card-head img {

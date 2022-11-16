@@ -37,6 +37,10 @@
   .p-mobile-0-start {
     padding-inline-start: 0 !important;
   }
+
+  .p-med-mobile-0 {
+    padding: 0;
+  }
 }
 
 .flex-align-center {
