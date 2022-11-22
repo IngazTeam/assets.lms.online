@@ -94,14 +94,14 @@ function formValidateRequest(data) {
                 let custom_label = $(`[name=${name}]`).closest('div');
                 let password_label = $(`[name=${name}]`).closest('.password_class');
                 let validate_show = `<small
-                                            class="error-message text-danger position-relative"
+                                            class="text-danger"
                                             style="text-transform: capitalize; font-weight: bold">
 
                                             <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                                             ${message[name] ?? 'This field is required '}
                                         </small>`;
-                custom_label.children('label').append(validate_show);
-                password_label.children('label').append(validate_show);
+                custom_label.children('input').after(validate_show);
+                password_label.children('input').after(validate_show);
                 custom_label.children('input').addClass('red-border');
                 custom_label.children('.nice-select').addClass('red-border');
             });
