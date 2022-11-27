@@ -131,6 +131,7 @@ $("#addinstructor").submit("submit", function (event) {
             success: function (data) {
                 console.log(data);
                 $('.error-message').remove();
+                $('.text-danger').remove();
                 $('input').removeClass('red-border');
                 $('.nice-select').removeClass('red-border');
 
@@ -186,6 +187,7 @@ $("#editinstructor").submit("submit", function (event) {
             success: function (data) {
                 console.log(data);
                 $('.error-message').remove();
+                $('.text-danger').remove();
                 $('input').removeClass('red-border');
                 $('.nice-select').removeClass('red-border');
                 let status = data.status;
