@@ -2571,3 +2571,15 @@ input {
     font-size: 10px !important;
   }
 }
+
+#instractor_modal {
+  .primary_input {
+    .error-message {
+      top: 45px !important;
+    }
+
+    .primary_input_label {
+      margin-bottom: 4px;
+    }
+  }
+}

@@ -2147,4 +2147,11 @@ input::placeholder {
 .select2-results__options li {
   padding-right: 15px !important;
   font-size: 10px !important;
+}
+
+#instractor_modal .primary_input .error-message {
+  top: 45px !important;
+}
+#instractor_modal .primary_input .primary_input_label {
+  margin-bottom: 4px;
 }/*# sourceMappingURL=style_new.css.map */
