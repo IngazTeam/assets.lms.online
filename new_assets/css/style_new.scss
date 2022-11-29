@@ -1963,6 +1963,14 @@ body {
   }
 }
 
+.course__box {
+  .form-error {
+    &.help-block {
+      white-space: nowrap;
+    }
+  }
+}
+
 .QA_section {
   .QA_table {
     tbody {
