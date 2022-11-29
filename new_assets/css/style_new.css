@@ -1031,6 +1031,9 @@ body {
   justify-content: center;
   height: 150px;
 }
+.med-new-content .card-box .img-box a {
+  height: 100%;
+}
 .med-new-content .card-box .img-box img {
   height: 100%;
   -o-object-fit: cover;

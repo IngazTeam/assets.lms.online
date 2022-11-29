@@ -1268,6 +1268,10 @@ body {
       justify-content: center;
       height: 150px;
 
+      a {
+        height: 100%;
+      }
+
       img {
         height: 100%;
         object-fit: cover;
