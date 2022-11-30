@@ -1624,11 +1624,39 @@ body {
   }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .dataTables_filter > label {
+    border-radius: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 991px) {
+  .dt-buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 992px) {
+  .custom_tbody td {
+    font-size: 10px !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+}
+
+.zoom-live-form input {
+  margin-bottom: 0 !important;
+}
+.zoom-live-form .form-error.help-block {
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
 .dataTables_wrapper .dataTables_length {
   position: absolute;
   top: 5px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1636,11 +1664,24 @@ body {
   right: 50%;
   transform: translateX(40%);
 }
-@media (max-width: 767px) {
+@media (max-width: 767px) and (min-width: 575px) {
+  .dataTables_wrapper .dataTables_length {
+    top: -40px;
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 575px) {
   .dataTables_wrapper .dataTables_length {
     top: -10px;
-    left: 25px;
+  }
+}
+@media only screen and (max-width: 1350px) and (min-width: 991px) {
+  .dataTables_wrapper .dataTables_length {
     right: unset;
+    left: 10px;
+    transform: unset;
   }
 }
 .dataTables_wrapper .dataTables_length select {
@@ -2161,4 +2202,14 @@ input::placeholder {
 }
 #instractor_modal .primary_input .primary_input_label {
   margin-bottom: 4px;
+}
+
+#certificateForm .nav-tabs .nav-link {
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #f2f3f7;
+}
+#certificateForm .nav-tabs .nav-link:hover {
+  background-color: #29bcb0;
+  border: 1px solid #29bcb0 !important;
 }/*# sourceMappingURL=style_new.css.map */
