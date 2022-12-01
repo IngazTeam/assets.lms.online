@@ -1603,6 +1603,8 @@ body {
 
 .course__box .form-error.help-block {
   white-space: nowrap;
+  font-size: 10px !important;
+  font-weight: 600 !important;
 }
 
 .QA_section .QA_table tbody td a {
@@ -2101,7 +2103,9 @@ body {
 #toGetAllIcons .current {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 -5px;
+  font-size: 11px !important;
 }
 #toGetAllIcons .nice-select-search-box {
   border-top-left-radius: 10px;
@@ -2212,4 +2216,21 @@ input::placeholder {
 #certificateForm .nav-tabs .nav-link:hover {
   background-color: #29bcb0;
   border: 1px solid #29bcb0 !important;
+}
+
+.custom-nice-select-style .primary_select {
+  height: 38px !important;
+  line-height: 38px !important;
+  font-weight: 600;
+  color: #525f77;
+}
+
+.field-icon.toggle-password, .field-icon.toggle-password2, .field-icon.toggle-password3 {
+  margin-top: 13px;
+}
+
+.special_toggle {
+  font-size: 12px;
+  color: #525c72;
+  font-weight: 700;
 }/*# sourceMappingURL=style_new.css.map */

@@ -14034,7 +14034,7 @@ label.error {
 .primary_input_field.is-invalid,
 .primary_file_uploader input.error,
 .primary_textarea.is-invalid {
-  border: 1px solid red !important;
+  border: 1px solid #dc3545 !important;
   position: relative;
   padding-left: 30px;
 }

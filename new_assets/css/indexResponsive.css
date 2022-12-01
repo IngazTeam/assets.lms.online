@@ -554,11 +554,19 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
   justify-content: space-between;
 }
 
-.LabelSwitchBox {
+.up_st_admin_visitor .LabelSwitchBox {
   display: flex;
   align-items: center;
-  gap: 9px;
-  font-size: 13px;
+  gap: 3px;
+  font-size: 10px;
+  color: #525C72;
+  font-weight: bold;
+}
+
+.up_st_admin_visitor .primary_input_label {
+  color: #525C72;
+  font-size: 11px;
+  font-weight: 500;
 }
 
 .theme_box_container {

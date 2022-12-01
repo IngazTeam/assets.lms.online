@@ -174,7 +174,7 @@ $("#editinstructor").submit("submit", function (event) {
             type: 'post',
             data: formData,
             beforeSend: function () {
-                $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> saving`);
+                $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> جار الحفظ`);
                 disabled_button("#update_button_parent");
             },
             success: function (data) {
