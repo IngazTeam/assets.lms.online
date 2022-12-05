@@ -629,3 +629,15 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
   overflow: hidden;
   line-height: 18px;
 }
+/**********image container in front page***********/
+.front_img_container{
+  max-width: 200px;
+  margin-inline: auto;
+  }
+.img-container-80-px{
+  max-width: 80px;
+  overflow: hidden;
+  }
+.small-label-upload{
+  padding: 4px 15px!important;
+  }
