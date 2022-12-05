@@ -4633,7 +4633,7 @@ html[dir="rtl"] table.dataTable tbody td:first-child {
 
 table.dataTable tbody th,
 table.dataTable tbody td:last-child {
-  border-radius: 10px 0 0 10px 0;
+  border-radius: 10px 0 0 10px;
 }
 
 .QA_section .QA_table .table {

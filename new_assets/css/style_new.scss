@@ -237,7 +237,7 @@ body {
     input {
       border: none;
       outline: none;
-      width: 150px;
+      // width: 150px;
       font-weight: 600;
       font-size: 10px;
       color: $lightText;
@@ -1471,9 +1471,9 @@ body {
     border-radius: 15px;
     text-align: center;
     padding: 10px;
-    box-shadow: 0px 10px 15px 0px #00000030;
+    box-shadow: 0px 3px 6px 1px rgb(0 0 0 / 10%);
     position: relative;
-    margin: 15px 0;
+    margin: 8px 0;
 
     .image-box {
       width: 100%;
@@ -1490,6 +1490,7 @@ body {
 
     .link-name {
       color: #767676;
+      font-size: 14px;
 
       &:hover {
         text-decoration: underline;
@@ -2684,4 +2685,76 @@ input {
   font-size: 12px;
   color: #525c72;
   font-weight: 700;
+}
+
+.px-customed {
+  padding-left: .4rem !important;
+  padding-right: .4rem !important;
+}
+
+.customed_card {
+  // background: #fff;
+  // padding: 25px;
+
+  .dataTables_filter {
+
+    label {
+      // background-color: #f2f3f7 !important;
+      box-shadow: 0px 3px 6px 2px rgb(86 86 86 / 25%) !important;
+    }
+  }
+
+  .dt-buttons {
+    box-shadow: 0px 3px 6px 2px rgb(86 86 86 / 25%) !important;
+  }
+
+  .currancy-table {
+
+    //   td,
+    //   th {
+    //     background-color: #f2f3f7 !important;
+    //     box-shadow: 0px 2px 0px 0px rgb(209 211 219 / 62%) !important;
+    //   }
+    td {
+      span {
+        background: #29bcb0;
+        width: 44%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        color: #fff;
+        margin: 0 auto;
+        padding: 5px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// #lms_table {
+//   &.currancy-table {
+//     th {
+//       &:first-child {
+//         border-radius: 0 10px 10px 0 !important;
+//         -webkit-border-radius: 0 10px 10px 0 !important;
+//       }
+//     }
+//   }
+// }
+
+.dataTables_wrapper {
+  .dataTables_info {
+    font-size: 15px;
+    font-weight: 600;
+    color: #525c72;
+  }
+}
+
+.dataTables_paginate {
+  a {
+    &.current {
+      box-shadow: 0px 3px 6px 2px rgb(86 86 86 / 25%) !important;
+    }
+  }
 }
