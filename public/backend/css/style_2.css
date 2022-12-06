@@ -15203,12 +15203,13 @@ footer .copyright_area .footer_widget .footer_links li a:hover {
   color: #0e1133;
 }
 
-.update_logo_btn.has-error {
-  overflow: unset;
-  margin-bottom: 30px;
+
+.update_logo_btn .primary-btn.has-error {
+  overflow: unset !important;
+  margin-bottom: 30px !important;
 }
 
-.update_logo_btn.has-error .form-error {
+.update_logo_btn .primary-btn.has-error .form-error {
   position: absolute;
   font-size: 10px !important;
 }
