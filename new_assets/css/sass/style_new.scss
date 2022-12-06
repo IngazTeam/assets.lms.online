@@ -2777,13 +2777,15 @@ input {
 
 // <-------------------------------- general setting  --------------------------------------------------> 
 .update_logo_btn {
-  &.has-error {
-    overflow: unset;
-    margin-bottom: 30px;
+  .primary-btn {
+    &.has-error {
+      overflow: unset !important;
+      margin-bottom: 30px !important;
 
-    .form-error {
-      position: absolute;
-      font-size: 10px !important;
+      .form-error {
+        position: absolute;
+        font-size: 10px !important;
+      }
     }
   }
 }
