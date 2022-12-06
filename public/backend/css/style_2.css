@@ -15202,3 +15202,13 @@ footer .copyright_area .footer_widget .footer_links li a:hover {
   font-weight: 600;
   color: #0e1133;
 }
+
+.update_logo_btn.has-error {
+  overflow: unset;
+  margin-bottom: 30px;
+}
+
+.update_logo_btn.has-error .form-error {
+  position: absolute;
+  font-size: 10px !important;
+}
