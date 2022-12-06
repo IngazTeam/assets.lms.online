@@ -2278,4 +2278,13 @@ input::placeholder {
   color: #fff !important;
   transition: all 0.4s ease 0s;
   background-size: 200% auto;
+}
+
+.update_logo_btn.has-error {
+  overflow: unset;
+  margin-bottom: 30px;
+}
+.update_logo_btn.has-error .form-error {
+  position: absolute;
+  font-size: 10px !important;
 }/*# sourceMappingURL=style_new.css.map */

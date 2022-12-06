@@ -2772,3 +2772,18 @@ input {
 }
 
 // <-------------------------------- style from class.css --------------------------------------------------> 
+
+
+
+// <-------------------------------- general setting  --------------------------------------------------> 
+.update_logo_btn {
+  &.has-error {
+    overflow: unset;
+    margin-bottom: 30px;
+
+    .form-error {
+      position: absolute;
+      font-size: 10px !important;
+    }
+  }
+}
