@@ -2287,4 +2287,8 @@ input::placeholder {
 .update_logo_btn .primary-btn.has-error .form-error {
   position: absolute;
   font-size: 10px !important;
+}
+
+#coupon-form small.error-message {
+  top: 50px !important;
 }/*# sourceMappingURL=style_new.css.map */

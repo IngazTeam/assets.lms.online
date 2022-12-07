@@ -2789,3 +2789,12 @@ input {
     }
   }
 }
+
+// <-------------------------------- cupones setting  --------------------------------------------------> 
+#coupon-form {
+  small {
+    &.error-message {
+      top: 50px !important;
+    }
+  }
+}
