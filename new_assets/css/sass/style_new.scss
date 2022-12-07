@@ -2758,3 +2758,34 @@ input {
     }
   }
 }
+
+// <-------------------------------- style from class.css --------------------------------------------------> 
+.bootstrap-datetimepicker-widget table td .btn.btn-primary {
+  background: transparent !important;
+}
+
+.bootstrap-datetimepicker-widget table td .btn.btn-primary:hover {
+  background: linear-gradient(90deg, #7c32ff 0%, #c738d8 51%, #7c32ff 100%) !important;
+  color: #fff !important;
+  transition: all 0.4s ease 0s;
+  background-size: 200% auto;
+}
+
+// <-------------------------------- style from class.css --------------------------------------------------> 
+
+
+
+// <-------------------------------- general setting  --------------------------------------------------> 
+.update_logo_btn {
+  .primary-btn {
+    &.has-error {
+      overflow: unset !important;
+      margin-bottom: 30px !important;
+
+      .form-error {
+        position: absolute;
+        font-size: 10px !important;
+      }
+    }
+  }
+}
