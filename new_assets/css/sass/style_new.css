@@ -1750,24 +1750,6 @@ body {
   font-weight: bold;
   gap: 10px;
 }
-.result_sheet_wrapper .question-p input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("../imgs/new-icons/radio.svg");
-  width: 18px;
-  height: 18px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.result_sheet_wrapper .question-p input:checked {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("../imgs/new-icons/radiochecked.svg");
-}
 
 .primary_checkbox input:checked ~ .checkmark {
   background: #00c3b3;
@@ -1996,25 +1978,6 @@ body {
 
 .zoommtg-drag-video {
   cursor: initial;
-}
-
-.new-page-input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("../imgs/new-icons/radio.svg");
-  width: 15px;
-  height: 15px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-  transition: 0.5s;
-}
-.new-page-input:checked {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("../imgs/new-icons/radiochecked.svg");
 }
 
 .loading-for-zoom {

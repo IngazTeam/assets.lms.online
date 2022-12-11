@@ -2143,21 +2143,21 @@ body {
     font-weight: bold;
     gap: 10px;
 
-    input {
-      appearance: none;
-      background-image: url("../imgs/new-icons/radio.svg");
-      width: 18px;
-      height: 18px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      cursor: pointer;
-      transition: .5s;
+    // input {
+    //   appearance: none;
+    //   background-image: url("../imgs/new-icons/radio.svg");
+    //   width: 18px;
+    //   height: 18px;
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   cursor: pointer;
+    //   transition: .5s;
 
-      &:checked {
-        appearance: none;
-        background-image: url("../imgs/new-icons/radiochecked.svg");
-      }
-    }
+    //   &:checked {
+    //     appearance: none;
+    //     background-image: url("../imgs/new-icons/radiochecked.svg");
+    //   }
+    // }
   }
 }
 
@@ -2425,21 +2425,21 @@ body {
 }
 
 // end zoom 
-.new-page-input {
-  appearance: none;
-  background-image: url("../imgs/new-icons/radio.svg");
-  width: 15px;
-  height: 15px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-  transition: .5s;
+// .new-page-input {
+//   appearance: none;
+//   background-image: url("../imgs/new-icons/radio.svg");
+//   width: 15px;
+//   height: 15px;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   cursor: pointer;
+//   transition: .5s;
 
-  &:checked {
-    appearance: none;
-    background-image: url("../imgs/new-icons/radiochecked.svg");
-  }
-}
+//   &:checked {
+//     appearance: none;
+//     background-image: url("../imgs/new-icons/radiochecked.svg");
+//   }
+// }
 
 .loading-for-zoom {
   color: #525c72;
