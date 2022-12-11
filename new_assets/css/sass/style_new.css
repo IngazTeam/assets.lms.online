@@ -1803,25 +1803,6 @@ body {
   font-weight: 500;
   height: 45px;
 }
-.new-modal .modal-content .checkDiv .checkBox {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("../imgs/new-icons/radio.svg");
-  width: 18px;
-  height: 18px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-  transition: 0.5s;
-  padding: 0;
-}
-.new-modal .modal-content .checkDiv .checkBox:checked {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("../imgs/new-icons/radio-2.svg");
-}
 .new-modal .modal-content .checkDiv span {
   font-size: 14px;
   color: #b8b8b8;

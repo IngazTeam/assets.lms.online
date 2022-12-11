@@ -2225,22 +2225,22 @@ body {
     }
 
     .checkDiv {
-      .checkBox {
-        appearance: none;
-        background-image: url("../imgs/new-icons/radio.svg");
-        width: 18px;
-        height: 18px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        cursor: pointer;
-        transition: .5s;
-        padding: 0;
+      // .checkBox {
+      //   appearance: none;
+      //   background-image: url("../imgs/new-icons/radio.svg");
+      //   width: 18px;
+      //   height: 18px;
+      //   background-repeat: no-repeat;
+      //   background-size: contain;
+      //   cursor: pointer;
+      //   transition: .5s;
+      //   padding: 0;
 
-        &:checked {
-          appearance: none;
-          background-image: url("../imgs/new-icons/radio-2.svg");
-        }
-      }
+      //   &:checked {
+      //     appearance: none;
+      //     background-image: url("../imgs/new-icons/radio-2.svg");
+      //   }
+      // }
 
       span {
         font-size: 14px;
