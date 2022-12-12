@@ -1695,7 +1695,7 @@ body {
   -webkit-appearance: none !important;
      -moz-appearance: none !important;
           appearance: none !important;
-  background-image: url(../imgs/arrow-down.svg);
+  background-image: url(../../imgs/arrow-down.svg);
   background-size: 15px !important;
   background-repeat: no-repeat;
   background-position: 5px;
@@ -1750,6 +1750,24 @@ body {
   font-weight: bold;
   gap: 10px;
 }
+.result_sheet_wrapper .question-p input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../../imgs/new-icons/radio.svg");
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.result_sheet_wrapper .question-p input:checked {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../../imgs/new-icons/radiochecked.svg");
+}
 
 .primary_checkbox input:checked ~ .checkmark {
   background: #00c3b3;
@@ -1802,6 +1820,25 @@ body {
   padding: 10px 40px;
   font-weight: 500;
   height: 45px;
+}
+.new-modal .modal-content .checkDiv .checkBox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../../imgs/new-icons/radio.svg");
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0;
+}
+.new-modal .modal-content .checkDiv .checkBox:checked {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../../imgs/new-icons/radio-2.svg");
 }
 .new-modal .modal-content .checkDiv span {
   font-size: 14px;
@@ -1959,6 +1996,25 @@ body {
 
 .zoommtg-drag-video {
   cursor: initial;
+}
+
+.new-page-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../../imgs/new-icons/radio.svg");
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.new-page-input:checked {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../../imgs/new-icons/radiochecked.svg");
 }
 
 .loading-for-zoom {
