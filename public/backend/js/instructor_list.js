@@ -75,13 +75,6 @@ $(document).on('click', '#add_instructor_btn', function () {
     $('#addInstagram').val('');
 });
 
-function isNumber(evt) {
-    var charCode = (evt.which) ? evt.which : event.keyCode
-    if (charCode > 31 && (charCode < 48 || charCode > 57))
-        return false;
-
-    return true;
-}
 
 
 function formValidateRequest(data) {
@@ -112,6 +105,7 @@ function formValidateRequest(data) {
 }
 
 
+
 /* store instructor */
 $("#addinstructor").submit("submit", function (event) {
     event.preventDefault();
@@ -124,14 +118,13 @@ $("#addinstructor").submit("submit", function (event) {
             type: 'post',
             data: formData,
             beforeSend: function () {
-                $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> جار حفظ`);
+                $("#save_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> جار الحفظ`);
                 disabled_button("#save_button_parent");
 
             },
             success: function (data) {
                 console.log(data);
                 $('.error-message').remove();
-                $('.text-danger').remove();
                 $('input').removeClass('red-border');
                 $('.nice-select').removeClass('red-border');
 
@@ -144,7 +137,7 @@ $("#addinstructor").submit("submit", function (event) {
 
                 if (status == 310) {
                     formValidateRequest(data);
-                    $("#save_button_parent").html(`<i class="ti-check"></i> جار حفظ`);
+                    $("#save_button_parent").html(`<i class="ti-check"></i> حفظ`);
                 }
 
 
@@ -181,7 +174,7 @@ $("#editinstructor").submit("submit", function (event) {
             type: 'post',
             data: formData,
             beforeSend: function () {
-                $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> جار حفظ`);
+                $("#update_button_parent").html(`<i class="fa fa-spinner fa-spin" aria-hidden="true"></i> جار الحفظ`);
                 disabled_button("#update_button_parent");
             },
             success: function (data) {
@@ -198,7 +191,7 @@ $("#editinstructor").submit("submit", function (event) {
                 }
                 if (status == 310) {
                     formValidateRequest(data);
-                    $("#update_button_parent").html(`<i class="ti-check"></i> جار حفظ`);
+                    $("#update_button_parent").html(`<i class="ti-check"></i> حفظ`);
                 }
                 if (status == 200) {
                     location.reload();
@@ -221,8 +214,8 @@ $("#editinstructor").submit("submit", function (event) {
 
 
 /***
- * helper function
- * ****/
+* helper function
+* ****/
 function disabled_button(selector) {
 
     $(selector).attr("disabled", true);
