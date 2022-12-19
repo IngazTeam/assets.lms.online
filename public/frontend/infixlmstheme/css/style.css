@@ -839,6 +839,13 @@ label {
   flex-direction: row-reverse;
 }
 
+@media (min-width:992px) and (max-width:1230px) {
+  #searchForm{
+    position: absolute;
+    bottom: -25px;
+    left: 55px;
+  }
+}
 /* line 531, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_reset.scss */
 .theme_search_field button {
   font-size: 18px;
@@ -2114,14 +2121,14 @@ label {
   -ms-justify-content: space-between;
   justify-content: space-between;
 }
-@media(max-width:992px){
+/* @media(max-width:992px){
   .header_area .header__wrapper{
     -webkit-justify-content: space-around;
   -moz-justify-content: space-around;
   -ms-justify-content: space-around;
   justify-content: space-around;
   }
-}
+} */
 
 /* line 42, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_header.scss */
 .header_area .header__wrapper .header__left .logo_img {
@@ -2255,6 +2262,7 @@ label {
 .header_area .main_menu ul li {
   display: inline-block;
   position: relative;
+  margin-inline-end: 5px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -4798,6 +4806,19 @@ input[type="number"] {
   background: var(--system_primery_color);
 }
 
+@media (max-width:576px) {
+  .category_wiz_Link_all{
+    display: flex;
+    flex-direction: column;
+  }
+  .category_wiz_Link_all div{
+    order: 2;
+  }
+  .category_wiz_Link_all a{
+    order: 1;
+  }
+  
+}
 /* line 77, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_category.scss */
 .category_area .brouse_cat_btn {
   display: block;
@@ -4923,10 +4944,14 @@ input[type="number"] {
   align-self: center;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767px) {
   /* line 126, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_category.scss */
   .category_area .couses_category .single_course_cat {
-    flex-direction: column;
+    /* flex-direction: column; */
+    margin-bottom: 10px;
+  }
+  .single_course_cat .icon img{
+    height: 70px;
   }
 }
 
@@ -4935,6 +4960,13 @@ input[type="number"] {
   .category_area .couses_category .single_course_cat {
     flex-direction: column;
   }
+  .category_area .couses_category .single_course_cat .icon{
+    margin:0 auto 0!important;
+  }
+  .category_area .couses_category .single_course_cat .course_content{
+    text-align: center;
+  }
+
 }
 
 /* line 134, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_category.scss */
@@ -9204,10 +9236,15 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* line 114, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
   .instractos_details_wrapper .instractos_main_details .course__details_title {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
 
+@media (max-width: 576px)  {
+  .instractos_details_wrapper .instractos_main_details .course__details_title {
+    flex-wrap: wrap;
+  }
+}
 /* line 127, ../../../../officeServer/www/infixlms_lv/public/frontend/infixlmstheme/scss/_instractor.scss */
 .instractos_details_wrapper
   .instractos_main_details
@@ -9291,7 +9328,7 @@ html[dir="rtl"] .shoping_wrapper .shoping_cart {
   .single__details:not(:last-child)::before {
   content: "";
   position: absolute;
-  right: 0;
+  right: -10px;
   top: 0;
   background: #e9e7f7;
   width: 1px;
@@ -15975,10 +16012,18 @@ body {
 .header_area .main_menu ul li a {
   margin: 0px 12px;
 }
-
-.header_area .contact_wrap .contact_btn .mobile_lgoin_button {
-  color: #a3a3a3;
-  font-size: 16px;
+@media (max-width:767px) {
+  .header_area .contact_wrap .contact_btn .mobile_lgoin_button {
+    font-size: 16px;
+    background-color: #F2F2F2;
+    color: black;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (max-width: 767.98px) {
   html[dir="rtl"] .header_area .contact_wrap {
