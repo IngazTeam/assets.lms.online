@@ -2292,4 +2292,13 @@ input::placeholder {
 
 #coupon-form small.error-message {
   top: 50px !important;
+}
+
+#edit-course-content .card_info div {
+  position: relative;
+}
+#edit-course-content .form-error.help-block {
+  position: absolute !important;
+  bottom: -15px !important;
+  top: unset !important;
 }/*# sourceMappingURL=style_new.css.map */

@@ -2799,3 +2799,16 @@ input {
     }
   }
 }
+
+#edit-course-content {
+
+  .card_info div {
+    position: relative;
+  }
+
+  .form-error.help-block {
+    position: absolute !important;
+    bottom: -15px !important;
+    top: unset !important;
+  }
+}
