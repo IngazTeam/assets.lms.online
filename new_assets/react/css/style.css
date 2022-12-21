@@ -10006,6 +10006,11 @@ p.checkout-coupon input[type=text]:focus {
         margin-right: 25%;
         margin-left: unset !important;
     }
+
+    [dir=rtl] .offset-xxl-4 {
+        margin-left: unset;
+        margin-right: 33.33%;
+    }
 }
 
 [dir=rtl] .checkout-form-list input[type=text],
