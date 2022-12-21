@@ -4419,32 +4419,38 @@ p {
 }
 
 #cartBtn .fa-cart-plus {
-    background: #0652DD;
+    background: #fff;
 }
 
 #cartBtn .addtocart {
     display: block;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.25em 0.5em;
     border-radius: 100px;
     border: none;
-    font-size: 2em;
+    font-size: 14px;
     position: relative;
-    background: #0652DD;
+    background: #fff;
     cursor: pointer;
     height: 2em;
-    width: 10em;
+    width: 4em;
     overflow: hidden;
-    transition: transform 0.1s;
+    transition: transform 0.2s;
     z-index: 1;
+    font-weight: 500;
+    border: 1px solid #f3f4f8;
+}
+
+#cartBtn .addtocart.added .done {
+    transform: translate(0px);
 }
 
 #cartBtn .addtocart:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 #cartBtn .pretext {
-    color: #fff;
-    background: #0652DD;
+    color: #00c3b3;
+    background: #fff;
     position: absolute;
     top: 0;
     left: 0;
@@ -4453,15 +4459,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Quicksand", sans-serif;
 }
 
 #cartBtn i {
-    margin-right: 10px;
+    margin: 0 5px;
 }
 
 #cartBtn .done {
-    background: #be2edd;
+    background: #fff;
     position: absolute;
     width: 100%;
     top: 0;
@@ -4471,11 +4476,11 @@ p {
 }
 
 #cartBtn .posttext {
-    background: #be2edd;
+    background: #fff;
 }
 
 #cartBtn .fa-check {
-    background: #be2edd;
+    background: #fff;
 }
 
 /*----------------------------------------*/
