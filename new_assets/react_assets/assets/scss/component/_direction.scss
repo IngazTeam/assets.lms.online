@@ -1,0 +1,362 @@
+@use "../abstract"as *;
+
+/*--------Style RTL Educal----------*/
+/*--------index 2 -----------*/
+[dir="rtl"] {
+
+  /*--------Shared-------------*/
+  /**--------Margins----------**/
+  .ml-10 {
+    margin-left: unset !important;
+    margin-right: 10px;
+  }
+
+  .mr-10 {
+    margin-right: unset !important;
+    margin-left: 10px;
+  }
+
+  .mr-15 {
+    margin-right: unset !important;
+    margin-left: 15px;
+  }
+
+  .ml-15 {
+    margin-left: unset !important;
+    margin-right: 15px;
+  }
+
+  .mr-20 {
+    margin-right: unset !important;
+    margin-left: 20px;
+  }
+
+  .ml-20 {
+    margin-left: unset !important;
+    margin-right: 20px;
+  }
+
+  .mr-30 {
+    margin-right: unset !important;
+    margin-left: 30px;
+  }
+
+  .ml-30 {
+    margin-left: unset !important;
+    margin-right: 30px;
+  }
+
+  .ml-50 {
+    margin-left: unset !important;
+    margin-right: 50px !important;
+  }
+
+  .mr-50 {
+    margin-right: unset !important;
+    margin-left: 50px;
+  }
+
+  .mr-70 {
+    margin-right: unset !important;
+    margin-left: 70px;
+  }
+
+  .mr-80 {
+    margin-right: unset !important;
+    margin-left: 80px;
+  }
+
+  .ml-100 {
+    margin-left: unset !important;
+    margin-right: 100px;
+  }
+
+  .mr-100 {
+    margin-right: unset !important;
+    margin-left: 100px;
+  }
+
+  .ml-270 {
+    margin-left: unset !important;
+    margin-right: 270px;
+  }
+
+  .mr-270 {
+    margin-right: unset !important;
+    margin-left: 270px;
+  }
+
+  /*-------padding------------*/
+
+  .pl-45 {
+    padding-right: 45px;
+    padding-left: unset !important;
+  }
+
+  .pr-50 {
+    padding-right: unset !important;
+    padding-left: 50px;
+  }
+
+  .pl-70 {
+    padding-right: 70px;
+    padding-left: unset !important;
+  }
+
+  .pl-85 {
+    padding-right: 85px;
+    padding-left: unset !important;
+  }
+
+  /*-------------Offset------------*/
+  @media (min-width: 1400px) {
+    .offset-xl-3 {
+      margin-left: unset !important;
+      margin-right: 25%;
+    }
+
+    .offset-xxl-1 {
+      margin-right: 8.3333333333%;
+      margin-left: unset !important;
+    }
+
+    .offset-xxl-3 {
+      margin-right: 25%;
+      margin-left: unset !important;
+    }
+
+    .offset-xxl-4 {
+      margin-left: unset;
+      margin-right: 33.33%;
+    }
+  }
+
+  /*----------input---------*/
+  .checkout-form-list input[type="text"],
+  .checkout-form-list input[type="password"],
+  .checkout-form-list input[type="email"] {
+    padding: 0 10px 0 0;
+  }
+
+  /*-------Header-----------*/
+  .sidebar {
+    &__close {
+      right: unset !important;
+      left: 80px;
+    }
+
+    &__content {
+      .sidebar__search {
+        input {
+          padding-left: 45px;
+          padding-right: 30px;
+        }
+
+        button {
+          left: 20px;
+          right: auto;
+        }
+      }
+    }
+  }
+
+  /*------ hero area start--------*/
+  .hero {
+    &__search {
+      &-input {
+        & button {
+          right: unset !important;
+          left: 24px;
+        }
+      }
+    }
+  }
+
+  /*---------WHY CSS START----------*/
+  .why {
+    &__thumb {
+      margin-left: unset;
+      margin-right: -35px;
+    }
+  }
+
+  /*------SERVICES CSS START-------*/
+  .services {
+    &__content {
+      .link-btn-2 {
+        left: unset;
+        right: 40px;
+      }
+    }
+  }
+
+  /*-------common link-btn-2--------*/
+  .link-btn-2 {
+    & i {
+      transform: translateY(-50%) rotateY(180deg);
+
+      &:first-child {
+        left: unset;
+        right: -100%;
+      }
+
+      &:last-child {
+        right: unset;
+        left: 35%;
+      }
+    }
+
+    &:hover {
+      & i:first-child {
+        left: unset;
+        right: 35%;
+      }
+
+      & i:last-child {
+        right: unset;
+        left: -100%;
+      }
+    }
+  }
+
+  /*----- ABOUT CSS START -------*/
+  .about {
+    &__review {
+      left: unset;
+      right: -25px;
+    }
+
+    &__student {
+      @media #{$xs} {
+        margin-right: 0;
+      }
+
+      & .sm-img-circle {
+        &+.sm-img-circle {
+          margin-left: unset;
+          margin-right: -12px;
+        }
+      }
+    }
+  }
+
+  /*--------COURSE CSS START--------*/
+  .course {
+    &__tag {
+      left: unset;
+      right: 20px;
+    }
+  }
+
+  /*---------CTA-----------*/
+  .cta {
+    &__shape {
+      & img {
+        right: unset !important;
+        left: -148px;
+
+        @media #{$sm} {
+          left: -80%;
+        }
+
+        @media #{$xs} {
+          left: -150%;
+        }
+      }
+    }
+  }
+
+  /*----------Testimonials------------*/
+  .testimonial {
+    &__thumb {
+      &_container {
+        @include img_container(80px, 80px);
+        @include border-radius(50%);
+        margin: auto;
+
+        img {
+          @include img_size(cover);
+        }
+      }
+    }
+  }
+
+  .swiper-container-rtl {
+    .swiper-button-prev {
+      left: 10px;
+      right: auto;
+    }
+
+    .swiper-button-next {
+      right: 10px !important;
+      left: auto !important;
+    }
+  }
+
+  /*----------checkout-----------*/
+  .your-order-table table {
+
+    th,
+    td {
+      text-align: right;
+    }
+  }
+
+  .payment-method {
+    & .accordion-button {
+      &::after {
+        right: unset;
+        left: 0;
+      }
+    }
+  }
+
+  /*-----course Details----*/
+
+  .course {
+    &__member {
+      &-thumb {
+        &::after {
+          left: 0;
+          right: unset !important;
+        }
+      }
+    }
+  }
+
+  /*----page title-----*/
+  .page {
+    &__title {
+      &-breadcrumb {
+        & .breadcrumb {
+          & .breadcrumb-item {
+            &+.breadcrumb-item {
+              &::before {
+                padding-left: 13px;
+                padding-right: unset !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .breadcrumb-item+.breadcrumb-item {
+    padding-left: unset !important;
+    padding-right: 0.5rem;
+
+    &::before {
+      float: right !important;
+    }
+  }
+
+  .accordion-button::after {
+    margin-right: auto;
+    margin-left: unset !important;
+  }
+
+  .course__enroll-btn i {
+    transform: rotate(180deg);
+  }
+}
