@@ -1,5 +1,4 @@
-
-@use '../abstract' as *;
+@use '../abstract'as *;
 
 /*-----------------------------------------------------------------------------------
 
@@ -51,30 +50,33 @@
 /*----------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
-*{
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
- body {
-	font-family: $hind;
+
+body {
+	// font-family: $hind;
 	font-size: 16px;
 	font-weight: normal;
 	color: $body-text-color;
 	line-height: 26px;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
-.w-img{
-	& img{
+.w-img {
+	& img {
 		width: 100%;
 	}
 }
-.m-img{
-	& img{
+
+.m-img {
+	& img {
 		max-width: 100%;
 	}
 }
@@ -103,33 +105,43 @@ h5,
 h6 {
 	@include transition(.3s);
 }
+
 a:focus,
 .button:focus {
 	text-decoration: none;
 	outline: none;
 }
+
 a:focus,
-a:hover
-{
+a:hover {
 	color: inherit;
 	text-decoration: none;
 }
+
 a,
 button {
 	color: inherit;
 	outline: none;
 	border: none;
 }
-button:hover{
+
+button:hover {
 	cursor: pointer;
 }
-button:focus{outline: 0; border:0}
+
+button:focus {
+	outline: 0;
+	border: 0
+}
+
 .uppercase {
 	text-transform: uppercase;
 }
+
 .capitalize {
 	text-transform: capitalize;
 }
+
 h1,
 h2,
 h3,
@@ -147,28 +159,36 @@ h6 {
 h1 {
 	font-size: 40px;
 }
+
 h2 {
 	font-size: 36px;
 }
+
 h3 {
 	font-size: 24px;
 }
+
 h4 {
 	font-size: 20px;
 }
+
 h5 {
 	font-size: 16px;
 }
+
 h6 {
 	font-size: 14px;
 }
+
 ul {
 	margin: 0px;
 	padding: 0px;
 }
+
 li {
 	list-style: none;
 }
+
 p {
 	font-family: $hind;
 	font-size: 16px;
@@ -183,11 +203,13 @@ p {
 	color: $white;
 	text-shadow: none;
 }
+
 ::-moz-selection {
 	background: $e-blue;
-	color:$white;
+	color: $white;
 	text-shadow: none;
 }
+
 ::selection {
 	background: $e-blue;
 	color: $white;
@@ -202,6 +224,7 @@ p {
 	font-size: 14px;
 	opacity: 1;
 }
+
 *::placeholder {
 	color: $black;
 	font-size: 14px;
@@ -213,75 +236,85 @@ p {
     - Common Classes
 -----------------------------------------*/
 .fix {
-    overflow:hidden
+	overflow: hidden
 }
-.clear{
-    clear: both;
+
+.clear {
+	clear: both;
 }
 
 .f-left {
 	float: left
 }
+
 .f-right {
 	float: right
 }
 
-.z-index-1{
+.z-index-1 {
 	z-index: 1;
 }
 
-.overflow-y-visible{
+.overflow-y-visible {
 	overflow-x: hidden;
 	overflow-y: visible;
 }
 
-.p-relative{
+.p-relative {
 	position: relative;
 }
-.p-absolute{
+
+.p-absolute {
 	position: absolute;
 }
+
 /*--
     - Background color
 -----------------------------------------*/
 .grey-bg {
 	background: $grey;
 }
+
 .grey-bg-2 {
 	background: $grey-2;
 }
+
 .grey-bg-5 {
 	background: $grey-5;
 }
 
 .blue-bg {
-	background:$e-blue;
-}
-.blue-bg-3 {
-	background:$e-blue-3;
-}
-.blue-bg-4 {
-	background:$e-blue-4;
+	background: $e-blue;
 }
 
-.pink-bg{
+.blue-bg-3 {
+	background: $e-blue-3;
+}
+
+.blue-bg-4 {
+	background: $e-blue-4;
+}
+
+.pink-bg {
 	background: $e-pink-3;
 }
 
-.purple-bg{
+.purple-bg {
 	background: $e-purple-2;
 }
 
-.green-bg{
+.green-bg {
 	background: $e-green-2;
 }
 
 .white-bg {
-	background:$white;
+	background: $white;
 }
+
 .black-bg {
 	background: $black;
 }
+
 .footer-bg {
 	background: $footer-bg;
 }
@@ -315,6 +348,7 @@ p {
 .theme-color {
 	color: $e-blue !important;
 }
+
 .black-color {
 	color: $black;
 }
@@ -322,50 +356,52 @@ p {
 
 // spacing
 
-.pl-245{
+.pl-245 {
 	padding-left: 245px;
 }
 
-.pr-245{
+.pr-245 {
 	padding-right: 245px;
 }
 
-.mb-22{
+.mb-22 {
 	margin-bottom: 22px;
 }
 
-.ml-270{
+.ml-270 {
 	margin-left: 270px;
 }
 
-.mb--120{
+.mb--120 {
 	margin-bottom: -120px;
 }
 
-.mb--100{
+.mb--100 {
 	margin-bottom: -100px;
 }
 
-.mt--210{
+.mt--210 {
 	margin-top: -210px;
 }
 
-.mt--80{
+.mt--80 {
 	margin-top: -80px;
 }
 
-.mb-130{
+.mb-130 {
 	margin-bottom: -130px;
 }
 
-.section-padding{
+.section-padding {
 	padding-left: 50px;
 	padding-right: 50px;
-	@media #{$xl}{
+
+	@media #{$xl} {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-	@media #{$xs}{
+
+	@media #{$xs} {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
@@ -374,7 +410,7 @@ p {
 
 // theme btn
 
-.e-btn{
+.e-btn {
 	display: inline-block;
 	height: 50px;
 	line-height: 52px;
@@ -385,70 +421,83 @@ p {
 	@include border-radius(4px);
 	font-weight: 500;
 	@include sentence-case();
-	&:hover{
+
+	&:hover {
 		color: $white;
 		@include box-shadow(0px 10px 24px 0px rgba(4, 23, 118, 0.3));
 	}
-	&-2{
+
+	&-2 {
 		height: 34px;
 		line-height: 36px;
 		padding: 0 20px;
 		font-size: 14px;
 		text-transform: capitalize;
 	}
-	&-3{
+
+	&-3 {
 		padding: 0 28px;
 	}
-	&-4{
+
+	&-4 {
 		height: 46px;
 		line-height: 44px;
 		border: 2px solid $e-blue;
 		background: $e-blue;
 		color: $white;
 	}
-	&-5{
+
+	&-5 {
 		padding-left: 22px;
 		padding-right: 22px;
 	}
-	&-6{
+
+	&-6 {
 		padding-left: 60px;
 		padding-right: 60px;
 	}
-	&-7{
+
+	&-7 {
 		height: 44px;
 		line-height: 46px;
 	}
-	&-border{
+
+	&-border {
 		height: 46px;
 		line-height: 44px;
 		border: 2px solid $border-4;
 		color: $black;
 		background: transparent;
-		&:hover{
+
+		&:hover {
 			background: $e-blue;
 			border-color: $e-blue;
 			color: $white;
 		}
-		&-2{
+
+		&-2 {
 			height: 46px;
 			line-height: 44px;
 			border: 2px solid rgba($color: $white, $alpha: .3);
 			background: transparent;
 			padding: 0 20px;
-			&:hover{
+
+			&:hover {
 				background: $white;
 				border-color: $white;
 				color: $black;
 			}
 		}
 	}
-	&-white{
+
+	&-white {
 		height: 54px;
 		line-height: 58px;
 		background: $white;
 		color: $black;
 		padding: 0 45px;
-		&:hover{
+
+		&:hover {
 			color: $black;
 		}
 	}
@@ -457,14 +506,15 @@ p {
 
 /* link btn */
 
-.link-btn{
+.link-btn {
 	position: relative;
 	font-size: 16px;
 	color: $e-text-3;
 	font-weight: 500;
 	padding-right: 21px;
 	display: inline-block;
-	& i{
+
+	& i {
 		font-size: 14px;
 		position: absolute;
 		top: 12px;
@@ -474,50 +524,60 @@ p {
 		-moz-transition: all ease .2s;
 		-ms-transition: all ease .2s;
 		-o-transition: all ease .2s;
-		&:first-child{
+
+		&:first-child {
 			right: 10%;
 			visibility: hidden;
 			opacity: 0;
 		}
-		&:last-child{
+
+		&:last-child {
 			right: 0;
 		}
 	}
-	&:hover{
+
+	&:hover {
 		color: $e-blue;
-		& i{
-			&:first-child{
+
+		& i {
+			&:first-child {
 				right: 0;
 				visibility: visible;
 				opacity: 1;
 			}
-			&:last-child{
+
+			&:last-child {
 				right: -10%;
 				visibility: hidden;
 				opacity: 0;
 			}
 		}
 	}
-	&.link-prev{
+
+	&.link-prev {
 		padding-right: 0;
 		padding-left: 21px;
-		& i{
-			&:first-child{
+
+		& i {
+			&:first-child {
 				left: 10%;
 				right: auto;
 			}
-			&:last-child{
+
+			&:last-child {
 				left: 0;
 				right: auto;
 			}
 		}
-		&:hover{
-			& i{
-				&:first-child{
+
+		&:hover {
+			& i {
+				&:first-child {
 					left: 0%;
 					right: auto;
 				}
-				&:last-child{
+
+				&:last-child {
 					left: -10%;
 					right: auto;
 				}
@@ -526,7 +586,7 @@ p {
 	}
 }
 
-.link-btn-2{
+.link-btn-2 {
 	position: relative;
 	font-size: 12px;
 	font-weight: 500;
@@ -540,7 +600,8 @@ p {
 	@include border-radius(50%);
 	border: 2px solid rgba($color: $white, $alpha: .2);
 	overflow: hidden;
-	& i{
+
+	& i {
 		position: absolute;
 		top: 50%;
 		@include transform(translateY(-50%));
@@ -549,24 +610,29 @@ p {
 		-moz-transition: all ease .2s;
 		-ms-transition: all ease .2s;
 		-o-transition: all ease .2s;
-		&:first-child{
+
+		&:first-child {
 			left: -100%;
 			visibility: hidden;
 			opacity: 0;
 
 		}
-		&:last-child{
+
+		&:last-child {
 			right: 35%;
 		}
 	}
-	&:hover{
+
+	&:hover {
 		color: $white;
-		& i:first-child{
+
+		& i:first-child {
 			left: 35%;
 			visibility: visible;
 			opacity: 1;
 		}
-		& i:last-child{
+
+		& i:last-child {
 			right: -100%;
 			visibility: hidden;
 			opacity: 0;
@@ -576,7 +642,7 @@ p {
 
 
 // play btn
-.play-btn{
+.play-btn {
 	display: inline-block;
 	width: 44px;
 	height: 44px;
@@ -587,60 +653,68 @@ p {
 	color: $e-blue;
 	-webkit-animation: pulse 2s infinite;
 	-moz-animation: pulse 2s infinite;
-	-o-animation: pulse 2s infinite; 
+	-o-animation: pulse 2s infinite;
 	animation: pulse 2s infinite;
 	font-size: 12px;
 }
 
 @-webkit-keyframes pulse {
 	0% {
-	  -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+		-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
 	}
+
 	70% {
-		-webkit-box-shadow: 0 0 0 45px rgba(255,255,255, 0);
+		-webkit-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
 	}
+
 	100% {
-		-webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+		-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
 	}
 }
+
 @keyframes pulse {
-0% {
-	-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
-	box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
-}
-70% {
-	-moz-box-shadow: 0 0 0 45px rgba(255,255,255, 0);
-	box-shadow: 0 0 0 45px rgba(255,255,255, 0);
-}
-100% {
-	-moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
-	box-shadow: 0 0 0 0 rgba(255,255,255, 0);
-}
+	0% {
+		-moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+	}
+
+	70% {
+		-moz-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+		box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
 }
 
 // section title
 
-.section{
-	&__sub-title{
+.section {
+	&__sub-title {
 		font-size: 18px;
 		font-weight: 500;
 		color: $e-blue;
 		display: inline-block;
 		margin-bottom: 5px;
 	}
-	&__title{
+
+	&__title {
 		font-size: 40px;
 		color: $black;
 		text-transform: capitalize;
 		z-index: 1;
 		margin-bottom: 3px;
 
-		@media #{$xs}{
+		@media #{$xs} {
 			font-size: 33px;
 		}
-		& span{
+
+		& span {
 			position: relative;
-			& img{
+
+			& img {
 				position: absolute;
 				left: -14px;
 				bottom: 12px;
@@ -648,16 +722,18 @@ p {
 				-webkit-animation: section-animation 3s infinite;
 				animation: section-animation 3s infinite;
 			}
-			&.yellow-bg-big{
-				& img{
+
+			&.yellow-bg-big {
+				& img {
 					bottom: 15px;
 					width: 120%;
 					-webkit-animation: section-animation-2 3s infinite;
 					animation: section-animation-2 3s infinite;
 				}
 			}
-			&.yellow-bg-sm{
-				& img{
+
+			&.yellow-bg-sm {
+				& img {
 					bottom: 10px;
 					width: 120%;
 					-webkit-animation: section-animation-2 3s infinite;
@@ -666,10 +742,12 @@ p {
 			}
 		}
 	}
-	&__title-wrapper{
+
+	&__title-wrapper {
 		position: relative;
 		z-index: 1;
-		& p{
+
+		& p {
 			font-size: 16px;
 			color: $e-text-4;
 		}
@@ -678,76 +756,89 @@ p {
 
 @keyframes section-animation {
 	0% {
-	  width: 0;
+		width: 0;
 	}
+
 	15% {
-	  width: 100%;
+		width: 100%;
 	}
+
 	85% {
-	  opacity: 1;
+		opacity: 1;
 	}
+
 	90% {
-	  width: 100%;
-	  opacity: 0;
+		width: 100%;
+		opacity: 0;
 	}
+
 	to {
-	  width: 0;
-	  opacity: 0;
+		width: 0;
+		opacity: 0;
 	}
 }
 
 @keyframes section-animation-2 {
 	0% {
-	  width: 0;
+		width: 0;
 	}
+
 	15% {
-	  width: 125%;
+		width: 125%;
 	}
+
 	85% {
-	  opacity: 1;
+		opacity: 1;
 	}
+
 	90% {
-	  width: 125%;
-	  opacity: 0;
+		width: 125%;
+		opacity: 0;
 	}
+
 	to {
-	  width: 0;
-	  opacity: 0;
+		width: 0;
+		opacity: 0;
 	}
 }
 
 /* basic pagination */
 
-.basic-pagination{
-	& ul{
-		& li{
+.basic-pagination {
+	& ul {
+		& li {
 			display: inline-block;
 			margin-right: 20px;
-			@media #{$xs}{
+
+			@media #{$xs} {
 				margin-right: 5px;
 			}
+
 			&.prev,
-			&.next{
-				& a{
+			&.next {
+				& a {
 					width: inherit;
 					height: inherit;
 					line-height: inherit;
 					@include border-radius(0);
 					border: none;
-					&:hover{
+
+					&:hover {
 						color: $e-blue;
 						background: inherit;
 					}
 				}
 			}
-			&.active{
-				& a{
+
+			&.active {
+				& a {
 					color: $white;
 					background: $e-blue;
 					border-color: $e-blue;
 				}
 			}
-			& a{
+
+			& a {
 				position: relative;
 				overflow: hidden;
 				background: transparent;
@@ -761,7 +852,8 @@ p {
 				font-size: 16px;
 				border: 2px solid #eef0f6;
 				color: $black;
-				&:hover{
+
+				&:hover {
 					background: $e-blue;
 					color: $white;
 					border-color: $e-blue;
@@ -775,8 +867,8 @@ p {
 
 // overlay
 
- .body-overlay{
-    background-color: rgba($color: #000000, $alpha: .5);
+.body-overlay {
+	background-color: rgba($color: #000000, $alpha: .5);
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -787,11 +879,12 @@ p {
 	visibility: hidden;
 	@include transition(.3s);
 
-	&:hover{
+	&:hover {
 		cursor: pointer;
 	}
 }
-.body-overlay.opened{
+
+.body-overlay.opened {
 	opacity: 1;
-    visibility: visible;
+	visibility: visible;
 }
