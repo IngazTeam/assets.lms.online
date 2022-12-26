@@ -1,0 +1,131 @@
+@use '../abstract'as *;
+
+/*----------------------------------------*/
+/*  12. ABOUT CSS START
+/*----------------------------------------*/
+
+.about {
+    &__thumb {
+        @include img_container(370px, 440px);
+        @include border-radius(6px);
+
+        @media #{$xs} {
+            width: calc(100% - 100px);
+            height: auto;
+        }
+
+        & img {
+            @include img_size(cover);
+        }
+
+        &-wrapper {
+            position: relative;
+        }
+    }
+
+    &__banner {
+        @include img_container(240px, 310px);
+        @include border-radius(6px);
+
+        @media #{$xs} {
+            margin-top: -25px;
+        }
+
+        & img {
+            @include border-radius(6px);
+            // max-width: 240px;
+            @include img_size(cover);
+        }
+    }
+
+    &__content {
+        @media #{$lg} {
+            padding-left: 55px;
+        }
+
+        @media #{$md} {
+            margin-top: 50px;
+            padding-left: 0px;
+        }
+
+        @media #{$sm} {
+            margin-top: 50px;
+            padding-left: 0px;
+        }
+
+        @media #{$xs} {
+            margin-top: 50px;
+            padding-left: 0px;
+            padding-right: 0;
+        }
+    }
+
+    &__student {
+
+        @media #{$xs} {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+
+        & .sm-img-circle {
+            @include img_container(36px, 36px);
+            @include border-radius(50%);
+            border: 2px solid $white;
+            @include box-shadow(0px 10px 20px 0px rgba(0, 5, 52, 0.1));
+
+            img {
+                @include img_size(cover);
+            }
+
+            &+.sm-img-circle {
+                margin-left: -12px;
+            }
+        }
+
+        & p {
+            margin-top: 4px;
+            margin-bottom: 0;
+
+            & span {
+                font-weight: 600;
+                color: $black;
+            }
+        }
+    }
+
+    &__review {
+        position: absolute;
+        left: -25px;
+        top: 100px;
+        @include transform(rotate(90deg));
+
+        & h5 {
+            font-size: 16px;
+            font-weight: 400;
+            color: $e-text-3;
+            margin-bottom: 0;
+
+            & span {
+                font-weight: 600;
+                color: $black;
+            }
+        }
+    }
+
+    &__list {
+        & ul {
+            & li {
+                font-size: 16px;
+                font-weight: 500;
+                color: $black;
+                margin-bottom: 5px;
+
+                & i {
+                    font-size: 16px;
+                    color: $e-green;
+                    padding-inline-end: 9px;
+                }
+            }
+        }
+    }
+}

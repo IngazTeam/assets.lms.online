@@ -2128,6 +2128,7 @@ body {
     border: 1px solid #efefef;
     border-radius: 15px;
     margin-top: 10px;
+    line-break: anywhere;
   }
 
   .ans-state {
@@ -2796,5 +2797,18 @@ input {
     &.error-message {
       top: 50px !important;
     }
+  }
+}
+
+#edit-course-content {
+
+  .card_info div {
+    position: relative;
+  }
+
+  .form-error.help-block {
+    position: absolute !important;
+    bottom: -15px !important;
+    top: unset !important;
   }
 }

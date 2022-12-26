@@ -47,15 +47,18 @@
   background-color: #ddd;
 }
 
-#myTabContent #modalLessonContent .image-content {
+#myTabContent .image-content,
+#modalLessonContent .image-content {
   width: 100%;
   border-radius: 25px;
 }
-#myTabContent #modalLessonContent .image-content img {
+#myTabContent .image-content img,
+#modalLessonContent .image-content img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-#myTabContent #modalLessonContent .download-btn {
+#myTabContent .download-btn,
+#modalLessonContent .download-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,6 +76,7 @@
   color: #fff;
   transition: background-color 0.5s;
 }
-#myTabContent #modalLessonContent .download-btn:hover {
+#myTabContent .download-btn:hover,
+#modalLessonContent .download-btn:hover {
   background-color: #3b449c;
 }/*# sourceMappingURL=exam-modal.css.map */
