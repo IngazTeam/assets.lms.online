@@ -19,7 +19,7 @@ function formValidateRequest(data, form = 'none') {
                                           <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                                           ${message[name] ?? 'This field is required '}
                                       </small>`;
-        custom_label.children('label').append(validate_show);
+        custom_label.children('input').append(validate_show);
         custom_label.children('input').addClass('red-border');
         custom_label.children('.nice-select').addClass('red-border');
       });
