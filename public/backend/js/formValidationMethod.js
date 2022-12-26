@@ -13,13 +13,15 @@ function formValidateRequest(data, form = 'none') {
         } else {
           custom_label = $(`[name=${name}]`).closest('div');
         }
-        let validate_show = `<small
+        //console.log(custom_label)
+        let validate_show =`<span class="help-block form-error"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> ${message[name] ?? 'This field is required '}</span>`;
+        /*let validate_show = `<small
                                           class="error-message text-danger position-relative"
                                           style="text-transform: capitalize; font-weight: bold">
                                           <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                                           ${message[name] ?? 'This field is required '}
-                                      </small>`;
-        custom_label.children('input').append(validate_show);
+                                      </small>`;*/
+        custom_label.children('input').after(validate_show);
         custom_label.children('input').addClass('red-border');
         custom_label.children('.nice-select').addClass('red-border');
       });
