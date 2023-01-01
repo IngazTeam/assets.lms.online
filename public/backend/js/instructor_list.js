@@ -77,32 +77,7 @@ $(document).on('click', '#add_instructor_btn', function () {
 
 
 
-function formValidateRequest(data) {
-    try {
-        let messages = data.error_messages;
-        if (messages.length > 0) {
-            messages.forEach(function (message) {
-                let name = Object.keys(message)[0];
-                $(`[id=${name}-error]`).remove();
-                let custom_label = $(`[name=${name}]`).closest('div');
-                let password_label = $(`[name=${name}]`).closest('.password_class');
-                let validate_show = `<small
-                                            class="error-message text-danger position-relative"
-                                            style="text-transform: capitalize; font-weight: bold">
 
-                                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                                            ${message[name] ?? 'This field is required '}
-                                        </small>`;
-                custom_label.children('label').append(validate_show);
-                password_label.children('label').append(validate_show);
-                custom_label.children('input').addClass('red-border');
-                custom_label.children('.nice-select').addClass('red-border');
-            });
-        }
-    } catch (e) {
-        console.log(e);
-    }
-}
 
 
 
