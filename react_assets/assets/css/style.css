@@ -7772,6 +7772,13 @@ p.checkout-coupon input[type=text]:focus {
   resize: none;
   margin-bottom: 13px;
 }
+.contact__form-input p {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: -18px;
+  margin-inline-start: 5px;
+}
 .contact__form-agree {
   padding-left: 5px;
 }
@@ -8796,6 +8803,13 @@ p.checkout-coupon input[type=text]:focus {
   left: 50%;
   visibility: visible;
   opacity: 1;
+}
+.footer__subscribe-input p {
+  color: #fc3030 !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  padding-right: 0 !important;
+  margin-inline-start: 5px !important;
 }
 .footer__subscribe p {
   font-size: 14px;
