@@ -60,7 +60,7 @@ function upload(img) {
                 $('#show_profile_image').attr('src', url+'/' +data.data);
                 // console.log(310);
                 // alert(data.error_messages);
-              // formValidateRequest(data);
+               formValidateRequest(data);
                 
             }
             if (status == 200) {
