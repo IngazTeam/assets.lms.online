@@ -87,7 +87,10 @@
   }
 
   /*-------padding------------*/
-
+  .pr-30{
+    padding-left:30px;
+    padding-right: unset !important;
+  }
   .pl-45 {
     padding-right: 45px;
     padding-left: unset !important;
@@ -358,5 +361,27 @@
 
   .course__enroll-btn i {
     transform: rotate(180deg);
+  }
+
+  .teacher{
+    &__details{
+      &-shape{
+        & img{
+          &.teacher-details-shape-1{
+            left: 0px;
+            right: unset!important;
+          }
+          &.teacher-details-shape-2{
+            right: -27px;
+            left: unset !important;
+          }
+        }
+      }
+    }
+  }
+  .cart-area{
+    .cart-page-total ul > li > span {
+      float: left!important;
+    }
   }
 }

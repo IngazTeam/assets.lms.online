@@ -8,6 +8,12 @@
     &__item{
         @include border-radius(6px);
         padding: 30px;
+        & .teacher__thumb{
+            @include img_container(310px,300px);
+            img{
+                @include img_size(cover)
+            }
+        }
         &:hover{
             background: $white;
             @include box-shadow(0px 30px 40px 0px rgba(1, 11, 60, 0.1));
@@ -19,6 +25,7 @@
             }
         }
     }
+
     &__content{
         padding-top: 25px;
         & span{
@@ -134,6 +141,9 @@
         & span{
             font-size: 16px;
             color: $e-text-4;
+            display: block;
+            max-height: 21px;
+            overflow: hidden;
         }
     }
     &__follow{
@@ -160,6 +170,10 @@
     &__top{
         padding-bottom: 20px;
         border-bottom: 1px solid #e8eaf0;
+        .Courses_number{
+            flex-shrink: 0;
+           h4{ margin-bottom: 0;}
+        }
     }
     &__bio{
         padding-bottom: 50px;
@@ -183,9 +197,13 @@
     }
     &__details{
         &-thumb{
-           & img{
+        .teacher_thumb_container{
+            @include img_container(340px,400px);
             @include border-radius(6px);
+           & img{
+            @include img_size(cover)
            }
+        }
             @media #{$md}{
                 margin-bottom: 50px;
             }

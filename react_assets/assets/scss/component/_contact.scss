@@ -7,7 +7,6 @@
 .contact{
     &__form{
         &-input{
-
             & input,
             & textarea{
                 width: 100%;
@@ -36,6 +35,13 @@
                 line-height: 1.1;
                 resize: none;
                 margin-bottom: 13px;
+            }
+            & p{
+                color: red;
+                font-size: 12px;
+                font-weight: 500;
+                margin-top: -18px;
+                margin-inline-start: 5px;
             }
         }
         &-agree{

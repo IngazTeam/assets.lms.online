@@ -1987,6 +1987,17 @@ p {
   color: #0e1133;
 }
 
+.profile-info .profile-name {
+  color: rgb(14, 17, 51);
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.profile-info .profile-name:hover {
+  color: #00c3b4;
+}
+
 /*----------------------------------------*/
 /*  03. HERO CSS START
 /*----------------------------------------*/
@@ -3150,8 +3161,10 @@ p {
 }
 
 .course__summary {
-  max-height: 20px;
+  max-height: 30px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin-bottom: 15px;
 }
 
@@ -8161,6 +8174,19 @@ p.checkout-coupon input[type=text]:focus {
   padding: 30px;
 }
 
+.teacher__item .teacher__thumb {
+  width: 310px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.teacher__item .teacher__thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .teacher__item:hover {
   background: #ffffff;
   box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.1);
@@ -8305,6 +8331,9 @@ p.checkout-coupon input[type=text]:focus {
 .teacher__info span {
   font-size: 16px;
   color: #53545b;
+  display: block;
+  max-height: 21px;
+  overflow: hidden;
 }
 
 .teacher__follow-btn {
@@ -8333,6 +8362,14 @@ p.checkout-coupon input[type=text]:focus {
   border-bottom: 1px solid #e8eaf0;
 }
 
+.teacher__top .Courses_number {
+  flex-shrink: 0;
+}
+
+.teacher__top .Courses_number h4 {
+  margin-bottom: 0;
+}
+
 .teacher__bio {
   padding-bottom: 50px;
   padding-top: 35px;
@@ -8355,8 +8392,18 @@ p.checkout-coupon input[type=text]:focus {
   font-size: 30px;
 }
 
-.teacher__details-thumb img {
+.teacher__details-thumb .teacher_thumb_container {
+  width: 340px;
+  height: 400px;
+  overflow: hidden;
   border-radius: 6px;
+}
+
+.teacher__details-thumb .teacher_thumb_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8741,6 +8788,15 @@ p.checkout-coupon input[type=text]:focus {
   line-height: 1.1;
   resize: none;
   margin-bottom: 13px;
+}
+
+.contact__form-input p {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: -18px;
+  -webkit-margin-start: 5px;
+  margin-inline-start: 5px;
 }
 
 .contact__form-agree {
@@ -9943,6 +9999,15 @@ p.checkout-coupon input[type=text]:focus {
   opacity: 1;
 }
 
+.footer__subscribe-input p {
+  color: rgb(252, 48, 48) !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  padding-right: 0 !important;
+  -webkit-margin-start: 5px !important;
+  margin-inline-start: 5px !important;
+}
+
 .footer__subscribe p {
   font-size: 14px;
   line-height: 20px;
@@ -10109,6 +10174,11 @@ p.checkout-coupon input[type=text]:focus {
 [dir=rtl] .mr-270 {
   margin-right: unset !important;
   margin-left: 270px;
+}
+
+[dir=rtl] .pr-30 {
+  padding-left: 30px;
+  padding-right: unset !important;
 }
 
 [dir=rtl] .pl-45 {
@@ -10312,6 +10382,20 @@ p.checkout-coupon input[type=text]:focus {
 
 [dir=rtl] .course__enroll-btn i {
   transform: rotate(180deg);
+}
+
+[dir=rtl] .teacher__details-shape img.teacher-details-shape-1 {
+  left: 0px;
+  right: unset !important;
+}
+
+[dir=rtl] .teacher__details-shape img.teacher-details-shape-2 {
+  right: -27px;
+  left: unset !important;
+}
+
+[dir=rtl] .cart-area .cart-page-total ul>li>span {
+  float: left !important;
 }
 
 [dir=rtl] .counter__pl-80 {
