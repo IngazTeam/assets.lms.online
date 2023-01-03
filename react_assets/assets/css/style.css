@@ -9129,6 +9129,9 @@ p.checkout-coupon input[type=text]:focus {
   right: -27px;
   left: unset !important;
 }
+[dir=rtl] .cart-area .cart-page-total ul > li > span {
+  float: left !important;
+}
 
 [dir=rtl] .counter__pl-80 {
   padding-left: unset;

@@ -379,4 +379,9 @@
       }
     }
   }
+  .cart-area{
+    .cart-page-total ul > li > span {
+      float: left!important;
+    }
+  }
 }
