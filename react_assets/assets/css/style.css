@@ -2775,8 +2775,10 @@ p {
   }
 }
 .course__summary {
-  max-height: 20px;
+  max-height: 30px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin-bottom: 15px;
 }
 .course__summary p {
