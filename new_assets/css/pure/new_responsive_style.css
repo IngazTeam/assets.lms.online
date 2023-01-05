@@ -399,7 +399,8 @@
      width: 0 !important;
      position: absolute !important;
      /* font-size: 12px !important; */
-     top: 35px !important;
+     top: unset !important;
+     bottom: -15px;
  }
 
  .remove_add_quiz_section .form-check {
