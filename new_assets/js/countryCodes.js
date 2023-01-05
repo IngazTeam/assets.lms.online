@@ -630,9 +630,9 @@ function getPhoneExample(code){
     return "xxxxxxx";
 }
 
-function setPlaceholder(obj){
+function setPlaceholder(obj , inputId = "phone"){
     let selectObj = $(obj);
     let countryCode = $('option:selected', obj).attr("data-country-code") || "none";
     let placeholderEx = getPhoneExample(countryCode);
-    $("#phone").attr("placeholder", placeholderEx);
+    $("#"+inputId).attr("placeholder", placeholderEx);
 }

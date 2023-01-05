@@ -83,6 +83,9 @@
 				& input {
 					background: $grey-2;
 				}
+				&.with-wish-cart{
+					background: $grey-2;
+				}
 			}
 
 			& .logo {
@@ -298,13 +301,13 @@
 		& input {
 			width: 280px;
 			height: 50px;
-			line-height: 20px;
+			line-height: 40px;
 			@include border-radius(4px);
 			background: $white;
 			outline: none;
 			border: 1px solid $white;
 			font-size: 16px;
-			padding: 25px 65px 20px 55px;
+			padding: 5px 80px 5px 35px;
 
 			&::placeholder {
 				color: $e-text-1;
@@ -319,8 +322,7 @@
 			background: transparent;
 			position: absolute;
 			top: 15px;
-			left: 24px;
-
+			left: 12px;
 			& i {
 				&::after {
 					color: $black;
@@ -349,6 +351,37 @@
 				&:hover {
 					cursor: pointer;
 				}
+			}
+		}
+		& .splitter{
+			display: inline-block;
+			width: 2px;
+			height: 30px;
+			background: $grey-3;
+		}
+
+		&.with-wish-cart{
+			@include border-radius(4px);
+			background: $white;
+			border: 1px solid $white;
+			align-items: center;
+			padding-inline-start: 18px;
+			width: 280px;
+			.header__cart{
+				position: static!important;	
+				&::after{
+					display: none!important;
+				}
+			}
+			.header__wish{
+				position: static!important;	
+				padding-left: 8px;
+				margin-top: 10px;
+			}
+			& input {
+				width: auto!important;
+				padding: 5px;
+				border: 0!important;
 			}
 		}
 	}
@@ -416,7 +449,44 @@
 			}
 		}
 	}
+	&__wish {
+		position: absolute;
+		top: 15px;
+		right: 55px;
+		i{
+			display: inline-block;
+			width: 20px;
+			height: 25px;
+		}
+		& a {
+			position: relative;
+			font-size: 17px;
+			color: $black;
 
+			& .wish-item {
+				position: absolute;
+				top: -12px;
+				right: -10px;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				font-size: 14px;
+				color: $white;
+				background: $e-blue;
+				@include border-radius(50%);
+				font-weight: 500;
+				@include box-shadow(0px 10px 20px 0px rgba(4, 23, 118, 0.3));
+			}
+
+			&:hover {
+				& .wish-item {
+					background: $black;
+				}
+			}
+		}
+	}
 	&__btn {
 		&-2 {
 			& a {
