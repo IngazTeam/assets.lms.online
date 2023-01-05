@@ -1753,3 +1753,26 @@
     }
 
 }
+
+// star rating style 
+.customstar {
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .on {
+        span {
+            color: #ff9415;
+        }
+    }
+
+    .off {
+        span {
+            color: gray;
+        }
+    }
+}

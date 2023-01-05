@@ -17,11 +17,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-height: 100vh;
 }
 
@@ -30,11 +30,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   height: 100%;
 }
 
@@ -47,32 +47,38 @@ img {
   border-radius: 15px;
   font-size: 14px;
 }
-.login .form-div input[type="number"]{
+
+.login .form-div input[type="number"] {
   padding-left: 82px;
 }
-.login .form-div .code-select{
-  position: absolute!important;
+
+.login .form-div .code-select {
+  position: absolute !important;
   direction: ltr;
   left: 10px;
   bottom: 5px;
   max-width: 80px;
 }
-.login .form-div .code-select select{
-  border:0;
+
+.login .form-div .code-select select {
+  border: 0;
   font-weight: 400;
   line-height: 1.5;
   color: #525F77;
   font-size: 14px;
   direction: rtl;
 }
-.login .form-div .code-select select option{
+
+.login .form-div .code-select select option {
   direction: ltr;
 }
-.login .form-div input:focus, .login .form-div input:hover {
+
+.login .form-div input:focus,
+.login .form-div input:hover {
   border-color: #4c75f3;
   outline: none;
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
 }
 
 .login .form-div .input-ico {
@@ -101,7 +107,7 @@ img {
   padding: 0 10px;
 }
 
-.login   .bottom-text {
+.login .bottom-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,17 +117,17 @@ img {
   right: 0;
 }
 
-.login   .bottom-text .txt-div {
+.login .bottom-text .txt-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 
@@ -129,6 +135,7 @@ img {
   .login .row {
     flex-direction: column-reverse;
   }
+
   .login .login-img {
     height: auto !important;
   }
@@ -144,31 +151,31 @@ img {
 
 
 
-.login   .bottom-text .txt-div p {
+.login .bottom-text .txt-div p {
   color: #3b459c;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0px;
 }
 
-.login   .bottom-text .txt-div span {
+.login .bottom-text .txt-div span {
   color: #b8b8b8;
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 0px;
 }
 
-.login   .bot-anker {
+.login .bot-anker {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   font-size: 12px;
 }
 
@@ -177,11 +184,12 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 650px;
 }
+
 /*# sourceMappingURL=mo-style.css.map */
