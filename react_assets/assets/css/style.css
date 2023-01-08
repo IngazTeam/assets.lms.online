@@ -9063,45 +9063,37 @@ p.checkout-coupon input[type=text]:focus {
 }
 
 .contact__social ul li a {
-  display: inline-block;
+  display: flex;
   width: 40px;
   height: 40px;
   line-height: 44px;
-  text-align: center;
-  font-size: 13px;
-  color: #0e1133;
-  background: #f3f4f8;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  position: relative;
   border-radius: 4px;
 }
 
-.contact__social ul li a.fb {
-  color: #285da1;
-  background: rgba(40, 93, 161, 0.1);
+.contact__social ul li a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
 }
 
-.contact__social ul li a.fb:hover {
-  color: #ffffff;
-  background: #285da1;
+.contact__social ul li a:hover {
+  color: #ffffff !important;
 }
 
-.contact__social ul li a.tw {
-  color: #03a9f4;
-  background: rgba(3, 169, 244, 0.1);
-}
-
-.contact__social ul li a.tw:hover {
-  color: #ffffff;
-  background: #03a9f4;
-}
-
-.contact__social ul li a.pin {
-  color: #d8163f;
-  background: rgba(216, 22, 63, 0.1);
-}
-
-.contact__social ul li a.pin:hover {
-  color: #ffffff;
-  background: #d8163f;
+.contact__social ul li a:hover::before {
+  width: 0;
+  height: 0;
 }
 
 .contact__icon {
