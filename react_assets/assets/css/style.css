@@ -5820,6 +5820,13 @@ p.checkout-coupon input[type=text]:focus {
   visibility: visible;
   opacity: 1;
 }
+.services__item.with-no-link:hover p {
+  visibility: visible;
+  opacity: 1;
+}
+.services__item.with-no-link .services__content p {
+  height: 44px !important;
+}
 .services__title {
   font-size: 22px;
   color: #ffffff;
@@ -5834,6 +5841,10 @@ p.checkout-coupon input[type=text]:focus {
 }
 .services__icon svg path {
   fill: #ffffff;
+}
+.services__icon img {
+  width: 50px;
+  height: 50px;
 }
 .services__content p {
   color: #ffffff;
