@@ -9975,50 +9975,49 @@ p.checkout-coupon input[type=text]:focus {
   color: #53545b;
 }
 
-.footer__social ul li {
-  display: inline-block;
+.footer__social h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 13px;
 }
 
-.footer__social ul li:not(:last-child) {
+.footer__social ul li {
+  display: inline-block;
   margin-right: 10px;
 }
 
 .footer__social ul li a {
-  display: inline-block;
-  font-size: 15px;
-  width: 44px;
-  height: 44px;
-  line-height: 46px;
-  text-align: center;
-  border: 2px solid #285da1;
-  background: #285da1;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  line-height: 44px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  position: relative;
   border-radius: 4px;
-  color: #ffffff;
+}
+
+.footer__social ul li a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
 }
 
 .footer__social ul li a:hover {
-  background: transparent;
-  color: #285da1;
+  color: #ffffff !important;
 }
 
-.footer__social ul li a.tw {
-  background: #03a9f4;
-  border-color: #03a9f4;
-}
-
-.footer__social ul li a.tw:hover {
-  background: transparent;
-  color: #03a9f4;
-}
-
-.footer__social ul li a.pin {
-  background: #d2173f;
-  border-color: #d2173f;
-}
-
-.footer__social ul li a.pin:hover {
-  background: transparent;
-  color: #d2173f;
+.footer__social ul li a:hover::before {
+  width: 0;
+  height: 0;
 }
 
 .footer__link ul li:not(:last-child) {
