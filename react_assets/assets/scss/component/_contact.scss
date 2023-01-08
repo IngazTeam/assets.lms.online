@@ -1,14 +1,15 @@
-@use '../abstract' as *;
+@use '../abstract'as *;
 
 /*----------------------------------------*/
 /*  22. CONTACT CSS START
 /*----------------------------------------*/
 
-.contact{
-    &__form{
-        &-input{
+.contact {
+    &__form {
+        &-input {
+
             & input,
-            & textarea{
+            & textarea {
                 width: 100%;
                 height: 56px;
                 line-height: 54px;
@@ -19,24 +20,28 @@
                 color: $black;
                 font-size: 15px;
                 margin-bottom: 20px;
-                &::placeholder{
+
+                &::placeholder {
                     font-size: 15px;
                     color: $e-text-3;
                 }
-                &:focus{
+
+                &:focus {
                     border-color: $e-blue;
                     outline: none;
                     background: $white;
                 }
             }
-            & textarea{
+
+            & textarea {
                 height: 180px;
                 padding: 23px 25px;
                 line-height: 1.1;
                 resize: none;
                 margin-bottom: 13px;
             }
-            & p{
+
+            & p {
                 color: red;
                 font-size: 12px;
                 font-weight: 500;
@@ -44,9 +49,11 @@
                 margin-inline-start: 5px;
             }
         }
-        &-agree{
+
+        &-agree {
             padding-left: 5px;
-            & input{
+
+            & input {
                 margin: 0;
                 appearance: none;
                 -moz-appearance: none;
@@ -57,11 +64,13 @@
                 border: 1px solid #b9bac1;
                 outline: none;
                 @include border-radius(4px);
-                &:checked{
+
+                &:checked {
                     position: relative;
                     background-color: $e-blue;
                     border-color: transparent;
-                    &::after{
+
+                    &::after {
                         box-sizing: border-box;
                         content: '\f00c';
                         position: absolute;
@@ -73,29 +82,35 @@
                         @include transform(translate(-50%, -50%));
                     }
                 }
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
             }
-            & label{
+
+            & label {
                 padding-left: 8px;
                 color: $e-text-4;
-                & a{
+
+                & a {
                     color: $black;
                     font-weight: 600;
                     padding-left: 4px;
-                    &:hover{
+
+                    &:hover {
                         color: $e-blue;
                     }
                 }
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
             }
         }
     }
-    &__info{
-        &-inner{
+
+    &__info {
+        &-inner {
             padding: 45px 40px;
             padding-right: 70px;
             @include border-radius(4px);
@@ -103,222 +118,254 @@
             position: relative;
             z-index: 1;
 
-            @media #{$md}{
+            @media #{$md} {
                 margin-top: 50px;
             }
-            @media #{$sm}{
+
+            @media #{$sm} {
                 margin-top: 50px;
             }
-            @media #{$xs}{
+
+            @media #{$xs} {
                 margin-top: 50px;
                 padding-right: 35px;
             }
         }
-        &-icon{
-            & svg{
-                fill:none;
-                stroke:$e-blue;
-                stroke-width:2;
-                stroke-linecap:round;
-                stroke-linejoin:round;
 
-                &.map{
+        &-icon {
+            & svg {
+                fill: none;
+                stroke: $e-blue;
+                stroke-width: 2;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+
+                &.map {
                     width: 16px;
                     height: 20px;
                 }
-                &.mail{
+
+                &.mail {
                     width: 18px;
                     height: 18px;
                 }
-                &.call{
+
+                &.call {
                     width: 18px;
                     height: 18px;
                 }
             }
         }
-        &-text{
-            & h4{
+
+        &-text {
+            & h4 {
                 font-size: 20px;
                 font-weight: 600;
                 margin-bottom: 6px;
             }
-            & p{
+
+            & p {
                 margin-bottom: 0;
                 color: $e-text-4;
-                & a{
-                    &:hover{
+
+                & a {
+                    &:hover {
                         color: $e-blue;
                     }
                 }
             }
         }
     }
-    &__social{
-        & h4{
+
+    &__social {
+        & h4 {
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 13px;
         }
-        & ul{
-            & li{
+
+        & ul {
+            & li {
                 display: inline-block;
                 margin-right: 10px;
-                & a{
-                    display: inline-block;
+
+                & a {
+                    display: flex;
                     width: 40px;
                     height: 40px;
                     line-height: 44px;
-                    text-align: center;
-                    font-size: 13px;
-                    color: $black;
-                    background: $grey;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                    position: relative;
                     @include border-radius(4px);
 
-                    &.fb{
-                        color: #285da1;
-                        background: rgba($color: #285da1, $alpha: .1);
-                        &:hover{
-                            color: $white;
-                            background: #285da1;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: #fff;
+                        z-index: 1;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 3px;
+                    }
+
+                    &:hover {
+                        color: $white !important;
+
+                        &::before {
+                            width: 0;
+                            height: 0;
                         }
                     }
-                    &.tw{
-                        color: #03a9f4;
-                        background: rgba($color: #03a9f4, $alpha: .1);
-                        &:hover{
-                            color: $white;
-                            background: #03a9f4;
-                        }
-                    }
-                    &.pin{
-                        color: #d8163f;
-                        background: rgba($color: #d8163f, $alpha: .1);
-                        &:hover{
-                            color: $white;
-                            background: #d8163f;
-                        }
-                    }
+
                 }
             }
         }
     }
-    &__icon{
+
+    &__icon {
         margin-bottom: 28px;
-        & svg{
+
+        & svg {
             width: 70px;
             height: 70px;
             backface-visibility: hidden;
-            -webkit-transform: translate3d(0,0,0);
-            -moz-transform: translate3d(0,0,0);
-            -ms-transform: translate3d(0,0,0);
-            -o-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-            -webkit-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
-            -moz-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
-            -ms-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
-            -o-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
-            transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
-            & .st0{
-                fill:none;
-                stroke:#00c3b3;
-                stroke-width:0.5;
-                stroke-linecap:round;
-                stroke-linejoin:round;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            -webkit-transition: transform .3s cubic-bezier(.21, .6, .44, 2.18);
+            -moz-transition: transform .3s cubic-bezier(.21, .6, .44, 2.18);
+            -ms-transition: transform .3s cubic-bezier(.21, .6, .44, 2.18);
+            -o-transition: transform .3s cubic-bezier(.21, .6, .44, 2.18);
+            transition: transform .3s cubic-bezier(.21, .6, .44, 2.18);
+
+            & .st0 {
+                fill: none;
+                stroke: #00c3b3;
+                stroke-width: 0.5;
+                stroke-linecap: round;
+                stroke-linejoin: round;
             }
         }
     }
-    &__item{
+
+    &__item {
         padding: 50px 80px;
         padding-bottom: 62px;
         @include border-radius(6px);
         @include box-shadow(0px 40px 50px 0px rgba(1, 11, 60, 0.08));
         position: relative;
         z-index: 1;
-        @media #{$md}{
+
+        @media #{$md} {
             padding-left: 30px;
             padding-right: 30px;
         }
-        @media #{$xs}{
+
+        @media #{$xs} {
             padding-left: 20px;
             padding-right: 20px;
         }
-        &:hover{
-            & .contact__icon{
-                & svg{
-                    -webkit-transform: translate3d(0,-10px,0);
-                    -moz-transform: translate3d(0,-10px,0);
-                    -ms-transform: translate3d(0,-10px,0);
-                    -o-transform: translate3d(0,-10px,0);
-                    transform: translate3d(0,-10px,0);
+
+        &:hover {
+            & .contact__icon {
+                & svg {
+                    -webkit-transform: translate3d(0, -10px, 0);
+                    -moz-transform: translate3d(0, -10px, 0);
+                    -ms-transform: translate3d(0, -10px, 0);
+                    -o-transform: translate3d(0, -10px, 0);
+                    transform: translate3d(0, -10px, 0);
                 }
             }
         }
     }
-    &__title{
+
+    &__title {
         font-size: 26px;
         margin-bottom: 8px;
     }
-    &__content{
-        & p{
+
+    &__content {
+        & p {
             font-size: 16px;
             color: $e-text-4;
             margin-bottom: 30px;
         }
     }
-    &__shape{
-        & img{
+
+    &__shape {
+        & img {
             position: absolute;
 
-            &.contact-shape-1{
+            &.contact-shape-1 {
                 bottom: 75px;
                 left: -30px;
                 z-index: -1;
 
             }
-            &.contact-shape-2{
+
+            &.contact-shape-2 {
                 top: 30px;
                 right: -30px;
-                @media #{$lg}{
+
+                @media #{$lg} {
                     right: -20px;
                 }
-                @media #{$md}{
+
+                @media #{$md} {
                     right: -20px;
                 }
-                @media #{$sm}{
+
+                @media #{$sm} {
                     right: -20px;
                 }
-                @media #{$xs}{
+
+                @media #{$xs} {
                     right: 0px;
                 }
             }
-            &.contact-shape-3{
+
+            &.contact-shape-3 {
                 right: -45%;
                 top: 50%;
-                @media #{$xxl}{
+
+                @media #{$xxl} {
                     right: -20%;
                 }
-                @media #{$xl}{
+
+                @media #{$xl} {
                     right: -10%;
                 }
-                @media #{$lg}{
+
+                @media #{$lg} {
                     right: -5%;
                 }
-                @media #{$md}{
+
+                @media #{$md} {
                     right: -5%;
                 }
-                @media #{$sm}{
+
+                @media #{$sm} {
                     right: -5%;
                 }
-                @media #{$xs}{
+
+                @media #{$xs} {
                     right: 0%;
                 }
             }
-            &.contact-shape-4{
+
+            &.contact-shape-4 {
                 right: 180px;
                 bottom: -21%;
             }
 
-            &.contact-shape-5{
+            &.contact-shape-5 {
                 left: 0;
                 bottom: 142px;
             }
