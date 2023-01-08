@@ -1,425 +1,487 @@
-@use '../abstract' as *;
+@use '../abstract'as *;
 
 /*----------------------------------------*/
 /*  10. PRODUCT CSS START
 /*----------------------------------------*/
 
-.product{
-    &__sm{
-        padding: 20px;
-        & ul{
-            & li{
-                display: flex;
-                margin-bottom: 20px;
-            }
-        }
-        &-thumb{
-            & img{
-                width: 85px;
-                height: 100px;
-            }
-        }
-        &-content{
-            & h5{
-                font-size: 14px;
-                margin-bottom: 0px;
-                font-weight: 500;
-                & a{
-                    &:hover{
-                        color: $e-blue;
-                    }
-                }
-            }
-        }
-        &-price{
-            color: $e-blue;
-            font-weight: 500;
-            &-wrapper{
-                & span{
-                    font-size: 14px;
-                }
-            }
-        }
+.product {
+  &__sm {
+    padding: 20px;
+
+    & ul {
+      & li {
+        display: flex;
+        margin-bottom: 20px;
+      }
     }
+
+    &-thumb {
+      & img {
+        width: 85px;
+        height: 100px;
+      }
+    }
+
+    &-content {
+      & h5 {
+        font-size: 14px;
+        margin-bottom: 0px;
+        font-weight: 500;
+
+        & a {
+          &:hover {
+            color: $e-blue;
+          }
+        }
+      }
+    }
+
+    &-price {
+      color: $e-blue;
+      font-weight: 500;
+
+      &-wrapper {
+        & span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 
 
 
-.cartmini{
-    &__area{
-        position: relative;
-    }
-    &__wrapper{
-        position: fixed;
-        right: -360px;
-        top: 0;
-        width: 340px;
-        height: 100%;
-        background: $white;
-        -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-        -moz-transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-        -ms-transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-        -o-transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-        transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-        @include box-shadow(-5px 0 20px -5px rgba(0, 0, 0, 0.5));
-		z-index: 9999;
-		overflow: hidden;
-		&.opened{
-			right: 0px;
-		}
-    }
-    &__title{
-        padding: 20px 20px;
-		border-bottom: 1px solid $border;
-        box-shadow: 0 0 10px 0 rgba(129,129,129,.2);
-		& h4{
-			font-size: 16px;
-			text-transform: uppercase;
-			font-weight: 600;
-			margin-bottom: 0;
-		}
-    }
-	&__close{
-		position: absolute;
-		top: 17px;
-		right: 20px;
-		&-btn{
-			background: transparent;
-			color: $black;
-			font-size: 22px;
-			&:hover{
-				@include transform(rotate(90deg));
-			}
-		}
-	}
-    &__widget{
-        overflow-y: scroll;
-        height: 100%;
-    }
-    &__inner{
-        & ul{
-            & li{
-                position: relative;
-                display: flex;
-                padding: 20px;
-                padding-right: 35px;
-                border-bottom: 1px solid rgba(129,129,129,.2);
-                transition: background-color .3s;
-                &:hover{
-                    background: #F9F9F9;
-                }
-            }
-        }
-    }
-    &__thumb{
-        margin-right: 15px;
-        & img{
-            width: 70px;
-            height: 90px;
-        }
-    }
-    &__content{
-        & h5{
-            font-size: 13px;
-            margin-bottom: 12px;
-            font-weight: 500;
-            & a{
-                &:hover{
-                    color: $e-blue;
-                }
-            }
-        }
+.cartmini {
+  &__area {
+    position: relative;
+  }
 
+  &__wrapper {
+    position: fixed;
+    right: -360px;
+    top: 0;
+    width: 340px;
+    height: 100%;
+    background: $white;
+    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -moz-transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -ms-transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    -o-transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    transition: all 600ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    @include box-shadow(-5px 0 20px -5px rgba(0, 0, 0, 0.5));
+    z-index: 9999;
+    overflow: hidden;
+
+    &.opened {
+      right: 0px;
     }
-    &__del{
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-        text-align: center;
-        color: $black;
-        font-size: 12px;
-        background: transparent;
-        @include border-radius(50%);
-        &:hover{
-            background: $white;
-        }
+  }
+
+  &__title {
+    padding: 20px 20px;
+    border-bottom: 1px solid $border;
+    box-shadow: 0 0 10px 0 rgba(129, 129, 129, .2);
+
+    & h4 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0;
     }
-    &__checkout{
+  }
+
+  &__close {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+
+    &-btn {
+      background: transparent;
+      color: $black;
+      font-size: 22px;
+
+      &:hover {
+        @include transform(rotate(90deg));
+      }
+    }
+  }
+
+  &__widget {
+    height: 100%;
+  }
+
+  &__inner {
+    overflow-y: auto;
+    height: calc(100% - 275px);
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 20px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 20px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    & ul {
+      & li {
+        position: relative;
+        display: flex;
         padding: 20px;
-        padding-bottom: 85px;
-        width: 100%;
-        background: $white;
-        border-top: 2px solid $border;
-        &-title{
-            & h4{
-                font-size: 18px;
-                display: inline-block;
-                font-weight: 600;
-                margin-bottom: 0;
-            }
-            & span{
-                float: right;
-                font-size: 20px;
-                color: $black;
-                font-weight: 600;
-                color: $e-blue;
-            }
+        padding-right: 35px;
+        border-bottom: 1px solid rgba(129, 129, 129, .2);
+        transition: background-color .3s;
+
+        &:hover {
+          background: #F9F9F9;
         }
+      }
     }
+  }
+
+  &__thumb {
+    margin-right: 15px;
+
+    & img {
+      width: 70px;
+      height: 90px;
+    }
+  }
+
+  &__content {
+    & h5 {
+      font-size: 13px;
+      margin-bottom: 12px;
+      font-weight: 500;
+
+      & a {
+        &:hover {
+          color: $e-blue;
+        }
+      }
+    }
+
+  }
+
+  &__del {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: $black;
+    font-size: 12px;
+    background: transparent;
+    @include border-radius(50%);
+
+    &:hover {
+      background: $white;
+    }
+  }
+
+  &__checkout {
+    padding: 20px;
+    padding-bottom: 85px;
+    width: 100%;
+    background: $white;
+    border-top: 2px solid $border;
+
+    &-title {
+      & h4 {
+        font-size: 18px;
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      & span {
+        float: right;
+        font-size: 20px;
+        color: $black;
+        font-weight: 600;
+        color: $e-blue;
+      }
+    }
+  }
 }
 
 
 .cart-plus,
-.cart-minus{
-    width: 25px;
-    height: 30px;
-    border: 2px solid $border;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 14px;
-    &:hover{
-        cursor: pointer;
-        color: $white;
-        background: $e-blue;
-        border-color: $e-blue;
-    }
+.cart-minus {
+  width: 25px;
+  height: 30px;
+  border: 2px solid $border;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+    color: $white;
+    background: $e-blue;
+    border-color: $e-blue;
+  }
 }
 
-.cart-input{
-    height:30px;
-    width: 32px;
-    text-align: center;
-    font-size: 14px;
-    border: none;
-    border-top: 2px solid $border;
-    border-bottom: 2px solid $border;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 -3px;
-    padding-bottom: 0px;
-    &:focus{
-        outline: none;
-    }
-} 
+.cart-input {
+  height: 30px;
+  width: 32px;
+  text-align: center;
+  font-size: 14px;
+  border: none;
+  border-top: 2px solid $border;
+  border-bottom: 2px solid $border;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 -3px;
+  padding-bottom: 0px;
+
+  &:focus {
+    outline: none;
+  }
+}
 
 
 
 /* 16. Cart */
 
-.cart-area{
+.cart-area {
 
-    .table-content table {
-        background: #ffffff;
-        border-color: #eaedff;
-        border-radius: 0;
-        border-style: solid;
-        border-width: 1px 0 0 1px;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 0;
-      }
-      .table-content .product-quantity {
-          float: none;
-      }
-      .table-content table td.product-name {
-        font-size: 16px;
-        font-weight: 400;
-        text-transform: capitalize;
-      }
-      
-        
-      .table > :not(:last-child) > :last-child > * {
-        border-bottom-color: #eaedff;
-      }
-    
-      .table-content table td.product-name a:hover {
-        color: $black;
-      }
-      
-      .table-content table td {
-        border-top: medium none;
-        padding: 20px 10px;
-        vertical-align: middle;
-        font-size: 16px;
-        .p-img-container{
-          display: inline-block;
-          @include img_container(120px,155px);
-          img{
-            @include img_size(cover)
-          }
-        }
-      }
-      
-      .table-content table th, .table-content table td {
-        border-bottom: 1px solid #eaedff;
-        border-right: 1px solid #eaedff;
-      }
-      
-      
-      .table td, .table th {
-          border-top: 1px solid #eaedff;
-      }
+  .table-content table {
+    background: #ffffff;
+    border-color: #eaedff;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
 
-      .table-content table td.product-subtotal {
-        font-size: 16px;
-      }
-      
-      .table-content table td .cart-plus-minus {
-        float: none;
-        margin: 0 auto;
-      }
-      
-      .coupon-all {
-        margin-top: 50px;
-      }
-      
-      .coupon {
-        float: left;
-      }
-      
-      @media (max-width: 767px) {
-        .coupon {
-          float: none;
-        }
-      }
-      #coupon_code {
-          height: 50px;
-          border: 2px solid #eaedff;
-          padding: 0 15px;
-          margin-inline-end: 10px;
-          outline: none;
-        @include box-shadow(none);
-        &:focus{
-            border-color: $black;
-        }
-      }
-      
-      @media (max-width: 767px) {
-        #coupon_code {
-          margin-bottom: 15px;
-        }
-      }
-      
-      .coupon2 {
-        float: right;
-      }
-      
-      @media (max-width: 767px) {
-        .coupon2 {
-          float: none;
-          margin-top: 15px;
-        }
-      }
-      
-      .cart-page-total {
-        padding-top: 50px;
-      }
-      
-      .cart-page-total > h2 {
-          font-size: 25px;
-          margin-bottom: 20px;
-          text-transform: capitalize;
-      }
-      
-      .cart-page-total > ul {
-        border: 1px solid #eaedff;
-      }
-      
-      .cart-page-total > ul > li {
-        list-style: none;
-        font-size: 15px;
-        color: #6f7172;
-        padding: 10px 30px;
-        border-bottom: 1px solid #eaedff;
-        font-weight: 400;
-      }
-      
-      .cart-page-total ul > li > span {
-        float: right;
-      }
-      
-      .cart-page-total li:last-child {
-        border-bottom: 0;
-      }
-      td.product-thumbnail img {
-          width: 125px;
-      }
+  .table-content .product-quantity {
+    float: none;
+  }
 
-      & .product-quantity-form{
-          margin: auto;
-        width: 122px;
-        height: 58px;
-        border: 2px solid #dadada;
-        text-align: center;
-        position: relative;
-        @include transition(.3s);
-        &:hover{
-            border-color: $black;
-        }
+  .table-content table td.product-name {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+
+  .table> :not(:last-child)> :last-child>* {
+    border-bottom-color: #eaedff;
+  }
+
+  .table-content table td.product-name a:hover {
+    color: $black;
+  }
+
+  .table-content table td {
+    border-top: medium none;
+    padding: 20px 10px;
+    vertical-align: middle;
+    font-size: 16px;
+
+    .p-img-container {
+      display: inline-block;
+      @include img_container(120px, 155px);
+
+      img {
+        @include img_size(cover)
+      }
     }
+  }
 
-    & .cart-plus,
-    & .cart-minus{
-        position: absolute;
-        top: 50%;
-        left: 0;
-        @include transform(translateY(-50%));
-        width: 45px;
-        height: 40px;
-        display: inline-block;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 14px;
-        background: transparent;
-        border: none;
-        outline: none;
-        &:hover{
-            cursor: pointer;
-            color: $black;
-            background: transparent;
-        }
-    }
+  .table-content table th,
+  .table-content table td {
+    border-bottom: 1px solid #eaedff;
+    border-right: 1px solid #eaedff;
+  }
 
-    & .cart-plus{
-        left: auto;
-        right: 0;
-    }
 
-    & .cart-input{
-        height:58px;
-        width: 32px;
-        text-align: center;
-        font-size: 14px;
-        border: none;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 -3px;
-        padding-bottom: 4px;
-        background: transparent;
-        &:focus{
-            outline: none;
-        }
+  .table td,
+  .table th {
+    border-top: 1px solid #eaedff;
+  }
+
+  .table-content table td.product-subtotal {
+    font-size: 16px;
+  }
+
+  .table-content table td .cart-plus-minus {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .coupon-all {
+    margin-top: 50px;
+  }
+
+  .coupon {
+    float: left;
+  }
+
+  @media (max-width: 767px) {
+    .coupon {
+      float: none;
     }
+  }
+
+  #coupon_code {
+    height: 50px;
+    border: 2px solid #eaedff;
+    padding: 0 15px;
+    margin-inline-end: 10px;
+    outline: none;
+    @include box-shadow(none);
+
+    &:focus {
+      border-color: $black;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #coupon_code {
+      margin-bottom: 15px;
+    }
+  }
+
+  .coupon2 {
+    float: right;
+  }
+
+  @media (max-width: 767px) {
+    .coupon2 {
+      float: none;
+      margin-top: 15px;
+    }
+  }
+
+  .cart-page-total {
+    padding-top: 50px;
+  }
+
+  .cart-page-total>h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+
+  .cart-page-total>ul {
+    border: 1px solid #eaedff;
+  }
+
+  .cart-page-total>ul>li {
+    list-style: none;
+    font-size: 15px;
+    color: #6f7172;
+    padding: 10px 30px;
+    border-bottom: 1px solid #eaedff;
+    font-weight: 400;
+  }
+
+  .cart-page-total ul>li>span {
+    float: right;
+  }
+
+  .cart-page-total li:last-child {
+    border-bottom: 0;
+  }
+
+  td.product-thumbnail img {
+    width: 125px;
+  }
+
+  & .product-quantity-form {
+    margin: auto;
+    width: 122px;
+    height: 58px;
+    border: 2px solid #dadada;
+    text-align: center;
+    position: relative;
+    @include transition(.3s);
+
+    &:hover {
+      border-color: $black;
+    }
+  }
+
+  & .cart-plus,
+  & .cart-minus {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    @include transform(translateY(-50%));
+    width: 45px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+      color: $black;
+      background: transparent;
+    }
+  }
+
+  & .cart-plus {
+    left: auto;
+    right: 0;
+  }
+
+  & .cart-input {
+    height: 58px;
+    width: 32px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 -3px;
+    padding-bottom: 4px;
+    background: transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 
 
-  
+
 /* 17. Checkout */
 .coupon-accordion h3 {
-	background-color: #f6f6f6;
-	border-top: 3px solid $black;
-	font-size: 14px;
-	font-weight: 400;
-	margin: 0 0 25px;
-	padding: 1em 2em 1em 3.5em;
-	position: relative;
-	width: auto;
+  background-color: #f6f6f6;
+  border-top: 3px solid $black;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 25px;
+  padding: 1em 2em 1em 3.5em;
+  position: relative;
+  width: auto;
 }
 
 .coupon-accordion h3::before {
@@ -439,7 +501,8 @@
   font-weight: 500;
 }
 
-.coupon-accordion span:hover, p.lost-password a:hover {
+.coupon-accordion span:hover,
+p.lost-password a:hover {
   color: $black;
 }
 
@@ -458,17 +521,20 @@
   margin-bottom: 0;
 }
 
-.coupon-info p.form-row-first label, .coupon-info p.form-row-last label {
+.coupon-info p.form-row-first label,
+.coupon-info p.form-row-last label {
   display: block;
   color: #6f7172;
 }
 
-.coupon-info p.form-row-first label span.required, .coupon-info p.form-row-last label span.required {
+.coupon-info p.form-row-first label span.required,
+.coupon-info p.form-row-last label span.required {
   color: red;
   font-weight: 700;
 }
 
-.coupon-info p.form-row-first input, .coupon-info p.form-row-last input {
+.coupon-info p.form-row-first input,
+.coupon-info p.form-row-last input {
   border: 1px solid #eaedff;
   height: 45px;
   margin: 0 0 14px;
@@ -477,12 +543,14 @@
   width: 100%;
   outline: none;
   @include box-shadow(none);
-  &:focus{
-      border-color: $black;
+
+  &:focus {
+    border-color: $black;
   }
 }
 
-.coupon-info p.form-row input[type="submit"]:hover, p.checkout-coupon input[type="submit"]:hover {
+.coupon-info p.form-row input[type="submit"]:hover,
+p.checkout-coupon input[type="submit"]:hover {
   background: #3e976c none repeat scroll 0 0;
 }
 
@@ -491,13 +559,16 @@
   top: 2px;
 }
 
-.form-row > label {
+.form-row>label {
   margin-top: 15px;
   margin-inline-start: 15px;
   color: #6f7172;
 }
 
-.buttons-cart input, .coupon input[type="submit"], .buttons-cart a, .coupon-info p.form-row input[type="submit"] {
+.buttons-cart input,
+.coupon input[type="submit"],
+.buttons-cart a,
+.coupon-info p.form-row input[type="submit"] {
   background: #252525 none repeat scroll 0 0;
   border: medium none;
   color: #fff;
@@ -529,8 +600,9 @@ p.checkout-coupon input[type="text"] {
   margin-bottom: 15px;
   outline: none;
   @include box-shadow(none);
-  &:focus{
-      border-color: $black;
+
+  &:focus {
+    border-color: $black;
   }
 }
 
@@ -550,7 +622,8 @@ p.checkout-coupon input[type="text"] {
   margin-bottom: 30px;
   position: relative;
 }
-.country-select select{
+
+.country-select select {
   width: 100%;
   background-color: transparent;
   border: 1px solid #eaedff;
@@ -558,13 +631,15 @@ p.checkout-coupon input[type="text"] {
   height: 50px;
 }
 
-.country-select label, .checkout-form-list label {
+.country-select label,
+.checkout-form-list label {
   color: #6f7172;
   display: block;
   margin: 0 0 5px;
 }
 
-.country-select label span.required, .checkout-form-list label span.required {
+.country-select label span.required,
+.checkout-form-list label span.required {
   color: red;
 }
 
@@ -577,14 +652,14 @@ p.checkout-coupon input[type="text"] {
   margin-bottom: 20px;
 }
 
-.country-select .nice-select .list{
- width: 100%;
+.country-select .nice-select .list {
+  width: 100%;
 }
 
 .country-select .nice-select::after {
-	border-top: 4px solid #6f7172;
-	border-right: 4px solid transparent;
-	border-left: 4px solid transparent;
+  border-top: 4px solid #6f7172;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
 
 .checkout-form-list {
@@ -606,8 +681,9 @@ p.checkout-coupon input[type="text"] {
   width: 100%;
   outline: none;
   @include box-shadow(none);
-  &:focus{
-      border-color: $black;
+
+  &:focus {
+    border-color: $black;
   }
 }
 
@@ -625,7 +701,7 @@ p.checkout-coupon input[type="text"] {
   opacity: 1;
 }
 
-.checkout-form-list input[type="checkbox"]{
+.checkout-form-list input[type="checkbox"] {
   display: inline-block;
   margin-inline-end: 10px;
   position: relative;
@@ -672,13 +748,13 @@ p.checkout-coupon input[type="text"] {
   border-radius: 0;
 }
 
-.panel-default > .panel-heading {
+.panel-default>.panel-heading {
   border-radius: 0;
 }
 
 .your-order {
-	padding: 30px 40px 45px;
-	border: 3px solid #eaedff;
+  padding: 30px 40px 45px;
+  border: 3px solid #eaedff;
 }
 
 @media (max-width: 767px) {
@@ -701,7 +777,8 @@ p.checkout-coupon input[type="text"] {
   width: 100%;
 }
 
-.your-order-table table th, .your-order-table table td {
+.your-order-table table th,
+.your-order-table table td {
   border-bottom: 1px solid #eaedff;
   border-right: medium none;
   color: #6f7172;
@@ -711,7 +788,9 @@ p.checkout-coupon input[type="text"] {
 }
 
 @media (max-width: 767px) {
-  .your-order-table table th, .your-order-table table td {
+
+  .your-order-table table th,
+  .your-order-table table td {
     padding-right: 10px;
   }
 }
@@ -726,7 +805,7 @@ p.checkout-coupon input[type="text"] {
   width: 250px;
 }
 
-.panel-body > p {
+.panel-body>p {
   color: #222;
 }
 
@@ -765,55 +844,63 @@ p.checkout-coupon input[type="text"] {
 .payment-method {
   margin-top: 40px;
 
-    & .accordion-item:last-of-type {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
+  & .accordion-item:last-of-type {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  & .accordion-item {
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid $border-2;
+  }
+
+  & .accordion-button {
+    font-size: 16px;
+    font-weight: 500;
+    color: $black;
+    padding: 23px 0;
+    border: none;
+
+    &:focus {
+      @include box-shadow(none);
     }
-    & .accordion-item {
-        background-color: #fff;
-        border: 0;
-        border-bottom: 1px solid $border-2;
+
+    &::after {
+      position: absolute;
+      content: '\f067';
+      right: 0;
+      top: 50%;
+      @include transform(translateY(-50%));
+      font-family: $fontawesome;
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 0;
+      background-image: none;
     }
-    & .accordion-button{
-        font-size: 16px;
-        font-weight: 500;
-        color: $black;
-        padding: 23px 0;
-        border: none;
-        &:focus{
-            @include box-shadow(none);
-        }
-        &::after{
-            position: absolute;
-            content: '\f067';
-            right: 0;
-            top: 50%;
-            @include transform(translateY(-50%));
-            font-family: $fontawesome;
-            font-size: 16px;
-            font-weight: 400;
-            margin-left: 0;
-            background-image: none;
-        }
+  }
+
+  & .accordion-button:not(.collapsed) {
+    color: $black;
+    background-color: $white;
+    box-shadow: none;
+
+    &::after {
+      content: '\f068';
     }
-    & .accordion-button:not(.collapsed) {
-        color: $black;
-        background-color: $white;
-        box-shadow: none;
-        &::after{
-            content: '\f068';
-        }
-    }
-    & .accordion-body{
-        padding: 8px 0;
-        padding-bottom: 40px;
-    }
-    & .accordion-collapse{
-        border: none;
-    }
+  }
+
+  & .accordion-body {
+    padding: 8px 0;
+    padding-bottom: 40px;
+  }
+
+  & .accordion-collapse {
+    border: none;
+  }
 }
 
-.panel-title > a {
+.panel-title>a {
   display: block;
 }
 
