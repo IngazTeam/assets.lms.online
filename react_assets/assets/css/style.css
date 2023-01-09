@@ -10034,29 +10034,12 @@ p.checkout-coupon input[type=text]:focus {
   justify-content: center;
   font-size: 16px;
   position: relative;
+  color: #ffffff !important;
   border-radius: 4px;
 }
 
-.footer__social ul li a::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  border-radius: 3px;
-}
-
 .footer__social ul li a:hover {
-  color: #ffffff !important;
-}
-
-.footer__social ul li a:hover::before {
-  width: 0;
-  height: 0;
+  background-color: transparent !important;
 }
 
 .footer__link ul li:not(:last-child) {
