@@ -5,6 +5,7 @@
 /*----------------------------------------*/
 
 .header {
+
 	&__padding {
 		padding-left: 245px;
 		padding-right: 245px;
@@ -52,6 +53,13 @@
 				padding: 20px 0;
 			}
 		}
+		.header_logo_container{
+			display: inline-block;
+			@include img_container(114px,auto);
+			img{
+			@include img_size(contain)
+			}
+		}
 	}
 
 	&__shadow {
@@ -60,7 +68,7 @@
 
 	&__area {
 		.logo_container {
-			@include img_container(114px, 30px);
+			@include img_container(114px, auto);
 
 			img {
 				@include img_size(cover)
@@ -398,7 +406,7 @@
 		position: absolute;
 		top: 15px;
 		right: 20px;
-		padding-left: 15px;
+		padding-left: 18px;
 
 		&::after {
 			position: absolute;

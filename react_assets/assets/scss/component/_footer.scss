@@ -33,6 +33,13 @@
                 }
             }
         }
+        & .footer_logo_container{
+            display: block;
+            @include img_container(114px,auto);
+            img{
+                @include img_size(contain)
+            }
+        }
     }
 
     &__social {
@@ -182,7 +189,7 @@
             font-size: 14px;
             line-height: 20px;
             color: $e-text-6;
-            padding-right: 60px;
+            padding-inline-end: 60px;
         }
 
         &-2 {
