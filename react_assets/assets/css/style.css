@@ -985,7 +985,6 @@ p {
     padding: 20px 0;
   }
 }
-<<<<<<< HEAD
 .header__padding .header_logo_container {
   display: inline-block;
   width: 114px;
@@ -997,9 +996,6 @@ p {
   height: 100%;
   object-fit: contain;
 }
-=======
-
->>>>>>> 22e4e036f96d65aaaf0b24ceb8cdbadab8037cd4
 .header__shadow {
   box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
 }
@@ -10062,7 +10058,6 @@ p.checkout-coupon input[type=text]:focus {
 .footer__widget-body-2 p {
   color: #53545b;
 }
-<<<<<<< HEAD
 .footer__widget .footer_logo_container {
   display: block;
   width: 114px;
@@ -10074,9 +10069,6 @@ p.checkout-coupon input[type=text]:focus {
   height: 100%;
   object-fit: contain;
 }
-=======
-
->>>>>>> 22e4e036f96d65aaaf0b24ceb8cdbadab8037cd4
 .footer__social h4 {
   font-size: 20px;
   font-weight: 600;
