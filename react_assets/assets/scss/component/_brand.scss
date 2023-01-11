@@ -25,7 +25,7 @@
         @include img_container(75px,50px);
         border: 1px solid rgb(215, 215, 215);
         img{
-            @include img_size(contain)
+            @include img_size(cover)
         }
     }
 }
