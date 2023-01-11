@@ -1,7 +1,8 @@
 /* Style the tabs */
-.tab_part .nav-link{
+.tab_part .nav-link {
   width: 120px;
 }
+
 .tabs {
   margin-bottom: 28px;
   display: flex;
@@ -22,8 +23,9 @@
   justify-content: center;
   text-align: center;
 }
-@media(max-width:768px){
-  .tabs a{
+
+@media(max-width:768px) {
+  .tabs a {
     padding: 5px 10px;
     font-size: .7rem;
   }
@@ -149,10 +151,11 @@ input:checked+.slider:before {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid #EAEAEA;
-  
+
 }
-@media(max-width:576px){
-  .about-the-course .img-box{
+
+@media(max-width:576px) {
+  .about-the-course .img-box {
     width: 100% !important;
   }
 }
@@ -221,11 +224,13 @@ input:checked+.slider:before {
 /* teachers area  */
 .teachers {
   padding: 20px 0;
-  
+
 }
-.teachers .owl-dots{
+
+.teachers .owl-dots {
   display: none;
 }
+
 .course-teachers {
   background-color: #fff;
   border-radius: 25px;
@@ -252,6 +257,11 @@ input:checked+.slider:before {
   overflow: hidden;
 }
 
+.course-teachers .teacher-card .teacher-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .course-teachers .teacher-card .teacher-name {
   color: #29BCB0;
   font-weight: bold;
@@ -261,7 +271,7 @@ input:checked+.slider:before {
   color: #525F77;
   font-weight: 500;
   font-size: 12px;
-  height: 70px ;
+  height: 70px;
   overflow: hidden;
 }
 
@@ -270,7 +280,7 @@ input:checked+.slider:before {
   background-color: #fff;
   border-radius: 25px;
   border: 1px solid #EAEAEA;
- 
+
 }
 
 p.next-course {
