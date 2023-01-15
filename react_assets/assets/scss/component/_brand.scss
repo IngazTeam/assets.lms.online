@@ -1,30 +1,35 @@
-@use '../abstract' as *;
+@use '../abstract'as *;
 
 /*----------------------------------------*/
 /*  19. BRAND CSS START
 /*----------------------------------------*/
 
-.brand{
-    &__title{
+.brand {
+    &__title {
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 50px;
     }
-    &__more{
+
+    &__more {
         margin-top: 52px;
-        & .link-btn{
+
+        & .link-btn {
             color: $black;
-            &:hover{
+
+            &:hover {
                 color: $e-blue;
             }
         }
     }
 }
-.brand__area{
-    .brand__item{
-        @include img_container(75px,50px);
+
+.brand__area {
+    .brand__item {
+        @include img_container(100px, 75px);
         border: 1px solid rgb(215, 215, 215);
-        img{
+
+        img {
             @include img_size(cover)
         }
     }
