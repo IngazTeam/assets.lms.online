@@ -1,4 +1,4 @@
-@use '../abstract'as *;
+@use '../abstract' as *;
 
 /*----------------------------------------*/
 /*  02. HEADER CSS START
@@ -53,11 +53,13 @@
 				padding: 20px 0;
 			}
 		}
-		.header_logo_container{
+
+		.header_logo_container {
 			display: inline-block;
-			@include img_container(114px,auto);
-			img{
-			@include img_size(contain)
+			@include img_container(114px, auto);
+
+			img {
+				@include img_size(contain)
 			}
 		}
 	}
@@ -308,7 +310,7 @@
 
 	&__search {
 		& input {
-			width: 280px;
+			// width: 280px;
 			height: 50px;
 			line-height: 40px;
 			@include border-radius(4px);
@@ -378,8 +380,10 @@
 			border: 1px solid $white;
 			align-items: center;
 			padding-inline-start: 18px;
-			max-width: 280px;
+			max-width: 250px;
 			height: 52px;
+			overflow: hidden;
+
 			.header__cart {
 				position: static !important;
 
@@ -395,7 +399,7 @@
 			}
 
 			& input {
-				width: auto !important;
+				max-width: 232px !important;
 				padding: 5px;
 				border: 0 !important;
 			}
