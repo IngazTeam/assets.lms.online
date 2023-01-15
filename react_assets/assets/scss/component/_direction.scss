@@ -110,7 +110,11 @@
     padding-right: 85px;
     padding-left: unset !important;
   }
-
+  @media (max-width: 992px) {
+    .pt-115 {
+      padding-top: 50px!important;
+    }
+  }
   /*-------------Offset------------*/
   @media (min-width: 1400px) {
     .offset-xl-3 {
