@@ -1,4 +1,4 @@
-@use '../abstract'as *;
+@use '../abstract' as *;
 
 /*-----------------------------------------------------------------------------------
 
@@ -49,7 +49,6 @@
 /*  01. Theme default CSS
 /*----------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 
 * {
 	margin: 0;
@@ -63,6 +62,8 @@ body {
 	font-weight: normal;
 	color: $body-text-color;
 	line-height: 26px;
+	font-family: "IBM Plex Sans Arabic", sans-serif;
+
 
 	&::-webkit-scrollbar {
 		width: 5px;
@@ -169,7 +170,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $hind;
+	font-family: $IBM;
 	color: $heading-color;
 	margin-top: 0px;
 	font-weight: 700;
@@ -211,7 +212,7 @@ li {
 }
 
 p {
-	font-family: $hind;
+	font-family: $IBM;
 	font-size: 16px;
 	font-weight: normal;
 	color: $body-text-color;
