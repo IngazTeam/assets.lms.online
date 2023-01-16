@@ -90,7 +90,7 @@
 
                         &::before {
                             content: '.';
-                            font-family: $hind;
+                            font-family: $IBM;
                             font-size: 30px;
                             color: $white;
                             line-height: 18px;
@@ -109,7 +109,7 @@
 
                         &::before {
                             content: '.';
-                            font-family: $hind;
+                            font-family: $IBM;
                             font-size: 30px;
                             color: #3b459c;
                             line-height: 18px;
@@ -262,7 +262,7 @@
                     &.active {
                         &::before {
                             content: '.';
-                            font-family: $hind;
+                            font-family: $IBM;
                             font-size: 30px;
                             color: $e-text-4;
                             line-height: 18px;
@@ -273,7 +273,7 @@
                     &+.breadcrumb-item {
                         &::before {
                             content: '.';
-                            font-family: $hind;
+                            font-family: $IBM;
                             font-size: 30px;
                             color: $e-text-4;
                             line-height: 18px;

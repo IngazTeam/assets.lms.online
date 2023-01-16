@@ -46,7 +46,6 @@
 /*----------------------------------------*/
 /*  01. Theme default CSS
 /*----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +57,7 @@ body {
   font-weight: normal;
   color: #6d6e75;
   line-height: 26px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   /* Track */
   /* Handle */
   /* Handle on hover */
@@ -155,7 +155,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Hind", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   color: #0e1133;
   margin-top: 0px;
   font-weight: 700;
@@ -197,7 +197,7 @@ li {
 }
 
 p {
-  font-family: "Hind", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #6d6e75;
@@ -895,12 +895,24 @@ p {
     padding: 20px 0;
   }
 }
+.header__padding .header_logo_container {
+  display: inline-block;
+  width: 114px;
+  height: auto;
+  overflow: hidden;
+}
+.header__padding .header_logo_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .header__shadow {
   box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
 }
 .header__area .logo_container {
   width: 114px;
-  height: 30px;
+  height: auto;
   overflow: hidden;
 }
 .header__area .logo_container img {
@@ -1059,7 +1071,6 @@ p {
   top: calc(100% + 10px);
 }
 .header__search input {
-  width: 280px;
   height: 50px;
   line-height: 40px;
   border-radius: 4px;
@@ -1084,7 +1095,8 @@ p {
 .header__search button {
   background: transparent;
   position: absolute;
-  top: 15px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 12px;
 }
 .header__search button i::after {
@@ -1120,7 +1132,9 @@ p {
   align-items: center;
   -webkit-padding-start: 18px;
           padding-inline-start: 18px;
-  width: 280px;
+  max-width: 250px;
+  height: 52px;
+  overflow: hidden;
 }
 .header__search.with-wish-cart .header__cart {
   position: static !important;
@@ -1134,7 +1148,7 @@ p {
   margin-top: 10px;
 }
 .header__search.with-wish-cart input {
-  width: auto !important;
+  max-width: 232px !important;
   padding: 5px;
   border: 0 !important;
 }
@@ -7176,6 +7190,19 @@ p.checkout-coupon input[type=text]:focus {
   color: #00c3b3;
 }
 
+.brand__area .brand__item {
+  width: 100px;
+  height: 75px;
+  overflow: hidden;
+  border: 1px solid rgb(215, 215, 215);
+}
+.brand__area .brand__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*----------------------------------------*/
 /*  20. TEACHER CSS START
 /*----------------------------------------*/
@@ -7489,7 +7516,7 @@ p.checkout-coupon input[type=text]:focus {
 }
 .page__title-wrapper .breadcrumb .breadcrumb-item.active::before {
   content: ".";
-  font-family: "Hind", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 30px;
   color: #ffffff;
   line-height: 18px;
@@ -7505,7 +7532,7 @@ p.checkout-coupon input[type=text]:focus {
 }
 .page__title-wrapper .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   content: ".";
-  font-family: "Hind", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 30px;
   color: #3b459c;
   line-height: 18px;
@@ -7644,7 +7671,7 @@ p.checkout-coupon input[type=text]:focus {
 }
 .page__title-breadcrumb .breadcrumb .breadcrumb-item.active::before {
   content: ".";
-  font-family: "Hind", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 30px;
   color: #53545b;
   line-height: 18px;
@@ -7652,7 +7679,7 @@ p.checkout-coupon input[type=text]:focus {
 }
 .page__title-breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   content: ".";
-  font-family: "Hind", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
   font-size: 30px;
   color: #53545b;
   line-height: 18px;
@@ -8596,6 +8623,18 @@ p.checkout-coupon input[type=text]:focus {
 .footer__widget-body-2 p {
   color: #53545b;
 }
+.footer__widget .footer_logo_container {
+  display: block;
+  width: 114px;
+  height: auto;
+  overflow: hidden;
+}
+.footer__widget .footer_logo_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .footer__social h4 {
   font-size: 20px;
   font-weight: 600;
@@ -8714,7 +8753,8 @@ p.checkout-coupon input[type=text]:focus {
   font-size: 14px;
   line-height: 20px;
   color: #83848a;
-  padding-right: 60px;
+  -webkit-padding-end: 60px;
+          padding-inline-end: 60px;
 }
 .footer__subscribe-2 p {
   color: #6d6e75;
@@ -8868,6 +8908,11 @@ p.checkout-coupon input[type=text]:focus {
 [dir=rtl] .pl-85 {
   padding-right: 85px;
   padding-left: unset !important;
+}
+@media (max-width: 992px) {
+  [dir=rtl] .pt-115 {
+    padding-top: 50px !important;
+  }
 }
 @media (min-width: 1400px) {
   [dir=rtl] .offset-xl-3 {
