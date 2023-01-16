@@ -6910,7 +6910,6 @@ p.checkout-coupon input[type=text]:focus {
   z-index: 1;
   margin-left: -35px;
 }
-<<<<<<< HEAD
 .why__thumb .main-image {
   width: 507px;
   height: 514px;
@@ -6927,9 +6926,6 @@ p.checkout-coupon input[type=text]:focus {
   height: 100%;
   object-fit: cover;
 }
-=======
-
->>>>>>> b7e5e867439db8379d89dfc1b3e53950fae6ec9d
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .why__thumb {
     margin-top: 50px;
@@ -8793,7 +8789,6 @@ p.checkout-coupon input[type=text]:focus {
   position: relative;
   z-index: 1;
 }
-<<<<<<< HEAD
 @media (max-width: 576px) {
   .page__title-wrapper {
     margin-top: 0;
@@ -8804,9 +8799,6 @@ p.checkout-coupon input[type=text]:focus {
     margin-top: 0 !important;
   }
 }
-=======
-
->>>>>>> b7e5e867439db8379d89dfc1b3e53950fae6ec9d
 .page__title-wrapper .breadcrumb {
   margin-bottom: 0;
 }
@@ -8850,7 +8842,6 @@ p.checkout-coupon input[type=text]:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-<<<<<<< HEAD
 @media (max-width: 576px) {
   .page__title-height {
     min-height: 200px;
@@ -8858,9 +8849,6 @@ p.checkout-coupon input[type=text]:focus {
     background-position: right;
   }
 }
-=======
-
->>>>>>> b7e5e867439db8379d89dfc1b3e53950fae6ec9d
 .page__title-height-2 {
   min-height: 700px;
 }
