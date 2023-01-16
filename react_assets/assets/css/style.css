@@ -885,21 +885,17 @@ p {
     padding: 20px 0;
   }
 }
-
 .header__padding .header_logo_container {
   display: inline-block;
   width: 114px;
   height: auto;
   overflow: hidden;
 }
-
 .header__padding .header_logo_container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
   object-fit: contain;
 }
-
 .header__shadow {
   -webkit-box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
   -moz-box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
@@ -4525,6 +4521,23 @@ p {
   font-weight: 400;
   color: #6d6e75;
 }
+.events__thumb {
+  width: 770px;
+  height: 450px;
+  overflow: hidden;
+}
+.events__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .events__thumb {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+}
 
 /*----------------------------------------*/
 /*  08. PRICE CSS START
@@ -6159,6 +6172,22 @@ p.checkout-coupon input[type=text]:focus {
   z-index: 1;
   margin-left: -35px;
 }
+.why__thumb .main-image {
+  width: 507px;
+  height: 514px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .why__thumb .main-image {
+    width: 100%;
+    height: auto;
+  }
+}
+.why__thumb .main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .why__thumb {
     margin-top: 50px;
@@ -6171,7 +6200,12 @@ p.checkout-coupon input[type=text]:focus {
 }
 @media (max-width: 575px) {
   .why__thumb {
-    margin-top: 50px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .why__thumb {
+    margin-right: 0 !important;
   }
 }
 @media (max-width: 575px) {
@@ -6251,6 +6285,20 @@ p.checkout-coupon input[type=text]:focus {
 @media (max-width: 575px) {
   .why__content {
     padding-right: 0;
+  }
+}
+.why__content .section__title {
+  max-height: 96px;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .why__content .section__title {
+    max-height: 82px !important;
+  }
+}
+@media (max-width: 576px) {
+  .why__area {
+    padding-top: 0 !important;
   }
 }
 
@@ -7454,13 +7502,11 @@ p.checkout-coupon input[type=text]:focus {
   width: 100px;
   height: 75px;
   overflow: hidden;
-  border: 1px solid rgb(215, 215, 215);
+  border: 1px solid #d7d7d7;
 }
-
 .brand__area .brand__item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -7781,6 +7827,16 @@ p.checkout-coupon input[type=text]:focus {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 576px) {
+  .page__title-wrapper {
+    margin-top: 0;
+  }
+}
+@media (max-width: 576px) {
+  .page__title-wrapper .breadcrumbNav {
+    margin-top: 0 !important;
+  }
+}
 .page__title-wrapper .breadcrumb {
   margin-bottom: 0;
 }
@@ -7817,6 +7873,13 @@ p.checkout-coupon input[type=text]:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 576px) {
+  .page__title-height {
+    min-height: 200px;
+    background-size: cover;
+    background-position: right;
+  }
 }
 .page__title-height-2 {
   min-height: 700px;
@@ -8901,21 +8964,17 @@ p.checkout-coupon input[type=text]:focus {
 .footer__widget-body-2 p {
   color: #53545b;
 }
-
 .footer__widget .footer_logo_container {
   display: block;
   width: 114px;
   height: auto;
   overflow: hidden;
 }
-
 .footer__widget .footer_logo_container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
   object-fit: contain;
 }
-
 .footer__social h4 {
   font-size: 20px;
   font-weight: 600;
@@ -9032,7 +9091,6 @@ p.checkout-coupon input[type=text]:focus {
   font-size: 14px;
   line-height: 20px;
   color: #83848a;
-  -webkit-padding-end: 60px;
   padding-inline-end: 60px;
 }
 .footer__subscribe-2 p {
@@ -9189,7 +9247,7 @@ p.checkout-coupon input[type=text]:focus {
   padding-left: unset !important;
 }
 @media (max-width: 992px) {
-  [dir=rtl] .pt-115 {
+  [dir=rtl] .pt-115, [dir=rtl] .pt-120 {
     padding-top: 50px !important;
   }
 }

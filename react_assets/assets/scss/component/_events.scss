@@ -359,4 +359,14 @@
             }
         }
     }
+    &__thumb{
+        @include img_container(770px,450px);
+        img{
+            @include img_size(cover)
+        }
+        @media (max-width:992px) {
+            @include img_container(100%,auto)
+        }
+    }
 }
+

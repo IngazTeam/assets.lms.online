@@ -9,15 +9,28 @@
         position: relative;
         z-index: 1;
         margin-left: -35px;
-
+        & .main-image{        
+            @include img_container(507px,514px);
+            @media (max-width:767px){
+                width: 100%;
+                height: auto;
+            }
+            img{
+                @include img_size(cover)
+            };
+        }
         @media #{$md}{
             margin-top: 50px;
+           
         }
         @media #{$sm}{
             margin-top: 50px;
         }
         @media #{$xs}{
-            margin-top: 50px;
+            margin-top: 0px;
+        }
+        @media (max-width:992px) {
+            margin-right: 0!important;
         }
         & img{
             @media #{$xs}{
@@ -83,6 +96,18 @@
     &__content{
         @media #{$xs}{
             padding-right: 0;
+        }
+        .section__title{
+            max-height: 96px;
+            overflow: hidden;
+            @media (max-width:576px) {
+                max-height: 82px!important;
+            }
+        }
+    }
+    &__area{
+        @media (max-width:576px) {
+            padding-top: 0!important;
         }
     }
 }
