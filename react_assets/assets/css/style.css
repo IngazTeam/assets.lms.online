@@ -9335,6 +9335,15 @@ p.checkout-coupon input[type=text]:focus {
   bottom: 142px;
 }
 
+.checkout-form-list p {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: -18px;
+  -webkit-margin-start: 5px;
+  margin-inline-start: 5px;
+}
+
 /*----------------------------------------*/
 /*  23. ERROR CSS START
 /*----------------------------------------*/

@@ -2844,3 +2844,12 @@ input {
 .dt-print-view {
   direction: rtl;
 }
+
+#students-datatable {
+  padding: 10px 14px;
+
+  .datatables-mail {
+    min-width: 135px;
+    word-break: break-word;
+  }
+}

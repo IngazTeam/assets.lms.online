@@ -1,4 +1,4 @@
-@use '../abstract'as *;
+@use '../abstract' as *;
 
 /*----------------------------------------*/
 /*  22. CONTACT CSS START
@@ -371,4 +371,12 @@
             }
         }
     }
+}
+
+.checkout-form-list p {
+    color: red;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -18px;
+    margin-inline-start: 5px;
 }
