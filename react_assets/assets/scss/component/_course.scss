@@ -1060,7 +1060,7 @@
             padding: 13px 30px;
             border-bottom: 1px solid $border-8;
             @include transition(.3s);
-
+            gap: 0 10px;
             &:hover {
                 background: $grey-7;
             }
@@ -1098,10 +1098,12 @@
         }
 
         &-meta {
+            flex-shrink: 0;
             & span {
                 &.time {
                     font-size: 16px;
                     color: $e-text-4;
+                    .course__curriculum-meta span.time
 
                     & i {
                         margin-right: 7px;
