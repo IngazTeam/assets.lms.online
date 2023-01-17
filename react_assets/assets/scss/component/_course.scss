@@ -1,4 +1,4 @@
-@use '../abstract'as *;
+@use '../abstract' as *;
 
 /*----------------------------------------*/
 /*  06. COURSE CSS START
@@ -1061,6 +1061,7 @@
             border-bottom: 1px solid $border-8;
             @include transition(.3s);
             gap: 0 10px;
+
             &:hover {
                 background: $grey-7;
             }
@@ -1099,13 +1100,13 @@
 
         &-meta {
             flex-shrink: 0;
+
             & span {
                 &.time {
                     font-size: 16px;
                     color: $e-text-4;
-                    .course__curriculum-meta span.time
 
-                    & i {
+                    .course__curriculum-meta span.time & i {
                         margin-right: 7px;
                     }
                 }
@@ -1777,4 +1778,8 @@
             color: gray;
         }
     }
+}
+
+.no-rating-star {
+    color: #b8b9bf;
 }
