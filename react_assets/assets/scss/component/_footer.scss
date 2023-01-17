@@ -24,7 +24,12 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: $e-text-5;
-                margin-bottom: 30px;
+                margin-bottom: 10px;
+                &.footerDescription{
+                    max-height: 70px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                }
             }
 
             &-2 {
