@@ -2935,6 +2935,34 @@ p {
   margin-bottom: 0;
 }
 
+.loadMore {
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #29bcb0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #f0f0f0;
+  transition: 0.5s;
+}
+
+.loadMore img {
+  transition: 0.5s;
+}
+
+.loadMore:hover {
+  color: #fff;
+  background-color: #29bcb0;
+}
+
+.loadMore:hover img {
+  filter: brightness(10);
+}
+
 /*----------------------------------------*/
 /*  05. BANNER CSS START
 /*----------------------------------------*/
