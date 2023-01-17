@@ -57,8 +57,9 @@
         & ul {
             & li {
                 display: inline-block;
-                margin-right: 10px;
-
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
                 & a {
                     display: flex;
                     width: 40px;
