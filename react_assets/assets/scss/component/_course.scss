@@ -1068,13 +1068,14 @@
         }
 
         &-info {
-
+            display: flex;
+            align-items: center;
 
             & svg {
                 width: 16px;
                 height: 16px;
                 margin-inline-end: 7px;
-
+                flex-shrink: 0;
                 & .st0 {
                     fill: none;
                     stroke: #6D6E75;
@@ -1090,6 +1091,8 @@
                 color: $e-text-4;
                 font-weight: 400;
                 margin-bottom: 0;
+                max-height: 40px;
+                overflow: hidden;
 
                 & span {
                     color: $black;
