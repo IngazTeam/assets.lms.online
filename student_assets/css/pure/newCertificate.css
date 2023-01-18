@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+@media print {
+
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+
+    .print-m-0 {
+        margin: 0 !important;
+    }
+}
+
+.btn {
+    padding: 10px 17px;
+    border-radius: 3px;
+    background: #f4b71a;
+    border: none;
+    font-size: 12px;
+    margin: 10px 5px;
+}
+
+.toolbar {
+    background: #333;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+.cert-container {
+    margin: 65px 0 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cert {
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    position: relative;
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.cert-bg {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.cert-content {
+    width: 100%;
+    height: 500px;
+    padding: 70px 60px 70px 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media only screen and (min-width:320px) and (max-width:425px) {
+    .cert-content {
+        zoom: .4;
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width:500px) {
+    .cert-content {
+        zoom: .5;
+    }
+}
+
+@media only screen and (min-width:501px) and (max-width:625px) {
+    .cert-content {
+        zoom: .6;
+    }
+}
+
+@media only screen and (min-width:626px) and (max-width:685px) {
+    .cert-content {
+        zoom: .7;
+    }
+}
+
+@media only screen and (min-width:686px) and (max-width:885px) {
+    .cert-content {
+        zoom: .8;
+    }
+}
+
+h1 {
+    font-size: 44px;
+}
+
+p {
+    font-size: 25px;
+}
+
+small {
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.bottom-txt {
+    padding: 12px 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.bottom-txt * {
+    white-space: nowrap !important;
+}
+
+.other-font {
+    font-family: Cambria, Georgia, serif;
+    font-style: italic;
+}
+
+.ml-215 {
+    margin-left: 215px;
+}
+
+.certifecate.input_box label {
+    font-size: 12px;
+    color: #525C72;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.certifecate.input_box input {
+    border-radius: 10px !important;
+    border: 0px solid transparent !important;
+    background-color: #F2F3F7;
+    font-size: 9px !important;
+    padding: 5px 15px;
+    height: 33px;
+}
+
+.certifecate.input_box textarea {
+    border-radius: 10px !important;
+    border: 0px solid transparent !important;
+    background-color: #F2F3F7;
+    font-size: 9px !important;
+    padding: 5px 15px;
+    height: 100px;
+}
+
+.certifecate.input_box select {
+    appearance: none !important;
+    background: #F2F3F7 url("{{ asset('new_assets') }}/imgs/arrow-down.svg") no-repeat 6px;
+    background-size: 15px !important;
+    font-size: 9px !important;
+    padding: 5px 20px;
+    border-radius: 10px !important;
+    border: 0px solid transparent !important;
+    cursor: pointer;
+    height: 33px;
+}
+
+.certifecate.input_box .button_submit {
+    border-radius: 100px;
+    background: #29bcb0;
+    font-size: 13px;
+    width: 105px;
+    height: 30px;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.certifecate.input_box .custom__upload div {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(242 243 247);
+    border: 1px solid rgb(242, 242, 242);
+    font-size: 10px;
+    color: #525C72;
+    position: relative;
+    padding: 10px 15px;
+    height: 33px;
+    cursor: pointer;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.certifecate.input_box .custom__upload div img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    height: 24px;
+    transform: translateY(-50%);
+}
+
+/**************From backend Certificate.css***************/
+.bootstrap-datetimepicker-widget table td .btn.btn-primary {
+    background: transparent !important;
+}
+.bootstrap-datetimepicker-widget table td .btn.btn-primary:hover {
+    background: linear-gradient(90deg, #7c32ff 0%, #c738d8 51%, #7c32ff 100%) !important;
+    color: #fff !important;
+    transition: all 0.4s ease 0s;
+    background-size: 200% auto;
+}
+.mt_m_10 {
+    margin-top: -10px;
+}
+.student-certificate .certificate-position {
+    position: absolute;
+    top: 49%;
+    bottom: 14%;
+    left: 65px !important;
+    right: 65px !important;
+    margin: auto;
+}
