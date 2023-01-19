@@ -21,6 +21,34 @@
         }
     }
     &__slider{
+        & .swiper-button-next,
+        & .swiper-button-prev{
+            display: inline-block;
+            font-size: 14px;
+            width: 50px;
+            height: 50px;
+            line-height: 46px;
+            text-align: center;
+            @include border-radius(50%);
+            border: 2px solid rgba($color: $white, $alpha: .2);
+            background: transparent;
+            color: $white;            
+            &:hover{
+                background: $white;
+                border-color: $white;
+                color: $e-blue;
+            }
+        }
+        & .swiper-button-next::after{
+            content: "\f061";
+            font-weight: 400;
+            font-family: "Font Awesome 5 Pro";
+        }
+        & .swiper-button-prev::after{
+            content: "\f060";
+            font-weight: 400;
+            font-family: "Font Awesome 5 Pro";
+        }
         & .swiper-nav{
             & i{
                 display: inline-block;
@@ -117,6 +145,14 @@
         }
     }
     &__content{
+        & ul.stars-rating{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                color: #ff9415;
+            }
+        }
         & p{
             font-size: 30px;
             color: $white;

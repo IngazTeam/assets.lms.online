@@ -1,10 +1,11 @@
-@use '../abstract'as *;
+@use '../abstract' as *;
 
 /*----------------------------------------*/
 /*  02. HEADER CSS START
 /*----------------------------------------*/
 
 .header {
+
 	&__padding {
 		padding-left: 245px;
 		padding-right: 245px;
@@ -52,6 +53,15 @@
 				padding: 20px 0;
 			}
 		}
+
+		.header_logo_container {
+			display: inline-block;
+			@include img_container(114px, auto);
+
+			img {
+				@include img_size(contain)
+			}
+		}
 	}
 
 	&__shadow {
@@ -60,7 +70,7 @@
 
 	&__area {
 		.logo_container {
-			@include img_container(114px, 30px);
+			@include img_container(114px, auto);
 
 			img {
 				@include img_size(cover)
@@ -81,6 +91,10 @@
 
 			& .header__search {
 				& input {
+					background: $grey-2;
+				}
+
+				&.with-wish-cart {
 					background: $grey-2;
 				}
 			}
@@ -296,15 +310,15 @@
 
 	&__search {
 		& input {
-			width: 280px;
+			// width: 280px;
 			height: 50px;
-			line-height: 20px;
+			line-height: 40px;
 			@include border-radius(4px);
 			background: $white;
 			outline: none;
 			border: 1px solid $white;
 			font-size: 16px;
-			padding: 25px 65px 20px 55px;
+			padding: 5px 80px 5px 35px;
 
 			&::placeholder {
 				color: $e-text-1;
@@ -318,8 +332,9 @@
 		& button {
 			background: transparent;
 			position: absolute;
-			top: 15px;
-			left: 24px;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 12px;
 
 			& i {
 				&::after {
@@ -349,6 +364,44 @@
 				&:hover {
 					cursor: pointer;
 				}
+			}
+		}
+
+		& .splitter {
+			display: inline-block;
+			width: 2px;
+			height: 30px;
+			background: $grey-3;
+		}
+
+		&.with-wish-cart {
+			@include border-radius(4px);
+			background: $white;
+			border: 1px solid $white;
+			align-items: center;
+			padding-inline-start: 18px;
+			max-width: 250px;
+			height: 52px;
+			overflow: hidden;
+
+			.header__cart {
+				position: static !important;
+
+				&::after {
+					display: none !important;
+				}
+			}
+
+			.header__wish {
+				position: static !important;
+				padding-left: 8px;
+				margin-top: 10px;
+			}
+
+			& input {
+				max-width: 232px !important;
+				padding: 5px;
+				border: 0 !important;
 			}
 		}
 	}
@@ -411,6 +464,47 @@
 
 			&:hover {
 				& .cart-item {
+					background: $black;
+				}
+			}
+		}
+	}
+
+	&__wish {
+		position: absolute;
+		top: 15px;
+		right: 55px;
+
+		i {
+			display: inline-block;
+			width: 20px;
+			height: 25px;
+		}
+
+		& a {
+			position: relative;
+			font-size: 17px;
+			color: $black;
+
+			& .wish-item {
+				position: absolute;
+				top: -12px;
+				right: -10px;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				font-size: 14px;
+				color: $white;
+				background: $e-blue;
+				@include border-radius(50%);
+				font-weight: 500;
+				@include box-shadow(0px 10px 20px 0px rgba(4, 23, 118, 0.3));
+			}
+
+			&:hover {
+				& .wish-item {
 					background: $black;
 				}
 			}
@@ -1170,6 +1264,43 @@
 
 		&:hover {
 			color: #00c3b4;
+		}
+	}
+}
+
+.header__right {
+	.profile-info {
+		&::after {
+			border: none;
+			background-image: url(../../../../new_assets/imgs/arrow-down.svg);
+			background-size: 15px;
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	.dropdown {
+		.dropdown-menu {
+			width: 200px;
+			font-size: 14px;
+			margin-top: 10px;
+			border-radius: 15px;
+			border: none;
+			border: none;
+			box-shadow: 0px 0px 5px #e6e6e6;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: -10px;
+				left: 20px;
+				border: 5px solid;
+				border-color: transparent transparent white transparent;
+			}
+
+			.dropdown-item {
+				color: #726e75;
+			}
 		}
 	}
 }

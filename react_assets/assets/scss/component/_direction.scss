@@ -110,7 +110,11 @@
     padding-right: 85px;
     padding-left: unset !important;
   }
-
+  @media (max-width: 992px) {
+    .pt-115,.pt-120{
+      padding-top: 50px!important;
+    }
+  }
   /*-------------Offset------------*/
   @media (min-width: 1400px) {
     .offset-xl-3 {
@@ -132,6 +136,11 @@
       margin-left: unset;
       margin-right: 33.33%;
     }
+
+  .offset-xxl-2 {
+      margin-left: unset!important;
+      margin-right: 16.6666666667%;
+  }
   }
 
   /*----------input---------*/
@@ -383,5 +392,8 @@
     .cart-page-total ul > li > span {
       float: left!important;
     }
+  }
+  .dropdown-menu{
+    text-align: right!important;
   }
 }

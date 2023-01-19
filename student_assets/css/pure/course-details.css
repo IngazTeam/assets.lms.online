@@ -1,0 +1,309 @@
+/* Style the tabs */
+.tab_part .nav-link {
+  width: 120px;
+}
+
+.tabs {
+  margin-bottom: 28px;
+  display: flex;
+  gap: 10px;
+}
+
+.tabs a {
+  font-size: .85rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 40px;
+  transition: background 0.1s, color 0.1s;
+  background: #fff;
+  color: #29BCB0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media(max-width:768px) {
+  .tabs a {
+    padding: 5px 10px;
+    font-size: .7rem;
+  }
+}
+
+/* Change background color of tabs on hover */
+.tabs a:hover {
+  background: linear-gradient(145deg, #f4f4f4, #cecece);
+  color: #888;
+}
+
+
+/* Styling for active tab */
+.tabs a.active {
+  background-color: #29BCB0;
+  color: #fff;
+  cursor: default;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+
+  display: none;
+
+}
+
+
+
+.content .active {
+  display: block;
+}
+
+.tabcontent p {
+  margin-bottom: 12px;
+}
+
+.tabcontent p:last-child {
+  margin-bottom: 0;
+}
+
+.tabcontent .read-more-link a {
+  color: #626262;
+  text-decoration: none;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+
+
+/* the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 22px;
+  margin-left: 4px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1A1B1F;
+  transition: .2s;
+  box-shadow: 2px 2px 3px #ffffff,
+    -2px -2px 3px #bebebe;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 2px;
+  background: #9294b8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #f4f4f4;
+}
+
+input:checked+.slider:before {
+  transform: translateX(21px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 11px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* the course details  */
+.about-the-course {
+  background-color: #fff;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #EAEAEA;
+}
+
+.about-the-course .img-box,
+.course-teachers .img-box {
+  width: 190px;
+  height: 120px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #EAEAEA;
+}
+
+@media(max-width:576px) {
+  .about-the-course .img-box {
+    width: 100% !important;
+  }
+}
+
+.about-the-course .img-box img {
+  width: 100%;
+}
+
+.about-the-course .text-box {
+  width: 100%;
+}
+
+.about-the-course .text-box .course-header {
+  color: #29BCB0;
+  font-weight: 600;
+}
+
+.about-the-course .text-box .course-snip {
+  color: #525F77;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+.next-courses {
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid #EAEAEA;
+}
+
+.next-course {
+  position: relative;
+  color: #525F77;
+  font-weight: 700;
+}
+
+.next-course::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #29BCB0;
+  border-radius: 50%;
+  right: -15px;
+  top: 5px;
+}
+
+.next-course.exam::before {
+  background-color: #4C75F3;
+}
+
+.next-course.direct::before {
+  background-color: #EA7E8D;
+}
+
+.the-content .next-course::before {
+  background-color: #E2E2E2;
+}
+
+.the-content span {
+  color: #C9C9C9;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* teachers area  */
+.teachers {
+  padding: 20px 0;
+
+}
+
+.teachers .owl-dots {
+  display: none;
+}
+
+.course-teachers {
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid #EAEAEA;
+}
+
+.course-teachers .instractor_details_info h4 {
+  color: #29BCB0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.course-teachers .instractor_details_info .ins_details p,
+.course-teachers .instractor_details_info .single_qualification {
+  font-size: 12px;
+  color: #525F77;
+  font-weight: 600;
+  text-shadow: 0px 0px 3px #cfcfcf7b;
+}
+
+.course-teachers .instractor_details_info .single_qualification {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.course-teachers .teacher-card {
+  background-color: #F2F3F7;
+  padding: 15px 5px;
+  border-radius: 20px;
+  gap: 5px;
+  height: 205px;
+}
+
+.course-teachers .teacher-card .text-box {
+  height: 90px;
+}
+
+
+.course-teachers .teacher-card .teacher-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.course-teachers .teacher-card .teacher-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-teachers .teacher-card .teacher-name {
+  color: #29BCB0;
+  font-weight: bold;
+}
+
+.course-teachers .teacher-card .job-desc {
+  color: #525F77;
+  font-weight: 500;
+  font-size: 12px;
+  height: 70px;
+  overflow: hidden;
+}
+
+/* chart area  */
+.course-percentage {
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid #EAEAEA;
+
+}
+
+p.next-course {
+  font-size: 12px;
+  margin-bottom: 0;
+}

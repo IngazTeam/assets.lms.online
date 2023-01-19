@@ -2301,4 +2301,42 @@ input::placeholder {
   position: absolute !important;
   bottom: -15px !important;
   top: unset !important;
+}
+
+.country_code.code-select {
+  position: absolute !important;
+  direction: ltr;
+  left: 10px;
+  top: 50%;
+  max-width: 90px;
+  transform: translateY(-15%);
+}
+.country_code.code-select select {
+  border: 0 !important;
+  font-weight: 500 !important;
+  line-height: 1.5;
+  color: #525F77 !important;
+  font-size: 12px !important;
+  direction: rtl;
+  height: unset !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../../imgs/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 5px;
+  padding: 0 30px !important;
+}
+
+.dt-print-view {
+  direction: rtl;
+}
+
+#students-datatable {
+  padding: 10px 14px;
+}
+#students-datatable .datatables-mail {
+  min-width: 135px;
+  word-break: break-word;
 }/*# sourceMappingURL=style_new.css.map */

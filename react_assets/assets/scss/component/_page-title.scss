@@ -72,10 +72,17 @@
         &-wrapper {
             position: relative;
             z-index: 1;
-
+            @media (max-width:576px) {
+                margin-top: 0;
+            }
+            .breadcrumbNav{
+                @media (max-width:576px) {
+                    margin-top: 0!important;
+                }
+            }
             & .breadcrumb {
                 margin-bottom: 0;
-
+              
                 & .breadcrumb-item {
                     &.active {
                         font-size: 15px;
@@ -83,7 +90,7 @@
 
                         &::before {
                             content: '.';
-                            font-family: $hind;
+                            font-family: $IBM;
                             font-size: 30px;
                             color: $white;
                             line-height: 18px;
@@ -102,7 +109,7 @@
 
                         &::before {
                             content: '.';
-                            font-family: $hind;
+                            font-family: $IBM;
                             font-size: 30px;
                             color: #3b459c;
                             line-height: 18px;
@@ -116,6 +123,11 @@
         &-height {
             min-height: 450px;
             @include background();
+            @media (max-width:576px) {
+                min-height: 200px;
+                background-size: cover;
+                background-position: right;
+            }
 
             &-2 {
                 min-height: 700px;
@@ -250,7 +262,7 @@
                     &.active {
                         &::before {
                             content: '.';
-                            font-family: $hind;
+                            font-family: $IBM;
                             font-size: 30px;
                             color: $e-text-4;
                             line-height: 18px;
@@ -261,7 +273,7 @@
                     &+.breadcrumb-item {
                         &::before {
                             content: '.';
-                            font-family: $hind;
+                            font-family: $IBM;
                             font-size: 30px;
                             color: $e-text-4;
                             line-height: 18px;
