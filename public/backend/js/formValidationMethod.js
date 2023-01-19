@@ -13,11 +13,17 @@ function formValidateRequest(data, form = 'none') {
         } else {
           elemmentObj = $(`[name=${name}]`);
         }
+
         let validate_show =`<span class="help-block form-error"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> ${message[name] ?? 'This field is required '}</span>`;
-    //    console.log(elemmentObj)
         elemmentObj.closest("div").find("span.form-error").remove();
         elemmentObj.addClass('red-border');
-        elemmentObj.after(validate_show);
+        // console.log(elemmentObj.parent())
+        if(elemmentObj.attr("type") == "file"){
+          elemmentObj.closest("div").after(validate_show);
+        }else{
+          elemmentObj.after(validate_show);
+        }
+
       });
     }
   } catch (e) {
