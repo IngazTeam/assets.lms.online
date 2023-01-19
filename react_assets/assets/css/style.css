@@ -6569,6 +6569,15 @@ p.checkout-coupon input[type=text]:focus {
   width: 100%;
   height: 100%;
 }
+.testimonial__content ul.stars-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.testimonial__content ul.stars-rating a {
+  color: #ff9415;
+}
 .testimonial__content p {
   font-size: 30px;
   color: #ffffff;

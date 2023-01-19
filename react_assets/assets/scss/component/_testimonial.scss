@@ -145,6 +145,14 @@
         }
     }
     &__content{
+        & ul.stars-rating{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                color: #ff9415;
+            }
+        }
         & p{
             font-size: 30px;
             color: $white;
