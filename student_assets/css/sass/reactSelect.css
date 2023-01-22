@@ -1,0 +1,58 @@
+.react-select-container {
+  height: 28px !important;
+  min-width: 140px !important;
+}
+.react-select__control {
+  min-height: 28px !important;
+  height: 28px !important;
+  border-radius: 15px !important;
+  border: 0 !important;
+}
+.react-select__control--menu-is-open {
+  border-radius: 5px 5px 0 0 !important;
+}
+.react-select__control--menu-is-open .react-select__indicator::before {
+  transform: rotate(180deg) !important;
+}
+.react-select__single-value {
+  font-size: 12px;
+  color: #b8b8b8;
+  font-weight: 600;
+}
+.react-select__value-container {
+  height: 100%;
+  padding-inline-start: 15px !important;
+}
+.react-select__indicators {
+  height: 100%;
+}
+.react-select__input-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.react-select__input::placeholder {
+  font-size: 12px;
+  color: #b8b8b8;
+}
+.react-select__indicator svg {
+  display: none;
+}
+.react-select__indicator::before {
+  content: "";
+  width: 11px;
+  height: 14px;
+  background: url(../../imgs/bodyicons/downarrow.png);
+}
+.react-select__indicator-separator {
+  display: none;
+}
+.react-select__menu {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.16) !important;
+  background-color: #fff !important;
+  border: 0 0 8px 8px;
+  border-top: none;
+  margin-top: -1px !important;
+  z-index: 9999;
+}
+
+/*# sourceMappingURL=reactSelect.css.map */
