@@ -29,6 +29,7 @@
 .react-select__input-container {
   padding: 0 !important;
   margin: 0 !important;
+  color: #b8b8b8 !important;
 }
 .react-select__input::placeholder {
   font-size: 12px;
@@ -53,6 +54,14 @@
   border-top: none;
   margin-top: -1px !important;
   z-index: 9999;
+}
+.react-select__menu-list {
+  padding: 4px 7px !important;
+}
+.react-select__option {
+  border-radius: 15px !important;
+  font-size: 12px !important;
+  padding: 5px 10px !important;
 }
 
 /*# sourceMappingURL=reactSelect.css.map */

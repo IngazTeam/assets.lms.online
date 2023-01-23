@@ -30,7 +30,8 @@
     }
     &__input-container{
         padding: 0!important;
-        margin: 0!important;       
+        margin: 0!important; 
+        color: #b8b8b8!important;      
     }
     &__input{
        &::placeholder{
@@ -59,5 +60,13 @@
         border-top: none;
         margin-top: -1px!important;
         z-index: 9999;
+    }
+    &__menu-list{
+        padding: 4px 7px!important;
+    }
+    &__option{
+        border-radius: 15px!important;
+        font-size: 12px!important;
+        padding: 5px 10px!important;
     }
 }
