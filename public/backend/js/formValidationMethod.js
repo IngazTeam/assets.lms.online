@@ -13,14 +13,25 @@ function formValidateRequest(data, form = 'none') {
         } else {
           elemmentObj = $(`[name=${name}]`);
         }
+        let  messageText = "" ;
+        //=============================================
+        if(typeof message[name]=== 'object' && message[name]!== null){
+          Object.keys(message[name]).forEach(key => {
+            messageText += message[name][key]
+          });
+        }else{
+          messageText = message[name] ;
+        }
+        let validate_show =`<span class="help-block form-error"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> ${messageText ?? 'This field is required '}</span>`;
 
-        let validate_show =`<span class="help-block form-error"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i> ${message[name] ?? 'This field is required '}</span>`;
-        elemmentObj.closest("div").find("span.form-error").remove();
+        console.log(elemmentObj.closest("div").find("span.form-error"))
         elemmentObj.addClass('red-border');
         // console.log(elemmentObj.parent())
         if(elemmentObj.attr("type") == "file"){
+          elemmentObj.closest("div").parent().find("span.form-error").remove();
           elemmentObj.closest("div").after(validate_show);
         }else{
+          elemmentObj.closest("div").find("span.form-error").remove();
           elemmentObj.after(validate_show);
         }
 
