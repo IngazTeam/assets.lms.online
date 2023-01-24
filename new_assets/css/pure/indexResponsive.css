@@ -500,6 +500,12 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
   }
 }
 
+/*----------------*/
+.xd_courses_table .email-fixed-width {
+  max-width: 150px;
+  word-break: break-word;
+}
+
 .responsive_box.title_with_breadcrumbs {
   display: flex;
   align-items: center;
@@ -629,15 +635,18 @@ html[dir="rtl"] .xd_courses_table.card_box table.dataTable tbody td:first-child:
   overflow: hidden;
   line-height: 18px;
 }
+
 /**********image container in front page***********/
-.front_img_container{
+.front_img_container {
   max-width: 200px;
   margin-inline: auto;
-  }
-.img-container-80-px{
+}
+
+.img-container-80-px {
   max-width: 80px;
   overflow: hidden;
-  }
-.small-label-upload{
-  padding: 4px 15px!important;
-  }
+}
+
+.small-label-upload {
+  padding: 4px 15px !important;
+}
