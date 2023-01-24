@@ -862,7 +862,7 @@ p {
 }
 @media (max-width: 575px) {
   .header__padding {
-    padding: 20px;
+    padding: 10px 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1931,6 +1931,76 @@ p {
 }
 .header__right .dropdown .dropdown-menu .dropdown-item {
   color: #726e75;
+}
+
+/***************************Responsive assets****************************/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .md_drop_menu::after {
+    content: "\f078";
+    font-family: "Font Awesome 5 Pro";
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .md_drop_menu::after {
+    content: "\f0ca";
+    font-family: "Font Awesome 5 Pro";
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #mobile-menu {
+    display: none;
+  }
+
+  .md_drop_menu {
+    display: flex !important;
+    position: relative;
+  }
+  .md_drop_menu .responsiveMenu {
+    background: none !important;
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0e1133;
+    padding: 3px 15px;
+    min-width: 100px;
+  }
+  .md_drop_menu .responsiveMenu:focus, .md_drop_menu .responsiveMenu:focus-visible {
+    border: 0 !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+  }
+  .md_drop_menu::after {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 767px) {
+  header .p-0-sm {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  header .header_logo_container {
+    width: 100px !important;
+  }
+  header .main-menu,
+header .profileDropdown {
+    display: none !important;
+  }
+  header .header__search {
+    height: 40px !important;
+    margin: 0 !important;
+  }
+  header .header__search .header__wish, header .header__search .header__cart, header .header__search .splitter {
+    display: none;
+  }
 }
 
 /*----------------------------------------*/
@@ -6573,7 +6643,6 @@ p.checkout-coupon input[type=text]:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
 }
 .testimonial__content ul.stars-rating a {
   color: #ff9415;

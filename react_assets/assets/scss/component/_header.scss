@@ -33,7 +33,7 @@
 		}
 
 		@media #{$xs} {
-			padding: 20px;
+			padding:10px 20px;
 		}
 
 		&-2 {
@@ -1302,5 +1302,80 @@
 				color: #726e75;
 			}
 		}
+	}
+}
+/***************************Responsive assets****************************/
+@media #{$lg} {
+	.md_drop_menu{
+		&::after{
+			content: "\f078";
+			font-family: "Font Awesome 5 Pro";
+		}
+	}
+}
+@media #{$md} {
+	.md_drop_menu{
+		&::after{
+			content: "\f0ca";
+			font-family: "Font Awesome 5 Pro";
+		}
+	}
+}
+@media #{$md-to-lg}{
+	#mobile-menu{
+		display: none;
+	}
+	.md_drop_menu{
+		display: flex!important;
+		position: relative;
+		.responsiveMenu{
+			background: none!important;
+			-moz-appearance:none; /* Firefox */
+			-webkit-appearance:none; /* Safari and Chrome */
+			appearance:none;
+			border: 0;
+			font-size: 16px;
+			font-weight: 500;
+			color: #0e1133;
+			padding:3px 15px;
+			min-width: 100px;
+			&:focus,
+			&:focus-visible{
+				border: 0!important;
+				box-shadow: none!important;
+				outline: 0!important;
+			}
+		}
+		&::after{
+			position: absolute;
+			left: 0;
+			z-index: -1;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+}
+}
+
+header{
+	@media #{$to-md} {
+		.p-0-sm{
+			padding-left: 0!important;
+			padding-right: 0!important;
+		}
+		.header_logo_container{
+			width: 100px!important;
+		}
+		.main-menu,
+		.profileDropdown{
+			display: none!important;
+		}
+		.header__search{
+			height: 40px!important;
+			margin:0!important;
+			.header__wish , .header__cart , .splitter{
+				display: none;
+			}
+		}
+		
 	}
 }
