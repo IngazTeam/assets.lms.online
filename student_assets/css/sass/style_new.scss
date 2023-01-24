@@ -1284,6 +1284,7 @@ body {
     background-color: #fff;
     padding: 12px;
     border-radius: 18px;
+    overflow: hidden;
 
     @media(min-width:320px)and (max-width:400px) {
       width: 100%;
@@ -3037,4 +3038,8 @@ input {
 
 .dt-print-view {
   direction: rtl;
+}
+.swiper-wrapper{
+  display: flex;
+  align-items: center;
 }

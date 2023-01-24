@@ -38,10 +38,15 @@ $(document).on('click', '.editStudent', function () {
             data: {
                 '_token': token,
             },
+            beforeSend:function () {
+                $('.custom-select').children().removeAttr('selected','selected');
+            },
             success: function (student) {
-                console.log(student.gender)
+                // console.log(student);
+                // console.log(student.gender)
                 $('#studentId').val(student.id);
                 $('#studentName').val(student.name);
+                $('#selectcode').val(student.country_code);
                 $('#studentAbout').summernote("code", student.about);
                 $('#studentDob').val(student.dob);
                 $('#studentPhone').val(student.phone);
@@ -56,6 +61,7 @@ $(document).on('click', '.editStudent', function () {
                 $('#studentLinkedin').val(student.linkedin);
                 $('#studentYoutube').val(student.youtube);
                 $("#editStudent").modal('show');
+                $('#code'+student.country_code).attr('selected','selected')
             },
             error: function (data) {
                 toastr.error(__('common.Something Went Wrong'), __('common.Error'));
