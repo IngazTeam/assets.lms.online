@@ -9,7 +9,7 @@
         @include border-radius(6px);
         padding: 30px;
         & .teacher__thumb{
-            @include img_container(310px,300px);
+            @include img_container(100%,300px);
             img{
                 @include img_size(cover)
             }

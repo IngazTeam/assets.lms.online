@@ -141,7 +141,11 @@
         overflow: hidden;
 
         @media #{$lg} {
-            font-size: 18px;
+            font-size: 18px!important;
+            height: 22px !important;
+        }
+        @media #{$md} {
+            font-size: 18px!important;
             height: 22px !important;
         }
 
@@ -633,6 +637,9 @@
                     }
                 }
             }
+            @media #{$to-md} {
+                display: none;
+            }
         }
 
         &-2 {
@@ -700,12 +707,14 @@
 
     &__sort {
         @media #{$xs} {
-            margin-top: 15px;
+            // margin-top: 15px;
         }
 
         &-inner {
             position: relative;
-
+            @media #{$xs} {
+               width: 100%;
+            }
             &::before {
                 content: "\f107";
                 right: 15px;
@@ -730,6 +739,9 @@
                 font-weight: 500;
                 text-transform: capitalize;
                 @include border-radius(4px);
+                @media #{$xs} {
+                    width: 100%;
+                }
 
                 &:hover {
                     cursor: pointer;
@@ -774,22 +786,26 @@
 
     &__sidebar {
         @media #{$lg} {
-            padding-left: 0;
+            padding-left: 0!important;
+            padding-right: 0!important;
         }
 
         @media #{$md} {
-            padding-left: 0;
+            padding-left: 0!important;
+            padding-right: 0!important;
             margin-top: 50px;
         }
 
         @media #{$sm} {
             margin-top: 50px;
-            padding-left: 0;
+            padding-left: 0!important;
+            padding-right: 0!important;
         }
 
         @media #{$xs} {
             margin-top: 50px;
-            padding-left: 0;
+            padding-left: 0!important;
+            padding-right: 0!important;
         }
 
         &-widget {

@@ -28,17 +28,17 @@
 ****************************************************/
 
 (function ($) {
-"use strict";
+	"use strict";
 
 	var windowOn = $(window);
 	////////////////////////////////////////////////////
-    // 01. PreLoader Js
-	windowOn.on('load',function() {
+	// 01. PreLoader Js
+	windowOn.on('load', function () {
 		$("#loading").fadeOut(500);
 	});
 
 	////////////////////////////////////////////////////
-    // 02. Mobile Menu Js
+	// 02. Mobile Menu Js
 	$('#mobile-menu').meanmenu({
 		meanMenuContainer: '.mobile-menu',
 		meanScreenWidth: "1199",
@@ -47,7 +47,7 @@
 
 
 	////////////////////////////////////////////////////
-    // 03. Sidebar Js
+	// 03. Sidebar Js
 	$("#sidebar-toggle").on("click", function () {
 		$(".sidebar__area").addClass("sidebar-opened");
 		$(".body-overlay").addClass("opened");
@@ -59,7 +59,7 @@
 
 
 	////////////////////////////////////////////////////
-    // 04. Cart Toggle Js
+	// 04. Cart Toggle Js
 	$(".cart-toggle-btn").on("click", function () {
 		$(".cartmini__wrapper").addClass("opened");
 		$(".body-overlay").addClass("opened");
@@ -77,7 +77,7 @@
 
 
 	////////////////////////////////////////////////////
-    // 05. Search Js
+	// 05. Search Js
 	$(".search-toggle").on("click", function () {
 		$(".header__search-3").addClass("search-opened");
 		$(".body-overlay").addClass("opened");
@@ -89,7 +89,7 @@
 
 
 	////////////////////////////////////////////////////
-    // 06. Sticky Header Js
+	// 06. Sticky Header Js
 	windowOn.on('scroll', function () {
 		var scroll = $(window).scrollTop();
 		if (scroll < 100) {
@@ -100,32 +100,32 @@
 	});
 
 	////////////////////////////////////////////////////
-    // 07. Data Background Js
+	// 07. Data Background Js
 	$("[data-background").each(function () {
 		$(this).css("background-image", "url( " + $(this).attr("data-background") + "  )");
 	});
 
-  
+
 	////////////////////////////////////////////////////
-    // 08. Testimonial Slider Js
+	// 08. Testimonial Slider Js
 	var swiper = new Swiper('.testimonial__slider', {
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
 		},
 	});
-	
+
 
 
 	////////////////////////////////////////////////////
-    // 09. Slider Js (Home 3)
+	// 09. Slider Js (Home 3)
 	var galleryThumbs = new Swiper('.slider__nav', {
 		spaceBetween: 0,
 		slidesPerView: 4,
 		freeMode: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
-		
+
 	});
 	var galleryTop = new Swiper('.slider__wrapper', {
 		spaceBetween: 0,
@@ -144,7 +144,7 @@
 
 
 	////////////////////////////////////////////////////
-    // 10. Brand Js
+	// 10. Brand Js
 	var swiper = new Swiper('.brand__slider', {
 		slidesPerView: 6,
 		spaceBetween: 30,
@@ -161,7 +161,7 @@
 	});
 
 	////////////////////////////////////////////////////
-    // 11. Tesimonial Js
+	// 11. Tesimonial Js
 	var tesimonialThumb = new Swiper('.testimonial-nav', {
 		spaceBetween: 20,
 		slidesPerView: 3,
@@ -171,89 +171,91 @@
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
 		centeredSlides: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-	  });
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
 	var testimonialText = new Swiper('.testimonial-text', {
-	spaceBetween: 0,
-	loop: true,
-	loopedSlides: 5, //looped slides should be the same
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	thumbs: {
-		swiper: tesimonialThumb,
-	},
+		spaceBetween: 0,
+		loop: true,
+		loopedSlides: 5, //looped slides should be the same
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		thumbs: {
+			swiper: tesimonialThumb,
+		},
 	});
 
 	////////////////////////////////////////////////////
-   	// 12. Course Slider Js
+	// 12. Course Slider Js
 	var swiper = new Swiper('.course__slider', {
-	spaceBetween: 30,
-	slidesPerView: 2,
-	breakpoints: {  
-		'768': {
-			slidesPerView: 2,
+		spaceBetween: 30,
+		slidesPerView: 2,
+		breakpoints: {
+			'768': {
+				slidesPerView: 2,
+			},
+			'576': {
+				slidesPerView: 1,
+			},
+			'0': {
+				slidesPerView: 1,
+			},
 		},
-		'576': {
-			slidesPerView: 1,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
 		},
-		'0': {
-			slidesPerView: 1,
-		},
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
 	});
-	
+
 	////////////////////////////////////////////////////
-    // 13. Masonary Js
-	$('.grid').imagesLoaded( function() {
+	// 13. Masonary Js
+	$('.grid').imagesLoaded(function () {
 		// init Isotope
 		var $grid = $('.grid').isotope({
-		  itemSelector: '.grid-item',
-		  percentPosition: true,
-		  masonry: {
-			// use outer width of grid-sizer for columnWidth
-			columnWidth: '.grid-item',
-		  }
+			itemSelector: '.grid-item',
+			percentPosition: true,
+			masonry: {
+				// use outer width of grid-sizer for columnWidth
+				columnWidth: '.grid-item',
+			}
 		});
 
 
-	// filter items on button click
-	$('.masonary-menu').on( 'click', 'button', function() {
-	  var filterValue = $(this).attr('data-filter');
-	  $grid.isotope({ filter: filterValue });
-	});
+		// filter items on button click
+		$('.masonary-menu').on('click', 'button', function () {
+			var filterValue = $(this).attr('data-filter');
+			$grid.isotope({
+				filter: filterValue
+			});
+		});
 
-	//for menu active class
-	$('.masonary-menu button').on('click', function(event) {
-		$(this).siblings('.active').removeClass('active');
-		$(this).addClass('active');
-		event.preventDefault();
-	});
+		//for menu active class
+		$('.masonary-menu button').on('click', function (event) {
+			$(this).siblings('.active').removeClass('active');
+			$(this).addClass('active');
+			event.preventDefault();
+		});
 
 	});
 
 
 	////////////////////////////////////////////////////
-    // 14. Wow Js
+	// 14. Wow Js
 	new WOW().init();
 
 	////////////////////////////////////////////////////
-    // 15. Data width Js
+	// 15. Data width Js
 	$("[data-width]").each(function () {
 		$(this).css("width", $(this).attr("data-width"));
-	  });
-	
+	});
+
 
 	////////////////////////////////////////////////////
-    // 16. Cart Quantity Js
+	// 16. Cart Quantity Js
 	$('.cart-minus').click(function () {
 		var $input = $(this).parent().find('input');
 		var count = parseInt($input.val()) - 1;
@@ -298,22 +300,22 @@
 
 	////////////////////////////////////////////////////
 	// 21. Counter Js
-	$('.counter').counterUp({
-		delay: 10,
-		time: 1000
-	});
-	
+	// $('.counter').counterUp({
+	// 	delay: 10,
+	// 	time: 1000
+	// });
+
 	////////////////////////////////////////////////////
 	// 22. Parallax Js
-	if ($('.scene').length > 0 ) {
+	if ($('.scene').length > 0) {
 		$('.scene').parallax({
 			scalarX: 10.0,
 			scalarY: 15.0,
-		}); 
+		});
 	};
 
 	////////////////////////////////////////////////////
-    // 23. InHover Active Js
+	// 23. InHover Active Js
 	$('.hover__active').on('mouseenter', function () {
 		$(this).addClass('active').parent().siblings().find('.hover__active').removeClass('active');
 	});

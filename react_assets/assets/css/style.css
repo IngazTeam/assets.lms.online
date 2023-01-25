@@ -1967,7 +1967,7 @@ p {
     font-weight: 500;
     color: #0e1133;
     padding: 3px 15px;
-    min-width: 100px;
+    min-width: 120px;
   }
   .md_drop_menu .responsiveMenu:focus, .md_drop_menu .responsiveMenu:focus-visible {
     border: 0 !important;
@@ -2006,6 +2006,25 @@ header .profileDropdown {
 /*----------------------------------------*/
 /*  03. HERO CSS START
 /*----------------------------------------*/
+.hero__area .hero-first-col {
+  order: 1;
+}
+@media (max-width: 767px) {
+  .hero__area .hero-first-col {
+    order: 2;
+  }
+}
+.hero__area .hero-second-col {
+  order: 2;
+}
+@media (max-width: 767px) {
+  .hero__area .hero-second-col {
+    order: 1;
+  }
+  .hero__area .hero-second-col .hero__thumb {
+    justify-content: center;
+  }
+}
 .hero__height {
   min-height: 950px;
 }
@@ -2135,6 +2154,12 @@ header .profileDropdown {
 .hero__thumb-big {
   position: relative;
 }
+@media (max-width: 767px) {
+  .hero__thumb-big {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
 .hero__thumb-big img {
   max-width: 400px;
   max-height: 460px;
@@ -2152,13 +2177,13 @@ header .profileDropdown {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .hero__thumb-big img {
-    margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
   }
 }
 @media (max-width: 575px) {
   .hero__thumb-big img {
-    margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
   }
 }
@@ -2198,6 +2223,11 @@ header .profileDropdown {
 .hero__thumb-shape img.hero-1-circle-3 {
   bottom: -47px;
   right: 1%;
+}
+@media (max-width: 767px) {
+  .hero__thumb-shape img.hero-1-circle-3 {
+    bottom: 15px !important;
+  }
 }
 .hero__thumb-shape img.hero-1-circle-4 {
   top: -50px;
@@ -2905,7 +2935,13 @@ header .profileDropdown {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .course__title {
-    font-size: 18px;
+    font-size: 18px !important;
+    height: 22px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .course__title {
+    font-size: 18px !important;
     height: 22px !important;
   }
 }
@@ -3329,6 +3365,11 @@ header .profileDropdown {
 .course__tab-btn .nav-tabs .nav-item .nav-link.active svg .st0 {
   fill: #ffffff;
 }
+@media (max-width: 767px) {
+  .course__tab-btn {
+    display: none;
+  }
+}
 .course__tab-2 .nav-tabs {
   border: none;
   -webkit-border-radius: 4px;
@@ -3381,13 +3422,13 @@ header .profileDropdown {
   display: inline-block;
   margin-bottom: 0;
 }
-@media (max-width: 575px) {
-  .course__sort {
-    margin-top: 15px;
-  }
-}
 .course__sort-inner {
   position: relative;
+}
+@media (max-width: 575px) {
+  .course__sort-inner {
+    width: 100%;
+  }
 }
 .course__sort-inner::before {
   content: "\f107";
@@ -3414,6 +3455,11 @@ header .profileDropdown {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+}
+@media (max-width: 575px) {
+  .course__sort-inner select {
+    width: 100%;
+  }
 }
 .course__sort-inner select:hover {
   cursor: pointer;
@@ -3442,25 +3488,29 @@ header .profileDropdown {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .course__sidebar {
-    padding-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .course__sidebar {
-    padding-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     margin-top: 50px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .course__sidebar {
     margin-top: 50px;
-    padding-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 @media (max-width: 575px) {
   .course__sidebar {
     margin-top: 50px;
-    padding-left: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
 .course__sidebar-widget {
@@ -7667,7 +7717,7 @@ p.checkout-coupon input[type=text]:focus {
   padding: 30px;
 }
 .teacher__item .teacher__thumb {
-  width: 310px;
+  width: 100%;
   height: 300px;
   overflow: hidden;
 }
@@ -8023,7 +8073,7 @@ p.checkout-coupon input[type=text]:focus {
 }
 @media (max-width: 576px) {
   .page__title-height {
-    min-height: 200px;
+    min-height: 350px;
     background-size: cover;
     background-position: right;
   }
@@ -9403,13 +9453,17 @@ p.checkout-coupon input[type=text]:focus {
   padding-right: 70px;
   padding-left: unset !important;
 }
+[dir=rtl] .pr-70 {
+  padding-left: 70px;
+  padding-right: unset !important;
+}
 [dir=rtl] .pl-85 {
   padding-right: 85px;
   padding-left: unset !important;
 }
 @media (max-width: 992px) {
   [dir=rtl] .pt-115, [dir=rtl] .pt-120 {
-    padding-top: 50px !important;
+    padding-top: 75px !important;
   }
 }
 @media (min-width: 1400px) {
@@ -9584,9 +9638,44 @@ p.checkout-coupon input[type=text]:focus {
   padding-left: unset;
   padding-right: 80px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  [dir=rtl] .counter__pl-80 {
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  [dir=rtl] .counter__pl-80 {
+    padding-right: 0px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  [dir=rtl] .counter__pl-80 {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 575px) {
+  [dir=rtl] .counter__pl-80 {
+    padding-right: 0px;
+  }
+}
 [dir=rtl] .counter__pl-34 {
   padding-left: unset;
   padding-right: 34px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  [dir=rtl] .counter__pl-34 {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  [dir=rtl] .counter__pl-34 {
+    padding-right: 0;
+  }
+}
+@media (max-width: 575px) {
+  [dir=rtl] .counter__pl-34 {
+    padding-right: 0;
+  }
 }
 [dir=rtl] .counter__icon,
 [dir=rtl] .counter__content {
@@ -9625,6 +9714,26 @@ p.checkout-coupon input[type=text]:focus {
 [dir=rtl] .hero__content p {
   padding-right: unset;
   padding-left: 130px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  [dir=rtl] .hero__content p {
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  [dir=rtl] .hero__content p {
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  [dir=rtl] .hero__content p {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 575px) {
+  [dir=rtl] .hero__content p {
+    padding-left: 0px;
+  }
 }
 [dir=rtl] .hero__quote {
   left: -200px;
