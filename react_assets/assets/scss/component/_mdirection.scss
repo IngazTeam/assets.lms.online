@@ -5,11 +5,32 @@
   .counter__pl-80 {
     padding-left: unset;
     padding-right: 80px;
+    @media #{$lg}{
+      padding-right: 30px;
+  }
+  @media #{$md}{
+      padding-right: 0px;
+  }
+  @media #{$sm}{
+      padding-right: 0px;
+  }
+  @media #{$xs}{
+      padding-right: 0px;
+  }
   }
 
   .counter__pl-34 {
     padding-left: unset;
     padding-right: 34px;
+    @media #{$md}{
+      padding-right: 0;
+  }
+  @media #{$sm}{
+      padding-right: 0;
+  }
+  @media #{$xs}{
+      padding-right: 0;
+  }
   }
 
   .counter__icon,
@@ -68,6 +89,18 @@
       & p {
         padding-right: unset;
         padding-left: 130px;
+        @media #{$lg}{
+            padding-left: 30px;
+      }
+      @media #{$md}{
+            padding-left: 0px;
+      }
+      @media #{$sm}{
+            padding-left: 0px;
+      }
+      @media #{$xs}{
+            padding-left: 0px;
+      }
       }
     }
 

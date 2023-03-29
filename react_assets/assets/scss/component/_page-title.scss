@@ -124,7 +124,7 @@
             min-height: 450px;
             @include background();
             @media (max-width:576px) {
-                min-height: 200px;
+                min-height: 350px;
                 background-size: cover;
                 background-position: right;
             }
