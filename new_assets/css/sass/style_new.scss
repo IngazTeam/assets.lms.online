@@ -2853,3 +2853,116 @@ input {
     word-break: break-word;
   }
 }
+
+[lang="en"] .med-new-content {
+  .right-sidebar {
+    padding-right: 10px !important;
+  }
+
+  .pe-0 {
+    padding-right: unset !important;
+    padding-left: 0 !important;
+  }
+
+  .select2-results__options li {
+    padding-right: 0 !important;
+    padding-left: 15px !important;
+  }
+
+  .right-sidebar {
+    .navbar {
+      .nav-item {
+        &.active {
+          &::before {
+            right: unset;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .culender {
+    .title {
+      &::before {
+        right: unset;
+        left: -30px;
+      }
+    }
+  }
+
+  .culender2 {
+    .title {
+      &::before {
+        right: unset;
+        left: 0;
+      }
+    }
+  }
+
+  #lms_table .absolute_check .form-check label::before,
+  #lms_table .absolute_check .form-check label::after {
+    right: -7px !important;
+    left: unset !important;
+  }
+
+  .check_box_table table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child::before {
+    left: 10px !important;
+    right: unset !important;
+  }
+
+  .dataTables_wrapper .dataTables_length {
+    right: unset;
+    left: 50%;
+  }
+
+  .section_title {
+    padding-right: unset;
+    padding-left: 19px;
+
+    &::before {
+      right: unset;
+      left: 0;
+    }
+  }
+
+  .card_box {
+    .title {
+      padding-right: unset;
+      padding-left: 10px;
+
+      &::before {
+        left: 13px !important;
+        right: unset !important;
+      }
+    }
+
+    .card_info {
+
+      .create_group.level,
+      .time .image {
+        margin-right: unset;
+        margin-left: 9px;
+      }
+
+      .card_info_title {
+        padding-right: unset;
+        padding-left: 22px;
+
+        &::before {
+          left: 13px !important;
+          right: unset !important;
+        }
+      }
+    }
+
+    .form-error.help-block {
+      left: 0;
+      right: unset !important;
+    }
+  }
+
+  .bi-caret-left-fill::before {
+    transform: rotate(180deg);
+  }
+}
