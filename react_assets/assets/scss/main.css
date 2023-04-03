@@ -2151,12 +2151,12 @@ p {
 }
 
 [dir=ltr] .header__wish {
-  padding-left: unset;
+  padding-left: unset !important;
   padding-right: 8px;
 }
 
-[dir=ltr] .header__wish {
-  padding-left: unset;
+[dir=ltr] .header__cart {
+  padding-left: unset !important;
   padding-right: 18px;
 }
 
