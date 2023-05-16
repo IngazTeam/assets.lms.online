@@ -2192,24 +2192,24 @@ p {
 }
 
 .hero__height {
-  min-height: 950px;
+  min-height: 750px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .hero__height {
-    min-height: 850px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero__height {
     min-height: 750px;
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero__height {
+    min-height: 700px;
+  }
+}
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .hero__height {
-    min-height: 1100px;
+    min-height: 900px;
   }
 }
 
@@ -5387,8 +5387,7 @@ p {
 
 @media (max-width: 575px) {
   .cta__inner {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px;
   }
 }
 
@@ -5534,7 +5533,14 @@ p {
 
 @media (max-width: 575px) {
   .cta__apps a {
+    margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 16px;
+    zoom: .8;
+  }
+
+  .cta__apps {
+    justify-content: center !important;
   }
 }
 
@@ -11310,6 +11316,53 @@ p.checkout-coupon input[type=text]:focus {
   100% {
     transform: scale(1);
   }
+}
+
+.Mobile-Menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  transition: .5s;
+  z-index: 9999999999999;
+}
+
+.Mobile-Menu.active {
+  top: 60px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.Mobile-Menu.active li {
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.Mobile-Menu.active li:first-child {
+  margin-top: 15px;
+}
+
+.Mobile-Menu.active li:last-child {
+  border-bottom: none;
+}
+
+.Mobile-Menu.active a {
+  color: #000320;
+  padding: 5px;
+  display: inline-block;
+}
+
+.Mobile-Menu .cart-quantaty {
+  position: absolute;
+  left: 15px;
+  color: #cf0000;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
