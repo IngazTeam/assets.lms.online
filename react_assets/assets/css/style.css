@@ -5591,12 +5591,20 @@ p {
   .cta__form-inner input {
     margin-bottom: 20px;
   }
+
+  .cta__form-inner span span {
+    margin-top: -15px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .cta__form-inner input {
     margin-bottom: 20px;
     width: 100%;
+  }
+
+  .cta__form-inner span span {
+    margin-top: -15px;
   }
 }
 
@@ -5605,12 +5613,20 @@ p {
     margin-bottom: 20px;
     width: 100%;
   }
+
+  .cta__form-inner span span {
+    margin-top: -15px;
+  }
 }
 
 @media (max-width: 575px) {
   .cta__form-inner input {
     margin-bottom: 20px;
     width: 100%;
+  }
+
+  .cta__form-inner span span {
+    margin-top: -15px;
   }
 }
 
