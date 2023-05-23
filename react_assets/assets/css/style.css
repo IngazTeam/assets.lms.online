@@ -7342,6 +7342,7 @@ p.checkout-coupon input[type=text]:focus {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .testimonial__slider-3 .testimonial-nav .swiper-slide.swiper-slide-thumb-active .testimonial__nav-thumb::after {
