@@ -11364,7 +11364,7 @@ p.checkout-coupon input[type=text]:focus {
 }
 
 .Mobile-Menu.active {
-  top: 60px;
+  top: 75px;
   opacity: 1;
   visibility: visible;
 }
